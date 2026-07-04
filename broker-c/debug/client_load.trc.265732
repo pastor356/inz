@@ -1,0 +1,33 @@
+rseq(0x7f6050260600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7f60502609a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+socket(AF_UNIX, SOCK_STREAM, 0)         = 3<socket:[1831798]>
+unlink("./loadtest/client0.sock")       = 0
+bind(3<socket:[1831798]>, {sa_family=AF_UNIX, sun_path="./loadtest/client0.sock"}, 26) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6047a00000
+munmap(0x7f6047a00000, 6291456)         = 0
+munmap(0x7f604c000000, 60817408)        = 0
+mprotect(0x7f6048000000, 135168, PROT_READ|PROT_WRITE) = 0
+setsockopt(3<socket:[1831798]>, SOL_SOCKET, 0x800 /* SO_??? */, [1], 4) = -1 ENOPROTOOPT (Protocol not available)
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f604f25f000
+mprotect(0x7f604f260000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f604fa5f990, parent_tid=0x7f604fa5f990, exit_signal=0, stack=0x7f604f25f000, stack_size=0x7fff80, tls=0x7f604fa5f6c0} => {parent_tid=[265733]}, 88) = 265733
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+connect(3<socket:[1831798]>, {sa_family=AF_UNIX, sun_path="./serv.sock"}, 14) = 0
+sendto(3<socket:[1831798]>, "1/topic0", 8, 0, NULL, 0) = 8
+fsync(3<socket:[1831798]>)              = -1 EINVAL (Invalid argument)
+fstat(1</dev/pts/10>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0xa), ...}) = 0
+write(1</dev/pts/10>, "sent introduction_buf: 1/topic0\n", 32) = 32
+sendto(3<socket:[1831798]>, "\v\0\0\0\10\0\0\0", 8, 0, NULL, 0) = 8
+sendto(3<socket:[1831798]>, "topic0?cli0msg no 0", 19, 0, NULL, 0) = 19
+fsync(3<socket:[1831798]>)              = -1 EINVAL (Invalid argument)
+write(1</dev/pts/10>, "sent msg: \n", 11) = 11
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, 0x7f605025fba0) = 0
+write(1</dev/pts/10>, "prod_func(): joining cons's thre"..., 39) = 39
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+madvise(0x7f604fa60000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

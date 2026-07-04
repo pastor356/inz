@@ -1,0 +1,456 @@
+rseq(0x7f8d25ffb600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7f8d25ffb9a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8d08000000
+munmap(0x7f8d0c000000, 67108864)        = 0
+mprotect(0x7f8d08000000, 135168, PROT_READ|PROT_WRITE) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\314[2\217\300\4g11|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|8|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\00011|9|topic0?cli0||0\0\0\0\0\0"..., 64, 0, NULL, NULL) = 64
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "bytes received: 64\n", 19) = 19
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 1
+poll([{fd=46<pipe:[1630020]>, events=POLLIN}, {fd=45<socket:[1630019]>, events=POLLIN}], 2, -1) = 1 ([{fd=45, revents=POLLIN}])
+recvfrom(45<socket:[1630019]>, "\0\0\0\0\0\0\0\0", 64, 0, NULL, NULL) = 8
+recvfrom(45<socket:[1630019]>, "", 56, 0, NULL, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f8d2d8257b0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+write(1</dev/pts/4>, "serv got a msg: \n", 17) = 17
+futex(0x7f8d2d8257b0, FUTEX_WAKE_PRIVATE, 1) = 0
+write(1</dev/pts/4>, "bytes received: 8\n", 18) = 18
+write(1</dev/pts/4>, "actual msglen: 0\n\n", 18) = 18
+write(1</dev/pts/4>, "thread is closing\n", 18) = 18
+rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+madvise(0x7f8d257fb000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

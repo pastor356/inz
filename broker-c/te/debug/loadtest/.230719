@@ -1,0 +1,11 @@
+rseq(0x7f8d277fe600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7f8d277fe9a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(0x7f8d1c000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8d1c000000
+mprotect(0x7f8d1c000000, 135168, PROT_READ|PROT_WRITE) = 0
+poll([{fd=18<pipe:[1658954]>, events=POLLIN}], 1, -1) = 1 ([{fd=18, revents=POLLIN}])
+write(1</dev/pts/4>, "thread is closing\n", 18) = 18
+rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+madvise(0x7f8d26ffe000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

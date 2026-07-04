@@ -1,0 +1,39 @@
+rseq(0x7f604fa5f600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7f604fa5f9a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGRT_2, {sa_handler=0x4015ab, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f605027e040}, NULL, 8) = 0
+socket(AF_UNIX, SOCK_STREAM, 0)         = 4<socket:[1828411]>
+unlink("./loadtest/client1.sock")       = 0
+bind(4<socket:[1828411]>, {sa_family=AF_UNIX, sun_path="./loadtest/client1.sock"}, 26) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6040000000
+munmap(0x7f6044000000, 67108864)        = 0
+mprotect(0x7f6040000000, 135168, PROT_READ|PROT_WRITE) = 0
+write(1</dev/pts/10>, "CONSCLI: introduce_buf: 0/topic0"..., 33) = 33
+connect(4<socket:[1828411]>, {sa_family=AF_UNIX, sun_path="./serv.sock"}, 14) = 0
+sendto(4<socket:[1828411]>, "0/topic0", 8, 0, NULL, 0) = 8
+write(1</dev/pts/10>, "sent introduction_buf: 0/topic0\n", 32) = 32
+recvfrom(4<socket:[1828411]>, "\v\0\0\0\10\0\0\0", 8, 0, NULL, NULL) = 8
+recvfrom(4<socket:[1828411]>, "topic0?cli0msg no ", 18, 0, NULL, NULL) = 18
+fsync(4<socket:[1828411]>)              = -1 EINVAL (Invalid argument)
+write(1</dev/pts/10>, "client [cli0] have a msg on topi"..., 43) = 43
+write(1</dev/pts/10>, "[msg no ] is body with len [8]\n\n", 32) = 32
+openat(AT_FDCWD</home/pastor/Public/code/serv6>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5</etc/ld.so.cache>
+fstat(5</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=144343, ...}) = 0
+mmap(NULL, 144343, PROT_READ, MAP_PRIVATE, 5</etc/ld.so.cache>, 0) = 0x7f6050455000
+close(5</etc/ld.so.cache>)              = 0
+openat(AT_FDCWD</home/pastor/Public/code/serv6>, "/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 5</usr/lib64/libgcc_s-15-20260123.so.1>
+read(5</usr/lib64/libgcc_s-15-20260123.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(5</usr/lib64/libgcc_s-15-20260123.so.1>, {st_mode=S_IFREG|0755, st_size=182368, ...}) = 0
+mmap(NULL, 176584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5</usr/lib64/libgcc_s-15-20260123.so.1>, 0) = 0x7f604f233000
+mmap(0x7f604f256000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5</usr/lib64/libgcc_s-15-20260123.so.1>, 0x23000) = 0x7f604f256000
+mmap(0x7f604f25d000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5</usr/lib64/libgcc_s-15-20260123.so.1>, 0x2a000) = 0x7f604f25d000
+mmap(0x7f604f25e000, 456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f604f25e000
+close(5</usr/lib64/libgcc_s-15-20260123.so.1>) = 0
+mprotect(0x7f604f25d000, 4096, PROT_READ) = 0
+munmap(0x7f6050455000, 144343)          = 0
+futex(0x7f604f25e050, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+madvise(0x7f604f25f000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

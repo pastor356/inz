@@ -1,0 +1,47 @@
+rseq(0x7f42e2d1b600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7f42e2d1b9a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f42da400000
+munmap(0x7f42da400000, 29360128)        = 0
+munmap(0x7f42e0000000, 37748736)        = 0
+mprotect(0x7f42dc000000, 135168, PROT_READ|PROT_WRITE) = 0
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+fstat(1</dev/pts/4>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}) = 0
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 1 ([{fd=4, revents=POLLIN}])
+recvfrom(4<socket:[193324]>, "18|7|newtopic?newclient|blalba|0"..., 64, 0, NULL, NULL) = 64
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[193324]>, events=POLLIN}], 1, 1000) = 1 ([{fd=4, revents=POLLIN|POLLHUP}])
+recvfrom(4<socket:[193324]>, "", 64, 0, NULL, NULL) = 0
+write(1</dev/pts/4>, "client 4 sent empty msg\n", 24) = 24
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000)                       = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([], 0, 1000 <unfinished ...>)      = ?
++++ killed by SIGSEGV (core dumped) +++

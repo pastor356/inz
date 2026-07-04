@@ -1,0 +1,18 @@
+rseq(0x7fbb5114b600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7fbb5114b9a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbb48800000
+munmap(0x7fbb48800000, 58720256)        = 0
+munmap(0x7fbb50000000, 8388608)         = 0
+mprotect(0x7fbb4c000000, 135168, PROT_READ|PROT_WRITE) = 0
+poll([{fd=5<socket:[1990509]>, events=POLLIN}, {fd=4<socket:[1995191]>, events=POLLIN}], 2, 2000) = 0 (Timeout)
+fstat(1</dev/pts/4>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}) = 0
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=5<socket:[1990509]>, events=POLLIN}, {fd=4<socket:[1995191]>, events=POLLIN}], 2, 2000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=5<socket:[1990509]>, events=POLLIN}, {fd=4<socket:[1995191]>, events=POLLIN}], 2, 2000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=5<socket:[1990509]>, events=POLLIN}, {fd=4<socket:[1995191]>, events=POLLIN}], 2, 2000) = 1 ([{fd=5, revents=POLLIN}])
+recvfrom(5<socket:[1990509]>, "C", 64, 0, NULL, NULL) = 1
+recvfrom(5<socket:[1990509]> <unfinished ...>) = ?
++++ killed by SIGQUIT (core dumped) +++

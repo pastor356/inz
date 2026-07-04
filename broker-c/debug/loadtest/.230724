@@ -1,0 +1,16 @@
+rseq(0x7f8d24ff9600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7f8d24ff99a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+openat(AT_FDCWD</home/pastor/Public/code/serv6>, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 57</sys/devices/system/cpu/online>
+read(57</sys/devices/system/cpu/online>, "0-11\n", 1024) = 5
+close(57</sys/devices/system/cpu/online>) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8cff600000
+munmap(0x7f8cff600000, 10485760)        = 0
+munmap(0x7f8d04000000, 56623104)        = 0
+mprotect(0x7f8d00000000, 135168, PROT_READ|PROT_WRITE) = 0
+poll([{fd=54<pipe:[1654452]>, events=POLLIN}], 1, -1) = 1 ([{fd=54, revents=POLLIN}])
+write(1</dev/pts/4>, "thread is closing\n", 18) = 18
+rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+madvise(0x7f8d247f9000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

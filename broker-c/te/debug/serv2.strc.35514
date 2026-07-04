@@ -1,0 +1,24 @@
+rseq(0x7fd161405600, 0x20, 0, 0x53053053) = 0
+set_robust_list(0x7fd1614059a0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd158c00000
+munmap(0x7fd158c00000, 54525952)        = 0
+munmap(0x7fd160000000, 12582912)        = 0
+mprotect(0x7fd15c000000, 135168, PROT_READ|PROT_WRITE) = 0
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+fstat(1</dev/pts/4>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}) = 0
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000) = 0 (Timeout)
+write(1</dev/pts/4>, "thr_func: poll() timeout reached"..., 33) = 33
+poll([{fd=4<socket:[219608]>, events=POLLIN}], 1, 1000 <unfinished ...>) = ?
++++ killed by SIGSEGV (core dumped) +++
