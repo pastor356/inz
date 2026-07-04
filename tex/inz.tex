@@ -1,0 +1,62 @@
+\input{/home/pastor/.preamble_pl.tex}
+
+\begin{document}
+	
+	\begin{center}
+		\Large\textbf{Obsługa sieci sensorycznej/Zarządzanie siecią sensoryczną}
+	\end{center}
+	
+	
+	\tableofcontents
+	
+	
+	
+	\newpage
+	\section{Ogólna idea oraz przeznaczenie układu}
+	
+	\section{Część elektroniczna}
+		\subsection{Host (schemat blokowy)}
+			\subsubsection{Moduł hosta 1}
+			\subsubsection{Moduł hosta n}
+			\subsubsection{Zasilanie}
+			\subsubsection{Komunikacja}
+			\subsubsection{...}
+		
+		\subsection{Płytki (\footnotesize{kilka płytek -- dla różnych przypadków) z czujnikami (schemat blokowy/schemat płytki w Eagle/KiCad)}}
+			\subsubsection{Czujnik 1} 
+			\subsubsection{Czujnik n}
+			\subsubsection{Zasilanie (\footnotesize{można coś wymyślić z płytką zero-energetyczną -- energia pochodzi od drgań lub panelu fotowoltaicznego (DC/DC EHE004 lub BQ25504))}}
+			\subsubsection{Komunikacja (bezprzewodowa \& przewodowa (I2C, SPI, ...))}
+		
+	
+	\section{Część programistyczna}
+		\subsection{Host (UML, schemat blokowy -- architektura publikacja-subskrypcja)}
+			\subsubsection{Protokół}
+			\subsubsection{Klasa 1}
+			\subsubsection{Klasa n}
+		
+		\subsection{Płytka (UML, schemat blokowy -- współpraca z czujnikami/modułami)} 
+			\subsubsection{Układy peryferyjne ESP32/Raspberry Pi z punktu widzenia softwearowego}
+			\subsubsection{FiLtR KaLmAnA realizowany softwearowo}
+			\subsubsection{Serializacja zebranych danych (nagłówek z opisem + dane)}
+			
+	\section{Montaż}
+		\subsection{Wybrane elementy}
+		\subsection{Osadzanie elementów (lutowanie/pasta/klejenie)}
+		\subsection{Wydrukowane obudowy (układy zero energetyczne -- miejsce pod panel fotowoltaiczny w obudowie)} 
+		
+	
+	\section{Pomiary/rozwiązane problemy/testy/...}
+	
+	\section{Przypadki użycia}
+	
+	\section{Wnioski} 
+	
+	
+	\section{Dodatek -- zdjęcia/przebiegi/charakterystyki}
+	
+	
+	
+	
+	
+\end{document}
