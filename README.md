@@ -5,7 +5,7 @@
 
 `docs`      -- dokumentacja czujników, wybrane artykuły
 
-`tex`       -- spis wstępny spis treści (stary)
+`tex`       -- wstępny spis treści (stary)
 
 `wymagania` -- wymagania projektowe 
 
