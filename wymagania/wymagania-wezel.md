@@ -40,6 +40,6 @@
 
 # Rozważania 
 
-8, 9 FR) Data -- dane z czujników, które węzeł wysyła brokerowi/otrzymuje od brokera, WARNING -- wiadomości, które informują o niekrytycznych rzeczach, np. o niskiej temperaturze, ciśnieniu, itd. ERROR -- informacja o błędach (softwearowych lub hardwearowych, np. o nieudanej inicjalizacji i2c). Broker nie interesuje się typem wiadomości.
+8, 9 FR) Data -- dane z czujników, które węzeł wysyła brokerowi/otrzymuje od brokera, WARNING -- wiadomości, które informują o niekrytycznych rzeczach, np. o niskiej temperaturze, ciśnieniu, itd. ERROR -- informacja o błędach (softwearowych lub hardwearowych, np. o nieudanej inicjalizacji i2c). Broker nie interesuje się typem wiadomości. Można też zmapować tą gradację na QoS
     
 5 FR) Chodzi o format nagłówka, który różni się od nagłówka wiadomości z danymi z czujników. Podczasu podłączenia węzeł wysyła tematY na które chciałby zasubskrybować się, a login i hasło do autoryzacji(i ewentualnie sekret) w ramach handshake'a. Można też dodać do nagłówka bit, który informuje czy konkretne konto jest "zarejestrowane". Jeśli nie, to login i hasło dodają sie do bazy danych (stąd 11FR i 13FR w brokerze).
