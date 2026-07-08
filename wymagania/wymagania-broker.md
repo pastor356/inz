@@ -28,7 +28,11 @@
 
 10) Broker na początku swojej pracy uruchamia FailoverBroker
 
-11) Gdy
+11) Failover broker ma statyczny IP 
+
+12) Broker usuwa tematy z bazy danych, na które nie było publikacji dłużej niż dwa miesiące
+
+13) Broker dodaje do bazy danych każde nowe konto
 
 
 # NFR 
