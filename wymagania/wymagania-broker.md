@@ -1,9 +1,9 @@
 # FR
-1) Broker pozwala węzłowi zasubskrybować się na temat 
+1) Broker pozwala węzłowi zasubskrybować się na temat
 
 2) Broker przesyła węzłowi-konsumentowi wiadomości na temat(y), na który(e) węzeł jest zasubskrybowany
 
-3) Broker oczekuje wiadomości do węzłów produkujących
+3) Broker oczekuje wiadomości do węzłów (producentów i konsumentów)
 
 4) Broker wspiera mechanizm handshake. W ramach handshake'a:
     4.1) Broker otrzymuje wiadomość określonego formatu od węzła 
@@ -30,11 +30,17 @@
 
 11) Failover broker ma statyczny IP 
 
-12) Broker usuwa tematy z bazy danych, na które nie było publikacji dłużej niż dwa miesiące
+12) Główny proker regularnie wysyła do failover brokera wiadomości informujące, że on żyje
 
-13) Broker dodaje do bazy danych każde nowe konto
+13) Broker usuwa tematy z bazy danych, na które nie było publikacji dłużej niż dwa miesiące
 
-14) Broker po dodaniu węzła do tematu wysyła potwierdzenie do węzła 
+14) Broker dodaje do bazy danych każde nowe konto
+
+15) Broker po dodaniu węzła do tematu wysyła potwierdzenie do węzła 
+
+16) Broker wspiera odłączanie węzła z konkretnego tematu //
+
+17) Broker wspiera ponowne połączenie węzła (reconnect) – po utracie połączenia węzeł może wznowić sesję bez ponownej pełnej rejestracji.
 
 
 # NFR 
@@ -52,8 +58,13 @@
 
 7) Maksymalna długość wiadomości, którą może przyjąć/wysłać broker wynosi 1MB
 
+8) Broker wspiera logowanie zdarzeń (np. do pliku lub syslog) z konfigurowalnym poziomem szczegółowości // 
 
+9) Broker wspiera konfigurację w pliku (JSON) oraz możliwość przeładowania konfiguracji bez restartu.
 
+10) Broker wspiera TLS 1.2 dla szyfrowania komunikacji 
+
+11) Czas przełączania failover (detekcja śmierci + podniesienie VIP + uruchomienie brokera) jest krótszy niż 5 sekund.
 
 
 # Rozważania 
@@ -63,6 +74,7 @@
 
 4 NFR) Można to sprawdzić za pomocą time stampów w nagłówku wiadomości (węzeł publikujący wpisuje czas wysłania do nagłówka, a aplikacja przy odczycie wiadomości odczytuje czas otrzymania. Stąd różnica między czasem wysłania i odczytu jest w przybliżeniu równa czasowi obróbki wiadomości)
 
+5 FR) Typ odrębny typ wiadomości -- zapytanie o subskrypcję
 
 7 FR) QoSn w tym kontekście -- kopia tego, co jest w MQTT
 

@@ -25,6 +25,12 @@
 
 13) Węzeł przy połączeniu do tematu oczekuje potwierdzenia od brokera
 
+14) Węzeł wspiera połączenie z brokerem poprzez TLS/SSL (szyfrowanie). //
+
+15) Węzeł może odczytać ostatnią wiadomość na temat (retained message) przy subskrypcji
+
+16) Węzeł buforuje wiadomości (kolejkuje) w przypadku chwilowej niedostępności brokera i wysyła je po przywróceniu połączenia.
+
 
 
 
