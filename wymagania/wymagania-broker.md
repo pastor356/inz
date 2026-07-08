@@ -50,8 +50,7 @@
 
 6) Broker utrzymuje do 500 węzłów przypisanych do jednego tematu
 
-7) Maksymalna długość wiadomości, którą może przyjąć/wysłać broker wynosi 64KB
-
+7) Maksymalna długość wiadomości, którą może przyjąć/wysłać broker wynosi 1MB
 
 
 
@@ -59,10 +58,15 @@
 
 # Rozważania 
 
-4, 5 FR) Czy na końcu handshake'a broker wywołuje `close()`? Tzn. co robimy, gdy węzeł nie znalazł tematu, na który chciał zasubskrybować się? Czy ogólnie w systemie chcemy odróżniać nieporządane przerwanie połączenia od porządnego (oczekujemy jakiejś bye-bye wiadomości?)?
+4, 5 FR) Czy na końcu handshake'a broker wywołuje `close()`? Tzn. co robimy, gdy węzeł nie znalazł tematu, na który chciał zasubskrybować się? I czy ogólnie w systemie chcemy odróżniać nieporządane przerwanie połączenia od porządnego (oczekujemy jakiejś bye-bye wiadomości?)? 
 
 
 4 NFR) Można to sprawdzić za pomocą time stampów w nagłówku wiadomości (węzeł publikujący wpisuje czas wysłania do nagłówka, a aplikacja przy odczycie wiadomości odczytuje czas otrzymania. Stąd różnica między czasem wysłania i odczytu jest w przybliżeniu równa czasowi obróbki wiadomości)
 
+
+7 FR) QoSn w tym kontekście -- kopia tego, co jest w MQTT
+
+
+4 NFR) Próbowałem testować broker mosquitto, żeby ocenić ile on czasu traci na obróbkę wiadomości, ale były to czasy rzędu kilku milisekund. Zakładam, w naszym przypadku zapytanie do bazy danych będzie wprowadzać opóźnienie. Więc 100ms -- czas, który wziąłem z sufitu, nie jest to wymagane do czegokolwiek, i nie wiem, jak trudne będzie osiągnięcie tego czasu.
 
 
