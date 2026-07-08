@@ -34,6 +34,8 @@
 
 13) Broker dodaje do bazy danych każde nowe konto
 
+14) Broker po dodaniu węzła do tematu wysyła potwierdzenie do węzła 
+
 
 # NFR 
 1) Broker wspiera protokół TCP/IP
@@ -46,6 +48,9 @@
 
 5) Broker wspiera systemy operacyjny Linux i OpenBSD
 
+6) Broker utrzymuje do 500 węzłów przypisanych do jednego tematu
+
+7) Maksymalna długość wiadomości, którą może przyjąć/wysłać broker wynosi 64KB
 
 
 

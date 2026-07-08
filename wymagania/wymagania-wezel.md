@@ -21,6 +21,11 @@
 
 11) Węzeł przy pierwszym podłączeniu do brokera tworzy konto przesyłając login i hasło
 
+12) Węzeł może zasubskrybować się na wszystkie tematy jednocześnie (wildcard) 
+
+13) Węzeł przy połączeniu do tematu oczekuje potwierdzenia od brokera
+
+
 
 
 # NFR
@@ -28,9 +33,9 @@
 2) Węzeł wspiera protokół TCP/lwIP
 3) Węzeł wspiera do 2 czujników analogowych
 4) Węzeł wspiera do 255 czujników cyfrowych
-
 5) Hasło węzła powinno zawierać przynajmniej 8 symboli
 6) Login węzła nie powinien zawierać symboli specjalnych
+7) Węzeł nie może stworzyć tematu, który wymaga praw do publikacji/subskrypcji wyższych, niż jego własne
 
 
 # Rozważania 
