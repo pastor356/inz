@@ -36,12 +36,20 @@
 
 # NFR
 1) Węzeł wspiera protokół TCP/IP
+
 2) Węzeł wspiera protokół TCP/lwIP
+
 3) Węzeł wspiera do 2 czujników analogowych
+
 4) Węzeł wspiera do 255 czujników cyfrowych
+
 5) Hasło węzła powinno zawierać przynajmniej 8 symboli
+
 6) Login węzła nie powinien zawierać symboli specjalnych
+
 7) Węzeł nie może stworzyć tematu, który wymaga praw do publikacji/subskrypcji wyższych, niż jego własne
+
+
 
 
 # Rozważania 

@@ -42,6 +42,10 @@
 
 17) Broker wspiera ponowne połączenie węzła (reconnect) – po utracie połączenia węzeł może wznowić sesję bez ponownej pełnej rejestracji.
 
+18) Broker zabrania subskrybować się producentom na wildcarda // ?
+
+19) Broker przechowuje listę węzłów, które są zasubskrybowani na wildcarda
+
 
 # NFR 
 1) Broker wspiera protokół TCP/IP
@@ -81,4 +85,6 @@
 
 4 NFR) Próbowałem testować broker mosquitto, żeby ocenić ile on czasu traci na obróbkę wiadomości, ale były to czasy rzędu kilku milisekund. Zakładam, w naszym przypadku zapytanie do bazy danych będzie wprowadzać opóźnienie. Więc 100ms -- czas, który wziąłem z sufitu, nie jest to wymagane do czegokolwiek, i nie wiem, jak trudne będzie osiągnięcie tego czasu.
 
+
+19 FR) Dzięki temu węzeł zasubskrybowany na wildcarda w przypadku dodania nowego tematu (już po tym, jak węzeł zasubskrybował się na wildcarda) dostaje z niego wiadomości 
 
