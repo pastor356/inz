@@ -46,6 +46,10 @@
 
 19) Broker przechowuje listę węzłów, które są zasubskrybowani na wildcarda
 
+20) Broker może aktualizować listę tematów, które bierze z bazy danych
+
+21) W celu aktualizacji listy tematów broker komunikuje się z bazą danych (a.k.a. DataService)
+
 
 # NFR 
 1) Broker wspiera protokół TCP/IP
@@ -69,6 +73,12 @@
 10) Broker wspiera TLS 1.2 dla szyfrowania komunikacji 
 
 11) Czas przełączania failover (detekcja śmierci + podniesienie VIP + uruchomienie brokera) jest krótszy niż 5 sekund.
+
+12) Broker raz na dobę aktualizuje listę tematów
+
+13) Broker komunikuje się z bazą danych po TCP
+
+14) Broker komunikuje się z węzłami po TCP czy UDP
 
 
 # Rozważania 

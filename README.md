@@ -9,3 +9,5 @@
 
 `wymagania` -- wymagania projektowe 
 
+`przypadki-uzycia`  -- 
+
