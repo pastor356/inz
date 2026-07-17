@@ -9,5 +9,6 @@
 
 `wymagania` -- wymagania projektowe 
 
-`przypadki-uzycia`  -- 
+`przypadki-uzycia`  -- przypadki użycia
 
+`proj` -- randomowe projekty
