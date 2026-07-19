@@ -12,7 +12,7 @@
 
 6) Aplikacja buforuje otrzymane dane w przypadku braku połączenia z bazą danych 
 
-7) Aplikacja dodaje wartości do wykresów, zatem  dodaje do bazy danych 
+// 7) Aplikacja dodaje wartości do wykresów, zatem  dodaje do bazy danych 
 
 8) Aplikacja zawiera DataService, który subskrybuje się na wszystkie tematy i otrzymuje dane z brokera
 
