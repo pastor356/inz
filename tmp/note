@@ -1,2 +1,3 @@
 Handshake domyślnie odbywa się przy użyciu UDP. W nagłówku węzeł przesyła informację o protokole (TCP/UDP), z którego on chce korzystać dla komunikacji z brokerem 
+Węzły, które nie publikują wiadomości 2 miesiące traktowane są za nieaktywne i usuwane są z bazy danych
 
