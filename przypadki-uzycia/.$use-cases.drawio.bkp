@@ -1244,7 +1244,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="I0ZcXugCllL28z01QNiE" name="networkClassDiagram">
-    <mxGraphModel dx="1909" dy="3117" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1707" dy="2976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1332,7 +1332,7 @@
         <mxCell id="jC4P0N7Acv1HfbpD3kWo-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="jC4P0N7Acv1HfbpD3kWo-29" vertex="1">
           <mxGeometry y="26" width="345" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="jC4P0N7Acv1HfbpD3kWo-32" value="# getDescriptor(): int&amp;nbsp;&lt;div&gt;TcpCaller(int selfFd, int remoteFd, std::string const&amp;amp; ipAddr)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="jC4P0N7Acv1HfbpD3kWo-29" vertex="1">
+        <mxCell id="jC4P0N7Acv1HfbpD3kWo-32" value="# getDescriptor(): int&amp;nbsp;&lt;div&gt;TcpCaller(int remoteFd, std::string const&amp;amp; ipAddr)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="jC4P0N7Acv1HfbpD3kWo-29" vertex="1">
           <mxGeometry y="34" width="345" height="46" as="geometry" />
         </mxCell>
         <mxCell id="jC4P0N7Acv1HfbpD3kWo-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=0;entryX=0.487;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="jC4P0N7Acv1HfbpD3kWo-29" target="w0lNoqg6YXwCCjPjnnBq-21" edge="1">
@@ -1823,7 +1823,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-43" value="Handshaker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="2650" y="-1150" width="350" height="170" as="geometry" />
+          <mxGeometry x="3000" y="-1315" width="350" height="170" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-44" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;- tlsDBConnection: DbCommunicator&lt;div&gt;- std::unique_ptr&amp;lt;ISocket&amp;gt; dtlsNodeEntryPoint&lt;/div&gt;&lt;div&gt;- authorizator: Authorizator&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="hb1zdEoMAL2HZ8Dk4cYR-43" vertex="1">
           <mxGeometry y="26" width="350" height="56" as="geometry" />
@@ -1835,7 +1835,7 @@
           <mxGeometry y="90" width="350" height="80" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-47" value="Authorizator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="2775" y="-880" width="290" height="126" as="geometry" />
+          <mxGeometry x="3125" y="-1045" width="290" height="126" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-48" value="- salt: int&lt;div&gt;- pswHash&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="hb1zdEoMAL2HZ8Dk4cYR-47" vertex="1">
           <mxGeometry y="26" width="290" height="44" as="geometry" />
@@ -1847,7 +1847,7 @@
           <mxGeometry y="78" width="290" height="48" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-51" value="DbCommunicator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="3150" y="-1074" width="330" height="170" as="geometry" />
+          <mxGeometry x="3500" y="-1239" width="330" height="170" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-52" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;- tlsDbConn: std::&lt;b&gt;shared&lt;/b&gt;_ptr&amp;lt;IConncetion&amp;gt;&lt;div&gt;- query: IPacket&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="hb1zdEoMAL2HZ8Dk4cYR-51" vertex="1">
           <mxGeometry y="26" width="330" height="39" as="geometry" />
@@ -1863,8 +1863,8 @@
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-56" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=25;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.455;exitY=1.012;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="hb1zdEoMAL2HZ8Dk4cYR-46" target="hb1zdEoMAL2HZ8Dk4cYR-47" edge="1">
           <mxGeometry x="-0.8536" y="3" relative="1" as="geometry">
-            <mxPoint x="2950" y="-990" as="sourcePoint" />
-            <mxPoint x="3055" y="-860" as="targetPoint" />
+            <mxPoint x="3300" y="-1155" as="sourcePoint" />
+            <mxPoint x="3405" y="-1025" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -1953,6 +1953,9 @@
               <mxPoint x="94" y="-330" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="o61qTQUuG982JHe1DD05-6" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;ISocketFactory&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;# resolve(std::string const&amp;amp; service): int&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="-1210" width="380" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
