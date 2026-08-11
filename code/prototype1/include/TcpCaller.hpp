@@ -1,8 +1,8 @@
 #pragma once
-#include "IConnection.hpp"
+#include "TcpConnection.hpp"
 
 class TcpCaller: public TcpConnection {
 public:
-	TcpCaller(int remoteFd, std::string const& addr, int port);
+	TcpCaller(int remoteFd, const struct sockaddr_storage addr);
 };
 

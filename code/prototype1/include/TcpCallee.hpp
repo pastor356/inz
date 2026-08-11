@@ -1,6 +1,7 @@
-#include "IConnection.hpp"
+#pragma once
+#include "TcpConnection.hpp"
 
 class TcpCallee: public TcpConnection {
 public:
-	TcpCallee(int sockFd, std::string const& addr, int port);
+	TcpCallee(int sockFd, const struct sockaddr_storage addr);
 };

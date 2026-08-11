@@ -3,17 +3,19 @@
 
 class TcpConnection: public IConnection {
 	int connectionFd;
-	std::string addr;
-	int port; // in clients case -- getnameinfo()
+	struct sockaddr_storage addr;
+
+	std::string sock_ntop() const; 
 
 public:
 	TcpConnection(int sockFd, std::string const& addr, int port);
+	TcpConnection(int sockFd, struct sockaddr_storage ipAddr);
+	virtual ~TcpConnection();
 
-	Status recv(std::string& msg, int flag = 0) const override;
-	void send(std::string const& msg, int flag = 0) const override;
-	const std::string& getAddr() const override;
+	virtual IConnection::Status recv(std::string& msg, int flag = 0) const override;
+	virtual void send(std::string const& msg, int flag = 0) const override;
+	virtual const struct sockaddr_storage getAddr() const override;
 
 	int getDescriptor() const; 
 };
 
-	

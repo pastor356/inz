@@ -1244,7 +1244,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="I0ZcXugCllL28z01QNiE" name="networkClassDiagram">
-    <mxGraphModel dx="1707" dy="2976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1382" dy="2748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1252,7 +1252,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="270" y="-845" />
-              <mxPoint x="270" y="-1031" />
+              <mxPoint x="270" y="-992" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1275,10 +1275,10 @@
           <mxGeometry y="72" width="285" height="68" as="geometry" />
         </mxCell>
         <mxCell id="w0lNoqg6YXwCCjPjnnBq-22" value="&lt;font style=&quot;color: rgb(255, 0, 98);&quot;&gt;(1)&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="480" y="-830" width="60" height="30" as="geometry" />
+          <mxGeometry x="480" y="-830" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="w0lNoqg6YXwCCjPjnnBq-23" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 0, 98);&quot;&gt;(1)&lt;/font&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt; &lt;/font&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Przeciążenie z dod. argumentem &lt;/font&gt;&lt;font face=&quot;IBM Plex Mono&quot; style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;size_t &lt;/font&gt;&lt;font color=&quot;#000000&quot;&gt;n&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;font face=&quot;IBM Plex Mono&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;color: rgb(255, 0, 0);&quot;&gt;(2) &lt;/font&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;color: rgb(255, 255, 255);&quot;&gt;Metody accept() i connect() w klasach TcpSocket i TlsSocket są jednakowe, ale w TlsSocket implementuje się nowe metody createCaller/Callee(), dodajemy owijkę z Tls/Dtls&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;color: rgb(255, 0, 18);&quot;&gt;(3)&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;color: light-dark(rgb(255, 255, 255), rgb(244, 240, 240));&quot;&gt;ConnectionWrapper&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;color: rgb(255, 255, 255);&quot;&gt; odpowiada za QoS (IQualityStrategy) i pakiety KeepAlive (LiveMonitor) &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;(ConnectionSupervisor::recv() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;liveMon.resetTimer();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;qosStrategy.recv();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;liveMon.lastActivity(std::chrono::steady_clock::now()&lt;br&gt;&lt;/div&gt;&lt;div&gt;})&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 0, 18);&quot;&gt;(4) &lt;/span&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Stan połączenia: onHold -- gdy KeepAlive nie przyszedł w okresie &lt;font face=&quot;IBM Plex Mono&quot; style=&quot;&quot;&gt;timeOut1, &lt;/font&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;&quot;&gt;tempDisconnected -- gdy nie przyszedł w okresie&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;IBM Plex Mono&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;timeOut2, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;Disconnected, gdy nie odpowiada na po&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;(5)&lt;/font&gt; W przypadku UDP f-cja &lt;font face=&quot;IBM Plex Mono&quot;&gt;accept()&lt;/font&gt; robi kopię UdpSocket::sockFd i przekazuje ją przy tworzeniu do UdpConnection::connectionFd&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="360" y="-2360" width="460" height="300" as="geometry" />
+          <mxGeometry x="360" y="-2440" width="460" height="380" as="geometry" />
         </mxCell>
         <mxCell id="w0lNoqg6YXwCCjPjnnBq-24" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;ISocket&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ accept(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ listen(int backlog): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ connect(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ bind(std::string const&amp;amp; ipAddr, int port): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getDescriptor(): int&lt;/div&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;align=center;" parent="1" vertex="1">
           <mxGeometry x="1577.5" y="-820" width="260" height="150" as="geometry" />
@@ -1295,7 +1295,7 @@
         <mxCell id="w0lNoqg6YXwCCjPjnnBq-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="w0lNoqg6YXwCCjPjnnBq-25" vertex="1">
           <mxGeometry y="80" width="270" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="w0lNoqg6YXwCCjPjnnBq-28" value="&lt;div style=&quot;line-height: 130%;&quot;&gt;&lt;div&gt;# createCaller(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;# createCaller(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;+ accept(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;div&gt;+ listen(int backlog): void&lt;/div&gt;&lt;div&gt;+ connect(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;+ bind(std::string const&amp;amp; ipAddr, int port): void&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="w0lNoqg6YXwCCjPjnnBq-25" vertex="1">
+        <mxCell id="w0lNoqg6YXwCCjPjnnBq-28" value="&lt;div style=&quot;line-height: 130%;&quot;&gt;&lt;div&gt;# createCaller(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;# createCallee(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;+ accept(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;div&gt;+ listen(int backlog): void&lt;/div&gt;&lt;div&gt;+ connect(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;+ bind(std::string const&amp;amp; ipAddr, int port): void&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="w0lNoqg6YXwCCjPjnnBq-25" vertex="1">
           <mxGeometry y="88" width="270" height="112" as="geometry" />
         </mxCell>
         <mxCell id="jC4P0N7Acv1HfbpD3kWo-1" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=0;entryX=0.489;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="jC4P0N7Acv1HfbpD3kWo-24" target="w0lNoqg6YXwCCjPjnnBq-21" edge="1">
@@ -1367,7 +1367,7 @@
           <mxGeometry y="60" width="440" height="70" as="geometry" />
         </mxCell>
         <mxCell id="xgzeYZVd5eg94ny7cS0k-3" value="ConnectionSupervisor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-490" y="-1084" width="357.5" height="165" as="geometry" />
+          <mxGeometry x="-490" y="-1045" width="357.5" height="165" as="geometry" />
         </mxCell>
         <mxCell id="xgzeYZVd5eg94ny7cS0k-4" value="&lt;div style=&quot;line-height: 130%;&quot;&gt;- connection: std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;div&gt;- qosStrategy: std::shared_ptr&amp;lt;IQualityStrategy&amp;gt;&lt;/div&gt;&lt;div&gt;- liveMon: std::shared_ptr&amp;lt;LiveMon&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="xgzeYZVd5eg94ny7cS0k-3" vertex="1">
           <mxGeometry y="26" width="357.5" height="54" as="geometry" />
@@ -1379,7 +1379,7 @@
           <mxGeometry y="88" width="357.5" height="77" as="geometry" />
         </mxCell>
         <mxCell id="xgzeYZVd5eg94ny7cS0k-7" value="&lt;font style=&quot;color: rgb(255, 0, 98);&quot;&gt;(3)&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-110" y="-1010" width="60" height="30" as="geometry" />
+          <mxGeometry x="-120" y="-980" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b0rPhilCzeJlOXmww_oC-1" value="IQualityStrategy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="-1348" width="285" height="120" as="geometry" />
@@ -1446,7 +1446,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="o61qTQUuG982JHe1DD05-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=diamondThin;endFill=0;startArrow=open;startFill=0;startSize=12;endSize=25;" edge="1" parent="1" source="JZF9HjM55Bf28UaE3WrV-1" target="xgzeYZVd5eg94ny7cS0k-3">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-568" y="-1170" />
+              <mxPoint x="-311" y="-1170" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="JZF9HjM55Bf28UaE3WrV-1" value="Bufforisator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-710" y="-1379" width="285" height="154" as="geometry" />
@@ -1461,11 +1466,16 @@
           <mxGeometry y="78" width="285" height="76" as="geometry" />
         </mxCell>
         <mxCell id="JZF9HjM55Bf28UaE3WrV-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=12;entryX=1.013;entryY=0.611;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=8 8;" parent="1" source="w0lNoqg6YXwCCjPjnnBq-24" target="w0lNoqg6YXwCCjPjnnBq-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1199" y="-750" />
+              <mxPoint x="1199" y="-831" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="JZF9HjM55Bf28UaE3WrV-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&amp;lt;&amp;lt;create&amp;gt;&amp;gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JZF9HjM55Bf28UaE3WrV-6" vertex="1" connectable="0">
           <mxGeometry x="-0.4964" y="2" relative="1" as="geometry">
-            <mxPoint x="-213" y="-102" as="offset" />
+            <mxPoint x="-214" y="-67" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="531NmXxxoVAyF5SEfgAv-1" value="SslRAII" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -1653,7 +1663,9 @@
           <mxGeometry y="34" width="230" height="42" as="geometry" />
         </mxCell>
         <mxCell id="mYzxmmtF7ejYnWK5IDjF-1" value="TlsCaller" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="202.5" y="-297" width="440" height="130" as="geometry" />
+          <mxGeometry x="202.5" y="-297" width="440" height="130" as="geometry">
+            <mxRectangle x="202.5" y="-297" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="mYzxmmtF7ejYnWK5IDjF-2" value="- std::unique_ptr&amp;lt;SslRAII&amp;gt; tls" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="mYzxmmtF7ejYnWK5IDjF-1" vertex="1">
           <mxGeometry y="26" width="440" height="26" as="geometry" />
@@ -1733,7 +1745,7 @@
           <mxGeometry x="4505" y="-1565" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-15" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;«interface»&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 160%;&quot;&gt;&lt;b&gt;IPoll&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;# monitoredCo&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nns: &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;std::unordered_map&amp;lt;int, MonitoredConnection&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;# epollFd: int&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ register(MonitoredFd&amp;amp;): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ deregister(MonitoredFd&amp;amp;): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ wait(): size_t&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getMonitoredConns(): std::unordered_map&amp;lt;int, MonitoredConnection&amp;gt; const&amp;amp;&lt;/div&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="2200" y="-1830" width="490" height="170" as="geometry" />
+          <mxGeometry x="2060" y="-1670" width="490" height="170" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=block;endFill=0;endSize=12;dashed=1;" parent="1" source="hb1zdEoMAL2HZ8Dk4cYR-16" target="w0lNoqg6YXwCCjPjnnBq-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1747,7 +1759,7 @@
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="hb1zdEoMAL2HZ8Dk4cYR-16" vertex="1">
           <mxGeometry y="80" width="270" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-19" value="&lt;div style=&quot;line-height: 130%;&quot;&gt;&lt;div&gt;# createCaller(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;# createCaller(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;+ accept(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;div&gt;+ listen(int backlog): void&lt;/div&gt;&lt;div&gt;+ connect(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;+ bind(std::string const&amp;amp; ipAddr, int port): void&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="hb1zdEoMAL2HZ8Dk4cYR-16" vertex="1">
+        <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-19" value="&lt;div style=&quot;line-height: 130%;&quot;&gt;&lt;div&gt;# createCaller(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;# createCallee(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;+ accept(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;div&gt;+ listen(int backlog): void&lt;/div&gt;&lt;div&gt;+ connect(): std::unique_ptr&amp;lt;IConnection&amp;gt;&lt;/div&gt;&lt;div&gt;+ bind(std::string const&amp;amp; ipAddr, int port): void&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="hb1zdEoMAL2HZ8Dk4cYR-16" vertex="1">
           <mxGeometry y="88" width="270" height="112" as="geometry" />
         </mxCell>
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-22" value="DtlsSocket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -1927,7 +1939,9 @@
         <mxCell id="hb1zdEoMAL2HZ8Dk4cYR-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=diamondThin;endFill=0;startArrow=open;startFill=0;startSize=12;endSize=25;" parent="1" source="hb1zdEoMAL2HZ8Dk4cYR-73" target="hb1zdEoMAL2HZ8Dk4cYR-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1900" y="-1745" />
+              <mxPoint x="1900" y="-1600" />
+              <mxPoint x="2000" y="-1600" />
+              <mxPoint x="2000" y="-1585" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1954,8 +1968,17 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="o61qTQUuG982JHe1DD05-6" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;ISocketFactory&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;# resolve(std::string const&amp;amp; service): int&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="1650" y="-1210" width="380" height="150" as="geometry" />
+        <mxCell id="o61qTQUuG982JHe1DD05-7" value="Resolver" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="-1050" width="520" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="o61qTQUuG982JHe1DD05-8" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="o61qTQUuG982JHe1DD05-7">
+          <mxGeometry y="26" width="520" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="o61qTQUuG982JHe1DD05-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="o61qTQUuG982JHe1DD05-7">
+          <mxGeometry y="52" width="520" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="o61qTQUuG982JHe1DD05-10" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;&lt;div&gt;using addrInfo = std::list&amp;lt;std::unique_ptr&amp;lt;struct addrinfo, addrInfoDeleter&amp;gt;&amp;gt;&lt;/div&gt;+ resolve(std::string const&amp;amp; hostName, std::string const&amp;amp; serviceName, int flags): &lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;addrInfo&amp;amp;&amp;amp;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="o61qTQUuG982JHe1DD05-7">
+          <mxGeometry y="60" width="520" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

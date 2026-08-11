@@ -1,29 +1,26 @@
 #pragma once
 #include "ISocket.hpp"
+#include "TcpCaller.hpp"
+#include "TcpCallee.hpp"
 
 class TcpSocket: public ISocket {
 	int sockFd;
-	std::string addr;
+	struct sockaddr_storage addr;
 	int port;
 
-protected:
-	std::unique_ptr<IConnection> createCallee() const; 
-	std::unique_ptr<IConnection> createCaller() const; 
+	void initAddress(std::string const& address, int port);
 
 public:
 	// OMG RESOLVER 
-	TcpSocket(std::string const& addr, int port); 
-	TcpSocket(int sockfd, std::string const& addr, int port); 
+	TcpSocket(int sockfd, std::string const& address, int port); 
 
 	std::unique_ptr<IConnection> accept() const override;
-	std::unique_ptr<IConnection> connect() const override;
+	std::unique_ptr<IConnection> connect(struct sockaddr_storage addr) const override;
 
 	void bind() const override;
-	int listen(int backlog) const override;
+	void listen(int backlog) const override;
 
 	int getDescriptor() const override;
 
 	~TcpSocket();
 };
-
-	
