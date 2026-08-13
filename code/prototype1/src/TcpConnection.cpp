@@ -11,7 +11,7 @@ IConnection::Status TcpConnection::recv(std::string& msg, int flag) const {
 
 	nrecv = ::recv(connectionFd, buffer, MAXMSGSIZ, flag);
 	if(nrecv < 0) {
-		logger << std::string{"recv() failed: "} + std::string{strerror(errno)};
+		logError << std::string{"recv() failed: "} + std::string{strerror(errno)};
 		return(IConnection::Status::ERROR);
 	} else if(nrecv == 0) {
 		return(IConnection::Status::HUP);
@@ -28,12 +28,12 @@ void TcpConnection::send(std::string const& msg, int flag) const {
 	ssize_t nsend;
 
 	if(msg.size() > MAXMSGSIZ) {
-		logger << std::string{"send(): max message size overflow"};
+		logError << std::string{"send(): max message size overflow"};
 	}
 
 	nsend = ::send(connectionFd, msg.c_str(), msg.size(), flag);
 	if(nsend < 0) {
-		logger << std::string{"send() failed: "} + std::string{strerror(errno)};
+		logError << std::string{"send() failed: "} + std::string{strerror(errno)};
 	} 
 
 	return;

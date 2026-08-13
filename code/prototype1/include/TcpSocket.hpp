@@ -3,6 +3,10 @@
 #include "TcpCaller.hpp"
 #include "TcpCallee.hpp"
 
+#include "ILogger.hpp"
+#include "ConsoleLogger.hpp"
+
+
 class TcpSocket: public ISocket {
 	int sockFd;
 	struct sockaddr_storage addr;

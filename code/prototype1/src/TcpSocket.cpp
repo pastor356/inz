@@ -50,7 +50,7 @@ std::unique_ptr<IConnection> TcpSocket::accept() const {
 			reinterpret_cast<struct sockaddr*>(&remoteAddr), &remoteAddrlen);
 
 	if(remoteFd < 0) {
-		logger << std::string{"accept() failed: "} + strerror(errno);
+		logError << std::string{"accept() failed: "} + strerror(errno);
 		return(nullptr);
 	}
 
@@ -65,7 +65,7 @@ std::unique_ptr<IConnection> TcpSocket::connect(struct sockaddr_storage ipAddr) 
 			reinterpret_cast<struct sockaddr*>(&ipAddr), sizeof(ipAddr));
 
 	if(remoteFd < 0) {
-		logger << std::string{"connect() failed: "} + strerror(errno);
+		logError << std::string{"connect() failed: "} + strerror(errno);
 		return(nullptr);
 	}
 
@@ -82,7 +82,7 @@ void TcpSocket::bind() const {
 	int err = ::bind(this->sockFd, reinterpret_cast<const sockaddr*>(&addr), addrLen);
 
 	if(err < 0) {
-		logger << std::string{"bind() failed: "} + strerror(errno);
+		logError << std::string{"bind() failed: "} + strerror(errno);
 	}
 	 
 	return;
@@ -94,7 +94,7 @@ void TcpSocket::listen(int backlog) const {
 	int err = ::listen(this->sockFd, backlog);
 
 	if(err < 0) {
-		logger << std::string{"listen() failed: "} + strerror(errno);
+		logError << std::string{"listen() failed: "} + strerror(errno);
 	}
 
 	return;

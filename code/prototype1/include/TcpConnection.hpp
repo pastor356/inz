@@ -1,6 +1,9 @@
 #pragma once
 #include "IConnection.hpp"
 
+#include "ILogger.hpp"
+#include "ConsoleLogger.hpp"
+
 class TcpConnection: public IConnection {
 	int connectionFd;
 	struct sockaddr_storage addr;
