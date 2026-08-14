@@ -1,0 +1,7 @@
+set_robust_list(0x7f95fbeb88e0, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3<socket:[161157]>
+connect(3<socket:[161157]>, {sa_family=AF_INET, sin_port=htons(4242), sin_addr=inet_addr("127.0.0.1")}, 128) = 0
+shutdown(3<socket:[161157]>, SHUT_RDWR) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

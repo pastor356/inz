@@ -1,0 +1,3 @@
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir

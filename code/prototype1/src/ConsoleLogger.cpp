@@ -1,5 +1,8 @@
 #include "ConsoleLogger.hpp"
 
+std::string ConsoleLogger::applicationName = "Default";
+bool ConsoleLogger::enable = false;
+
 ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string const& msg) {
 	std::string outputString;
 
@@ -21,21 +24,25 @@ ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string const& msg) {
 
 
 ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string file, int line) {
-	std::string outputString;
+	if(enable) {
+		std::string outputString;
 
-	outputString += file;
-	outputString += line;
+		outputString += file;
+		outputString += line;
 
-	std::cout << applicationName << outputString << ": ";
+		std::cout << applicationName << " :: " << outputString << ": ";
+	}
 }
 
 
 ILogger& ConsoleLogger::operator << (std::string const& msg) { 
-	std::cout << msg << std::endl;
+	if(enable) std::cout << msg << std::endl;
+
 	return(*this);
 }
 
 void ConsoleLogger::setApplicationName(std::string const& appName) {
 	applicationName = appName;
 } 
+
 

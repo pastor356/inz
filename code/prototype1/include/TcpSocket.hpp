@@ -16,9 +16,13 @@ class TcpSocket: public ISocket {
 
 public:
 	// OMG RESOLVER 
+	// setsockopt() method
 	TcpSocket(int sockfd, std::string const& address, int port); 
+	TcpSocket(std::string const& address, int port); 
 
 	std::unique_ptr<IConnection> accept() const override;
+	
+	// connect(const struct sockaddr* addr) overloading
 	std::unique_ptr<IConnection> connect(struct sockaddr_storage addr) const override;
 
 	void bind() const override;

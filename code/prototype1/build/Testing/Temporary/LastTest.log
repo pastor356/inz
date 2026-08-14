@@ -1,0 +1,23 @@
+Start testing: Aug 14 22:15 CEST
+----------------------------------------------------------
+1/1 Testing: network_Test
+1/1 Test: network_Test
+Command: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/network_test"
+Directory: /home/pastor/Public/books/VI_sem/inz/code/prototype1/build
+"network_Test" start time: Aug 14 22:15 CEST
+Output:
+----------------------------------------------------------
+Default :: /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/TcpConnection.cpp$: send() failed: Socket operation on non-socket
+Default :: /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/TcpSocket.cpp: Connection 127.0.0.1
+ closed :(
+Default :: /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/TcpSocket.cpp: Connection 127.0.0.1
+ closed :(
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"network_Test" end time: Aug 14 22:15 CEST
+"network_Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 14 22:15 CEST

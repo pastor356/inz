@@ -8,6 +8,21 @@ TcpSocket::TcpSocket(int sockDescriptor, std::string const& address, int port):
 
 
 
+TcpSocket::TcpSocket(std::string const& address, int port) {
+	this->initAddress(address, port);
+
+	this->sockFd = socket(this->addr.ss_family, SOCK_STREAM, 0);
+	if(this->sockFd < 0) {
+		logError << std::string{"socket() failed: "} + strerror(errno);
+	} 
+
+	int reuse = 1;
+	setsockopt(this->sockFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(int));
+
+}
+
+
+
 void TcpSocket::initAddress(std::string const& address, int port) {
 	std::memset(&(this->addr), 0, sizeof(this->addr)); 
 	int err; 
@@ -61,15 +76,15 @@ std::unique_ptr<IConnection> TcpSocket::accept() const {
 
 
 std::unique_ptr<IConnection> TcpSocket::connect(struct sockaddr_storage ipAddr) const {
-	int remoteFd = ::connect(this->sockFd, 
+	int err = ::connect(this->sockFd, 
 			reinterpret_cast<struct sockaddr*>(&ipAddr), sizeof(ipAddr));
 
-	if(remoteFd < 0) {
+	if(err < 0) {
 		logError << std::string{"connect() failed: "} + strerror(errno);
 		return(nullptr);
 	}
 
-	return(std::make_unique<TcpCallee>(remoteFd, ipAddr));
+	return(std::make_unique<TcpCallee>(this->sockFd, ipAddr));
 }
 
 
@@ -103,6 +118,28 @@ void TcpSocket::listen(int backlog) const {
 
 int TcpSocket::getDescriptor() const {
 	return(this->sockFd);
+}
+
+
+TcpSocket::~TcpSocket() {
+	char output[MAXLINE];
+	
+	if(addr.ss_family == AF_INET) {
+		struct sockaddr_in* addrv4 = reinterpret_cast<struct sockaddr_in*>(&addr);
+
+		logInfo << std::string{"Connection "} 
+		+ std::string{inet_ntop(this->addr.ss_family, 
+				&addrv4->sin_addr, output, sizeof(struct sockaddr_in))} << " closed :(";
+
+	} else if(addr.ss_family == AF_INET6) {
+		struct sockaddr_in6* addrv6 = reinterpret_cast<struct sockaddr_in6*>(&addr);
+
+		logInfo << std::string{"Connection "} 
+		+ std::string{inet_ntop(this->addr.ss_family, 
+				&addrv6->sin6_addr, output, sizeof(struct sockaddr_in))} << " closed :(";
+	}
+
+	shutdown(this->sockFd, SHUT_RDWR);
 }
 
 

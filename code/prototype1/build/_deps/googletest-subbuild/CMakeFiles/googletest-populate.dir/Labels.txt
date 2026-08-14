@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule

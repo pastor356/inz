@@ -8,7 +8,6 @@ IConnection::Status TcpConnection::recv(std::string& msg, int flag) const {
 	ssize_t nrecv;
 	char buffer[MAXMSGSIZ];
 
-
 	nrecv = ::recv(connectionFd, buffer, MAXMSGSIZ, flag);
 	if(nrecv < 0) {
 		logError << std::string{"recv() failed: "} + std::string{strerror(errno)};
