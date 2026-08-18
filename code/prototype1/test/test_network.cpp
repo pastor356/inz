@@ -2,10 +2,12 @@
 #include "TcpSocket.hpp"
 #include "ConsoleLogger.hpp"
 #include <gtest/gtest.h>
+#include <cstring>
 
 
 
-TEST(dupa, dupa) {
+TEST(NetworkTest, PARENT_CHILD_EXCHANGE) {
+	std::cerr << std::endl << std::endl;
 	auto tcpSocketServer = std::make_unique<TcpSocket>("127.0.0.1", 4242);
 	(*tcpSocketServer).bind();
 	(*tcpSocketServer).listen(5);
@@ -39,6 +41,7 @@ TEST(dupa, dupa) {
 		
 		logInfo << msg;
 		EXPECT_EQ(msg, std::string{"blalba!"});
+		EXPECT_EQ(msg.size(), strlen("blalba!"));
 
 		wait(NULL);
 		if(status == IConnection::Status::SUCCESS) {
@@ -46,9 +49,11 @@ TEST(dupa, dupa) {
 		} else {
 			logError << "FAILURE";
 		}
-
 	}
 }
+
+
+
 
 
 

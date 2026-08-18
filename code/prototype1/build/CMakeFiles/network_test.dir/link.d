@@ -4,11 +4,13 @@ network_test: \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o \
   CMakeFiles/network_test.dir/test/test_network.cpp.o \
+  CMakeFiles/network_test.dir/test/resolver_test.cpp.o \
   CMakeFiles/network.dir/src/TcpConnection.cpp.o \
   CMakeFiles/network.dir/src/TcpSocket.cpp.o \
   CMakeFiles/network.dir/src/TcpCallee.cpp.o \
   CMakeFiles/network.dir/src/TcpCaller.cpp.o \
   CMakeFiles/network.dir/src/ConsoleLogger.cpp.o \
+  CMakeFiles/network.dir/src/Resolver.cpp.o \
   lib/libgtest_main.a \
   lib/libgtest.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
@@ -49,6 +51,8 @@ CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o:
 
 CMakeFiles/network_test.dir/test/test_network.cpp.o:
 
+CMakeFiles/network_test.dir/test/resolver_test.cpp.o:
+
 CMakeFiles/network.dir/src/TcpConnection.cpp.o:
 
 CMakeFiles/network.dir/src/TcpSocket.cpp.o:
@@ -58,6 +62,8 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o:
 CMakeFiles/network.dir/src/TcpCaller.cpp.o:
 
 CMakeFiles/network.dir/src/ConsoleLogger.cpp.o:
+
+CMakeFiles/network.dir/src/Resolver.cpp.o:
 
 lib/libgtest_main.a:
 

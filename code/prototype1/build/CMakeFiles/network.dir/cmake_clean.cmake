@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/network.dir/src/ConsoleLogger.cpp.o"
   "CMakeFiles/network.dir/src/ConsoleLogger.cpp.o.d"
+  "CMakeFiles/network.dir/src/Resolver.cpp.o"
+  "CMakeFiles/network.dir/src/Resolver.cpp.o.d"
   "CMakeFiles/network.dir/src/TcpCallee.cpp.o"
   "CMakeFiles/network.dir/src/TcpCallee.cpp.o.d"
   "CMakeFiles/network.dir/src/TcpCaller.cpp.o"

@@ -1,34 +1,35 @@
 #include "TcpSocket.hpp"
 
-
 TcpSocket::TcpSocket(int sockDescriptor, std::string const& address, int port): 
 	sockFd{sockDescriptor} {
-	this->initAddress(address, port);
+	this->addr = this->initAddress(address, port);
 }
 
 
 
 TcpSocket::TcpSocket(std::string const& address, int port) {
-	this->initAddress(address, port);
+	this->addr = this->initAddress(address, port);
 
 	this->sockFd = socket(this->addr.ss_family, SOCK_STREAM, 0);
 	if(this->sockFd < 0) {
 		logError << std::string{"socket() failed: "} + strerror(errno);
+		throw std::runtime_error{"socket() failed"};
 	} 
 
 	int reuse = 1;
 	setsockopt(this->sockFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(int));
-
 }
 
 
 
-void TcpSocket::initAddress(std::string const& address, int port) {
-	std::memset(&(this->addr), 0, sizeof(this->addr)); 
-	int err; 
+struct sockaddr_storage TcpSocket::initAddress(std::string const& address, int port) {
+	int err;
 	struct sockaddr_in ipv4;
 	struct sockaddr_in6 ipv6;
+	struct sockaddr_storage outputAddr;
 	int isIpV4;
+	
+	std::memset(&outputAddr, 0, sizeof(outputAddr)); 
 
 	isIpV4 = inet_pton(AF_INET, address.c_str(), &ipv4.sin_addr);
 
@@ -39,7 +40,9 @@ void TcpSocket::initAddress(std::string const& address, int port) {
 		ipv4.sin_family = AF_INET; 
 		ipv4.sin_port = htons(port);
 
-		std::memcpy(&this->addr, &ipv4, sizeof(ipv4));
+		std::memcpy(&outputAddr, &ipv4, sizeof(ipv4));
+
+		return(outputAddr);
 
 	} else {
 		ipv6.sin6_family = AF_INET6;
@@ -49,7 +52,9 @@ void TcpSocket::initAddress(std::string const& address, int port) {
 		if(err < 0) 
 			throw std::string{"inet_pton() failed: "} + strerror(errno);
 
-		std::memcpy(&this->addr, &ipv6, sizeof(ipv6));
+		std::memcpy(&outputAddr, &ipv6, sizeof(ipv6));
+
+		return(outputAddr);
 	}
 }
 
@@ -136,10 +141,70 @@ TcpSocket::~TcpSocket() {
 
 		logInfo << std::string{"Connection "} 
 		+ std::string{inet_ntop(this->addr.ss_family, 
-				&addrv6->sin6_addr, output, sizeof(struct sockaddr_in))} << " closed :(";
+				&addrv6->sin6_addr, output, INET6_ADDRSTRLEN)} << " closed :(";
 	}
 
 	shutdown(this->sockFd, SHUT_RDWR);
+}
+
+
+
+std::unique_ptr<IConnection> TcpSocket::connect(addrInfo const& resolvedAddress) const  {
+	struct addrinfo *iter = resolvedAddress.get();
+	int err;
+
+	do {
+
+		if((err = ::connect(this->sockFd, iter->ai_addr, iter->ai_addrlen)) < 0) {
+			logError << std::string{"connect() failed: "} + strerror(errno);
+			continue;
+		} else if(err == 0) break; // success
+		
+	} while((iter = iter->ai_next) != NULL);
+
+	if(!iter) {
+		logError << std::string{"connect() failed: "} + strerror(errno);
+		struct sockaddr_storage failed;
+		memset(&failed, 0, sizeof(failed));
+		return(std::make_unique<TcpCallee>(-1, failed));
+	}
+
+	return(std::make_unique<TcpCallee>(this->sockFd, 
+				*(reinterpret_cast<struct sockaddr_storage*>(iter->ai_addr))));
+}
+
+TcpSocket::TcpSocket(addrInfo const& resolvedAddress) { 
+	struct addrinfo* iter = resolvedAddress.get();
+	int err;
+
+	if(iter == nullptr) {
+		auto ex = std::string{__func__} + ": address info is corrupted";
+		throw std::runtime_error{ex};
+	}
+	
+	do {
+		this->sockFd = ::socket(iter->ai_family, iter->ai_socktype, iter->ai_protocol);
+		if(this->sockFd < 0) continue;
+
+		int reuse = 1;
+		setsockopt(this->sockFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(int));
+
+		if((err = ::bind(this->sockFd, iter->ai_addr, iter->ai_addrlen)) == 0)
+				break;
+
+		close(this->sockFd);
+		logWarn << std::string{"::bind() failed: "} + strerror(errno);
+		std::cerr << std::string{"::bind() failed: "} + strerror(errno) << std::endl;
+
+
+	} while((iter = iter->ai_next) != NULL);
+
+	if(!iter) {
+		logError << std::string{"socket creation failed: "} + strerror(errno);
+	}
+
+
+	this->addr = *(reinterpret_cast<struct sockaddr_storage*>(iter->ai_addr));
 }
 
 

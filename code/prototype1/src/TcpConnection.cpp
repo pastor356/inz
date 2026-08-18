@@ -23,7 +23,7 @@ IConnection::Status TcpConnection::recv(std::string& msg, int flag) const {
 }
 
 
-void TcpConnection::send(std::string const& msg, int flag) const {
+IConnection::Status TcpConnection::send(std::string const& msg, int flag) const {
 	ssize_t nsend;
 
 	if(msg.size() > MAXMSGSIZ) {
@@ -33,9 +33,10 @@ void TcpConnection::send(std::string const& msg, int flag) const {
 	nsend = ::send(connectionFd, msg.c_str(), msg.size(), flag);
 	if(nsend < 0) {
 		logError << std::string{"send() failed: "} + std::string{strerror(errno)};
+		return(IConnection::Status::ERROR);
 	} 
 
-	return;
+	return(IConnection::Status::SUCCESS);
 }
 
 

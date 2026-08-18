@@ -175,4 +175,5 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o: \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
  /usr/include/c++/15/bits/istream.tcc \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConsoleLogger.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Resolver.hpp

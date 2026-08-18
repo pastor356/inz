@@ -20,9 +20,10 @@ public:
 		ERROR
 	};
 
-	virtual void send(std::string const& msg, int flag = 0) const = 0;
+	virtual Status send(std::string const& msg, int flag = 0) const = 0;
 	virtual Status recv(std::string& msg, int flag = 0) const = 0;
 	virtual const struct sockaddr_storage getAddr() const = 0;
+	virtual int getDescriptor() const = 0;
 };
 
 

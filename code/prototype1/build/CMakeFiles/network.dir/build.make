@@ -142,11 +142,26 @@ CMakeFiles/network.dir/src/ConsoleLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/network.dir/src/ConsoleLogger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/ConsoleLogger.cpp -o CMakeFiles/network.dir/src/ConsoleLogger.cpp.s
 
+CMakeFiles/network.dir/src/Resolver.cpp.o: CMakeFiles/network.dir/flags.make
+CMakeFiles/network.dir/src/Resolver.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Resolver.cpp
+CMakeFiles/network.dir/src/Resolver.cpp.o: CMakeFiles/network.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/network.dir/src/Resolver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/network.dir/src/Resolver.cpp.o -MF CMakeFiles/network.dir/src/Resolver.cpp.o.d -o CMakeFiles/network.dir/src/Resolver.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Resolver.cpp
+
+CMakeFiles/network.dir/src/Resolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/network.dir/src/Resolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Resolver.cpp > CMakeFiles/network.dir/src/Resolver.cpp.i
+
+CMakeFiles/network.dir/src/Resolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/network.dir/src/Resolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Resolver.cpp -o CMakeFiles/network.dir/src/Resolver.cpp.s
+
 network: CMakeFiles/network.dir/src/TcpConnection.cpp.o
 network: CMakeFiles/network.dir/src/TcpSocket.cpp.o
 network: CMakeFiles/network.dir/src/TcpCallee.cpp.o
 network: CMakeFiles/network.dir/src/TcpCaller.cpp.o
 network: CMakeFiles/network.dir/src/ConsoleLogger.cpp.o
+network: CMakeFiles/network.dir/src/Resolver.cpp.o
 network: CMakeFiles/network.dir/build.make
 .PHONY : network
 

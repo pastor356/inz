@@ -263,6 +263,30 @@ src/ConsoleLogger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConsoleLogger.cpp.s
 .PHONY : src/ConsoleLogger.cpp.s
 
+src/Resolver.o: src/Resolver.cpp.o
+.PHONY : src/Resolver.o
+
+# target to build an object file
+src/Resolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Resolver.cpp.o
+.PHONY : src/Resolver.cpp.o
+
+src/Resolver.i: src/Resolver.cpp.i
+.PHONY : src/Resolver.i
+
+# target to preprocess a source file
+src/Resolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Resolver.cpp.i
+.PHONY : src/Resolver.cpp.i
+
+src/Resolver.s: src/Resolver.cpp.s
+.PHONY : src/Resolver.s
+
+# target to generate assembly for a file
+src/Resolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Resolver.cpp.s
+.PHONY : src/Resolver.cpp.s
+
 src/TcpCallee.o: src/TcpCallee.cpp.o
 .PHONY : src/TcpCallee.o
 
@@ -383,6 +407,30 @@ test/maintest_gtest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/maintest_gtest.cpp.s
 .PHONY : test/maintest_gtest.cpp.s
 
+test/resolver_test.o: test/resolver_test.cpp.o
+.PHONY : test/resolver_test.o
+
+# target to build an object file
+test/resolver_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/resolver_test.cpp.o
+.PHONY : test/resolver_test.cpp.o
+
+test/resolver_test.i: test/resolver_test.cpp.i
+.PHONY : test/resolver_test.i
+
+# target to preprocess a source file
+test/resolver_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/resolver_test.cpp.i
+.PHONY : test/resolver_test.cpp.i
+
+test/resolver_test.s: test/resolver_test.cpp.s
+.PHONY : test/resolver_test.s
+
+# target to generate assembly for a file
+test/resolver_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/resolver_test.cpp.s
+.PHONY : test/resolver_test.cpp.s
+
 test/test_network.o: test/test_network.cpp.o
 .PHONY : test/test_network.o
 
@@ -428,6 +476,9 @@ help:
 	@echo "... src/ConsoleLogger.o"
 	@echo "... src/ConsoleLogger.i"
 	@echo "... src/ConsoleLogger.s"
+	@echo "... src/Resolver.o"
+	@echo "... src/Resolver.i"
+	@echo "... src/Resolver.s"
 	@echo "... src/TcpCallee.o"
 	@echo "... src/TcpCallee.i"
 	@echo "... src/TcpCallee.s"
@@ -443,6 +494,9 @@ help:
 	@echo "... test/maintest_gtest.o"
 	@echo "... test/maintest_gtest.i"
 	@echo "... test/maintest_gtest.s"
+	@echo "... test/resolver_test.o"
+	@echo "... test/resolver_test.i"
+	@echo "... test/resolver_test.s"
 	@echo "... test/test_network.o"
 	@echo "... test/test_network.i"
 	@echo "... test/test_network.s"

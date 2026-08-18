@@ -176,6 +176,7 @@ CMakeFiles/network_test.dir/test/test_network.cpp.o: \
  /usr/include/c++/15/pstl/execution_defs.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCaller.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Resolver.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /usr/include/c++/15/limits /usr/include/c++/15/vector \
  /usr/include/c++/15/bits/stl_vector.h \

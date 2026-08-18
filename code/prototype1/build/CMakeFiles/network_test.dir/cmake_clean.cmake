@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/network_test.dir/link.d"
   "CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o"
   "CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o.d"
+  "CMakeFiles/network_test.dir/test/resolver_test.cpp.o"
+  "CMakeFiles/network_test.dir/test/resolver_test.cpp.o.d"
   "CMakeFiles/network_test.dir/test/test_network.cpp.o"
   "CMakeFiles/network_test.dir/test/test_network.cpp.o.d"
   "network_test"

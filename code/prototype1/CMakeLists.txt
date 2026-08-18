@@ -26,6 +26,7 @@ set(NET_SRCFILES
 	TcpCallee.cpp
 	TcpCaller.cpp
 	ConsoleLogger.cpp
+	Resolver.cpp
 )
 
 set(NET_HEADERS
@@ -37,6 +38,7 @@ set(NET_HEADERS
 	TcpCaller.hpp
 	TcpConnection.hpp
 	TcpSocket.hpp
+	Resolver.hpp
 )
 
 list(TRANSFORM NET_SRCFILES PREPEND ${SRCDIR})
@@ -48,6 +50,7 @@ target_include_directories(network PRIVATE ${HEADERDIR})
 
 set(TESTSRC
 	test_network.cpp
+	resolver_test.cpp
 )
 list(TRANSFORM TESTSRC PREPEND ${TESTDIR})
 

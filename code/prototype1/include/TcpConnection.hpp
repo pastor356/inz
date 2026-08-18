@@ -16,9 +16,9 @@ public:
 	virtual ~TcpConnection();
 
 	virtual IConnection::Status recv(std::string& msg, int flag = 0) const override;
-	virtual void send(std::string const& msg, int flag = 0) const override;
+	virtual IConnection::Status send(std::string const& msg, int flag = 0) const override;
 	virtual const struct sockaddr_storage getAddr() const override;
 
-	int getDescriptor() const; 
+	int getDescriptor() const override; 
 };
 
