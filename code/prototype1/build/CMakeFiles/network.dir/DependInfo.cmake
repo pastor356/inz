@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/src/ConnectionDecorator.cpp" "CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o" "gcc" "CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/src/ConsoleLogger.cpp" "CMakeFiles/network.dir/src/ConsoleLogger.cpp.o" "gcc" "CMakeFiles/network.dir/src/ConsoleLogger.cpp.o.d"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/src/LiveMonitor.cpp" "CMakeFiles/network.dir/src/LiveMonitor.cpp.o" "gcc" "CMakeFiles/network.dir/src/LiveMonitor.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Resolver.cpp" "CMakeFiles/network.dir/src/Resolver.cpp.o" "gcc" "CMakeFiles/network.dir/src/Resolver.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/src/TcpCallee.cpp" "CMakeFiles/network.dir/src/TcpCallee.cpp.o" "gcc" "CMakeFiles/network.dir/src/TcpCallee.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/src/TcpCaller.cpp" "CMakeFiles/network.dir/src/TcpCaller.cpp.o" "gcc" "CMakeFiles/network.dir/src/TcpCaller.cpp.o.d"

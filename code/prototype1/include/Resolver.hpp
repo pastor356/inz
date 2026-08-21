@@ -30,7 +30,6 @@ struct SocketParams {
 
 
 class Resolver {
-
 public:
 	addrInfo resolve(std::string const& hostname, 
 			std::string const& service, SocketParams const& params) const; 

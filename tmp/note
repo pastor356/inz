@@ -4,3 +4,6 @@ Węzły, które nie publikują wiadomości 2 miesiące traktowane są za nieakty
 openssl/demos/sslecho -- create_socket(), create_context()
 man DTLS_client/server_method
 
+
+int flag = fcntl(sockFd, F_GETFL, 0); fcntl(sockFd, F_SETFL, flag | O_NONBLOCK) NA KAŻDYM SOKECIE OMG
+

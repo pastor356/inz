@@ -127,7 +127,9 @@ network_test_EXTERNAL_OBJECTS = \
 "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir/src/TcpCallee.cpp.o" \
 "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir/src/TcpCaller.cpp.o" \
 "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir/src/ConsoleLogger.cpp.o" \
-"/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir/src/Resolver.cpp.o"
+"/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir/src/Resolver.cpp.o" \
+"/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o" \
+"/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir/src/LiveMonitor.cpp.o"
 
 network_test: CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o
 network_test: CMakeFiles/network_test.dir/test/test_network.cpp.o
@@ -138,6 +140,8 @@ network_test: CMakeFiles/network.dir/src/TcpCallee.cpp.o
 network_test: CMakeFiles/network.dir/src/TcpCaller.cpp.o
 network_test: CMakeFiles/network.dir/src/ConsoleLogger.cpp.o
 network_test: CMakeFiles/network.dir/src/Resolver.cpp.o
+network_test: CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
+network_test: CMakeFiles/network.dir/src/LiveMonitor.cpp.o
 network_test: CMakeFiles/network_test.dir/build.make
 network_test: CMakeFiles/network_test.dir/compiler_depend.ts
 network_test: lib/libgtest_main.a

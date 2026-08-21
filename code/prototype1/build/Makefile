@@ -239,6 +239,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/ConnectionDecorator.o: src/ConnectionDecorator.cpp.o
+.PHONY : src/ConnectionDecorator.o
+
+# target to build an object file
+src/ConnectionDecorator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
+.PHONY : src/ConnectionDecorator.cpp.o
+
+src/ConnectionDecorator.i: src/ConnectionDecorator.cpp.i
+.PHONY : src/ConnectionDecorator.i
+
+# target to preprocess a source file
+src/ConnectionDecorator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConnectionDecorator.cpp.i
+.PHONY : src/ConnectionDecorator.cpp.i
+
+src/ConnectionDecorator.s: src/ConnectionDecorator.cpp.s
+.PHONY : src/ConnectionDecorator.s
+
+# target to generate assembly for a file
+src/ConnectionDecorator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConnectionDecorator.cpp.s
+.PHONY : src/ConnectionDecorator.cpp.s
+
 src/ConsoleLogger.o: src/ConsoleLogger.cpp.o
 .PHONY : src/ConsoleLogger.o
 
@@ -262,6 +286,30 @@ src/ConsoleLogger.s: src/ConsoleLogger.cpp.s
 src/ConsoleLogger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConsoleLogger.cpp.s
 .PHONY : src/ConsoleLogger.cpp.s
+
+src/LiveMonitor.o: src/LiveMonitor.cpp.o
+.PHONY : src/LiveMonitor.o
+
+# target to build an object file
+src/LiveMonitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/LiveMonitor.cpp.o
+.PHONY : src/LiveMonitor.cpp.o
+
+src/LiveMonitor.i: src/LiveMonitor.cpp.i
+.PHONY : src/LiveMonitor.i
+
+# target to preprocess a source file
+src/LiveMonitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/LiveMonitor.cpp.i
+.PHONY : src/LiveMonitor.cpp.i
+
+src/LiveMonitor.s: src/LiveMonitor.cpp.s
+.PHONY : src/LiveMonitor.s
+
+# target to generate assembly for a file
+src/LiveMonitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/LiveMonitor.cpp.s
+.PHONY : src/LiveMonitor.cpp.s
 
 src/Resolver.o: src/Resolver.cpp.o
 .PHONY : src/Resolver.o
@@ -473,9 +521,15 @@ help:
 	@echo "... gtest_main"
 	@echo "... network"
 	@echo "... network_test"
+	@echo "... src/ConnectionDecorator.o"
+	@echo "... src/ConnectionDecorator.i"
+	@echo "... src/ConnectionDecorator.s"
 	@echo "... src/ConsoleLogger.o"
 	@echo "... src/ConsoleLogger.i"
 	@echo "... src/ConsoleLogger.s"
+	@echo "... src/LiveMonitor.o"
+	@echo "... src/LiveMonitor.i"
+	@echo "... src/LiveMonitor.s"
 	@echo "... src/Resolver.o"
 	@echo "... src/Resolver.i"
 	@echo "... src/Resolver.s"

@@ -11,6 +11,8 @@ network_test: \
   CMakeFiles/network.dir/src/TcpCaller.cpp.o \
   CMakeFiles/network.dir/src/ConsoleLogger.cpp.o \
   CMakeFiles/network.dir/src/Resolver.cpp.o \
+  CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o \
+  CMakeFiles/network.dir/src/LiveMonitor.cpp.o \
   lib/libgtest_main.a \
   lib/libgtest.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
@@ -64,6 +66,10 @@ CMakeFiles/network.dir/src/TcpCaller.cpp.o:
 CMakeFiles/network.dir/src/ConsoleLogger.cpp.o:
 
 CMakeFiles/network.dir/src/Resolver.cpp.o:
+
+CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
+
+CMakeFiles/network.dir/src/LiveMonitor.cpp.o:
 
 lib/libgtest_main.a:
 

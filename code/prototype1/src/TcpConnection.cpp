@@ -11,6 +11,9 @@ IConnection::Status TcpConnection::recv(std::string& msg, int flag) const {
 	nrecv = ::recv(connectionFd, buffer, MAXMSGSIZ, flag);
 	if(nrecv < 0) {
 		logError << std::string{"recv() failed: "} + std::string{strerror(errno)};
+
+		if(errno == EAGAIN) return(IConnection::Status::AGAIN);
+
 		return(IConnection::Status::ERROR);
 	} else if(nrecv == 0) {
 		return(IConnection::Status::HUP);

@@ -1107,7 +1107,9 @@ network_test: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib64/libc_nonshared.a \
+  CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o \
   CMakeFiles/network.dir/src/ConsoleLogger.cpp.o \
+  CMakeFiles/network.dir/src/LiveMonitor.cpp.o \
   CMakeFiles/network.dir/src/Resolver.cpp.o \
   CMakeFiles/network.dir/src/TcpCallee.cpp.o \
   CMakeFiles/network.dir/src/TcpCaller.cpp.o \
@@ -1127,6 +1129,10 @@ CMakeFiles/network_test.dir/test/test_network.cpp.o:
 CMakeFiles/network.dir/src/TcpConnection.cpp.o:
 
 CMakeFiles/network.dir/src/TcpCaller.cpp.o:
+
+CMakeFiles/network.dir/src/LiveMonitor.cpp.o:
+
+CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 

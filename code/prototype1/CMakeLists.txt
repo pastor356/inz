@@ -27,6 +27,8 @@ set(NET_SRCFILES
 	TcpCaller.cpp
 	ConsoleLogger.cpp
 	Resolver.cpp
+	ConnectionDecorator.cpp
+	LiveMonitor.cpp
 )
 
 set(NET_HEADERS
@@ -39,6 +41,8 @@ set(NET_HEADERS
 	TcpConnection.hpp
 	TcpSocket.hpp
 	Resolver.hpp
+	ConnectionDecorator.hpp
+	LiveMonitor.hpp
 )
 
 list(TRANSFORM NET_SRCFILES PREPEND ${SRCDIR})

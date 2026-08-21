@@ -17,7 +17,8 @@ public:
 	enum class Status: ssize_t {
 		SUCCESS = 0,
 		HUP, 
-		ERROR
+		ERROR,
+		AGAIN
 	};
 
 	virtual Status send(std::string const& msg, int flag = 0) const = 0;
