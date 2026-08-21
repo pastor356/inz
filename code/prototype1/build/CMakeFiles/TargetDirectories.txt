@@ -1,5 +1,6 @@
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/network_test.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/test_server.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/edit_cache.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/rebuild_cache.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/list_install_components.dir

@@ -29,6 +29,7 @@ set(NET_SRCFILES
 	Resolver.cpp
 	ConnectionDecorator.cpp
 	LiveMonitor.cpp
+	Qos1.cpp
 )
 
 set(NET_HEADERS
@@ -43,6 +44,8 @@ set(NET_HEADERS
 	Resolver.hpp
 	ConnectionDecorator.hpp
 	LiveMonitor.hpp
+	IQualityStrategy.hpp
+	Qos1.hpp
 )
 
 list(TRANSFORM NET_SRCFILES PREPEND ${SRCDIR})
@@ -64,3 +67,8 @@ target_link_libraries(network_test network
 )
 target_include_directories(network_test PRIVATE ${HEADERDIR})
 
+
+# TEST ECHO SERVER
+add_executable(test_server ${TESTDIR}test_server.cpp)
+target_link_libraries(test_server network)
+target_include_directories(test_server PRIVATE ${HEADERDIR})

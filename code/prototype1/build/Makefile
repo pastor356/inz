@@ -188,6 +188,19 @@ network_test/fast:
 .PHONY : network_test/fast
 
 #=============================================================================
+# Target rules for targets named test_server
+
+# Build rule for target.
+test_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_server
+.PHONY : test_server
+
+# fast build rule for target.
+test_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/build
+.PHONY : test_server/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -310,6 +323,30 @@ src/LiveMonitor.s: src/LiveMonitor.cpp.s
 src/LiveMonitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/LiveMonitor.cpp.s
 .PHONY : src/LiveMonitor.cpp.s
+
+src/Qos1.o: src/Qos1.cpp.o
+.PHONY : src/Qos1.o
+
+# target to build an object file
+src/Qos1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Qos1.cpp.o
+.PHONY : src/Qos1.cpp.o
+
+src/Qos1.i: src/Qos1.cpp.i
+.PHONY : src/Qos1.i
+
+# target to preprocess a source file
+src/Qos1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Qos1.cpp.i
+.PHONY : src/Qos1.cpp.i
+
+src/Qos1.s: src/Qos1.cpp.s
+.PHONY : src/Qos1.s
+
+# target to generate assembly for a file
+src/Qos1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Qos1.cpp.s
+.PHONY : src/Qos1.cpp.s
 
 src/Resolver.o: src/Resolver.cpp.o
 .PHONY : src/Resolver.o
@@ -503,6 +540,30 @@ test/test_network.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/test_network.cpp.s
 .PHONY : test/test_network.cpp.s
 
+test/test_server.o: test/test_server.cpp.o
+.PHONY : test/test_server.o
+
+# target to build an object file
+test/test_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/test/test_server.cpp.o
+.PHONY : test/test_server.cpp.o
+
+test/test_server.i: test/test_server.cpp.i
+.PHONY : test/test_server.i
+
+# target to preprocess a source file
+test/test_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/test/test_server.cpp.i
+.PHONY : test/test_server.cpp.i
+
+test/test_server.s: test/test_server.cpp.s
+.PHONY : test/test_server.s
+
+# target to generate assembly for a file
+test/test_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/test/test_server.cpp.s
+.PHONY : test/test_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -521,6 +582,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... network"
 	@echo "... network_test"
+	@echo "... test_server"
 	@echo "... src/ConnectionDecorator.o"
 	@echo "... src/ConnectionDecorator.i"
 	@echo "... src/ConnectionDecorator.s"
@@ -530,6 +592,9 @@ help:
 	@echo "... src/LiveMonitor.o"
 	@echo "... src/LiveMonitor.i"
 	@echo "... src/LiveMonitor.s"
+	@echo "... src/Qos1.o"
+	@echo "... src/Qos1.i"
+	@echo "... src/Qos1.s"
 	@echo "... src/Resolver.o"
 	@echo "... src/Resolver.i"
 	@echo "... src/Resolver.s"
@@ -554,6 +619,9 @@ help:
 	@echo "... test/test_network.o"
 	@echo "... test/test_network.i"
 	@echo "... test/test_network.s"
+	@echo "... test/test_server.o"
+	@echo "... test/test_server.i"
+	@echo "... test/test_server.s"
 .PHONY : help
 
 

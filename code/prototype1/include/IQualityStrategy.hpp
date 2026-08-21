@@ -1,6 +1,8 @@
 #pragma once
 #include "IConnection.hpp"
+#include "ConnectionDecorator.hpp"
 #include <unordered_map>
+#include <chrono>
 
 class IQualityStrategy: public ConnectionDecorator {
 protected:
@@ -30,14 +32,16 @@ protected:
 
 
 	// packetId to PendingMessage
-	mutable std::unordered_map<uint16_t, PendingMessage> pendindMessages;
+	mutable std::unordered_map<uint16_t, PendingMessage> pendingMessages;
 	mutable uint16_t currMsgId = 0;
 
-	IConnection::Status sendPubAck(uint16_t packetId);
+	// todo
+	IConnection::Status sendPubAck(uint16_t packetId) const;
+	IConnection::Status sendPubRec(uint16_t packetId) const;
+	IConnection::Status sendPubRel(uint16_t packetId) const;
+	IConnection::Status sendPubComp(uint16_t packetId) const;
 
-	IConnection::Status sendPubRec(uint16_t packetId);
-	IConnection::Status sendPubRel(uint16_t packetId);
-	IConnection::Status sendPubComp(uint16_t packetId);
+	PendingMessage parseMsg(std::string const& msg) const; // todo
 
 
 public:

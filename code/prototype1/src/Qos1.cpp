@@ -1,7 +1,6 @@
 #include "Qos1.hpp"
 
 IConnection::Status Qos1::send(std::string const& msg, int flag) const {
-	using IQualityStrategy;
 
 	std::string message{QOS1_HEADER};
 	message += msg;
@@ -19,19 +18,18 @@ IConnection::Status Qos1::send(std::string const& msg, int flag) const {
 
 
 IConnection::Status Qos1::recv(std::string& msg, int flag) const {
-	using IQualityStrategy;
 
 	auto status = connection->recv(msg, flag);
 
 	PendingMessage pending = parseMsg(msg);
 
 	if(pending.msgType == MsgType::PUBACK &&
-			pending.state == WAIT_PUBACK) {
+			pending.state == QosState::WAIT_PUBACK) {
 
 		auto iter = pendingMessages.find(pending.packetId);
 
 		// if we're waiting for puback -- erase record, 'cause we just got puback
-		if(iter != pendingMessages.end() && iter->second.state = QosState::WAIT_PUBACK)
+		if(iter != pendingMessages.end() && iter->second.state == QosState::WAIT_PUBACK)
 			pendingMessages.erase(iter);
 
 	} else if(pending.msgType == MsgType::REG) { 
@@ -42,9 +40,5 @@ IConnection::Status Qos1::recv(std::string& msg, int flag) const {
 
 	return(status);
 }
-
-
-
-
 
 

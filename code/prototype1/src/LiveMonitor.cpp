@@ -11,6 +11,8 @@ IConnection::Status LiveMonitor::recv(std::string& msg, int flag) const {
 		resetTimer();
 
 		if(isKeepAlive(msg)) continue;
+
+		return(IConnection::Status::SUCCESS);
 	}
 }
 

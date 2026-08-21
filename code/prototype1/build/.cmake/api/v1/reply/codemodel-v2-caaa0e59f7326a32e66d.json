@@ -21,7 +21,8 @@
 					"targetIndexes" : 
 					[
 						4,
-						5
+						5,
+						6
 					]
 				},
 				{
@@ -95,7 +96,8 @@
 					"targetIndexes" : 
 					[
 						4,
-						5
+						5,
+						6
 					]
 				},
 				{
@@ -174,15 +176,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "network::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-network-ef0d1ca4d96d4cde79df.json",
+					"jsonFile" : "target-network-007189f5ffa14cc1810a.json",
 					"name" : "network",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "network_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-network_test-a4ccf24ccf0d1c08f533.json",
+					"jsonFile" : "target-network_test-48440f03caa7b3021705.json",
 					"name" : "network_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_server-e16fff5b2d75bcaab8da.json",
+					"name" : "test_server",
 					"projectIndex" : 0
 				}
 			]

@@ -184,6 +184,20 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/network.dir/src/LiveMonitor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/LiveMonitor.cpp -o CMakeFiles/network.dir/src/LiveMonitor.cpp.s
 
+CMakeFiles/network.dir/src/Qos1.cpp.o: CMakeFiles/network.dir/flags.make
+CMakeFiles/network.dir/src/Qos1.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Qos1.cpp
+CMakeFiles/network.dir/src/Qos1.cpp.o: CMakeFiles/network.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/network.dir/src/Qos1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/network.dir/src/Qos1.cpp.o -MF CMakeFiles/network.dir/src/Qos1.cpp.o.d -o CMakeFiles/network.dir/src/Qos1.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Qos1.cpp
+
+CMakeFiles/network.dir/src/Qos1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/network.dir/src/Qos1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Qos1.cpp > CMakeFiles/network.dir/src/Qos1.cpp.i
+
+CMakeFiles/network.dir/src/Qos1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/network.dir/src/Qos1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/Qos1.cpp -o CMakeFiles/network.dir/src/Qos1.cpp.s
+
 network: CMakeFiles/network.dir/src/TcpConnection.cpp.o
 network: CMakeFiles/network.dir/src/TcpSocket.cpp.o
 network: CMakeFiles/network.dir/src/TcpCallee.cpp.o
@@ -192,6 +206,7 @@ network: CMakeFiles/network.dir/src/ConsoleLogger.cpp.o
 network: CMakeFiles/network.dir/src/Resolver.cpp.o
 network: CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
 network: CMakeFiles/network.dir/src/LiveMonitor.cpp.o
+network: CMakeFiles/network.dir/src/Qos1.cpp.o
 network: CMakeFiles/network.dir/build.make
 .PHONY : network
 
