@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/decorator_test.cpp" "CMakeFiles/network_test.dir/test/decorator_test.cpp.o" "gcc" "CMakeFiles/network_test.dir/test/decorator_test.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/maintest_gtest.cpp" "CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o" "gcc" "CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/resolver_test.cpp" "CMakeFiles/network_test.dir/test/resolver_test.cpp.o" "gcc" "CMakeFiles/network_test.dir/test/resolver_test.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/test_network.cpp" "CMakeFiles/network_test.dir/test/test_network.cpp.o" "gcc" "CMakeFiles/network_test.dir/test/test_network.cpp.o.d"

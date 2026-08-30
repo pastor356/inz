@@ -5,6 +5,7 @@ network_test: \
   CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o \
   CMakeFiles/network_test.dir/test/test_network.cpp.o \
   CMakeFiles/network_test.dir/test/resolver_test.cpp.o \
+  CMakeFiles/network_test.dir/test/decorator_test.cpp.o \
   CMakeFiles/network.dir/src/TcpConnection.cpp.o \
   CMakeFiles/network.dir/src/TcpSocket.cpp.o \
   CMakeFiles/network.dir/src/TcpCallee.cpp.o \
@@ -13,6 +14,7 @@ network_test: \
   CMakeFiles/network.dir/src/Resolver.cpp.o \
   CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o \
   CMakeFiles/network.dir/src/LiveMonitor.cpp.o \
+  CMakeFiles/network.dir/src/Qos1.cpp.o \
   lib/libgtest_main.a \
   lib/libgtest.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
@@ -55,6 +57,8 @@ CMakeFiles/network_test.dir/test/test_network.cpp.o:
 
 CMakeFiles/network_test.dir/test/resolver_test.cpp.o:
 
+CMakeFiles/network_test.dir/test/decorator_test.cpp.o:
+
 CMakeFiles/network.dir/src/TcpConnection.cpp.o:
 
 CMakeFiles/network.dir/src/TcpSocket.cpp.o:
@@ -70,6 +74,8 @@ CMakeFiles/network.dir/src/Resolver.cpp.o:
 CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 
 CMakeFiles/network.dir/src/LiveMonitor.cpp.o:
+
+CMakeFiles/network.dir/src/Qos1.cpp.o:
 
 lib/libgtest_main.a:
 

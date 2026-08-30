@@ -165,23 +165,23 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc \
+ /usr/include/c++/15/bits/istream.tcc /usr/include/arpa/inet.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpConnection.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/IConnection.hpp \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/environments.h /usr/include/bits/confname.h \
  /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
  /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h \
- /usr/include/arpa/inet.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Packet.hpp \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpSocket.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ISocket.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCaller.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
- /usr/include/c++/15/limits /usr/include/c++/15/vector \
- /usr/include/c++/15/bits/stl_vector.h \
- /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc \
+ /usr/include/c++/15/limits \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
  /usr/include/c++/15/sstream /usr/include/c++/15/bits/sstream.tcc \

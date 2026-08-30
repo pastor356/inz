@@ -468,6 +468,30 @@ src/TcpSocket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpSocket.cpp.s
 .PHONY : src/TcpSocket.cpp.s
 
+test/decorator_test.o: test/decorator_test.cpp.o
+.PHONY : test/decorator_test.o
+
+# target to build an object file
+test/decorator_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/decorator_test.cpp.o
+.PHONY : test/decorator_test.cpp.o
+
+test/decorator_test.i: test/decorator_test.cpp.i
+.PHONY : test/decorator_test.i
+
+# target to preprocess a source file
+test/decorator_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/decorator_test.cpp.i
+.PHONY : test/decorator_test.cpp.i
+
+test/decorator_test.s: test/decorator_test.cpp.s
+.PHONY : test/decorator_test.s
+
+# target to generate assembly for a file
+test/decorator_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/decorator_test.cpp.s
+.PHONY : test/decorator_test.cpp.s
+
 test/maintest_gtest.o: test/maintest_gtest.cpp.o
 .PHONY : test/maintest_gtest.o
 
@@ -610,6 +634,9 @@ help:
 	@echo "... src/TcpSocket.o"
 	@echo "... src/TcpSocket.i"
 	@echo "... src/TcpSocket.s"
+	@echo "... test/decorator_test.o"
+	@echo "... test/decorator_test.i"
+	@echo "... test/decorator_test.s"
 	@echo "... test/maintest_gtest.o"
 	@echo "... test/maintest_gtest.i"
 	@echo "... test/maintest_gtest.s"

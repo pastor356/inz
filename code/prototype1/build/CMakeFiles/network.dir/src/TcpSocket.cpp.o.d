@@ -116,9 +116,14 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o: \
  /usr/include/rpc/netdb.h /usr/include/bits/types/sigevent_t.h \
  /usr/include/bits/types/__sigval_t.h /usr/include/bits/netdb.h \
  /usr/include/c++/15/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/include/arpa/inet.h /usr/include/c++/15/memory \
- /usr/include/c++/15/bits/stl_tempbuf.h \
- /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/arpa/inet.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Packet.hpp \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Resolver.hpp \
+ /usr/include/c++/15/memory /usr/include/c++/15/bits/stl_tempbuf.h \
  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
  /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
  /usr/include/c++/15/bits/shared_ptr.h \
@@ -149,8 +154,7 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o: \
  /usr/include/c++/15/backward/auto_ptr.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
  /usr/include/c++/15/pstl/execution_defs.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCaller.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpConnection.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConsoleLogger.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ILogger.hpp \
  /usr/include/c++/15/cstdint \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
@@ -174,6 +178,6 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o: \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
  /usr/include/c++/15/bits/istream.tcc \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConsoleLogger.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Resolver.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCaller.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpConnection.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp

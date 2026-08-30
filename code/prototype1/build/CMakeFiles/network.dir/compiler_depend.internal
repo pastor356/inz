@@ -5,6 +5,7 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/ConnectionDecorator.cpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConnectionDecorator.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -138,6 +139,7 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
  /usr/include/c++/15/bits/shared_ptr_base.h
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/stl_algobase.h
+ /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_iterator.h
@@ -147,12 +149,14 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
  /usr/include/c++/15/bits/stl_raw_storage_iter.h
  /usr/include/c++/15/bits/stl_tempbuf.h
  /usr/include/c++/15/bits/stl_uninitialized.h
+ /usr/include/c++/15/bits/stl_vector.h
  /usr/include/c++/15/bits/string_view.tcc
  /usr/include/c++/15/bits/stringfwd.h
  /usr/include/c++/15/bits/unique_ptr.h
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
+ /usr/include/c++/15/bits/vector.tcc
  /usr/include/c++/15/bits/version.h
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
@@ -185,6 +189,7 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
+ /usr/include/c++/15/vector
  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h
@@ -443,6 +448,7 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConnectionDecorator.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/LiveMonitor.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -579,6 +585,7 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o
  /usr/include/c++/15/bits/shared_ptr_base.h
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/stl_algobase.h
+ /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_iterator.h
@@ -588,12 +595,14 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o
  /usr/include/c++/15/bits/stl_raw_storage_iter.h
  /usr/include/c++/15/bits/stl_tempbuf.h
  /usr/include/c++/15/bits/stl_uninitialized.h
+ /usr/include/c++/15/bits/stl_vector.h
  /usr/include/c++/15/bits/string_view.tcc
  /usr/include/c++/15/bits/stringfwd.h
  /usr/include/c++/15/bits/unique_ptr.h
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
+ /usr/include/c++/15/bits/vector.tcc
  /usr/include/c++/15/bits/version.h
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
@@ -631,6 +640,7 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
+ /usr/include/c++/15/vector
  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h
@@ -681,6 +691,7 @@ CMakeFiles/network.dir/src/Qos1.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConnectionDecorator.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IQualityStrategy.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Qos1.hpp
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
@@ -823,6 +834,7 @@ CMakeFiles/network.dir/src/Qos1.cpp.o
  /usr/include/c++/15/bits/shared_ptr_base.h
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/stl_algobase.h
+ /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_iterator.h
@@ -832,6 +844,7 @@ CMakeFiles/network.dir/src/Qos1.cpp.o
  /usr/include/c++/15/bits/stl_raw_storage_iter.h
  /usr/include/c++/15/bits/stl_tempbuf.h
  /usr/include/c++/15/bits/stl_uninitialized.h
+ /usr/include/c++/15/bits/stl_vector.h
  /usr/include/c++/15/bits/string_view.tcc
  /usr/include/c++/15/bits/stringfwd.h
  /usr/include/c++/15/bits/unique_ptr.h
@@ -839,6 +852,7 @@ CMakeFiles/network.dir/src/Qos1.cpp.o
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
+ /usr/include/c++/15/bits/vector.tcc
  /usr/include/c++/15/bits/version.h
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
@@ -877,6 +891,7 @@ CMakeFiles/network.dir/src/Qos1.cpp.o
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
  /usr/include/c++/15/unordered_map
+ /usr/include/c++/15/vector
  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h
@@ -928,6 +943,7 @@ CMakeFiles/network.dir/src/Resolver.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ILogger.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Resolver.hpp
  /usr/include/alloca.h
+ /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -1175,6 +1191,7 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConsoleLogger.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ILogger.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/TcpCallee.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/TcpConnection.hpp
  /usr/include/alloca.h
@@ -1314,12 +1331,15 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o
  /usr/include/c++/15/bits/requires_hosted.h
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/stl_algobase.h
+ /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_iterator.h
  /usr/include/c++/15/bits/stl_iterator_base_funcs.h
  /usr/include/c++/15/bits/stl_iterator_base_types.h
  /usr/include/c++/15/bits/stl_pair.h
+ /usr/include/c++/15/bits/stl_uninitialized.h
+ /usr/include/c++/15/bits/stl_vector.h
  /usr/include/c++/15/bits/streambuf.tcc
  /usr/include/c++/15/bits/streambuf_iterator.h
  /usr/include/c++/15/bits/string_view.tcc
@@ -1327,6 +1347,7 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
+ /usr/include/c++/15/bits/vector.tcc
  /usr/include/c++/15/bits/version.h
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
@@ -1363,6 +1384,7 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
+ /usr/include/c++/15/vector
  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h
@@ -1417,6 +1439,7 @@ CMakeFiles/network.dir/src/TcpCaller.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConsoleLogger.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ILogger.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/TcpCaller.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/TcpConnection.hpp
  /usr/include/alloca.h
@@ -1556,12 +1579,15 @@ CMakeFiles/network.dir/src/TcpCaller.cpp.o
  /usr/include/c++/15/bits/requires_hosted.h
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/stl_algobase.h
+ /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_iterator.h
  /usr/include/c++/15/bits/stl_iterator_base_funcs.h
  /usr/include/c++/15/bits/stl_iterator_base_types.h
  /usr/include/c++/15/bits/stl_pair.h
+ /usr/include/c++/15/bits/stl_uninitialized.h
+ /usr/include/c++/15/bits/stl_vector.h
  /usr/include/c++/15/bits/streambuf.tcc
  /usr/include/c++/15/bits/streambuf_iterator.h
  /usr/include/c++/15/bits/string_view.tcc
@@ -1569,6 +1595,7 @@ CMakeFiles/network.dir/src/TcpCaller.cpp.o
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
+ /usr/include/c++/15/bits/vector.tcc
  /usr/include/c++/15/bits/version.h
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
@@ -1605,6 +1632,7 @@ CMakeFiles/network.dir/src/TcpCaller.cpp.o
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
+ /usr/include/c++/15/vector
  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h
@@ -1659,6 +1687,7 @@ CMakeFiles/network.dir/src/TcpConnection.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConsoleLogger.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ILogger.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/TcpConnection.hpp
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
@@ -1797,12 +1826,15 @@ CMakeFiles/network.dir/src/TcpConnection.cpp.o
  /usr/include/c++/15/bits/requires_hosted.h
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/stl_algobase.h
+ /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_iterator.h
  /usr/include/c++/15/bits/stl_iterator_base_funcs.h
  /usr/include/c++/15/bits/stl_iterator_base_types.h
  /usr/include/c++/15/bits/stl_pair.h
+ /usr/include/c++/15/bits/stl_uninitialized.h
+ /usr/include/c++/15/bits/stl_vector.h
  /usr/include/c++/15/bits/streambuf.tcc
  /usr/include/c++/15/bits/streambuf_iterator.h
  /usr/include/c++/15/bits/string_view.tcc
@@ -1810,6 +1842,7 @@ CMakeFiles/network.dir/src/TcpConnection.cpp.o
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
+ /usr/include/c++/15/bits/vector.tcc
  /usr/include/c++/15/bits/version.h
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
@@ -1846,6 +1879,7 @@ CMakeFiles/network.dir/src/TcpConnection.cpp.o
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
+ /usr/include/c++/15/vector
  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h
@@ -1901,6 +1935,7 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ILogger.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ISocket.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Resolver.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/TcpCallee.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/TcpCaller.hpp
@@ -2051,6 +2086,7 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o
  /usr/include/c++/15/bits/shared_ptr_base.h
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/stl_algobase.h
+ /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_iterator.h
@@ -2060,6 +2096,7 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o
  /usr/include/c++/15/bits/stl_raw_storage_iter.h
  /usr/include/c++/15/bits/stl_tempbuf.h
  /usr/include/c++/15/bits/stl_uninitialized.h
+ /usr/include/c++/15/bits/stl_vector.h
  /usr/include/c++/15/bits/streambuf.tcc
  /usr/include/c++/15/bits/streambuf_iterator.h
  /usr/include/c++/15/bits/string_view.tcc
@@ -2068,6 +2105,7 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o
  /usr/include/c++/15/bits/uses_allocator.h
  /usr/include/c++/15/bits/uses_allocator_args.h
  /usr/include/c++/15/bits/utility.h
+ /usr/include/c++/15/bits/vector.tcc
  /usr/include/c++/15/bits/version.h
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
@@ -2109,6 +2147,7 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
+ /usr/include/c++/15/vector
  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h
