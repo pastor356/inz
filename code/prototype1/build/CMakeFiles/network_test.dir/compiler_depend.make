@@ -43,12 +43,16 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/asm-generic/ioctls.h \
   /usr/include/asm-generic/posix_types.h \
   /usr/include/asm-generic/socket.h \
   /usr/include/asm-generic/sockios.h \
   /usr/include/asm-generic/types.h \
   /usr/include/asm/bitsperlong.h \
   /usr/include/asm/errno.h \
+  /usr/include/asm/ioctl.h \
+  /usr/include/asm/ioctls.h \
   /usr/include/asm/posix_types.h \
   /usr/include/asm/posix_types_64.h \
   /usr/include/asm/socket.h \
@@ -62,12 +66,15 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
+  /usr/include/bits/epoll.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
   /usr/include/bits/getopt_posix.h \
   /usr/include/bits/in.h \
+  /usr/include/bits/ioctl-types.h \
+  /usr/include/bits/ioctls.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
@@ -180,6 +187,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/c++/15/bits/cpp_type_traits.h \
   /usr/include/c++/15/bits/cxxabi_forced.h \
   /usr/include/c++/15/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15/bits/deque.tcc \
   /usr/include/c++/15/bits/enable_special_members.h \
   /usr/include/c++/15/bits/erase_if.h \
   /usr/include/c++/15/bits/exception.h \
@@ -229,6 +237,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
   /usr/include/c++/15/bits/stl_construct.h \
+  /usr/include/c++/15/bits/stl_deque.h \
   /usr/include/c++/15/bits/stl_function.h \
   /usr/include/c++/15/bits/stl_iterator.h \
   /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
@@ -276,6 +285,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/c++/15/cxxabi.h \
   /usr/include/c++/15/debug/assertions.h \
   /usr/include/c++/15/debug/debug.h \
+  /usr/include/c++/15/deque \
   /usr/include/c++/15/exception \
   /usr/include/c++/15/ext/aligned_buffer.h \
   /usr/include/c++/15/ext/alloc_traits.h \
@@ -343,8 +353,10 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/libintl.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/ioctl.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
+  /usr/include/linux/sockios.h \
   /usr/include/linux/stat.h \
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
@@ -363,10 +375,13 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/sys/epoll.h \
+  /usr/include/sys/ioctl.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/socket.h \
   /usr/include/sys/stat.h \
+  /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
   /usr/include/sys/ucontext.h \
   /usr/include/sys/wait.h \
@@ -380,6 +395,8 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
 
 CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/maintest_gtest.cpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConsoleLogger.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ILogger.hpp \
   _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
   _deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
   _deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
@@ -900,6 +917,7 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o: /home/pastor/Public/books/
   /usr/include/c++/15/bits/cpp_type_traits.h \
   /usr/include/c++/15/bits/cxxabi_forced.h \
   /usr/include/c++/15/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15/bits/deque.tcc \
   /usr/include/c++/15/bits/enable_special_members.h \
   /usr/include/c++/15/bits/erase_if.h \
   /usr/include/c++/15/bits/exception.h \
@@ -949,6 +967,7 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o: /home/pastor/Public/books/
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
   /usr/include/c++/15/bits/stl_construct.h \
+  /usr/include/c++/15/bits/stl_deque.h \
   /usr/include/c++/15/bits/stl_function.h \
   /usr/include/c++/15/bits/stl_iterator.h \
   /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
@@ -995,6 +1014,7 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o: /home/pastor/Public/books/
   /usr/include/c++/15/cxxabi.h \
   /usr/include/c++/15/debug/assertions.h \
   /usr/include/c++/15/debug/debug.h \
+  /usr/include/c++/15/deque \
   /usr/include/c++/15/exception \
   /usr/include/c++/15/ext/aligned_buffer.h \
   /usr/include/c++/15/ext/alloc_traits.h \
@@ -1273,6 +1293,7 @@ CMakeFiles/network_test.dir/test/test_network.cpp.o: /home/pastor/Public/books/V
   /usr/include/c++/15/bits/cpp_type_traits.h \
   /usr/include/c++/15/bits/cxxabi_forced.h \
   /usr/include/c++/15/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15/bits/deque.tcc \
   /usr/include/c++/15/bits/enable_special_members.h \
   /usr/include/c++/15/bits/erase_if.h \
   /usr/include/c++/15/bits/exception.h \
@@ -1322,6 +1343,7 @@ CMakeFiles/network_test.dir/test/test_network.cpp.o: /home/pastor/Public/books/V
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
   /usr/include/c++/15/bits/stl_construct.h \
+  /usr/include/c++/15/bits/stl_deque.h \
   /usr/include/c++/15/bits/stl_function.h \
   /usr/include/c++/15/bits/stl_iterator.h \
   /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
@@ -1368,6 +1390,7 @@ CMakeFiles/network_test.dir/test/test_network.cpp.o: /home/pastor/Public/books/V
   /usr/include/c++/15/cxxabi.h \
   /usr/include/c++/15/debug/assertions.h \
   /usr/include/c++/15/debug/debug.h \
+  /usr/include/c++/15/deque \
   /usr/include/c++/15/exception \
   /usr/include/c++/15/ext/aligned_buffer.h \
   /usr/include/c++/15/ext/alloc_traits.h \
@@ -1504,8 +1527,6 @@ network_test: /lib64/ld-linux-x86-64.so.2 \
   lib/libgtest_main.a
 
 
-lib/libgtest.a:
-
 CMakeFiles/network_test.dir/test/test_network.cpp.o:
 
 CMakeFiles/network.dir/src/TcpConnection.cpp.o:
@@ -1544,9 +1565,13 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/include/sys/types.h:
 
+/usr/include/sys/ttydefaults.h:
+
 /usr/include/sys/socket.h:
 
 /usr/include/sys/select.h:
+
+/usr/include/sys/epoll.h:
 
 /usr/include/stdlib.h:
 
@@ -1565,6 +1590,8 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 /usr/include/linux/types.h:
 
 /usr/include/linux/stat.h:
+
+/usr/include/linux/ioctl.h:
 
 /usr/include/linux/close_range.h:
 
@@ -1648,6 +1675,8 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o:
 
 /usr/include/c++/15/exception:
 
+/usr/include/c++/15/deque:
+
 /usr/include/sys/cdefs.h:
 
 /usr/include/c++/15/debug/assertions.h:
@@ -1678,7 +1707,21 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o:
 
 /usr/include/c++/15/cerrno:
 
-/usr/include/bits/types/locale_t.h:
+/usr/include/c++/15/cassert:
+
+/usr/include/c++/15/bits/version.h:
+
+/usr/include/c++/15/iostream:
+
+/usr/include/c++/15/bits/vector.tcc:
+
+/usr/include/c++/15/bits/utility.h:
+
+/usr/include/c++/15/bits/uses_allocator_args.h:
+
+/usr/include/c++/15/bits/unordered_map.h:
+
+/usr/include/c++/15/bits/unique_lock.h:
 
 lib/libgtest_main.a:
 
@@ -1692,25 +1735,21 @@ lib/libgtest_main.a:
 
 /usr/include/bits/errno.h:
 
-/usr/include/bits/thread-shared-types.h:
-
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
 
 /usr/include/bits/struct_stat.h:
 
 /usr/include/bits/types/time_t.h:
 
+/usr/include/c++/15/bits/uses_allocator.h:
+
+/usr/include/bits/struct_rwlock.h:
+
 CMakeFiles/network_test.dir/test/resolver_test.cpp.o:
 
 /usr/include/c++/15/bits/hashtable.h:
 
 /usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/bits/types/idtype_t.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/15/bits/memoryfwd.h:
 
 /usr/include/bits/struct_mutex.h:
 
@@ -1722,9 +1761,9 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o:
 
 /usr/include/bits/stdio_lim.h:
 
-/usr/include/bits/types/sig_atomic_t.h:
+lib/libgtest.a:
 
-/usr/include/bits/types/__fpos_t.h:
+/usr/include/bits/ioctls.h:
 
 /usr/include/bits/statx-generic.h:
 
@@ -1733,12 +1772,6 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o:
 /usr/include/string.h:
 
 /usr/include/bits/socket_type.h:
-
-/usr/include/c++/15/bits/ostream_insert.h:
-
-/usr/include/bits/types/error_t.h:
-
-/usr/include/c++/15/bits/utility.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h:
 
@@ -1749,10 +1782,6 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o:
 /usr/include/asm/socket.h:
 
 /usr/include/bits/signum-arch.h:
-
-/usr/include/c++/15/iostream:
-
-/usr/include/c++/15/bits/vector.tcc:
 
 /usr/include/bits/sigevent-consts.h:
 
@@ -1769,8 +1798,6 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o:
 /usr/include/bits/getopt_core.h:
 
 /usr/include/bits/sigaction.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/15/streambuf:
 
@@ -1808,13 +1835,15 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o:
 
 /usr/include/c++/15/bits/std_mutex.h:
 
-/usr/include/c++/15/bits/unordered_map.h:
-
 /usr/include/bits/sockaddr.h:
 
 /usr/include/bits/siginfo-consts.h:
 
 /usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/ioctl-types.h:
 
 /usr/include/errno.h:
 
@@ -1832,15 +1861,17 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o:
 
 /usr/include/bits/floatn.h:
 
-/usr/include/c++/15/cstdint:
-
-_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:
-
 /usr/include/c++/15/bits/refwrap.h:
 
 /usr/include/libintl.h:
 
 /usr/include/bits/endianness.h:
+
+/usr/include/linux/sockios.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/bits/byteswap.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h:
 
@@ -1862,8 +1893,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
-/usr/include/bits/byteswap.h:
-
 /usr/include/bits/types/__mbstate_t.h:
 
 /usr/include/c++/15/bits/stream_iterator.h:
@@ -1871,10 +1900,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /usr/include/alloca.h:
-
-/usr/include/bits/typesizes.h:
-
-_deps/googletest-src/googletest/include/gtest/gtest-message.h:
 
 /usr/include/linux/sched/types.h:
 
@@ -1896,19 +1921,17 @@ CMakeFiles/network.dir/src/Resolver.cpp.o:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
+/usr/include/sys/stat.h:
+
+/usr/include/bits/epoll.h:
+
+/usr/include/c++/15/backward/binders.h:
+
 /usr/include/asm/bitsperlong.h:
 
 /usr/include/bits/types/clock_t.h:
 
 /usr/include/c++/15/bits/charconv.h:
-
-CMakeFiles/network_test.dir/test/decorator_test.cpp.o:
-
-/usr/include/bits/signal_ext.h:
-
-_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
-
-/usr/include/bits/types/mbstate_t.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConnectionDecorator.hpp:
 
@@ -1978,6 +2001,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
+/usr/include/asm-generic/ioctls.h:
+
 _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 
 /usr/include/bits/sigthread.h:
@@ -2012,7 +2037,19 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 
 /usr/include/bits/statx.h:
 
-/usr/include/c++/15/bits/uses_allocator_args.h:
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/bits/types/idtype_t.h:
+
+/usr/include/c++/15/bits/memoryfwd.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/c++/15/cstdint:
+
+_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:
+
+/usr/include/asm/ioctls.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -2021,6 +2058,20 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 /usr/include/asm-generic/sockios.h:
 
 /usr/include/bits/types/sigset_t.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types/__sigval_t.h:
+
+/usr/include/bits/timesize.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/decorator_test.cpp:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/types/struct_osockaddr.h:
 
 /usr/include/bits/ss_flags.h:
 
@@ -2064,27 +2115,29 @@ CMakeFiles/network.dir/src/Qos1.cpp.o:
 
 /usr/include/c++/15/bits/streambuf.tcc:
 
-/usr/include/c++/15/cassert:
+/usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/include/bits/confname.h:
+/usr/include/c++/15/bits/ostream_insert.h:
 
-/usr/include/sys/stat.h:
+/usr/include/bits/types/error_t.h:
 
-/usr/include/c++/15/backward/binders.h:
+/usr/include/bits/types/locale_t.h:
 
-/usr/include/gnu/stubs-64.h:
+CMakeFiles/network_test.dir/test/decorator_test.cpp.o:
 
-/usr/include/bits/types/__sigval_t.h:
+/usr/include/bits/signal_ext.h:
 
-/usr/include/bits/timesize.h:
+_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/decorator_test.cpp:
+/usr/include/bits/types/mbstate_t.h:
 
-/usr/include/bits/stdint-uintn.h:
+/usr/include/bits/types/__fpos_t.h:
 
-/usr/include/asm/errno.h:
+/usr/include/bits/types/sig_atomic_t.h:
 
-/usr/include/bits/types/struct_osockaddr.h:
+_deps/googletest-src/googletest/include/gtest/gtest-message.h:
+
+/usr/include/bits/typesizes.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
@@ -2120,8 +2173,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /usr/include/c++/15/bits/concept_check.h:
 
-/usr/include/c++/15/bits/version.h:
-
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/c++/15/mutex:
@@ -2148,6 +2199,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /usr/include/c++/15/ratio:
 
+/usr/include/asm-generic/ioctl.h:
+
 /usr/include/c++/15/atomic:
 
 /usr/include/c++/15/bits/exception_defines.h:
@@ -2169,6 +2222,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/c++/15/set:
 
 /usr/include/c++/15/bits/memory_resource.h:
+
+/usr/include/sys/ioctl.h:
 
 /usr/include/c++/15/bits/basic_ios.h:
 
@@ -2197,10 +2252,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/bits/cpu-set.h:
 
 /usr/include/c++/15/bits/new_allocator.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/15/bits/uses_allocator.h:
 
 CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o:
 
@@ -2274,6 +2325,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 
 /usr/include/c++/15/bits/stl_construct.h:
 
+/usr/include/c++/15/bits/stl_deque.h:
+
 /usr/include/c++/15/bits/stl_function.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o:
@@ -2302,6 +2355,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 
 /usr/include/c++/15/bits/stl_pair.h:
 
+/usr/include/c++/15/bits/deque.tcc:
+
 /usr/include/c++/15/bits/stl_tempbuf.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
@@ -2323,5 +2378,3 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/c++/15/bits/string_view.tcc:
-
-/usr/include/c++/15/bits/unique_lock.h:

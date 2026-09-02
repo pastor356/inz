@@ -9,8 +9,8 @@
 TEST(NetworkTest, PARENT_CHILD_EXCHANGE) {
 	std::cerr << std::endl << std::endl;
 	auto tcpSocketServer = std::make_unique<TcpSocket>("127.0.0.1", 4242);
-	(*tcpSocketServer).bind();
-	(*tcpSocketServer).listen(5);
+	tcpSocketServer->bind();
+	tcpSocketServer->listen(5);
 
 	auto tcpSocketClient = std::make_unique<TcpSocket>("127.0.0.1", 4243);
 
@@ -51,10 +51,5 @@ TEST(NetworkTest, PARENT_CHILD_EXCHANGE) {
 		}
 	}
 }
-
-
-
-
-
 
 

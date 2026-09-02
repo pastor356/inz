@@ -1,19 +1,32 @@
 #include "LiveMonitor.hpp"
 
 
-IConnection::Status LiveMonitor::recv(std::string& msg, int flag) const {
+IConnection::Status LiveMonitor::recv(Packet& packet, int flag) const {
+	IConnection::Status status = IConnection::Status::AGAIN;
 
-	while(true) {
-		auto status = connection->recv(msg, flag);
+	while(1) {
+		status = connection->recv(packet, flag);
 
-		if(IConnection::Status::SUCCESS != status) return(status);
+		if(status != IConnection::Status::SUCCESS) return(status);
 
 		resetTimer();
 
-		if(isKeepAlive(msg)) continue;
+		if(isKeepAlive(packet)) continue;
 
 		return(IConnection::Status::SUCCESS);
 	}
+}
+
+
+
+IConnection::Status LiveMonitor::recv(std::string& msg, int flag) const {
+	IConnection::Status status = IConnection::Status::AGAIN;
+	Packet packet;
+
+	status = this->recv(packet, flag);
+	msg = packet.payload;
+
+	return(status);
 }
 
 
@@ -28,8 +41,8 @@ bool LiveMonitor::isSessionExpired() const {
 
 
 
-bool LiveMonitor::isKeepAlive(std::string const& msg) const {
-
+bool LiveMonitor::isKeepAlive(Packet& packet) const {
+	if((packet.header[0] & MSGTYPE_KEEPALIVE) == MSGTYPE_KEEPALIVE) return(true);
 
 	return(false);
 }

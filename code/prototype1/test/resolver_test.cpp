@@ -4,7 +4,6 @@
 #include <gtest/gtest.h>
 
 
-
 // Resolver test
 TEST(ResolverTest, CLientChildResolverTest) {
 	Resolver resolver;
@@ -14,8 +13,11 @@ TEST(ResolverTest, CLientChildResolverTest) {
 		resolver.resolve("localhost", "4242", servParams)
 	);
 
+
 	EXPECT_NE(tcpServer->getDescriptor(), -1);
 }
+
+
 
 
 // socalhost -- fail expected

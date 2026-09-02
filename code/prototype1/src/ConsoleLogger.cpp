@@ -9,12 +9,16 @@ ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string const& msg) {
 	switch(sev) {
 		case ILogger::Severity::LOG_INFO:
 			outputString += "INFO: ";
+			break;
 		case ILogger::Severity::LOG_WARN:
 			outputString += "WARNING: ";
+			break;
 		case ILogger::Severity::LOG_ERROR:
 			outputString += "ERROR: ";
+			break;
 		default:
 			outputString += "Unknown logtype: ";
+			break;
 	}
 
 	outputString += msg;
@@ -23,20 +27,35 @@ ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string const& msg) {
 }
 
 
-ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string file, int line) {
+ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string file, int line, std::string func) {
 	if(enable) {
 		std::string outputString;
 
-		outputString += file;
-		outputString += line;
+		switch(sev) {
+			case ILogger::Severity::LOG_INFO:
+				outputString += "INFO:";
+				break;
+			case ILogger::Severity::LOG_WARN:
+				outputString += "WARNING:";
+				break;
+			case ILogger::Severity::LOG_ERROR:
+				outputString += "ERROR:";
+				break;
+			default:
+				outputString += "Unknown logtype: ";
+				break;
+		}
 
-		std::cout << applicationName << " :: " << outputString << ": ";
+		outputString += file;
+		outputString += "::" + std::to_string(line);
+		std::cout << applicationName << "::" << outputString 
+			<< " in " << std::endl << '\t' << func << "(): \t";
 	}
 }
 
 
 ILogger& ConsoleLogger::operator << (std::string const& msg) { 
-	if(enable) std::cout << msg << std::endl;
+	if(enable) std::cout << msg << std::endl << std::endl;
 
 	return(*this);
 }
@@ -44,5 +63,10 @@ ILogger& ConsoleLogger::operator << (std::string const& msg) {
 void ConsoleLogger::setApplicationName(std::string const& appName) {
 	applicationName = appName;
 } 
+
+bool ConsoleLogger::enableLogger() {
+	ConsoleLogger::enable = true;
+	return(enable);
+}
 
 

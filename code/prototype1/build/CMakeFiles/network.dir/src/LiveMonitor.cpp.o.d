@@ -158,4 +158,5 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Packet.hpp \
  /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/deque \
+ /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc

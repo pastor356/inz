@@ -19,8 +19,11 @@ addrInfo Resolver::resolve(std::string const& hostname,
 	hints.ai_family = params.af_family;
 	hints.ai_socktype = params.sock_type;
 
-	if((err = getaddrinfo(hostname.c_str(), 
-					service.c_str(), &hints, &res)) != 0) {
+	const char* host = hostname.empty()? nullptr : hostname.c_str();
+	const char* serv = service.empty() ? nullptr : service.c_str(); 
+
+	if((err = getaddrinfo(host, 
+					serv, &hints, &res)) != 0) {
 		throw std::runtime_error{std::string{"getaddrinfo() failed: "} + gai_strerror(err)};
 		return(addrInfo(nullptr, addrinfoDeleter));
 	}

@@ -239,4 +239,6 @@ CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConsoleLogger.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ILogger.hpp

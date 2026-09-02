@@ -65,8 +65,7 @@ std::unique_ptr<IConnection> TcpSocket::accept() const {
 	socklen_t remoteAddrlen = sizeof(remoteAddr);
 	int remoteFd;
 
-	std::memset(&remoteAddr, 0, sizeof(remoteAddr));
-	remoteFd = ::accept(this->sockFd, 
+	std::memset(&remoteAddr, 0, sizeof(remoteAddr)); remoteFd = ::accept(this->sockFd, 
 			reinterpret_cast<struct sockaddr*>(&remoteAddr), &remoteAddrlen);
 
 	if(remoteFd < 0) {
@@ -132,24 +131,25 @@ TcpSocket::~TcpSocket() {
 	if(addr.ss_family == AF_INET) {
 		struct sockaddr_in* addrv4 = reinterpret_cast<struct sockaddr_in*>(&addr);
 
-		logInfo << std::string{"Connection "} 
+		logInfo << std::string{"Socket on "} 
 		+ std::string{inet_ntop(this->addr.ss_family, 
-				&addrv4->sin_addr, output, sizeof(struct sockaddr_in))} << " closed :(";
+				&addrv4->sin_addr, output, sizeof(struct sockaddr_in))} + " closed :(";
 
 	} else if(addr.ss_family == AF_INET6) {
 		struct sockaddr_in6* addrv6 = reinterpret_cast<struct sockaddr_in6*>(&addr);
 
-		logInfo << std::string{"Connection "} 
+		logInfo << std::string{"Socket on "} 
 		+ std::string{inet_ntop(this->addr.ss_family, 
-				&addrv6->sin6_addr, output, INET6_ADDRSTRLEN)} << " closed :(";
+				&addrv6->sin6_addr, output, INET6_ADDRSTRLEN)} + " closed :(";
 	}
 
 	shutdown(this->sockFd, SHUT_RDWR);
+	close(this->sockFd);
 }
 
 
 
-std::unique_ptr<IConnection> TcpSocket::connect(addrInfo const& resolvedAddress) const  {
+std::unique_ptr<IConnection> TcpSocket::connect(addrInfo && resolvedAddress) const  {
 	struct addrinfo *iter = resolvedAddress.get();
 	int err;
 
@@ -169,12 +169,18 @@ std::unique_ptr<IConnection> TcpSocket::connect(addrInfo const& resolvedAddress)
 		return(std::make_unique<TcpCallee>(-1, failed));
 	}
 
-	return(std::make_unique<TcpCallee>(this->sockFd, 
-				*(reinterpret_cast<struct sockaddr_storage*>(iter->ai_addr))));
+	struct sockaddr_storage a;
+	std::memset(&a, 0, sizeof(struct sockaddr_storage));
+
+	std::memcpy(&a, iter->ai_addr, iter->ai_addrlen);
+
+	return(std::make_unique<TcpCallee>(this->sockFd, a));
 }
 
-TcpSocket::TcpSocket(addrInfo const& resolvedAddress) { 
-	struct addrinfo* iter = resolvedAddress.get();
+TcpSocket::TcpSocket(addrInfo && resolvedAddress) { 
+	std::unique_ptr ai = std::move(resolvedAddress);
+
+	struct addrinfo* iter = ai.get();
 	int err;
 
 	if(iter == nullptr) {
@@ -187,10 +193,9 @@ TcpSocket::TcpSocket(addrInfo const& resolvedAddress) {
 		if(this->sockFd < 0) continue;
 
 		int reuse = 1;
-		setsockopt(this->sockFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(int));
+		if(setsockopt(this->sockFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(int)) == 0)
+			break;
 
-		if((err = ::bind(this->sockFd, iter->ai_addr, iter->ai_addrlen)) == 0)
-				break;
 
 		close(this->sockFd);
 		logWarn << std::string{"::bind() failed: "} + strerror(errno);
@@ -204,7 +209,36 @@ TcpSocket::TcpSocket(addrInfo const& resolvedAddress) {
 	}
 
 
-	this->addr = *(reinterpret_cast<struct sockaddr_storage*>(iter->ai_addr));
+	std::memcpy(&this->addr, iter->ai_addr, iter->ai_addrlen);
+	
+	logInfo << std::string{"Tcp socket created with address: "} + this->sock_ntop();
 }
 
 
+
+std::string TcpSocket::sock_ntop() const {
+	char res[MAXLINE];
+
+	switch(addr.ss_family) {
+		case AF_INET: {
+			auto *sin = reinterpret_cast<const struct sockaddr_in*>(&this->addr);
+
+			if(inet_ntop(AF_INET, &sin->sin_addr, res, MAXLINE) != NULL) {
+					return(std::string{res});
+			}
+
+			break;
+		} case AF_INET6: {
+			 auto *sin6 = reinterpret_cast<const struct sockaddr_in6*>(&this->addr);
+
+			if(inet_ntop(AF_INET6, &sin6->sin6_addr, res, MAXLINE) != NULL) {
+					return(std::string{res});
+			}
+
+			break;
+		} default: {
+			printf("%s: unknown sa_family\n", __func__);
+			return(std::string{});
+		}
+	}
+}

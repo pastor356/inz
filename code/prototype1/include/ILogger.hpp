@@ -7,7 +7,7 @@
 class ILogger {
 
 public:
-	static void setAplicationName(std::string const& appName); 
+	static void setAplicationName(std::string const& appName);
 	virtual ILogger& operator << (std::string const& msg) = 0;
 
 	enum class Severity: uint16_t {

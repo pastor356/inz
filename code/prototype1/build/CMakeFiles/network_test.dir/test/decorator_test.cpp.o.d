@@ -175,7 +175,8 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Packet.hpp \
  /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc \
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/deque \
+ /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/IQualityStrategy.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConnectionDecorator.hpp \
  /usr/include/c++/15/unordered_map \
@@ -189,11 +190,6 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: \
  /usr/include/c++/15/limits /usr/include/c++/15/ctime \
  /usr/include/c++/15/bits/parse_numbers.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Qos1.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/LiveMonitor.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpSocket.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ISocket.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCaller.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
@@ -260,4 +256,15 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/LiveMonitor.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpSocket.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ISocket.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCaller.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCallee.hpp \
+ /usr/include/sys/epoll.h /usr/include/sys/ioctl.h \
+ /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
+ /usr/include/linux/sockios.h /usr/include/bits/ioctl-types.h \
+ /usr/include/sys/ttydefaults.h /usr/include/bits/epoll.h

@@ -8,6 +8,7 @@
 #include <cstring>
 
 #include "ConsoleLogger.hpp"
+#include <arpa/inet.h>
 
 using addrInfo = std::unique_ptr<struct addrinfo, void(*)(struct addrinfo*)>;
 

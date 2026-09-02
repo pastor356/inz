@@ -175,7 +175,8 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/Packet.hpp \
  /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc \
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/deque \
+ /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpSocket.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ISocket.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/TcpCaller.hpp \

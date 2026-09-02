@@ -58,6 +58,7 @@ target_include_directories(network PRIVATE ${HEADERDIR})
 set(TESTSRC
 	test_network.cpp
 	resolver_test.cpp
+	decorator_test.cpp
 )
 list(TRANSFORM TESTSRC PREPEND ${TESTDIR})
 

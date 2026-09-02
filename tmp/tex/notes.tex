@@ -1,0 +1,39 @@
+\input{/home/pastor/.preamble_pl.tex}
+
+
+\begin{document}
+	\section{Decorator, Qos, LiveMon}
+	
+	\subsection{recv()}
+	Użytkownik chce dysponować funkcją \code{recv(std::string& msg)} w celu wysyłania własnych wiadomości. Jednak protokół wymaga, aby oprócz wiadomości wysyłane były również nagłówki. Dlatego konieczne jest, aby funkcja \code{recv(std::string& msg)} wywoływała wewnątrz siebie funkcję \code{recv(Packet& packet)}, która odpowiada za wypełnianie nagłówków
+	
+	
+	\subsection{F-cje send/recv() w dekoratorze} 
+	
+	\subsubsection{Wiadomość wychodząca}
+	Pakiet jest tworzony na najwyższym poziomie (najprawdopodobniej na poziomie sesji). Sesja dodaje swój nagłówek do pakietu, wykonując \code{packet.header.push_back(SESSION_HEADER)}, a następnie przekazuje pakiet do niższej warstwy, wywołując \code{connection->send(packet)}. Na niższych warstwach (QoS lub LiveMonitor) wywoływana jest funkcja \code{packet.header.push_back()} z ich własnymi nagłówkami, a najniższa warstwa (surowa połączenie) wysyła najpierw nagłówek wiadomości (zgromadzone nagłówki wszystkich warstw), a następnie sam komunikat.
+	
+	
+	\subsubsection{Wiadomość przychodząca}
+	Każda wiadomość przechodzi ścieżkę od dołu do góry (w przeciwieństwie do komunikatu wychodzącego). Oznacza to, że najniższa warstwa otrzymuje wiadomość w pełnej postaci, a kolejne warstwy wykonują funkcję \code{packet.header.pop_back()}, czyli usuwają swoje nagłówki. 
+	
+	
+	Stąd wynika, że każda z warstw powinna mieć funkcje \code{send()/recv()} z argumentem \code{Packet& packet}, nawet warstwa \code{IConnection}.
+	
+	
+	\subsubsection{Kolejność wywołania funkcji}
+	
+	Jeśli na najniższym poziomie jest \code{IConnection}, czyli surowe połączenie, to poziom wyżej teoretycznie powinien się znależć \code{LiveMonitor}, który nie przepuszcza na góre pakiety KeepAlive. 
+	
+	
+	
+	\subsection{Problem funkcji recv()} 
+	F-cja \code{recv()} na najniższym poziomie powinna w pierwszym kroku dostać nagłówek, a w drugim \da ciało wiadomości, ale w pierwszym kroku otrzymuje nagłówek i ciało. Dlatego \textit{przed} wejściem na najniższy poziom (w przypadku wysłania wiadomości przez \code{send()}) trzeba przekazać stronie drugiej stronie rozmiar nagłówka i rozmiar ciała wiadomości. Stąd \da \code{IConnection} powinien mieć swój nagłówek.
+	
+	
+	
+	
+	\Huge{...}\normalsize\\
+	F-cja \code{sendPayload()} powinna wysłać na początku rozmiar ciała wiadomości (nawet jeśli ciała niema, na przykład w przypadku pakietu PubAck), ponieważ f-cja \code{sendPubAck()} wywołuje \code{send(Packet&)}. Wtedy odbiorca w f-cji \code{recvPayload()} odczyta, że rozmiar ciała == 0 i odrazu zwróci wartość, nie blokując procesu w f-cji \code{recv(std::string&)}. 
+	
+\end{document}

@@ -121,7 +121,8 @@ CMakeFiles/network.dir/src/Qos1.cpp.o: \
  /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
  /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc \
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/deque \
+ /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConnectionDecorator.hpp \
  /usr/include/c++/15/memory /usr/include/c++/15/bits/stl_tempbuf.h \
  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
@@ -154,7 +155,30 @@ CMakeFiles/network.dir/src/Qos1.cpp.o: \
  /usr/include/c++/15/backward/auto_ptr.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
  /usr/include/c++/15/pstl/execution_defs.h \
- /usr/include/c++/15/unordered_map \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConsoleLogger.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ILogger.hpp \
+ /usr/include/c++/15/cstdint \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-least.h \
+ /usr/include/c++/15/iostream /usr/include/c++/15/ostream \
+ /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
+ /usr/include/c++/15/bits/ios_base.h \
+ /usr/include/c++/15/bits/locale_classes.h \
+ /usr/include/c++/15/bits/locale_classes.tcc \
+ /usr/include/c++/15/system_error \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h \
+ /usr/include/c++/15/stdexcept /usr/include/c++/15/streambuf \
+ /usr/include/c++/15/bits/streambuf.tcc \
+ /usr/include/c++/15/bits/basic_ios.h \
+ /usr/include/c++/15/bits/locale_facets.h /usr/include/c++/15/cwctype \
+ /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/15/bits/streambuf_iterator.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/15/bits/locale_facets.tcc \
+ /usr/include/c++/15/bits/basic_ios.tcc \
+ /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
+ /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/unordered_map \
  /usr/include/c++/15/bits/unordered_map.h \
  /usr/include/c++/15/bits/hashtable.h \
  /usr/include/c++/15/bits/hashtable_policy.h \
@@ -162,8 +186,70 @@ CMakeFiles/network.dir/src/Qos1.cpp.o: \
  /usr/include/c++/15/bits/node_handle.h \
  /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/chrono \
  /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
- /usr/include/c++/15/cstdint \
- /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/stdint-least.h \
  /usr/include/c++/15/limits /usr/include/c++/15/ctime \
- /usr/include/c++/15/bits/parse_numbers.h
+ /usr/include/c++/15/bits/parse_numbers.h \
+ /usr/local/include/gtest/gtest.h /usr/include/c++/15/set \
+ /usr/include/c++/15/bits/stl_tree.h /usr/include/c++/15/bits/stl_set.h \
+ /usr/include/c++/15/bits/stl_multiset.h /usr/include/c++/15/sstream \
+ /usr/include/c++/15/bits/sstream.tcc \
+ /usr/local/include/gtest/gtest-assertion-result.h \
+ /usr/local/include/gtest/gtest-message.h \
+ /usr/local/include/gtest/internal/gtest-port.h \
+ /usr/include/c++/15/version /usr/include/c++/15/stdlib.h \
+ /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/locale_facets_nonio.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/15/bits/locale_conv.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
+ /usr/include/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/bits/statx-generic.h \
+ /usr/include/bits/types/struct_statx_timestamp.h \
+ /usr/include/bits/types/struct_statx.h \
+ /usr/local/include/gtest/internal/custom/gtest-port.h \
+ /usr/local/include/gtest/internal/gtest-port-arch.h /usr/include/regex.h \
+ /usr/include/c++/15/condition_variable \
+ /usr/include/c++/15/bits/std_mutex.h \
+ /usr/include/c++/15/bits/unique_lock.h /usr/include/c++/15/mutex \
+ /usr/local/include/gtest/gtest-death-test.h \
+ /usr/local/include/gtest/internal/gtest-death-test-internal.h \
+ /usr/local/include/gtest/gtest-matchers.h /usr/include/c++/15/atomic \
+ /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
+ /usr/include/c++/15/array /usr/include/c++/15/compare \
+ /usr/local/include/gtest/gtest-printers.h /usr/include/c++/15/any \
+ /usr/include/c++/15/optional /usr/include/c++/15/utility \
+ /usr/include/c++/15/bits/stl_relops.h /usr/include/c++/15/variant \
+ /usr/include/c++/15/bits/monostate.h \
+ /usr/local/include/gtest/internal/gtest-internal.h \
+ /usr/include/sys/wait.h /usr/include/signal.h \
+ /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
+ /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/siginfo-arch.h \
+ /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/sigevent-consts.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/bits/types/stack_t.h /usr/include/sys/ucontext.h \
+ /usr/include/bits/sigstack.h /usr/include/bits/sigstksz.h \
+ /usr/include/bits/ss_flags.h /usr/include/bits/types/struct_sigstack.h \
+ /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h \
+ /usr/include/bits/types/idtype_t.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h \
+ /usr/local/include/gtest/internal/gtest-filepath.h \
+ /usr/local/include/gtest/internal/gtest-string.h \
+ /usr/local/include/gtest/internal/gtest-type-util.h \
+ /usr/include/c++/15/cxxabi.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/cxxabi_tweaks.h \
+ /usr/local/include/gtest/internal/custom/gtest-printers.h \
+ /usr/local/include/gtest/gtest-param-test.h /usr/include/c++/15/iterator \
+ /usr/include/c++/15/bits/stream_iterator.h \
+ /usr/local/include/gtest/internal/gtest-param-util.h \
+ /usr/include/c++/15/cassert /usr/include/assert.h \
+ /usr/local/include/gtest/gtest-test-part.h \
+ /usr/local/include/gtest/gtest-typed-test.h \
+ /usr/local/include/gtest/gtest_pred_impl.h \
+ /usr/local/include/gtest/gtest_prod.h
