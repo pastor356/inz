@@ -52,7 +52,8 @@ TEST_F(QosTest, MessageExhchangeTest) {
 
 	incoming_msg.clear();
 	status = connection->recv(incoming_msg);
-	logInfo << std::string{"<"} + incoming_msg + std::string{"> is new msg"};
+	EXPECT_FALSE(incoming_msg.empty());
+	logWarn << std::string{"\033[31m<"} + incoming_msg + std::string{">\033[0m is new msg"};
 
 	EXPECT_EQ(status, IConnection::Status::SUCCESS);
 }
