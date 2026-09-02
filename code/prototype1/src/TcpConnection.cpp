@@ -141,7 +141,43 @@ IConnection::Status TcpConnection::send(std::string const& msg, size_t nbytes, i
 
 IConnection::Status TcpConnection::send(Packet& packet, int flag) const {
 	IConnection::Status status;
+	struct msghdr message;
+	struct iovec pack[4];
+	ssize_t nsend;
 
+	std::memset(&message, 0, sizeof(message));
+	size_t headerSize = packet.header.size();
+	size_t payloadSize = packet.payload.size();
+
+	pack[0].iov_base = &headerSize;
+	pack[0].iov_len = sizeof(headerSize);
+
+	pack[1].iov_base = packet.header.data();
+	pack[1].iov_len = packet.header.size();
+
+	pack[2].iov_base = &payloadSize;
+	pack[2].iov_len = sizeof(payloadSize);
+
+	pack[3].iov_base = packet.payload.data();
+	pack[3].iov_len = packet.payload.size();
+
+	message.msg_iov = pack;
+	message.msg_iovlen = 4;
+
+	nsend = ::sendmsg(connectionFd, &message, flag);
+
+	if(nsend < 0) {
+		if(errno == EAGAIN) return(IConnection::Status::AGAIN);
+
+		logError << std::string{"send(Packet&) failed: "} + strerror(errno);
+
+		return(IConnection::Status::ERROR);
+	} else if(nsend == 0) {
+		return(IConnection::Status::HUP);
+	}
+
+	status = IConnection::Status::SUCCESS;
+	/*
 	status = sendHeader(packet.header);
 
 	if(status != IConnection::Status::SUCCESS) {
@@ -155,6 +191,7 @@ IConnection::Status TcpConnection::send(Packet& packet, int flag) const {
 		logError << std::string{"send(Packet&) failed: "} + strerror(errno);
 		return(status);
 	}
+	*/
 
 	return(status);
 }
@@ -183,14 +220,15 @@ IConnection::Status TcpConnection::recv(Packet& packet, int flag) const {
 	
 IConnection::Status TcpConnection::recvHeader(std::vector<uint8_t>& header) const {
 	std::string tmp;
+	size_t headerSize;
 	tmp.resize(2);
 
-	auto status = this->recv(tmp, 2, 0);
+	auto status = this->recv(tmp, sizeof(headerSize), 0);
 
 	if(status != IConnection::Status::SUCCESS) 
 		return(status);
 
-	uint16_t headerSize = (uint16_t)*(tmp.data());
+	headerSize = (size_t)*(tmp.data());
 	tmp.clear();
 
 	status = this->recv(tmp, headerSize, 0);
@@ -211,16 +249,16 @@ IConnection::Status TcpConnection::recvPayload(std::string& payload, bool expect
 	IConnection::Status status = IConnection::Status::SUCCESS;
 
 	// recvSize(size_t& msgSize) method
-	uint16_t payloadSize;
+	size_t payloadSize;
 	std::string buf;
-	status = this->recv(buf, 2, 0);
+	status = this->recv(buf, sizeof(payloadSize), 0);
 
 	if(status != IConnection::Status::SUCCESS) {
 		logError << std::string{"recvPayload() failed: "} + strerror(errno);
 		return(status);
 	}
 
-	std::memcpy(&payloadSize, buf.data(), sizeof(uint16_t));
+	std::memcpy(&payloadSize, buf.data(), sizeof(payloadSize));
 	// recvSize(size_t& msgSize) method END
 
 	if(payloadSize == 0) return(IConnection::Status::SUCCESS);

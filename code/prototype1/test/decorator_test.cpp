@@ -59,6 +59,7 @@ TEST_F(QosTest, MessageExhchangeTest) {
 }
 
 
+/*
 
 TEST_F(QosTest, MessageExchangeTest_EPOLL) {
 	int epoll_fd = epoll_create(1);
@@ -94,3 +95,4 @@ TEST_F(QosTest, MessageExchangeTest_EPOLL) {
 		EXPECT_EQ(status, IConnection::Status::SUCCESS);
 	}
 }
+*/

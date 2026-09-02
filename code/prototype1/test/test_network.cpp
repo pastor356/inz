@@ -12,12 +12,13 @@ TEST(NetworkTest, PARENT_CHILD_EXCHANGE) {
 	tcpSocketServer->bind();
 	tcpSocketServer->listen(5);
 
-	auto tcpSocketClient = std::make_unique<TcpSocket>("127.0.0.1", 4243);
 
 	pid_t client;
 	if((client = fork()) < 0) {
 		logError << "fork() failed: " << strerror(errno);
 	} else if(client == 0) {
+
+		auto tcpSocketClient = std::make_unique<TcpSocket>("127.0.0.1", 4243);
 		struct sockaddr_in a;
 		std::memset(&a, 0, sizeof(struct sockaddr_in));
 		a.sin_family = AF_INET;

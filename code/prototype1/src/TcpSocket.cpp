@@ -17,6 +17,7 @@ TcpSocket::TcpSocket(std::string const& address, int port) {
 	} 
 
 	int reuse = 1;
+
 	setsockopt(this->sockFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(int));
 }
 
