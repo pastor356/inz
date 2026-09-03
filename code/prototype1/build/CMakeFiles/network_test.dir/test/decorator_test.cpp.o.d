@@ -267,4 +267,8 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: \
  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
  /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
  /usr/include/linux/sockios.h /usr/include/bits/ioctl-types.h \
- /usr/include/sys/ttydefaults.h /usr/include/bits/epoll.h
+ /usr/include/sys/ttydefaults.h /usr/include/bits/epoll.h \
+ /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/fcntl-linux.h /usr/include/bits/cloexec.h \
+ /usr/include/linux/falloc.h /usr/include/poll.h /usr/include/sys/poll.h \
+ /usr/include/bits/poll.h

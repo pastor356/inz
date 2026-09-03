@@ -61,6 +61,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
+  /usr/include/bits/cloexec.h \
   /usr/include/bits/confname.h \
   /usr/include/bits/cpu-set.h \
   /usr/include/bits/endian.h \
@@ -68,6 +69,8 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/bits/environments.h \
   /usr/include/bits/epoll.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -79,6 +82,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
   /usr/include/bits/netdb.h \
+  /usr/include/bits/poll.h \
   /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
@@ -346,6 +350,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
@@ -353,6 +358,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/libintl.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/linux/ioctl.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
@@ -363,6 +369,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/locale.h \
   /usr/include/netdb.h \
   /usr/include/netinet/in.h \
+  /usr/include/poll.h \
   /usr/include/pthread.h \
   /usr/include/regex.h \
   /usr/include/rpc/netdb.h \
@@ -377,6 +384,7 @@ CMakeFiles/network_test.dir/test/decorator_test.cpp.o: /home/pastor/Public/books
   /usr/include/sys/cdefs.h \
   /usr/include/sys/epoll.h \
   /usr/include/sys/ioctl.h \
+  /usr/include/sys/poll.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/socket.h \
@@ -1561,8 +1569,6 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/include/time.h:
 
-/usr/include/sys/wait.h:
-
 /usr/include/sys/types.h:
 
 /usr/include/sys/ttydefaults.h:
@@ -1570,6 +1576,8 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 /usr/include/sys/socket.h:
 
 /usr/include/sys/select.h:
+
+/usr/include/sys/poll.h:
 
 /usr/include/sys/epoll.h:
 
@@ -1585,6 +1593,8 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/include/pthread.h:
 
+/usr/include/poll.h:
+
 /usr/include/locale.h:
 
 /usr/include/linux/types.h:
@@ -1598,6 +1608,10 @@ CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o:
 /usr/include/gnu/stubs.h:
 
 /usr/include/features-time64.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/fcntl.h:
 
 /usr/include/stdint.h:
 
@@ -1723,6 +1737,8 @@ CMakeFiles/network.dir/src/TcpSocket.cpp.o:
 
 /usr/include/c++/15/bits/unique_lock.h:
 
+/usr/include/c++/15/bits/streambuf_iterator.h:
+
 lib/libgtest_main.a:
 
 /usr/include/bits/types/__fpos64_t.h:
@@ -1760,10 +1776,6 @@ CMakeFiles/network_test.dir/test/resolver_test.cpp.o:
 /usr/include/bits/time64.h:
 
 /usr/include/bits/stdio_lim.h:
-
-lib/libgtest.a:
-
-/usr/include/bits/ioctls.h:
 
 /usr/include/bits/statx-generic.h:
 
@@ -1823,6 +1835,8 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o:
 
 /usr/include/bits/atomic_wide_counter.h:
 
+/usr/include/bits/poll.h:
+
 /lib64/libgcc_s.so.1:
 
 /usr/include/bits/netdb.h:
@@ -1851,9 +1865,9 @@ CMakeFiles/network.dir/src/TcpCallee.cpp.o:
 
 /usr/include/bits/getopt_posix.h:
 
-/usr/include/bits/types.h:
+/usr/include/bits/cloexec.h:
 
-/usr/include/c++/15/bits/streambuf_iterator.h:
+/usr/include/bits/types.h:
 
 /usr/include/c++/15/cstdio:
 
@@ -1892,6 +1906,10 @@ _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h:
 _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
+
+lib/libgtest.a:
+
+/usr/include/bits/ioctls.h:
 
 /usr/include/bits/types/__mbstate_t.h:
 
@@ -1979,6 +1997,8 @@ CMakeFiles/network.dir/src/ConsoleLogger.cpp.o:
 
 /usr/include/c++/15/compare:
 
+/usr/include/bits/fcntl-linux.h:
+
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
 /usr/include/bits/stdint-least.h:
@@ -2021,6 +2041,10 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 
 /usr/include/arpa/inet.h:
 
+/usr/include/c++/15/bits/streambuf.tcc:
+
+/usr/include/c++/15/bits/basic_string.tcc:
+
 /usr/include/asm-generic/types.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -2051,17 +2075,11 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 
 /usr/include/asm/ioctls.h:
 
-/usr/include/bits/types/__sigset_t.h:
-
 /usr/include/c++/15/bits/unique_ptr.h:
 
 /usr/include/asm-generic/sockios.h:
 
 /usr/include/bits/types/sigset_t.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/types/__sigval_t.h:
 
 /usr/include/bits/timesize.h:
 
@@ -2101,19 +2119,25 @@ CMakeFiles/network.dir/src/Qos1.cpp.o:
 
 /usr/include/c++/15/bits/alloc_traits.h:
 
+/usr/include/c++/15/bits/stringfwd.h:
+
+/usr/include/c++/15/bits/erase_if.h:
+
 /usr/include/bits/setjmp.h:
 
 /usr/include/c++/15/bits/char_traits.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types/__sigval_t.h:
 
 /usr/include/c++/15/typeinfo:
 
 /usr/include/bits/stdint-intn.h:
 
 /usr/include/bits/types/clockid_t.h:
-
-/usr/include/c++/15/bits/basic_string.tcc:
-
-/usr/include/c++/15/bits/streambuf.tcc:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
@@ -2171,9 +2195,15 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
+/usr/include/c++/15/bits/string_view.tcc:
+
+/usr/include/bits/types/struct_tm.h:
+
 /usr/include/c++/15/bits/concept_check.h:
 
 /usr/include/bits/uintn-identity.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/c++/15/mutex:
 
@@ -2241,6 +2271,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /lib64/libm.so.6:
 
+/usr/include/bits/fcntl.h:
+
 /usr/include/c++/15/bits/hash_bytes.h:
 
 /usr/include/c++/15/bits/locale_classes.tcc:
@@ -2296,10 +2328,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 /usr/include/c++/15/bits/range_access.h:
 
 /usr/include/c++/15/bits/shared_ptr.h:
-
-/usr/include/c++/15/bits/erase_if.h:
-
-/usr/include/c++/15/bits/stringfwd.h:
 
 /usr/include/bits/types/stack_t.h:
 
@@ -2374,7 +2402,3 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 /usr/include/c++/15/bits/functexcept.h:
 
 /usr/include/c++/15/bits/stl_vector.h:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/c++/15/bits/string_view.tcc:

@@ -446,7 +446,9 @@ CMakeFiles/network.dir/src/ConsoleLogger.cpp.o: /home/pastor/Public/books/VI_sem
 
 CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/src/LiveMonitor.cpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConnectionDecorator.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ConsoleLogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/IConnection.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/ILogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/LiveMonitor.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/include/Packet.hpp \
   /usr/include/alloca.h \
@@ -540,6 +542,7 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/15/backward/auto_ptr.h \
   /usr/include/c++/15/backward/binders.h \
@@ -550,6 +553,8 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/c++/15/bits/allocator.h \
   /usr/include/c++/15/bits/atomic_base.h \
   /usr/include/c++/15/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/15/bits/basic_ios.h \
+  /usr/include/c++/15/bits/basic_ios.tcc \
   /usr/include/c++/15/bits/basic_string.h \
   /usr/include/c++/15/bits/basic_string.tcc \
   /usr/include/c++/15/bits/char_traits.h \
@@ -567,12 +572,20 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/c++/15/bits/functional_hash.h \
   /usr/include/c++/15/bits/hash_bytes.h \
   /usr/include/c++/15/bits/invoke.h \
+  /usr/include/c++/15/bits/ios_base.h \
+  /usr/include/c++/15/bits/istream.tcc \
+  /usr/include/c++/15/bits/locale_classes.h \
+  /usr/include/c++/15/bits/locale_classes.tcc \
+  /usr/include/c++/15/bits/locale_facets.h \
+  /usr/include/c++/15/bits/locale_facets.tcc \
   /usr/include/c++/15/bits/localefwd.h \
   /usr/include/c++/15/bits/memory_resource.h \
   /usr/include/c++/15/bits/memoryfwd.h \
   /usr/include/c++/15/bits/move.h \
   /usr/include/c++/15/bits/nested_exception.h \
   /usr/include/c++/15/bits/new_allocator.h \
+  /usr/include/c++/15/bits/ostream.h \
+  /usr/include/c++/15/bits/ostream.tcc \
   /usr/include/c++/15/bits/ostream_insert.h \
   /usr/include/c++/15/bits/parse_numbers.h \
   /usr/include/c++/15/bits/postypes.h \
@@ -598,6 +611,8 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/c++/15/bits/stl_tempbuf.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
   /usr/include/c++/15/bits/stl_vector.h \
+  /usr/include/c++/15/bits/streambuf.tcc \
+  /usr/include/c++/15/bits/streambuf_iterator.h \
   /usr/include/c++/15/bits/string_view.tcc \
   /usr/include/c++/15/bits/stringfwd.h \
   /usr/include/c++/15/bits/unique_ptr.h \
@@ -618,6 +633,7 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/c++/15/cstring \
   /usr/include/c++/15/ctime \
   /usr/include/c++/15/cwchar \
+  /usr/include/c++/15/cwctype \
   /usr/include/c++/15/debug/assertions.h \
   /usr/include/c++/15/debug/debug.h \
   /usr/include/c++/15/deque \
@@ -630,16 +646,23 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/c++/15/ext/string_conversions.h \
   /usr/include/c++/15/ext/type_traits.h \
   /usr/include/c++/15/initializer_list \
+  /usr/include/c++/15/ios \
   /usr/include/c++/15/iosfwd \
+  /usr/include/c++/15/iostream \
+  /usr/include/c++/15/istream \
   /usr/include/c++/15/limits \
   /usr/include/c++/15/memory \
   /usr/include/c++/15/new \
+  /usr/include/c++/15/ostream \
   /usr/include/c++/15/pstl/execution_defs.h \
   /usr/include/c++/15/pstl/glue_memory_defs.h \
   /usr/include/c++/15/pstl/pstl_config.h \
   /usr/include/c++/15/ratio \
+  /usr/include/c++/15/stdexcept \
+  /usr/include/c++/15/streambuf \
   /usr/include/c++/15/string \
   /usr/include/c++/15/string_view \
+  /usr/include/c++/15/system_error \
   /usr/include/c++/15/tuple \
   /usr/include/c++/15/type_traits \
   /usr/include/c++/15/typeinfo \
@@ -649,6 +672,9 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/gthr-default.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
@@ -685,6 +711,7 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: /home/pastor/Public/books/VI_sem/i
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h

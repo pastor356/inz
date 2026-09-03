@@ -251,6 +251,8 @@ IConnection::Status TcpConnection::recvPayload(std::string& payload, bool expect
 	// recvSize(size_t& msgSize) method
 	size_t payloadSize;
 	std::string buf;
+	buf.resize(sizeof(payloadSize));
+
 	status = this->recv(buf, sizeof(payloadSize), 0);
 
 	if(status != IConnection::Status::SUCCESS) {
@@ -261,7 +263,10 @@ IConnection::Status TcpConnection::recvPayload(std::string& payload, bool expect
 	std::memcpy(&payloadSize, buf.data(), sizeof(payloadSize));
 	// recvSize(size_t& msgSize) method END
 
-	if(payloadSize == 0) return(IConnection::Status::SUCCESS);
+	if(payloadSize == 0) {
+		payload.clear();
+		return(IConnection::Status::SUCCESS);
+	}
 
 	if(expected) status = this->recv(payload, payloadSize, 0);
 

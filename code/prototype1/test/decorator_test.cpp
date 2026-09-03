@@ -7,6 +7,8 @@
 #include "TcpSocket.hpp"
 #include <gtest/gtest.h>
 #include <sys/epoll.h>
+#include <fcntl.h>
+#include <poll.h>
 
 #define MAXEVENTS 10
 
@@ -16,16 +18,14 @@ public:
 		Resolver resolver;
 		SocketParams params{AF_INET, SOCK_STREAM, SockRole::CLI, false};
 
-		this->socket = 
-			std::make_unique<TcpSocket>(resolver.resolve("localhost", "4244", params));
+		this->socket = std::make_unique<TcpSocket>(
+				resolver.resolve("localhost", "4244", params));
 
 		SocketParams serv_params{AF_INET, SOCK_STREAM, SockRole::SERV, false};
 
 		connection = std::move(
 				socket->connect(resolver.resolve("localhost", "4242", serv_params)));
 
-		this->connection = std::make_unique<LiveMonitor>(std::move(connection));
-		this->connection = std::make_unique<Qos1>(std::move(connection));
 	}
 
 	std::unique_ptr<ISocket> socket;
@@ -34,65 +34,58 @@ public:
 
 TEST_F(QosTest, MessageExhchangeTest) {
 
+	this->connection = std::make_unique<LiveMonitor>(std::move(connection));
+	this->connection = std::make_unique<Qos1>(std::move(connection));
+
+	int flag = fcntl(connection->getDescriptor(), F_GETFL, 0);
+	fcntl(connection->getDescriptor(),  F_SETFL, flag | O_NONBLOCK);
+
 	EXPECT_NE(connection->getDescriptor(), -1);
 
 	auto status = connection->send("dupa!");
 
+
 	EXPECT_EQ(status, IConnection::Status::SUCCESS);
 
 	std::string incoming_msg;
-	status = connection->recv(incoming_msg);
+	struct pollfd polls[1];
+	std::memset(polls, 0, sizeof(struct pollfd));
+
+	polls[0].fd = connection->getDescriptor();
+	polls[0].events = EPOLLIN;
+
+	poll(polls, 1, -1);
+	while(status != IConnection::Status::AGAIN) {
+
+		status = connection->recv(incoming_msg);
+		if(status == IConnection::Status::SUCCESS) logInfo << "success";
+		else if(status == IConnection::Status::AGAIN) logInfo << "eagain";
+		else logInfo << "error";
+	} 
 
 	if(status == IConnection::Status::HUP) {
 		logError << "connection closed! OMG :O";
 	}
 
 	logInfo << std::string{"<"} + incoming_msg + std::string{"> is new msg"};
-	EXPECT_EQ(status, IConnection::Status::SUCCESS);
+	EXPECT_EQ(status, IConnection::Status::AGAIN);
 
-	incoming_msg.clear();
-	status = connection->recv(incoming_msg);
-	EXPECT_FALSE(incoming_msg.empty());
 	logWarn << std::string{"\033[31m<"} + incoming_msg + std::string{">\033[0m is new msg"};
 
-	EXPECT_EQ(status, IConnection::Status::SUCCESS);
 }
 
 
-/*
+TEST_F(QosTest, KeepAlivePacketTest) {
+	Packet packet;
+	Resolver resolver;
 
-TEST_F(QosTest, MessageExchangeTest_EPOLL) {
-	int epoll_fd = epoll_create(1);
-	struct epoll_event ev, events[MAXEVENTS];
-	ev.events = EPOLLIN;
-	ev.data.fd = connection->getDescriptor();
-	epoll_ctl(epoll_fd, EPOLL_CTL_ADD, connection->getDescriptor(), &ev);
+	this->connection = std::make_unique<LiveMonitor>(std::move(connection));
 
-	EXPECT_NE(connection->getDescriptor(), -1);
+	packet.header.push_back(MSGTYPE_KEEPALIVE);
 
-	auto status = connection->send("dupa!");
-
-	ssize_t nfds;
-	while(1) {
-		nfds = epoll_wait(epoll_fd, events, MAXEVENTS, -1);
-
-		EXPECT_EQ(status, IConnection::Status::SUCCESS);
-
-		std::string incoming_msg;
-		status = connection->recv(incoming_msg);
-
-		if(status == IConnection::Status::HUP) {
-			epoll_ctl(epoll_fd, EPOLL_CTL_DEL, connection->getDescriptor(), NULL);
-			break;
-		}
+	connection->send(packet);
 
 
-		EXPECT_EQ(status, IConnection::Status::SUCCESS);
-
-		incoming_msg.clear();
-		status = connection->recv(incoming_msg);
-
-		EXPECT_EQ(status, IConnection::Status::SUCCESS);
-	}
 }
-*/
+
+

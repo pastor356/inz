@@ -1,6 +1,7 @@
 #pragma once
 #include <chrono>
 #include "ConnectionDecorator.hpp"
+#include "ConsoleLogger.hpp"
 
 #ifndef MsgType_Pos
 #define MsgType_Pos 0x4

@@ -25,7 +25,7 @@ IConnection::Status Qos1::recv(std::string& msg, int flag) const {
 IConnection::Status Qos1::recv(Packet& packet, int flag) const {
 	auto status = connection->recv(packet);
 
-	if(status == IConnection::Status::ERROR || status == IConnection::Status::HUP) {
+	if(status != IConnection::Status::SUCCESS) {
 		return(status);
 	}
 
@@ -48,6 +48,8 @@ IConnection::Status Qos1::recv(Packet& packet, int flag) const {
 		// msg found in map
 		if(iter != pendingMessages.end() && iter->second.state == QosState::WAIT_PUBACK) 
 			pendingMessages.erase(iter);
+
+		return(IConnection::Status::SUCCESS);
 	}
 
 	trimQosHeader(packet.header); 

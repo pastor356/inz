@@ -112,8 +112,12 @@ void do_echo(IConnection const& conn) {
 	std::string msg;
 	auto status = conn.recv(msg);
 	if(status == IConnection::Status::SUCCESS) {
+		if(msg.empty()) return;
 		conn.send(msg);
 		logInfo << std::string{"<"} + msg + std::string{"> is new msg"};
+	} else if(status == IConnection::Status::AGAIN) {
+	} else {
+		return;
 	}
 }
 

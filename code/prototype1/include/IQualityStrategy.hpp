@@ -51,13 +51,10 @@ protected:
 	mutable std::unordered_map<uint16_t, PendingMessage> pendingMessages;
 	mutable uint16_t currMsgId = 33;
 
-	// todo
 	virtual IConnection::Status sendPubAck(uint16_t packetId) const = 0;
 	virtual IConnection::Status sendPubRec(uint16_t packetId) const = 0;
 	virtual IConnection::Status sendPubRel(uint16_t packetId) const = 0;
 	virtual IConnection::Status sendPubComp(uint16_t packetId) const = 0;
-
-	//virtual	std::shared_ptr<PendingMessage> parseMsg(std::string const& msg) const = 0; // todo
 
 	virtual	std::shared_ptr<PendingMessage> parseMsg(Packet const& packet) const = 0; 
 	virtual void trimQosHeader(std::vector<uint8_t>& header) const = 0;

@@ -159,4 +159,25 @@ CMakeFiles/network.dir/src/LiveMonitor.cpp.o: \
  /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
  /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/deque \
- /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc
+ /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ConsoleLogger.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/./include/ILogger.hpp \
+ /usr/include/c++/15/iostream /usr/include/c++/15/ostream \
+ /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
+ /usr/include/c++/15/bits/ios_base.h \
+ /usr/include/c++/15/bits/locale_classes.h \
+ /usr/include/c++/15/bits/locale_classes.tcc \
+ /usr/include/c++/15/system_error \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h \
+ /usr/include/c++/15/stdexcept /usr/include/c++/15/streambuf \
+ /usr/include/c++/15/bits/streambuf.tcc \
+ /usr/include/c++/15/bits/basic_ios.h \
+ /usr/include/c++/15/bits/locale_facets.h /usr/include/c++/15/cwctype \
+ /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/15/bits/streambuf_iterator.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/15/bits/locale_facets.tcc \
+ /usr/include/c++/15/bits/basic_ios.tcc \
+ /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
+ /usr/include/c++/15/bits/istream.tcc

@@ -7,11 +7,16 @@ IConnection::Status LiveMonitor::recv(Packet& packet, int flag) const {
 	while(1) {
 		status = connection->recv(packet, flag);
 
-		if(status != IConnection::Status::SUCCESS) return(status);
+		if(status != IConnection::Status::SUCCESS) {
+			return(status);
+		}
 
 		resetTimer();
 
-		if(isKeepAlive(packet)) continue;
+		if(isKeepAlive(packet)) {
+			logInfo << "caught KeepAlive";
+			continue;
+		}
 
 		return(IConnection::Status::SUCCESS);
 	}
