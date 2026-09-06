@@ -3,7 +3,6 @@
 #include <cstdint>
 #include <iostream>
 
-
 class ILogger {
 
 public:

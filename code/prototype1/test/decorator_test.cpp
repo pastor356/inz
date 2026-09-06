@@ -14,9 +14,8 @@
 
 class QosTest: public ::testing::Test {
 public:
-	QosTest() {
-		Resolver resolver;
-		SocketParams params{AF_INET, SOCK_STREAM, SockRole::CLI, false};
+	QosTest() { 
+		Resolver resolver; SocketParams params{AF_INET, SOCK_STREAM, SockRole::CLI, false};
 
 		this->socket = std::make_unique<TcpSocket>(
 				resolver.resolve("localhost", "4244", params));
@@ -34,8 +33,8 @@ public:
 
 TEST_F(QosTest, MessageExhchangeTest) {
 
-	this->connection = std::make_unique<LiveMonitor>(std::move(connection));
-	this->connection = std::make_unique<Qos1>(std::move(connection));
+	this->connection = std::make_unique<LiveMonitor>(std::move(this->connection));
+	this->connection = std::make_unique<Qos1>(std::move(this->connection));
 
 	int flag = fcntl(connection->getDescriptor(), F_GETFL, 0);
 	fcntl(connection->getDescriptor(),  F_SETFL, flag | O_NONBLOCK);
@@ -43,7 +42,6 @@ TEST_F(QosTest, MessageExhchangeTest) {
 	EXPECT_NE(connection->getDescriptor(), -1);
 
 	auto status = connection->send("dupa!");
-
 
 	EXPECT_EQ(status, IConnection::Status::SUCCESS);
 
@@ -56,8 +54,8 @@ TEST_F(QosTest, MessageExhchangeTest) {
 
 	poll(polls, 1, -1);
 	while(status != IConnection::Status::AGAIN) {
-
 		status = connection->recv(incoming_msg);
+
 		if(status == IConnection::Status::SUCCESS) logInfo << "success";
 		else if(status == IConnection::Status::AGAIN) logInfo << "eagain";
 		else logInfo << "error";
@@ -69,7 +67,6 @@ TEST_F(QosTest, MessageExhchangeTest) {
 
 	logInfo << std::string{"<"} + incoming_msg + std::string{"> is new msg"};
 	EXPECT_EQ(status, IConnection::Status::AGAIN);
-
 	logWarn << std::string{"\033[31m<"} + incoming_msg + std::string{">\033[0m is new msg"};
 
 }
@@ -84,8 +81,4 @@ TEST_F(QosTest, KeepAlivePacketTest) {
 	packet.header.push_back(MSGTYPE_KEEPALIVE);
 
 	connection->send(packet);
-
-
 }
-
-

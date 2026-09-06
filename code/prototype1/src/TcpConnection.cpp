@@ -259,7 +259,6 @@ IConnection::Status TcpConnection::recvPayload(std::string& payload, bool expect
 		logError << std::string{"recvPayload() failed: "} + strerror(errno);
 		return(status);
 	}
-
 	std::memcpy(&payloadSize, buf.data(), sizeof(payloadSize));
 	// recvSize(size_t& msgSize) method END
 

@@ -1,10 +1,10 @@
 #include "TcpSocket.hpp"
 
+
 TcpSocket::TcpSocket(int sockDescriptor, std::string const& address, int port): 
 	sockFd{sockDescriptor} {
 	this->addr = this->initAddress(address, port);
 }
-
 
 
 TcpSocket::TcpSocket(std::string const& address, int port) {
@@ -15,8 +15,7 @@ TcpSocket::TcpSocket(std::string const& address, int port) {
 		logError << std::string{"socket() failed: "} + strerror(errno);
 		throw std::runtime_error{"socket() failed"};
 	} 
-
-	int reuse = 1;
+int reuse = 1;
 
 	setsockopt(this->sockFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(int));
 }
@@ -155,7 +154,6 @@ std::unique_ptr<IConnection> TcpSocket::connect(addrInfo && resolvedAddress) con
 	int err;
 
 	do {
-
 		if((err = ::connect(this->sockFd, iter->ai_addr, iter->ai_addrlen)) < 0) {
 			logError << std::string{"connect() failed: "} + strerror(errno);
 			continue;
@@ -177,6 +175,7 @@ std::unique_ptr<IConnection> TcpSocket::connect(addrInfo && resolvedAddress) con
 
 	return(std::make_unique<TcpCallee>(this->sockFd, a));
 }
+
 
 TcpSocket::TcpSocket(addrInfo && resolvedAddress) { 
 	std::unique_ptr ai = std::move(resolvedAddress);
