@@ -310,6 +310,27 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
+common_BINARY_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common
+
+//Value Computed by CMake
+common_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+common_SOURCE_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common
+
+//Value Computed by CMake
+decorator_BINARY_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator
+
+//Value Computed by CMake
+decorator_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+decorator_LIB_DEPENDS:STATIC=general;networking;
+
+//Value Computed by CMake
+decorator_SOURCE_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-build/googlemock
 
 //Value Computed by CMake
@@ -365,6 +386,18 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
+networking_BINARY_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking
+
+//Value Computed by CMake
+networking_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+networking_LIB_DEPENDS:STATIC=general;common;
+
+//Value Computed by CMake
+networking_SOURCE_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking
+
+//Value Computed by CMake
 prototype1_BINARY_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build
 
 //Value Computed by CMake
@@ -372,6 +405,15 @@ prototype1_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 prototype1_SOURCE_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1
+
+//Value Computed by CMake
+tests_BINARY_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test
+
+//Value Computed by CMake
+tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+tests_SOURCE_DIR:STATIC=/home/pastor/Public/books/VI_sem/inz/code/prototype1/test
 
 
 ########################
@@ -514,7 +556,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

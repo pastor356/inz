@@ -44,7 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-build/cmake_install.cmake")
+  include("/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common/cmake_install.cmake")
+  include("/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking/cmake_install.cmake")
+  include("/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator/cmake_install.cmake")
+  include("/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test/cmake_install.cmake")
 
 endif()
 

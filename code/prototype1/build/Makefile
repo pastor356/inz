@@ -162,43 +162,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named network
+# Target rules for targets named common
 
 # Build rule for target.
-network: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 network
-.PHONY : network
+common: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common
+.PHONY : common
 
 # fast build rule for target.
-network/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/build
-.PHONY : network/fast
+common/fast:
+	$(MAKE) $(MAKESILENT) -f lib/common/CMakeFiles/common.dir/build.make lib/common/CMakeFiles/common.dir/build
+.PHONY : common/fast
 
 #=============================================================================
-# Target rules for targets named network_test
+# Target rules for targets named networking
 
 # Build rule for target.
-network_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 network_test
-.PHONY : network_test
+networking: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 networking
+.PHONY : networking
 
 # fast build rule for target.
-network_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/build
-.PHONY : network_test/fast
+networking/fast:
+	$(MAKE) $(MAKESILENT) -f lib/networking/CMakeFiles/networking.dir/build.make lib/networking/CMakeFiles/networking.dir/build
+.PHONY : networking/fast
 
 #=============================================================================
-# Target rules for targets named test_server
+# Target rules for targets named decorator
 
 # Build rule for target.
-test_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_server
-.PHONY : test_server
+decorator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 decorator
+.PHONY : decorator
 
 # fast build rule for target.
-test_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/build
-.PHONY : test_server/fast
+decorator/fast:
+	$(MAKE) $(MAKESILENT) -f lib/decorator/CMakeFiles/decorator.dir/build.make lib/decorator/CMakeFiles/decorator.dir/build
+.PHONY : decorator/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
+.PHONY : tests/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -252,342 +265,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/ConnectionDecorator.o: src/ConnectionDecorator.cpp.o
-.PHONY : src/ConnectionDecorator.o
-
-# target to build an object file
-src/ConnectionDecorator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConnectionDecorator.cpp.o
-.PHONY : src/ConnectionDecorator.cpp.o
-
-src/ConnectionDecorator.i: src/ConnectionDecorator.cpp.i
-.PHONY : src/ConnectionDecorator.i
-
-# target to preprocess a source file
-src/ConnectionDecorator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConnectionDecorator.cpp.i
-.PHONY : src/ConnectionDecorator.cpp.i
-
-src/ConnectionDecorator.s: src/ConnectionDecorator.cpp.s
-.PHONY : src/ConnectionDecorator.s
-
-# target to generate assembly for a file
-src/ConnectionDecorator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConnectionDecorator.cpp.s
-.PHONY : src/ConnectionDecorator.cpp.s
-
-src/ConsoleLogger.o: src/ConsoleLogger.cpp.o
-.PHONY : src/ConsoleLogger.o
-
-# target to build an object file
-src/ConsoleLogger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConsoleLogger.cpp.o
-.PHONY : src/ConsoleLogger.cpp.o
-
-src/ConsoleLogger.i: src/ConsoleLogger.cpp.i
-.PHONY : src/ConsoleLogger.i
-
-# target to preprocess a source file
-src/ConsoleLogger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConsoleLogger.cpp.i
-.PHONY : src/ConsoleLogger.cpp.i
-
-src/ConsoleLogger.s: src/ConsoleLogger.cpp.s
-.PHONY : src/ConsoleLogger.s
-
-# target to generate assembly for a file
-src/ConsoleLogger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/ConsoleLogger.cpp.s
-.PHONY : src/ConsoleLogger.cpp.s
-
-src/LiveMonitor.o: src/LiveMonitor.cpp.o
-.PHONY : src/LiveMonitor.o
-
-# target to build an object file
-src/LiveMonitor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/LiveMonitor.cpp.o
-.PHONY : src/LiveMonitor.cpp.o
-
-src/LiveMonitor.i: src/LiveMonitor.cpp.i
-.PHONY : src/LiveMonitor.i
-
-# target to preprocess a source file
-src/LiveMonitor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/LiveMonitor.cpp.i
-.PHONY : src/LiveMonitor.cpp.i
-
-src/LiveMonitor.s: src/LiveMonitor.cpp.s
-.PHONY : src/LiveMonitor.s
-
-# target to generate assembly for a file
-src/LiveMonitor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/LiveMonitor.cpp.s
-.PHONY : src/LiveMonitor.cpp.s
-
-src/Qos1.o: src/Qos1.cpp.o
-.PHONY : src/Qos1.o
-
-# target to build an object file
-src/Qos1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Qos1.cpp.o
-.PHONY : src/Qos1.cpp.o
-
-src/Qos1.i: src/Qos1.cpp.i
-.PHONY : src/Qos1.i
-
-# target to preprocess a source file
-src/Qos1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Qos1.cpp.i
-.PHONY : src/Qos1.cpp.i
-
-src/Qos1.s: src/Qos1.cpp.s
-.PHONY : src/Qos1.s
-
-# target to generate assembly for a file
-src/Qos1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Qos1.cpp.s
-.PHONY : src/Qos1.cpp.s
-
-src/Resolver.o: src/Resolver.cpp.o
-.PHONY : src/Resolver.o
-
-# target to build an object file
-src/Resolver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Resolver.cpp.o
-.PHONY : src/Resolver.cpp.o
-
-src/Resolver.i: src/Resolver.cpp.i
-.PHONY : src/Resolver.i
-
-# target to preprocess a source file
-src/Resolver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Resolver.cpp.i
-.PHONY : src/Resolver.cpp.i
-
-src/Resolver.s: src/Resolver.cpp.s
-.PHONY : src/Resolver.s
-
-# target to generate assembly for a file
-src/Resolver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/Resolver.cpp.s
-.PHONY : src/Resolver.cpp.s
-
-src/TcpCallee.o: src/TcpCallee.cpp.o
-.PHONY : src/TcpCallee.o
-
-# target to build an object file
-src/TcpCallee.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpCallee.cpp.o
-.PHONY : src/TcpCallee.cpp.o
-
-src/TcpCallee.i: src/TcpCallee.cpp.i
-.PHONY : src/TcpCallee.i
-
-# target to preprocess a source file
-src/TcpCallee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpCallee.cpp.i
-.PHONY : src/TcpCallee.cpp.i
-
-src/TcpCallee.s: src/TcpCallee.cpp.s
-.PHONY : src/TcpCallee.s
-
-# target to generate assembly for a file
-src/TcpCallee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpCallee.cpp.s
-.PHONY : src/TcpCallee.cpp.s
-
-src/TcpCaller.o: src/TcpCaller.cpp.o
-.PHONY : src/TcpCaller.o
-
-# target to build an object file
-src/TcpCaller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpCaller.cpp.o
-.PHONY : src/TcpCaller.cpp.o
-
-src/TcpCaller.i: src/TcpCaller.cpp.i
-.PHONY : src/TcpCaller.i
-
-# target to preprocess a source file
-src/TcpCaller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpCaller.cpp.i
-.PHONY : src/TcpCaller.cpp.i
-
-src/TcpCaller.s: src/TcpCaller.cpp.s
-.PHONY : src/TcpCaller.s
-
-# target to generate assembly for a file
-src/TcpCaller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpCaller.cpp.s
-.PHONY : src/TcpCaller.cpp.s
-
-src/TcpConnection.o: src/TcpConnection.cpp.o
-.PHONY : src/TcpConnection.o
-
-# target to build an object file
-src/TcpConnection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpConnection.cpp.o
-.PHONY : src/TcpConnection.cpp.o
-
-src/TcpConnection.i: src/TcpConnection.cpp.i
-.PHONY : src/TcpConnection.i
-
-# target to preprocess a source file
-src/TcpConnection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpConnection.cpp.i
-.PHONY : src/TcpConnection.cpp.i
-
-src/TcpConnection.s: src/TcpConnection.cpp.s
-.PHONY : src/TcpConnection.s
-
-# target to generate assembly for a file
-src/TcpConnection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpConnection.cpp.s
-.PHONY : src/TcpConnection.cpp.s
-
-src/TcpSocket.o: src/TcpSocket.cpp.o
-.PHONY : src/TcpSocket.o
-
-# target to build an object file
-src/TcpSocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpSocket.cpp.o
-.PHONY : src/TcpSocket.cpp.o
-
-src/TcpSocket.i: src/TcpSocket.cpp.i
-.PHONY : src/TcpSocket.i
-
-# target to preprocess a source file
-src/TcpSocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpSocket.cpp.i
-.PHONY : src/TcpSocket.cpp.i
-
-src/TcpSocket.s: src/TcpSocket.cpp.s
-.PHONY : src/TcpSocket.s
-
-# target to generate assembly for a file
-src/TcpSocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/TcpSocket.cpp.s
-.PHONY : src/TcpSocket.cpp.s
-
-test/decorator_test.o: test/decorator_test.cpp.o
-.PHONY : test/decorator_test.o
-
-# target to build an object file
-test/decorator_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/decorator_test.cpp.o
-.PHONY : test/decorator_test.cpp.o
-
-test/decorator_test.i: test/decorator_test.cpp.i
-.PHONY : test/decorator_test.i
-
-# target to preprocess a source file
-test/decorator_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/decorator_test.cpp.i
-.PHONY : test/decorator_test.cpp.i
-
-test/decorator_test.s: test/decorator_test.cpp.s
-.PHONY : test/decorator_test.s
-
-# target to generate assembly for a file
-test/decorator_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/decorator_test.cpp.s
-.PHONY : test/decorator_test.cpp.s
-
-test/maintest_gtest.o: test/maintest_gtest.cpp.o
-.PHONY : test/maintest_gtest.o
-
-# target to build an object file
-test/maintest_gtest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/maintest_gtest.cpp.o
-.PHONY : test/maintest_gtest.cpp.o
-
-test/maintest_gtest.i: test/maintest_gtest.cpp.i
-.PHONY : test/maintest_gtest.i
-
-# target to preprocess a source file
-test/maintest_gtest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/maintest_gtest.cpp.i
-.PHONY : test/maintest_gtest.cpp.i
-
-test/maintest_gtest.s: test/maintest_gtest.cpp.s
-.PHONY : test/maintest_gtest.s
-
-# target to generate assembly for a file
-test/maintest_gtest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/maintest_gtest.cpp.s
-.PHONY : test/maintest_gtest.cpp.s
-
-test/resolver_test.o: test/resolver_test.cpp.o
-.PHONY : test/resolver_test.o
-
-# target to build an object file
-test/resolver_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/resolver_test.cpp.o
-.PHONY : test/resolver_test.cpp.o
-
-test/resolver_test.i: test/resolver_test.cpp.i
-.PHONY : test/resolver_test.i
-
-# target to preprocess a source file
-test/resolver_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/resolver_test.cpp.i
-.PHONY : test/resolver_test.cpp.i
-
-test/resolver_test.s: test/resolver_test.cpp.s
-.PHONY : test/resolver_test.s
-
-# target to generate assembly for a file
-test/resolver_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/resolver_test.cpp.s
-.PHONY : test/resolver_test.cpp.s
-
-test/test_network.o: test/test_network.cpp.o
-.PHONY : test/test_network.o
-
-# target to build an object file
-test/test_network.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/test_network.cpp.o
-.PHONY : test/test_network.cpp.o
-
-test/test_network.i: test/test_network.cpp.i
-.PHONY : test/test_network.i
-
-# target to preprocess a source file
-test/test_network.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/test_network.cpp.i
-.PHONY : test/test_network.cpp.i
-
-test/test_network.s: test/test_network.cpp.s
-.PHONY : test/test_network.s
-
-# target to generate assembly for a file
-test/test_network.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_test.dir/build.make CMakeFiles/network_test.dir/test/test_network.cpp.s
-.PHONY : test/test_network.cpp.s
-
-test/test_server.o: test/test_server.cpp.o
-.PHONY : test/test_server.o
-
-# target to build an object file
-test/test_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/test/test_server.cpp.o
-.PHONY : test/test_server.cpp.o
-
-test/test_server.i: test/test_server.cpp.i
-.PHONY : test/test_server.i
-
-# target to preprocess a source file
-test/test_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/test/test_server.cpp.i
-.PHONY : test/test_server.cpp.i
-
-test/test_server.s: test/test_server.cpp.s
-.PHONY : test/test_server.s
-
-# target to generate assembly for a file
-test/test_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/test/test_server.cpp.s
-.PHONY : test/test_server.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -600,55 +277,14 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... common"
+	@echo "... decorator"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... network"
-	@echo "... network_test"
-	@echo "... test_server"
-	@echo "... src/ConnectionDecorator.o"
-	@echo "... src/ConnectionDecorator.i"
-	@echo "... src/ConnectionDecorator.s"
-	@echo "... src/ConsoleLogger.o"
-	@echo "... src/ConsoleLogger.i"
-	@echo "... src/ConsoleLogger.s"
-	@echo "... src/LiveMonitor.o"
-	@echo "... src/LiveMonitor.i"
-	@echo "... src/LiveMonitor.s"
-	@echo "... src/Qos1.o"
-	@echo "... src/Qos1.i"
-	@echo "... src/Qos1.s"
-	@echo "... src/Resolver.o"
-	@echo "... src/Resolver.i"
-	@echo "... src/Resolver.s"
-	@echo "... src/TcpCallee.o"
-	@echo "... src/TcpCallee.i"
-	@echo "... src/TcpCallee.s"
-	@echo "... src/TcpCaller.o"
-	@echo "... src/TcpCaller.i"
-	@echo "... src/TcpCaller.s"
-	@echo "... src/TcpConnection.o"
-	@echo "... src/TcpConnection.i"
-	@echo "... src/TcpConnection.s"
-	@echo "... src/TcpSocket.o"
-	@echo "... src/TcpSocket.i"
-	@echo "... src/TcpSocket.s"
-	@echo "... test/decorator_test.o"
-	@echo "... test/decorator_test.i"
-	@echo "... test/decorator_test.s"
-	@echo "... test/maintest_gtest.o"
-	@echo "... test/maintest_gtest.i"
-	@echo "... test/maintest_gtest.s"
-	@echo "... test/resolver_test.o"
-	@echo "... test/resolver_test.i"
-	@echo "... test/resolver_test.s"
-	@echo "... test/test_network.o"
-	@echo "... test/test_network.i"
-	@echo "... test/test_network.s"
-	@echo "... test/test_server.o"
-	@echo "... test/test_server.i"
-	@echo "... test/test_server.s"
+	@echo "... networking"
+	@echo "... tests"
 .PHONY : help
 
 

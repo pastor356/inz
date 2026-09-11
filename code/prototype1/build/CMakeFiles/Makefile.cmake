@@ -20,6 +20,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/googletest-src/googletest/cmake/gtest.pc.in"
   "_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
   "_deps/googletest-src/googletest/cmake/internal_utils.cmake"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/CMakeLists.txt"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/CMakeLists.txt"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/CMakeLists.txt"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/CMakeLists.txt"
   "/usr/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -75,8 +79,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "_deps/googletest-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/common/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/networking/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/decorator/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/googletest-subbuild/CMakeLists.txt"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/googletest/generated/gmock.pc"
   "_deps/googletest-build/googletest/generated/gmock_main.pc"
@@ -90,9 +98,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/network.dir/DependInfo.cmake"
-  "CMakeFiles/network_test.dir/DependInfo.cmake"
-  "CMakeFiles/test_server.dir/DependInfo.cmake"
+  "lib/common/CMakeFiles/common.dir/DependInfo.cmake"
+  "lib/networking/CMakeFiles/networking.dir/DependInfo.cmake"
+  "lib/decorator/CMakeFiles/decorator.dir/DependInfo.cmake"
+  "test/CMakeFiles/tests.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

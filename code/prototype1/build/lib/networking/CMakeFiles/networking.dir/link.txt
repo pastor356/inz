@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnetworking.a CMakeFiles/networking.dir/src/Resolver.cpp.o CMakeFiles/networking.dir/src/TcpCallee.cpp.o CMakeFiles/networking.dir/src/TcpCaller.cpp.o CMakeFiles/networking.dir/src/TcpConnection.cpp.o CMakeFiles/networking.dir/src/TcpSocket.cpp.o
+/usr/bin/ranlib libnetworking.a

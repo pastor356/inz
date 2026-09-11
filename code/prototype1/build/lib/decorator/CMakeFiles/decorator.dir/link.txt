@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdecorator.a CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o CMakeFiles/decorator.dir/src/LiveMonitor.cpp.o CMakeFiles/decorator.dir/src/Qos1.cpp.o
+/usr/bin/ranlib libdecorator.a

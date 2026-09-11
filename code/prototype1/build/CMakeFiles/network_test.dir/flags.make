@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/./include -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest
 
-CXX_FLAGS = -g -O0 -std=c++17
+CXX_FLAGS = --debug -O0 -std=c++17
 
