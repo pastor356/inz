@@ -182,13 +182,30 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o: \
  /usr/include/c++/15/pstl/execution_defs.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCallee.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
- /usr/include/c++/15/limits \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
- /usr/include/c++/15/sstream /usr/include/c++/15/bits/sstream.tcc \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectorMock.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h \
+ /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algo.h \
+ /usr/include/c++/15/bits/algorithmfwd.h \
+ /usr/include/c++/15/bits/stl_heap.h \
+ /usr/include/c++/15/bits/uniform_int_dist.h \
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
+ /usr/include/c++/15/unordered_map \
+ /usr/include/c++/15/bits/unordered_map.h \
+ /usr/include/c++/15/bits/hashtable.h \
+ /usr/include/c++/15/bits/hashtable_policy.h \
+ /usr/include/c++/15/bits/enable_special_members.h \
+ /usr/include/c++/15/bits/node_handle.h \
+ /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/array \
+ /usr/include/c++/15/compare /usr/include/c++/15/utility \
+ /usr/include/c++/15/bits/stl_relops.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h \
+ /usr/include/assert.h /usr/include/c++/15/stdlib.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
- /usr/include/c++/15/stdlib.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/limits /usr/include/c++/15/locale \
  /usr/include/c++/15/bits/locale_facets_nonio.h /usr/include/c++/15/ctime \
  /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
@@ -208,22 +225,16 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o: \
  /usr/include/c++/15/bits/std_mutex.h \
  /usr/include/c++/15/bits/unique_lock.h /usr/include/c++/15/mutex \
  /usr/include/c++/15/any /usr/include/c++/15/optional \
- /usr/include/c++/15/bits/enable_special_members.h \
  /usr/include/c++/15/variant /usr/include/c++/15/bits/monostate.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
+ /usr/include/c++/15/sstream /usr/include/c++/15/bits/sstream.tcc \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
  /usr/include/c++/15/atomic \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
- /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
- /usr/include/c++/15/unordered_map \
- /usr/include/c++/15/bits/unordered_map.h \
- /usr/include/c++/15/bits/hashtable.h \
- /usr/include/c++/15/bits/hashtable_policy.h \
- /usr/include/c++/15/bits/node_handle.h \
- /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/array \
- /usr/include/c++/15/compare /usr/include/c++/15/utility \
- /usr/include/c++/15/bits/stl_relops.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/sys/wait.h /usr/include/signal.h \
  /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
@@ -254,8 +265,43 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
  /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
- /usr/include/c++/15/cassert /usr/include/assert.h \
+ /usr/include/c++/15/cassert \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h \
+ /usr/include/c++/15/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/15/bits/specfun.h \
+ /usr/include/c++/15/tr1/gamma.tcc \
+ /usr/include/c++/15/tr1/special_function_util.h \
+ /usr/include/c++/15/tr1/bessel_function.tcc \
+ /usr/include/c++/15/tr1/beta_function.tcc \
+ /usr/include/c++/15/tr1/ell_integral.tcc \
+ /usr/include/c++/15/tr1/exp_integral.tcc \
+ /usr/include/c++/15/tr1/hypergeometric.tcc \
+ /usr/include/c++/15/tr1/legendre_function.tcc \
+ /usr/include/c++/15/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/15/tr1/poly_hermite.tcc \
+ /usr/include/c++/15/tr1/poly_laguerre.tcc \
+ /usr/include/c++/15/tr1/riemann_zeta.tcc \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-actions.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h

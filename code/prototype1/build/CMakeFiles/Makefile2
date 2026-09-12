@@ -338,6 +338,7 @@ lib/decorator/CMakeFiles/decorator.dir/clean:
 # All Build rule for target.
 test/CMakeFiles/tests.dir/all: lib/networking/CMakeFiles/networking.dir/all
 test/CMakeFiles/tests.dir/all: lib/decorator/CMakeFiles/decorator.dir/all
+test/CMakeFiles/tests.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 test/CMakeFiles/tests.dir/all: lib/common/CMakeFiles/common.dir/all
@@ -348,7 +349,7 @@ test/CMakeFiles/tests.dir/all: lib/common/CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/tests.dir/rule

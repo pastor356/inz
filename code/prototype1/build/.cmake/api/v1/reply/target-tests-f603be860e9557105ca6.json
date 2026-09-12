@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -32,7 +33,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 47,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -43,6 +44,12 @@
 				"file" : 1,
 				"line" : 161,
 				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
 			}
 		]
 	},
@@ -57,6 +64,10 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks"
+				},
 				{
 					"backtrace" : 2,
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include"
@@ -78,6 +89,16 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock"
 				}
 			],
 			"language" : "CXX",
@@ -110,6 +131,10 @@
 		},
 		{
 			"backtrace" : 2,
+			"id" : "gmock::@0f7bb11d64f3678238c7"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
@@ -135,18 +160,12 @@
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "../lib/common/libcommon.a",
+				"fragment" : "-Wl,-rpath,/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../lib/networking/libnetworking.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "../lib/decorator/libdecorator.a",
+				"fragment" : "../lib/decorator/libdecorator.so",
 				"role" : "libraries"
 			},
 			{
@@ -156,12 +175,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../lib/networking/libnetworking.a",
+				"fragment" : "../lib/libgmock.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../lib/common/libcommon.a",
+				"fragment" : "../lib/networking/libnetworking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../lib/common/libcommon.so",
 				"role" : "libraries"
 			},
 			{

@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/common/libcommon.a"
+			"path" : "lib/common/libcommon.so"
 		}
 	],
 	"backtrace" : 1,
@@ -43,7 +42,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "        -O0        -Wall        -Wextra        -Wunused        -Wno-error=maybe-uninitialized        -Wcast-align        -Winvalid-pch        -Wmissing-include-dirs        -g -std=c++17"
+					"fragment" : "        -O0        -Wall        -Wextra        -Wunused        -Wno-error=maybe-uninitialized        -Wcast-align        -Winvalid-pch        -Wmissing-include-dirs        -g -std=c++17 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "common_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -69,8 +74,19 @@
 		}
 	],
 	"id" : "common::@9fc5b58572d5f236116a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "common",
-	"nameOnDisk" : "libcommon.a",
+	"nameOnDisk" : "libcommon.so",
 	"paths" : 
 	{
 		"build" : "lib/common",
@@ -119,5 +135,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

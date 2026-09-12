@@ -243,38 +243,3 @@ std::string TcpSocket::sock_ntop() const {
 	}
 }
 
-
-std::unique_ptr<IConnection> TcpSocket::connect(addrInfo && resolvedAddress, 
-													Connector& connector) const  {
-	struct addrinfo *iter = resolvedAddress.get();
-	int err;
-
-	do {
-		if((err = connector(this->sockFd, iter->ai_addr, iter->ai_addrlen)) < 0) {
-			logError << std::string{"connector() failed: "} + strerror(errno);
-			continue;
-		} else if(err == 0) break; // success
-		
-	} while((iter = iter->ai_next) != NULL);
-
-	if(!iter) {
-		logError << std::string{"connect() failed: "} + strerror(errno);
-		struct sockaddr_storage failed;
-		memset(&failed, 0, sizeof(failed));
-		return(std::make_unique<TcpCallee>(-1, failed));
-	}
-
-	struct sockaddr_storage a;
-	std::memset(&a, 0, sizeof(struct sockaddr_storage));
-
-	std::memcpy(&a, iter->ai_addr, iter->ai_addrlen);
-
-	return(std::make_unique<TcpCallee>(this->sockFd, a));
-}
-
-
-
-
-int Connector::operator() (int sockfd, struct sockaddr* addr, socklen_t addrlen) const {
-	return(::connect(sockfd, addr, addrlen));
-}

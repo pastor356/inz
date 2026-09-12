@@ -5,12 +5,6 @@
 #include "Resolver.hpp"
 #include "ConsoleLogger.hpp"
 
-struct Connector {
-public:
-	// connect operation
-	int operator() (int sockfd, struct sockaddr* addr, socklen_t addrlen) const; 
-};
-
 
 class TcpSocket: public ISocket {
 	int sockFd;
@@ -30,7 +24,6 @@ public:
 	// connect(const struct sockaddr* addr) overloading
 	std::unique_ptr<IConnection> connect(struct sockaddr_storage addr) const override;
 	std::unique_ptr<IConnection> connect(addrInfo && resolvedAddress) const override;
-	std::unique_ptr<IConnection> connect(addrInfo && resolvedAddress, Connector& connector) const;
 
 	void bind() const override;
 	void listen(int backlog) const override;

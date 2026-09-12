@@ -880,6 +880,43 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
   /usr/local/include/gtest/internal/gtest-string.h \
   /usr/local/include/gtest/internal/gtest-type-util.h
 
+lib/decorator/libdecorator.so: lib/common/libcommon.so \
+  lib/networking/libnetworking.so \
+  /lib64/ld-linux-x86-64.so.2 \
+  /lib64/libc.so.6 \
+  /lib64/libgcc_s.so.1 \
+  /lib64/libm.so.6 \
+  /lib64/libmvec.so.1 \
+  /usr/lib64/crti.o \
+  /usr/lib64/crtn.o \
+  /usr/lib64/libc.so \
+  /usr/lib64/libm.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o \
+  /usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o \
+  /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a \
+  /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
+  /usr/lib64/libc_nonshared.a \
+  lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o \
+  lib/decorator/CMakeFiles/decorator.dir/src/LiveMonitor.cpp.o \
+  lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o
+
+
+lib/decorator/CMakeFiles/decorator.dir/src/LiveMonitor.cpp.o:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a:
+
+/usr/lib64/libm.so:
+
+/lib64/libmvec.so.1:
+
+/lib64/ld-linux-x86-64.so.2:
+
+lib/networking/libnetworking.so:
+
+lib/common/libcommon.so:
 
 /usr/local/include/gtest/internal/gtest-type-util.h:
 
@@ -922,6 +959,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h:
 
 /usr/include/c++/15/variant:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o:
 
 /usr/include/c++/15/utility:
 
@@ -1027,6 +1066,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
+/lib64/libm.so.6:
+
 /usr/include/c++/15/bits/hash_bytes.h:
 
 /usr/include/c++/15/bits/locale_classes.tcc:
@@ -1038,6 +1079,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 /usr/include/bits/in.h:
 
 /usr/include/arpa/inet.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so:
 
 /usr/include/c++/15/compare:
 
@@ -1114,6 +1157,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 /usr/include/c++/15/bits/basic_string.tcc:
 
 /usr/include/c++/15/bits/streambuf.tcc:
+
+lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -1223,13 +1268,19 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 
 /usr/include/c++/15/bits/invoke.h:
 
+/lib64/libgcc_s.so.1:
+
 /usr/include/bits/netdb.h:
 
 /usr/include/bits/types.h:
 
+lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
+
 /usr/include/c++/15/bits/streambuf_iterator.h:
 
 /usr/include/bits/waitflags.h:
+
+/usr/lib64/libc.so:
 
 /usr/include/ctype.h:
 
@@ -1322,6 +1373,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 /usr/include/c++/15/bits/locale_facets.h:
 
 /usr/include/c++/15/bits/shared_ptr.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o:
 
 /usr/include/c++/15/bits/erase_if.h:
 
@@ -1455,6 +1508,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h:
 
+/usr/lib64/libc_nonshared.a:
+
 /usr/include/c++/15/ext/numeric_traits.h:
 
 /usr/include/c++/15/bits/hashtable_policy.h:
@@ -1569,6 +1624,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 
 /usr/include/sched.h:
 
+/usr/lib64/crti.o:
+
 /usr/include/bits/wordsize.h:
 
 /usr/include/stdio.h:
@@ -1601,9 +1658,13 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
 
 /usr/include/wchar.h:
 
+/usr/lib64/crtn.o:
+
 /usr/include/c++/15/bits/ios_base.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h:
+
+/lib64/libc.so.6:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp:
 

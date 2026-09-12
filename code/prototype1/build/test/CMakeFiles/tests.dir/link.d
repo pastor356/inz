@@ -6,12 +6,11 @@ tests: \
   CMakeFiles/tests.dir/utest/decorator_test.cpp.o \
   CMakeFiles/tests.dir/utest/resolver_test.cpp.o \
   CMakeFiles/tests.dir/utest/test_network.cpp.o \
-  ../lib/common/libcommon.a \
-  ../lib/networking/libnetworking.a \
-  ../lib/decorator/libdecorator.a \
+  ../lib/decorator/libdecorator.so \
   ../lib/libgtest_main.a \
-  ../lib/networking/libnetworking.a \
-  ../lib/common/libcommon.a \
+  ../lib/libgmock.a \
+  ../lib/networking/libnetworking.so \
+  ../lib/common/libcommon.so \
   ../lib/libgtest.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -55,17 +54,15 @@ CMakeFiles/tests.dir/utest/resolver_test.cpp.o:
 
 CMakeFiles/tests.dir/utest/test_network.cpp.o:
 
-../lib/common/libcommon.a:
-
-../lib/networking/libnetworking.a:
-
-../lib/decorator/libdecorator.a:
+../lib/decorator/libdecorator.so:
 
 ../lib/libgtest_main.a:
 
-../lib/networking/libnetworking.a:
+../lib/libgmock.a:
 
-../lib/common/libcommon.a:
+../lib/networking/libnetworking.so:
+
+../lib/common/libcommon.so:
 
 ../lib/libgtest.a:
 

@@ -44,9 +44,11 @@ list(TRANSFORM UTESTSOURCE PREPEND ${UTESTDIR})
 list(TRANSFORM MOCKHEADERS PREPEND ${MOCKSDIR})
 
 add_executable(${PROJECT_NAME} ${UTESTDIR}maintest_gtest.cpp ${UTESTSOURCE} ${MOCKHEADERS})
+target_include_directories(${PROJECT_NAME} PUBLIC ${MOCKSDIR})
 target_link_libraries(${PROJECT_NAME}
 	common
 	networking
 	decorator
 	GTest::gtest_main
+	GTest::gmock
 )

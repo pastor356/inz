@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/decorator/libdecorator.a"
+			"path" : "lib/decorator/libdecorator.so"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +16,8 @@
 		],
 		"files" : 
 		[
-			"lib/decorator/CMakeLists.txt"
+			"lib/decorator/CMakeLists.txt",
+			"lib/networking/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -37,6 +37,15 @@
 				"parent" : 0
 			},
 			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 43,
@@ -50,13 +59,19 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "    -O0    -Wall    -Wextra    -Wunused    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs\t-g -std=c++17"
+					"fragment" : "    -O0    -Wall    -Wextra    -Wunused    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs\t-g -std=c++17 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "decorator_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 5,
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include"
 				},
 				{
@@ -97,8 +112,33 @@
 		}
 	],
 	"id" : "decorator::@f0f1d9882c4718bc7120",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../networking/libnetworking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../common/libcommon.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "decorator",
-	"nameOnDisk" : "libdecorator.a",
+	"nameOnDisk" : "libdecorator.so",
 	"paths" : 
 	{
 		"build" : "lib/decorator",
@@ -167,5 +207,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

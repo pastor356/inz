@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/common.dir/link.d"
   "CMakeFiles/common.dir/src/ConsoleLogger.cpp.o"
   "CMakeFiles/common.dir/src/ConsoleLogger.cpp.o.d"
-  "libcommon.a"
   "libcommon.pdb"
+  "libcommon.so"
 )
 
 # Per-language clean rules from dependency scanning.

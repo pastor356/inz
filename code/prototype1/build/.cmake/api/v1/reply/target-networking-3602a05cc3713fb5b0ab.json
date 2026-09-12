@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/networking/libnetworking.a"
+			"path" : "lib/networking/libnetworking.so"
 		}
 	],
 	"backtrace" : 1,
@@ -50,7 +49,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g -std=c++17"
+					"fragment" : "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g -std=c++17 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "networking_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -91,8 +96,28 @@
 		}
 	],
 	"id" : "networking::@f3c59c8fb4d405477e2b",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../common/libcommon.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "networking",
-	"nameOnDisk" : "libnetworking.a",
+	"nameOnDisk" : "libnetworking.so",
 	"paths" : 
 	{
 		"build" : "lib/networking",
@@ -193,5 +218,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

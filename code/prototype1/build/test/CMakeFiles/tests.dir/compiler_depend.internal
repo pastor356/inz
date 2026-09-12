@@ -1131,6 +1131,21 @@ test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o
 
 test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/test_network.cpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-actions.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h
@@ -1162,6 +1177,7 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectorMock.hpp
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -1190,13 +1206,26 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/bits/errno.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
+ /usr/include/bits/flt-eval-method.h
+ /usr/include/bits/fp-fast.h
+ /usr/include/bits/fp-logb.h
  /usr/include/bits/getopt_core.h
  /usr/include/bits/getopt_posix.h
  /usr/include/bits/in.h
+ /usr/include/bits/iscanonical.h
  /usr/include/bits/libc-header-start.h
+ /usr/include/bits/libm-simd-decl-stubs.h
+ /usr/include/bits/local_lim.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/math-vector.h
+ /usr/include/bits/mathcalls-helper-functions.h
+ /usr/include/bits/mathcalls-macros.h
+ /usr/include/bits/mathcalls-narrow.h
+ /usr/include/bits/mathcalls.h
  /usr/include/bits/netdb.h
+ /usr/include/bits/posix1_lim.h
+ /usr/include/bits/posix2_lim.h
  /usr/include/bits/posix_opt.h
  /usr/include/bits/pthread_stack_min-dynamic.h
  /usr/include/bits/pthreadtypes-arch.h
@@ -1275,18 +1304,22 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/bits/types/wint_t.h
  /usr/include/bits/typesizes.h
  /usr/include/bits/uintn-identity.h
+ /usr/include/bits/uio_lim.h
  /usr/include/bits/unistd_ext.h
  /usr/include/bits/waitflags.h
  /usr/include/bits/waitstatus.h
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/bits/xopen_lim.h
+ /usr/include/c++/15/algorithm
  /usr/include/c++/15/any
  /usr/include/c++/15/array
  /usr/include/c++/15/atomic
  /usr/include/c++/15/backward/auto_ptr.h
  /usr/include/c++/15/backward/binders.h
  /usr/include/c++/15/bit
+ /usr/include/c++/15/bits/algorithmfwd.h
  /usr/include/c++/15/bits/align.h
  /usr/include/c++/15/bits/alloc_traits.h
  /usr/include/c++/15/bits/allocated_ptr.h
@@ -1348,15 +1381,18 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/c++/15/bits/shared_ptr.h
  /usr/include/c++/15/bits/shared_ptr_atomic.h
  /usr/include/c++/15/bits/shared_ptr_base.h
+ /usr/include/c++/15/bits/specfun.h
  /usr/include/c++/15/bits/sstream.tcc
  /usr/include/c++/15/bits/std_abs.h
  /usr/include/c++/15/bits/std_function.h
  /usr/include/c++/15/bits/std_mutex.h
+ /usr/include/c++/15/bits/stl_algo.h
  /usr/include/c++/15/bits/stl_algobase.h
  /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
  /usr/include/c++/15/bits/stl_deque.h
  /usr/include/c++/15/bits/stl_function.h
+ /usr/include/c++/15/bits/stl_heap.h
  /usr/include/c++/15/bits/stl_iterator.h
  /usr/include/c++/15/bits/stl_iterator_base_funcs.h
  /usr/include/c++/15/bits/stl_iterator_base_types.h
@@ -1376,6 +1412,7 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/c++/15/bits/streambuf_iterator.h
  /usr/include/c++/15/bits/string_view.tcc
  /usr/include/c++/15/bits/stringfwd.h
+ /usr/include/c++/15/bits/uniform_int_dist.h
  /usr/include/c++/15/bits/unique_lock.h
  /usr/include/c++/15/bits/unique_ptr.h
  /usr/include/c++/15/bits/unordered_map.h
@@ -1388,6 +1425,7 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/c++/15/cctype
  /usr/include/c++/15/cerrno
  /usr/include/c++/15/clocale
+ /usr/include/c++/15/cmath
  /usr/include/c++/15/compare
  /usr/include/c++/15/concepts
  /usr/include/c++/15/condition_variable
@@ -1428,6 +1466,7 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/c++/15/optional
  /usr/include/c++/15/ostream
  /usr/include/c++/15/pstl/execution_defs.h
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h
  /usr/include/c++/15/pstl/glue_memory_defs.h
  /usr/include/c++/15/pstl/pstl_config.h
  /usr/include/c++/15/ratio
@@ -1439,6 +1478,18 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/c++/15/string
  /usr/include/c++/15/string_view
  /usr/include/c++/15/system_error
+ /usr/include/c++/15/tr1/bessel_function.tcc
+ /usr/include/c++/15/tr1/beta_function.tcc
+ /usr/include/c++/15/tr1/ell_integral.tcc
+ /usr/include/c++/15/tr1/exp_integral.tcc
+ /usr/include/c++/15/tr1/gamma.tcc
+ /usr/include/c++/15/tr1/hypergeometric.tcc
+ /usr/include/c++/15/tr1/legendre_function.tcc
+ /usr/include/c++/15/tr1/modified_bessel_func.tcc
+ /usr/include/c++/15/tr1/poly_hermite.tcc
+ /usr/include/c++/15/tr1/poly_laguerre.tcc
+ /usr/include/c++/15/tr1/riemann_zeta.tcc
+ /usr/include/c++/15/tr1/special_function_util.h
  /usr/include/c++/15/tuple
  /usr/include/c++/15/type_traits
  /usr/include/c++/15/typeinfo
@@ -1468,14 +1519,17 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
  /usr/include/libintl.h
+ /usr/include/limits.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
+ /usr/include/linux/limits.h
  /usr/include/linux/posix_types.h
  /usr/include/linux/sched/types.h
  /usr/include/linux/stat.h
  /usr/include/linux/stddef.h
  /usr/include/linux/types.h
  /usr/include/locale.h
+ /usr/include/math.h
  /usr/include/netdb.h
  /usr/include/netinet/in.h
  /usr/include/pthread.h
@@ -1502,16 +1556,19 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o
  /usr/include/wchar.h
  /usr/include/wctype.h
  /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/limits.h
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/syslimits.h
 
 test/tests
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common/libcommon.a
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator/libdecorator.a
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common/libcommon.so
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator/libdecorator.so
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgmock.a
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgtest.a
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgtest_main.a
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking/libnetworking.a
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking/libnetworking.so
  /lib64/ld-linux-x86-64.so.2
  /lib64/libc.so.6
  /lib64/libgcc_s.so.1

@@ -38,6 +38,6 @@ set(SOURCES
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})
 list(TRANSFORM SOURCES PREPEND ${SOURCEDIR})
 
-add_library(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+add_library(${PROJECT_NAME} SHARED ${SOURCES} ${HEADERS})
 target_link_libraries(${PROJECT_NAME} PUBLIC networking)
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDEDIR})

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/networking.dir/link.d"
   "CMakeFiles/networking.dir/src/Resolver.cpp.o"
   "CMakeFiles/networking.dir/src/Resolver.cpp.o.d"
   "CMakeFiles/networking.dir/src/TcpCallee.cpp.o"
@@ -9,8 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/networking.dir/src/TcpConnection.cpp.o.d"
   "CMakeFiles/networking.dir/src/TcpSocket.cpp.o"
   "CMakeFiles/networking.dir/src/TcpSocket.cpp.o.d"
-  "libnetworking.a"
   "libnetworking.pdb"
+  "libnetworking.so"
 )
 
 # Per-language clean rules from dependency scanning.

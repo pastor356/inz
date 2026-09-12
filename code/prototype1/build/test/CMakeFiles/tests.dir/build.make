@@ -147,12 +147,11 @@ test/tests: test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o
 test/tests: test/CMakeFiles/tests.dir/utest/test_network.cpp.o
 test/tests: test/CMakeFiles/tests.dir/build.make
 test/tests: test/CMakeFiles/tests.dir/compiler_depend.ts
-test/tests: lib/common/libcommon.a
-test/tests: lib/networking/libnetworking.a
-test/tests: lib/decorator/libdecorator.a
+test/tests: lib/decorator/libdecorator.so
 test/tests: lib/libgtest_main.a
-test/tests: lib/networking/libnetworking.a
-test/tests: lib/common/libcommon.a
+test/tests: lib/libgmock.a
+test/tests: lib/networking/libnetworking.so
+test/tests: lib/common/libcommon.so
 test/tests: lib/libgtest.a
 test/tests: test/CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests"

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include -isystem /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock
 
 CXX_FLAGS =     -O0    -Wall    -Wextra    -Wunused    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs	-g -std=c++17
 

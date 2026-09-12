@@ -1268,6 +1268,50 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
 
+lib/networking/libnetworking.so: lib/common/libcommon.so \
+  /lib64/ld-linux-x86-64.so.2 \
+  /lib64/libc.so.6 \
+  /lib64/libgcc_s.so.1 \
+  /lib64/libm.so.6 \
+  /lib64/libmvec.so.1 \
+  /usr/lib64/crti.o \
+  /usr/lib64/crtn.o \
+  /usr/lib64/libc.so \
+  /usr/lib64/libm.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o \
+  /usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o \
+  /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a \
+  /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
+  /usr/lib64/libc_nonshared.a \
+  lib/networking/CMakeFiles/networking.dir/src/Resolver.cpp.o \
+  lib/networking/CMakeFiles/networking.dir/src/TcpCallee.cpp.o \
+  lib/networking/CMakeFiles/networking.dir/src/TcpCaller.cpp.o \
+  lib/networking/CMakeFiles/networking.dir/src/TcpConnection.cpp.o \
+  lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o
+
+
+lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o:
+
+lib/networking/CMakeFiles/networking.dir/src/TcpCallee.cpp.o:
+
+lib/networking/CMakeFiles/networking.dir/src/Resolver.cpp.o:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o:
+
+/usr/lib64/libm.so:
+
+/lib64/libmvec.so.1:
+
+/lib64/libc.so.6:
+
+/lib64/ld-linux-x86-64.so.2:
+
+lib/common/libcommon.so:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp:
 
@@ -1301,9 +1345,13 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 
 /usr/include/bits/waitflags.h:
 
+/usr/lib64/libc.so:
+
 /usr/include/ctype.h:
 
 /usr/include/c++/15/bits/locale_classes.tcc:
+
+/lib64/libm.so.6:
 
 /usr/include/c++/15/bits/hash_bytes.h:
 
@@ -1325,6 +1373,8 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 
 /usr/include/arpa/inet.h:
 
+lib/networking/CMakeFiles/networking.dir/src/TcpCaller.cpp.o:
+
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
 /usr/include/bits/types/struct_sched_param.h:
@@ -1332,6 +1382,8 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 /usr/include/c++/15/bits/basic_string.h:
 
 /usr/include/c++/15/bits/basic_ios.tcc:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so:
 
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
@@ -1370,6 +1422,8 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 /usr/include/bits/types/sigevent_t.h:
 
 /usr/include/bits/types/mbstate_t.h:
+
+/usr/lib64/crtn.o:
 
 /usr/include/c++/15/bits/ios_base.h:
 
@@ -1471,6 +1525,8 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h:
 
+/lib64/libgcc_s.so.1:
+
 /usr/include/bits/netdb.h:
 
 /usr/include/bits/thread-shared-types.h:
@@ -1488,6 +1544,8 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 /usr/include/asm/posix_types_64.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp:
+
+/usr/lib64/crti.o:
 
 /usr/include/bits/wordsize.h:
 
@@ -1593,11 +1651,15 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 
 /usr/include/c++/15/bits/ostream.tcc:
 
+lib/networking/CMakeFiles/networking.dir/src/TcpConnection.cpp.o:
+
 /usr/include/c++/15/bits/postypes.h:
 
 /usr/include/c++/15/bits/range_access.h:
 
 /usr/include/c++/15/bits/shared_ptr.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o:
 
 /usr/include/c++/15/bits/stringfwd.h:
 
@@ -1686,6 +1748,8 @@ lib/networking/CMakeFiles/networking.dir/src/TcpSocket.cpp.o: /home/pastor/Publi
 /usr/include/c++/15/bits/localefwd.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h:
+
+/usr/lib64/libc_nonshared.a:
 
 /usr/include/c++/15/ext/numeric_traits.h:
 
