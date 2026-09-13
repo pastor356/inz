@@ -1,7 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/link.d"
+  "CMakeFiles/tests.dir/utest/QosMockTest.cpp.o"
+  "CMakeFiles/tests.dir/utest/QosMockTest.cpp.o.d"
   "CMakeFiles/tests.dir/utest/decorator_test.cpp.o"
   "CMakeFiles/tests.dir/utest/decorator_test.cpp.o.d"
+  "CMakeFiles/tests.dir/utest/first_mock.cpp.o"
+  "CMakeFiles/tests.dir/utest/first_mock.cpp.o.d"
   "CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o"
   "CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o.d"
   "CMakeFiles/tests.dir/utest/resolver_test.cpp.o"

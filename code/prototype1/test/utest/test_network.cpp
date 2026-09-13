@@ -1,7 +1,7 @@
 #include "TcpConnection.hpp"
 #include "TcpSocket.hpp"
 #include "ConsoleLogger.hpp"
-#include "ConnectorMock.hpp"
+#include "SocketMock.hpp"
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
@@ -56,31 +56,6 @@ TEST(NetworkTest, PARENT_CHILD_EXCHANGE) {
 			logError << "FAILURE";
 		}
 	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class TcpSocketTest: public Test {
-public:
-	StrictMock<SocketMock> socket;
-};
-
-
-TEST_F(TcpSocketTest, MockingTest) {
-	EXPECT_CALL(socket, accept()).WillOnce(Return(ByMove(std::unique_ptr<IConnection>{})));
-	socket.accept();
 }
 
 

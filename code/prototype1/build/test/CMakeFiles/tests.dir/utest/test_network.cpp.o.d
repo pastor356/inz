@@ -182,7 +182,7 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o: \
  /usr/include/c++/15/pstl/execution_defs.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCallee.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectorMock.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/SocketMock.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h \
  /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algo.h \

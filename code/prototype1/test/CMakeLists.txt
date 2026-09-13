@@ -34,10 +34,14 @@ set(UTESTSOURCE
 	maintest_gtest.cpp
 	resolver_test.cpp
 	test_network.cpp
+	first_mock.cpp
+	QosMockTest.cpp 
 )
 
 set(MOCKHEADERS
-	ConnectorMock.hpp
+	SocketMock.hpp
+	ConnectionMock.hpp
+	QosMock.hpp
 )
 
 list(TRANSFORM UTESTSOURCE PREPEND ${UTESTDIR})

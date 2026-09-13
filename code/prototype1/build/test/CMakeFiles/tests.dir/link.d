@@ -6,6 +6,8 @@ tests: \
   CMakeFiles/tests.dir/utest/decorator_test.cpp.o \
   CMakeFiles/tests.dir/utest/resolver_test.cpp.o \
   CMakeFiles/tests.dir/utest/test_network.cpp.o \
+  CMakeFiles/tests.dir/utest/first_mock.cpp.o \
+  CMakeFiles/tests.dir/utest/QosMockTest.cpp.o \
   ../lib/decorator/libdecorator.so \
   ../lib/libgtest_main.a \
   ../lib/libgmock.a \
@@ -53,6 +55,10 @@ CMakeFiles/tests.dir/utest/decorator_test.cpp.o:
 CMakeFiles/tests.dir/utest/resolver_test.cpp.o:
 
 CMakeFiles/tests.dir/utest/test_network.cpp.o:
+
+CMakeFiles/tests.dir/utest/first_mock.cpp.o:
+
+CMakeFiles/tests.dir/utest/QosMockTest.cpp.o:
 
 ../lib/decorator/libdecorator.so:
 

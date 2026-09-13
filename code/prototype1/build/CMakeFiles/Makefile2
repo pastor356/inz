@@ -344,12 +344,12 @@ test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtes
 test/CMakeFiles/tests.dir/all: lib/common/CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=21,22,23,24,25 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=21,22,23,24,25,26,27 "Built target tests"
 .PHONY : test/CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/tests.dir/rule
@@ -361,7 +361,7 @@ tests: test/CMakeFiles/tests.dir/rule
 # codegen rule for target.
 test/CMakeFiles/tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=21,22,23,24,25 "Finished codegen for target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=21,22,23,24,25,26,27 "Finished codegen for target tests"
 .PHONY : test/CMakeFiles/tests.dir/codegen
 
 # clean rule for target.

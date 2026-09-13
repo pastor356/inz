@@ -1,3 +1,4 @@
+#pragma once
 #include <gmock/gmock.h>
 #include "TcpConnection.hpp"
 #include "TcpSocket.hpp"
@@ -13,3 +14,6 @@ public:
 	MOCK_METHOD(void, listen, (int), (const, override));
 	MOCK_METHOD(int, getDescriptor, (), (const, override));
 };
+
+
+

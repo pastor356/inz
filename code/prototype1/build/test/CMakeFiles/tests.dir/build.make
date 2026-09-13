@@ -131,12 +131,42 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/utest/test_network.cpp.s"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/test_network.cpp -o CMakeFiles/tests.dir/utest/test_network.cpp.s
 
+test/CMakeFiles/tests.dir/utest/first_mock.cpp.o: test/CMakeFiles/tests.dir/flags.make
+test/CMakeFiles/tests.dir/utest/first_mock.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/first_mock.cpp
+test/CMakeFiles/tests.dir/utest/first_mock.cpp.o: test/CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/tests.dir/utest/first_mock.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/tests.dir/utest/first_mock.cpp.o -MF CMakeFiles/tests.dir/utest/first_mock.cpp.o.d -o CMakeFiles/tests.dir/utest/first_mock.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/first_mock.cpp
+
+test/CMakeFiles/tests.dir/utest/first_mock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/utest/first_mock.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/first_mock.cpp > CMakeFiles/tests.dir/utest/first_mock.cpp.i
+
+test/CMakeFiles/tests.dir/utest/first_mock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/utest/first_mock.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/first_mock.cpp -o CMakeFiles/tests.dir/utest/first_mock.cpp.s
+
+test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: test/CMakeFiles/tests.dir/flags.make
+test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/QosMockTest.cpp
+test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: test/CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o -MF CMakeFiles/tests.dir/utest/QosMockTest.cpp.o.d -o CMakeFiles/tests.dir/utest/QosMockTest.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/QosMockTest.cpp
+
+test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/utest/QosMockTest.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/QosMockTest.cpp > CMakeFiles/tests.dir/utest/QosMockTest.cpp.i
+
+test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/utest/QosMockTest.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/QosMockTest.cpp -o CMakeFiles/tests.dir/utest/QosMockTest.cpp.s
+
 # Object files for target tests
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o" \
 "CMakeFiles/tests.dir/utest/decorator_test.cpp.o" \
 "CMakeFiles/tests.dir/utest/resolver_test.cpp.o" \
-"CMakeFiles/tests.dir/utest/test_network.cpp.o"
+"CMakeFiles/tests.dir/utest/test_network.cpp.o" \
+"CMakeFiles/tests.dir/utest/first_mock.cpp.o" \
+"CMakeFiles/tests.dir/utest/QosMockTest.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
@@ -145,6 +175,8 @@ test/tests: test/CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o
 test/tests: test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o
 test/tests: test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o
 test/tests: test/CMakeFiles/tests.dir/utest/test_network.cpp.o
+test/tests: test/CMakeFiles/tests.dir/utest/first_mock.cpp.o
+test/tests: test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o
 test/tests: test/CMakeFiles/tests.dir/build.make
 test/tests: test/CMakeFiles/tests.dir/compiler_depend.ts
 test/tests: lib/decorator/libdecorator.so
@@ -154,7 +186,7 @@ test/tests: lib/networking/libnetworking.so
 test/tests: lib/common/libcommon.so
 test/tests: lib/libgtest.a
 test/tests: test/CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable tests"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

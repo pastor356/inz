@@ -178,6 +178,30 @@ tests/fast:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+utest/QosMockTest.o: utest/QosMockTest.cpp.o
+.PHONY : utest/QosMockTest.o
+
+# target to build an object file
+utest/QosMockTest.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o
+.PHONY : utest/QosMockTest.cpp.o
+
+utest/QosMockTest.i: utest/QosMockTest.cpp.i
+.PHONY : utest/QosMockTest.i
+
+# target to preprocess a source file
+utest/QosMockTest.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.i
+.PHONY : utest/QosMockTest.cpp.i
+
+utest/QosMockTest.s: utest/QosMockTest.cpp.s
+.PHONY : utest/QosMockTest.s
+
+# target to generate assembly for a file
+utest/QosMockTest.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.s
+.PHONY : utest/QosMockTest.cpp.s
+
 utest/decorator_test.o: utest/decorator_test.cpp.o
 .PHONY : utest/decorator_test.o
 
@@ -201,6 +225,30 @@ utest/decorator_test.s: utest/decorator_test.cpp.s
 utest/decorator_test.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/decorator_test.cpp.s
 .PHONY : utest/decorator_test.cpp.s
+
+utest/first_mock.o: utest/first_mock.cpp.o
+.PHONY : utest/first_mock.o
+
+# target to build an object file
+utest/first_mock.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/first_mock.cpp.o
+.PHONY : utest/first_mock.cpp.o
+
+utest/first_mock.i: utest/first_mock.cpp.i
+.PHONY : utest/first_mock.i
+
+# target to preprocess a source file
+utest/first_mock.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/first_mock.cpp.i
+.PHONY : utest/first_mock.cpp.i
+
+utest/first_mock.s: utest/first_mock.cpp.s
+.PHONY : utest/first_mock.s
+
+# target to generate assembly for a file
+utest/first_mock.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/first_mock.cpp.s
+.PHONY : utest/first_mock.cpp.s
 
 utest/maintest_gtest.o: utest/maintest_gtest.cpp.o
 .PHONY : utest/maintest_gtest.o
@@ -287,9 +335,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... tests"
+	@echo "... utest/QosMockTest.o"
+	@echo "... utest/QosMockTest.i"
+	@echo "... utest/QosMockTest.s"
 	@echo "... utest/decorator_test.o"
 	@echo "... utest/decorator_test.i"
 	@echo "... utest/decorator_test.s"
+	@echo "... utest/first_mock.o"
+	@echo "... utest/first_mock.i"
+	@echo "... utest/first_mock.s"
 	@echo "... utest/maintest_gtest.o"
 	@echo "... utest/maintest_gtest.i"
 	@echo "... utest/maintest_gtest.s"
