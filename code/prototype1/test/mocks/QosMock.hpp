@@ -27,7 +27,9 @@ public:
 	void insertPending(uint16_t id, PendingMessage pending) {
 		this->pendingMessages[id] = std::move(pending);
 	}
+
+	std::shared_ptr<PendingMessage> parse(Packet const& packet) {
+		return(parseMsg(packet));
+	}
+
 };
-
-
-

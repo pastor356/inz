@@ -63,12 +63,16 @@ IConnection::Status Qos1::recv(Packet& packet, int flag) const {
 std::shared_ptr<IQualityStrategy::PendingMessage> Qos1::parseMsg(Packet const& packet) const {
 	auto retMsg = std::make_shared<PendingMessage>();
 
-	size_t packHeaderSize = packet.header.size() - 1;
+	size_t packHeaderSize = packet.header.size();
+	uint16_t msb, lsb;
 
 	if(packet.header.size() >= QOSHEADER_LEN) {
-		retMsg->msgType = static_cast<MsgType>(packet.header[packHeaderSize]);
-		retMsg->packetId = (packet.header[packHeaderSize - 1] & 0xff) |
-			((packet.header[packHeaderSize - 2] << 0x8) & 0xff);
+		retMsg->msgType = static_cast<MsgType>(packet.header[packHeaderSize - 3]);
+
+		msb = static_cast<uint8_t>(packet.header[packHeaderSize - 1]);
+		lsb = static_cast<uint8_t>(packet.header[packHeaderSize - 2]);
+
+		retMsg->packetId = (msb << 8) | lsb;
 		
 		retMsg->state = (retMsg->msgType == MsgType::DATA)?
 			QosState::WAIT_PUBACK : QosState::FINISHED;
@@ -79,7 +83,7 @@ std::shared_ptr<IQualityStrategy::PendingMessage> Qos1::parseMsg(Packet const& p
 
 		return(retMsg);
 	} else {
-		logError << "packet.header.size() >= QOSHEADER_LEN";
+		logError << "packet.header.size() < QOSHEADER_LEN";
 		return(nullptr);
 	}
 
