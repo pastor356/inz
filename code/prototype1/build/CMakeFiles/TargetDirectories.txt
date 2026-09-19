@@ -25,6 +25,13 @@
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator/CMakeFiles/install.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator/CMakeFiles/install/local.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator/CMakeFiles/install/strip.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/nodesession.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/edit_cache.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/rebuild_cache.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/list_install_components.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/install.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/install/local.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/install/strip.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test/CMakeFiles/tests.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test/CMakeFiles/edit_cache.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test/CMakeFiles/rebuild_cache.dir

@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "8"
+			"value" : "9"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -2100,6 +2100,54 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking"
+		},
+		{
+			"name" : "nodesession_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession"
+		},
+		{
+			"name" : "nodesession_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "nodesession_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;networking;general;decorator;general;common;"
+		},
+		{
+			"name" : "nodesession_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession"
 		},
 		{
 			"name" : "prototype1_BINARY_DIR",

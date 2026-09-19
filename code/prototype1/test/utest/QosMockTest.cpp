@@ -57,7 +57,6 @@ TEST(QosMockTest, PendingMsgTest_OnSend) {
 };
 
 
-
 /*
  * checking if after calling recv(packet) with puback
  * pendingMessages map is empty
@@ -104,6 +103,3 @@ TEST(QosMockTest, PendingMsgTest_Puback) {
 	ASSERT_EQ(0u, qos.pending().size()); // container should be empty after 
 										 // getting puback
 }
-	
-
-

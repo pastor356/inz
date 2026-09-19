@@ -242,4 +242,3 @@ std::string TcpSocket::sock_ntop() const {
 		}
 	}
 }
-

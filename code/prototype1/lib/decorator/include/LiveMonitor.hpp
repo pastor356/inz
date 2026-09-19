@@ -1,5 +1,7 @@
 #pragma once
 #include <chrono>
+#include <functional>
+
 #include "ConnectionDecorator.hpp"
 #include "ConsoleLogger.hpp"
 
@@ -14,15 +16,15 @@ class LiveMonitor: public ConnectionDecorator {
 protected:
 	std::chrono::milliseconds timeout;
 	mutable std::chrono::steady_clock::time_point lastActivity;
+	std::function<void()> timeoutCallback;
 
 	void resetTimer() const;
 	bool isKeepAlive(Packet& packet) const;
 
 public:
 	using ConnectionDecorator::ConnectionDecorator;
-
+	
 	bool isSessionExpired() const;
 	IConnection::Status recv(std::string& msg, int flag = 0) const override;
 	IConnection::Status recv(Packet& packet, int flag = 0) const override;
 };
-

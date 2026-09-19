@@ -36,5 +36,6 @@ list(TRANSFORM SOURCES PREPEND ${SRCDIR})
 add_subdirectory(lib/common)
 add_subdirectory(lib/networking)
 add_subdirectory(lib/decorator)
+add_subdirectory(lib/nodesession)
 add_subdirectory(test)
 

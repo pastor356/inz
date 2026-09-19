@@ -1,4 +1,3 @@
-#include "Resolver.hpp"
 #include "TcpConnection.hpp"
 #include "Resolver.hpp"
 #include "IQualityStrategy.hpp"
@@ -15,7 +14,8 @@
 class QosTest: public ::testing::Test {
 public:
 	QosTest() { 
-		Resolver resolver; SocketParams params{AF_INET, SOCK_STREAM, SockRole::CLI, false};
+		Resolver resolver; 
+		SocketParams params{AF_INET, SOCK_STREAM, SockRole::CLI, false};
 
 		this->socket = std::make_unique<TcpSocket>(
 				resolver.resolve("localhost", "4244", params));
@@ -30,6 +30,7 @@ public:
 	std::unique_ptr<ISocket> socket;
 	std::unique_ptr<IConnection> connection;
 };
+
 
 TEST_F(QosTest, MessageExhchangeTest) {
 
@@ -74,7 +75,6 @@ TEST_F(QosTest, MessageExhchangeTest) {
 
 TEST_F(QosTest, KeepAlivePacketTest) {
 	Packet packet;
-	Resolver resolver;
 	this->connection = std::make_unique<LiveMonitor>(std::move(connection));
 	packet.header.push_back(MSGTYPE_KEEPALIVE);
 	connection->send(packet);

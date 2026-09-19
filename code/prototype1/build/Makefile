@@ -201,6 +201,19 @@ decorator/fast:
 .PHONY : decorator/fast
 
 #=============================================================================
+# Target rules for targets named nodesession
+
+# Build rule for target.
+nodesession: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nodesession
+.PHONY : nodesession
+
+# fast build rule for target.
+nodesession/fast:
+	$(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/build
+.PHONY : nodesession/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -284,6 +297,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... networking"
+	@echo "... nodesession"
 	@echo "... tests"
 .PHONY : help
 

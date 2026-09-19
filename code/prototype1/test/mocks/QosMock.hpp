@@ -20,9 +20,7 @@ public:
 
 	uint16_t currentId() { return(this->currMsgId); }
 
-	std::unordered_map<uint16_t, PendingMessage>& pending() {
-		return(this->pendingMessages);
-	}
+	std::unordered_map<uint16_t, PendingMessage>& pending() { return(this->pendingMessages); }
 
 	void insertPending(uint16_t id, PendingMessage pending) {
 		this->pendingMessages[id] = std::move(pending);
@@ -31,5 +29,4 @@ public:
 	std::shared_ptr<PendingMessage> parse(Packet const& packet) {
 		return(parseMsg(packet));
 	}
-
 };

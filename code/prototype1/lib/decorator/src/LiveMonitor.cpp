@@ -41,7 +41,11 @@ void LiveMonitor::resetTimer() const {
 
 
 bool LiveMonitor::isSessionExpired() const {
-	return((lastActivity - std::chrono::steady_clock::now()) > timeout);
+	if((lastActivity - std::chrono::steady_clock::now()) > timeout) {
+		this->timeoutCallback();
+		return(true);
+	}
+	return(false);
 }
 
 
