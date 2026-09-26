@@ -15,6 +15,7 @@
 #define RIGHTS_Pos			0x2
 
 #define MSGTYPE_HANDSHAKE	(uint8_t)(0x06 << MsgType_Pos)
+#define MSGTYPE_RECONNECT	(uint8_t)(0x07 << MsgType_Pos)
 #define QOSTYPE_0			(uint8_t)(0x0 << QosType_Pos)
 #define QOSTYPE_1			(uint8_t)(0x1 << QosType_Pos)
 #define QOSTYPE_2			(uint8_t)(0x2 << QosType_Pos)
@@ -23,8 +24,8 @@
 #define RIGHTS_ADMIN		(uint8_t)(0b10 << RIGHTS_Pos)
 #define RIGHTS_SYSTEM		(uint8_t)(0b11 << RIGHTS_Pos)
 
-
-#define SESSIONHEADER_LEN	0x5
+#define SESSIONHEADER_LEN	0x6
+#define SESSION_RECONNECT_HEADER_LEN 0x3
 
 struct SessionConfig {
 	uint8_t qosLevel; // 0, 1 or 2
@@ -34,25 +35,36 @@ struct SessionConfig {
 	std::string login;
 	std::string passwd;
 	std::string secret;
-	uint8_t rights; // 1 -- user, 2 -- admin, 3 -- system
+	std::string topic;
+	uint8_t rights; 
 };
 
 
 
 class Handshaker: public IConnectionHandler {
-	std::shared_ptr<IStateContext> context;
+	std::weak_ptr<IStateContext> context;
 	std::unique_ptr<IConnection> connection;
 	std::shared_ptr<IStateFabric> fabric;
 	std::unique_ptr<DatabaseCommunicator> dbCommunicator;
 
 	SessionConfig parseConfig(Packet const& packet) const;
 
+	IConnection::Status sendHandshakeAck() const;
+
 public:
+	Packet serializeReconnectPacket(uint16_t sessionId) const;
+
+	Packet serializeHandshakePacket(bool role, uint8_t qos, bool creat, bool newUsr,
+			uint8_t rights, std::string topic, std::string login, std::string password, 
+			std::string secret) const;
+
 	Handshaker(std::unique_ptr<IConnection> conn, 
-			std::shared_ptr<IStateContext> ctx,
+			std::weak_ptr<IStateContext> ctx,
 			std::shared_ptr<IStateFabric> fabric);
 
-	void setContext(std::shared_ptr<IStateContext> ctx) override;
+	void makeHandshake();
+
+	//void setContext(std::weak_ptr<IStateContext> ctx) override;
 	IConnection::Status send(Packet& packet, int flag = 0) const override;
 	IConnection::Status recv(Packet& packet, int flag = 0) const override;
 };

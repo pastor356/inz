@@ -13,6 +13,8 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateFabric.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /usr/include/alloca.h \
   /usr/include/arpa/inet.h \
@@ -333,8 +335,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/c++/15/bits/basic_string.h:
 
-/usr/include/c++/15/bits/concept_check.h:
-
 /usr/include/c++/15/bits/version.h:
 
 /usr/include/c++/15/backward/binders.h:
@@ -429,6 +429,10 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h:
 
+/usr/include/bits/stdint-least.h:
+
+/usr/include/c++/15/bits/move.h:
+
 /usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/asm-generic/types.h:
@@ -438,14 +442,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 /usr/include/c++/15/bits/align.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp:
-
-/usr/include/asm/sockios.h:
-
-/usr/include/asm-generic/sockios.h:
-
-/usr/include/c++/15/bits/unique_ptr.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/asm-generic/int-ll64.h:
 
@@ -469,7 +465,31 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp:
 
+/usr/include/bits/confname.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h:
+
+/usr/include/alloca.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp:
+
 /usr/include/bits/byteswap.h:
+
+/usr/include/c++/15/bits/ostream_insert.h:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/include/c++/15/bits/utility.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/include/c++/15/bits/new_allocator.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/c++/15/bits/uses_allocator.h:
 
 /usr/include/c++/15/bits/basic_string.tcc:
 
@@ -485,33 +505,11 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/c++/15/bits/atomic_base.h:
 
-/usr/include/c++/15/bits/utility.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/c++/15/bits/locale_facets.tcc:
-
-/usr/include/ctype.h:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/c++/15/bits/cxxabi_init_exception.h:
-
-/usr/include/bits/in.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/include/c++/15/bits/move.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
 /usr/include/netinet/in.h:
 
 /usr/include/c++/15/cerrno:
+
+/usr/include/bits/pthreadtypes-arch.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp:
 
@@ -525,6 +523,36 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/c++/15/ext/type_traits.h:
 
+/usr/include/bits/waitflags.h:
+
+/usr/include/c++/15/bits/locale_facets.tcc:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateFabric.hpp:
+
+/usr/include/c++/15/bits/cxxabi_init_exception.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/c++/15/bits/concept_check.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp:
+
+/usr/include/string.h:
+
+/usr/include/bits/socket_type.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/c++/15/bits/unique_ptr.h:
+
 /usr/include/c++/15/bits/node_handle.h:
 
 /usr/include/c++/15/pstl/glue_memory_defs.h:
@@ -535,8 +563,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/bits/setjmp.h:
 
-/usr/include/bits/confname.h:
-
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/typesizes.h:
@@ -545,11 +571,13 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/c++/15/exception:
 
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types/__sigval_t.h:
+
 /usr/include/bits/types/struct_osockaddr.h:
 
 /usr/include/bits/endianness.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h:
 
 /usr/include/bits/floatn.h:
 
@@ -583,9 +611,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/bits/socket.h:
 
-/usr/include/bits/types/__FILE.h:
-
 /usr/include/features.h:
+
+/usr/include/bits/types/__FILE.h:
 
 /usr/include/bits/sched.h:
 
@@ -600,24 +628,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 /usr/include/c++/15/bits/vector.tcc:
 
 /usr/include/asm/socket.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/socket_type.h:
-
-/usr/include/c++/15/bits/ostream_insert.h:
-
-/usr/include/bits/types/error_t.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp:
-
-/usr/include/bits/cpu-set.h:
-
-/usr/include/c++/15/bits/new_allocator.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/15/bits/uses_allocator.h:
 
 /usr/include/bits/waitstatus.h:
 
@@ -697,9 +707,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 
 /usr/include/c++/15/bits/std_abs.h:
 
-/usr/include/bits/types/clockid_t.h:
-
 /usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/clockid_t.h:
 
 /usr/include/c++/15/typeinfo:
 
@@ -862,7 +872,3 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp:
 
 /usr/include/features-time64.h:
-
-/usr/include/bits/types/__sigval_t.h:
-
-/usr/include/gnu/stubs-64.h:

@@ -2,7 +2,7 @@
 
 
 IConnection::Status LiveMonitor::recv(Packet& packet, int flag) const {
-	IConnection::Status status = IConnection::Status::AGAIN;
+	IConnection::Status status;
 
 	while(1) {
 		status = connection->recv(packet, flag);
@@ -17,6 +17,8 @@ IConnection::Status LiveMonitor::recv(Packet& packet, int flag) const {
 			logInfo << "caught KeepAlive";
 			continue;
 		}
+
+		isSessionExpired();
 
 		return(IConnection::Status::SUCCESS);
 	}
@@ -51,7 +53,8 @@ bool LiveMonitor::isSessionExpired() const {
 
 
 bool LiveMonitor::isKeepAlive(Packet& packet) const {
-	if((packet.header[0] & MSGTYPE_KEEPALIVE) == MSGTYPE_KEEPALIVE) return(true);
+	if((packet.header[0] & MSGTYPE_KEEPALIVE) == MSGTYPE_KEEPALIVE) 
+		return(true);
 
 	return(false);
 }

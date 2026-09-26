@@ -14,6 +14,8 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateFabric.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
