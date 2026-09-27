@@ -41,6 +41,7 @@ public:
 	IConnection::Status recv(Packet& packet, int flag = 0) const override;
 	//void setContext(std::shared_ptr<IStateContext> ctx) override; 
 
+	int getDescriptor() const override;
 	
 	// callback, injected into LiveMonitor (timeoutCallback field)
 	void handleTimeout(); 

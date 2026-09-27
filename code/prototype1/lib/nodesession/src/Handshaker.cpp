@@ -8,12 +8,9 @@ Handshaker::Handshaker(std::unique_ptr<IConnection> conn,
 			registry(std::move(sessionFabric)) {}
 
 
-void Handshaker::setContext(std::shared_ptr<IStateContext> ctx) {
-	this->context = ctx;
-}
-
 
 IConnection::Status Handshaker::send(Packet& packet, int flag) const {
+
 	// add handshaker header
 	return(connection->send(packet, flag));
 }
@@ -35,10 +32,10 @@ IConnection::Status Handshaker::recv(Packet& packet, int flag) const {
 
 
 void Handshaker::makeHandshake() {
+	const char* methodName = "Handshaker::makeHandshake()";
 	uint16_t sessionId;
 	SessionConfig sc;
 	Packet packet;
-	const char* methodName = "Handshaker::makeHandshake()";
 
 	auto status = this->recv(packet, 0);
 
@@ -50,7 +47,7 @@ void Handshaker::makeHandshake() {
 		sc = parseConfig(packet);
 
 		// set connection in new session
-		context->changeState(this->fabric(sc));
+		(context.lock())->changeState(this->fabric(sc));
 
 	} else if(packet.header[0] == MSGTYPE_RECONNECT) {
 		sessionId = getSessionIdReconnection(packet);
@@ -59,7 +56,7 @@ void Handshaker::makeHandshake() {
 
 		session->setConnection(std::move(this->connection));
 
-		context->changeState(session);
+		(context.lock())->changeState(session);
 	}
 }
 
@@ -211,16 +208,16 @@ Packet Handshaker::serializeReconnectPacket(uint16_t sessionId) const {
 
 
 
-
-
 uint16_t Handshaker::getSessionIdReconnection(Packet const& packet) const {
+	const char* methodName = "Handshaker::getSessionIdReconnection()";
+
 	if(headerSize != SESSION_RECONNECT_HEADER_LEN) {
 		logError << std::string{methodName} + ": header size doesn't fit";
 		return(0);
 	}
 
 	uint8_t msgType = packet.header[0];
-	uint16_t sessionid;
+	uint16_t sessionId;
 
 	sessionId = packet.header[1] | (packet.header[1] << 0x8);
 
@@ -228,8 +225,14 @@ uint16_t Handshaker::getSessionIdReconnection(Packet const& packet) const {
 }
 
 
-
-void Session::setConnection(std::unique_ptr<IConnection> conn) {
+void Handshaker::setConnection(std::unique_ptr<IConnection> conn) {
 	this->connection = std::move(conn);
 }
+
+
+
+int Handshaker::getDescriptor() const {
+	return(connection->getDescriptor());
+}
+
 

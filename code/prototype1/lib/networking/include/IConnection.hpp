@@ -33,5 +33,3 @@ public:
 	virtual const struct sockaddr_storage getAddr() const = 0;
 	virtual int getDescriptor() const = 0;
 };
-
-

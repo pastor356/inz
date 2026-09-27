@@ -50,6 +50,8 @@ class Handshaker: public IConnectionHandler {
 	SessionConfig parseConfig(Packet const& packet) const;
 
 	IConnection::Status sendHandshakeAck() const;
+	void makeHandshake();
+	uint16_t getSessionIdReconnection(Packet const& packet) const;
 
 public:
 	Packet serializeReconnectPacket(uint16_t sessionId) const;
@@ -62,7 +64,8 @@ public:
 			std::weak_ptr<IStateContext> ctx,
 			std::shared_ptr<IStateFabric> fabric);
 
-	void makeHandshake();
+
+	int getDescriptor() const override;
 
 	//void setContext(std::weak_ptr<IStateContext> ctx) override;
 	IConnection::Status send(Packet& packet, int flag = 0) const override;

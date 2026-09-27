@@ -15,6 +15,7 @@ public:
 	virtual IConnection::Status recv(Packet& packet, int flag = 0) const = 0;
 
 	//virtual void setContext(std::weak_ptr<IStateContext> ctx) = 0;
+	virtual int getDescriptor() const = 0;
 	virtual ~IConnectionHandler() = default;
 	virtual uint32_t getId() const = 0;
 };

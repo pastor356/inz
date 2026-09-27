@@ -69,8 +69,11 @@ IConnection::Status Session::send(Packet& packet, int flag) const {
 	return(status);
 }
 
-
-
 void Session::setConnection(std::unique_ptr<IConnection> conn) {
 	this->connection = std::move(conn);
 }
+
+int Session::getDescriptor() const {
+	return(connection->getDescriptor());
+}
+
