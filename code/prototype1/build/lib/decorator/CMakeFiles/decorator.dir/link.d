@@ -4,6 +4,7 @@ libdecorator.so: \
   CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o \
   CMakeFiles/decorator.dir/src/LiveMonitor.cpp.o \
   CMakeFiles/decorator.dir/src/Qos1.cpp.o \
+  CMakeFiles/decorator.dir/src/DecoratorBuilder.cpp.o \
   ../networking/libnetworking.so \
   ../common/libcommon.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
@@ -40,6 +41,8 @@ CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
 CMakeFiles/decorator.dir/src/LiveMonitor.cpp.o:
 
 CMakeFiles/decorator.dir/src/Qos1.cpp.o:
+
+CMakeFiles/decorator.dir/src/DecoratorBuilder.cpp.o:
 
 ../networking/libnetworking.so:
 

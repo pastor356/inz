@@ -1,4 +1,5 @@
 #pragma once
+#include <mutex>
 #include "IConnectionHandler.hpp"
 #include "Session.hpp"
 
@@ -9,8 +10,9 @@ class SessionRegistry {
 	std::mutex registryMutex;
 
 public:
-	std::shared_ptr<Session> findSession(SessionId si) const;
+	std::shared_ptr<Session> findSession(SessionId si);
 	void addSession(std::shared_ptr<Session> session);
+};
 
 
 

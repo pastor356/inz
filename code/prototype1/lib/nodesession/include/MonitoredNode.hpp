@@ -4,11 +4,12 @@
 
 
 class MonitoredNode: public IStateContext {
-	std::unique_ptr<IConnectionHandler> connection;
+	std::shared_ptr<IConnectionHandler> connection;
 
 public:
-	MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
-					std::shared_ptr<IHandlerFabric> fabric);
+	MonitoredNode() = default;
+	MonitoredNode(std::shared_ptr<IConnectionHandler> initial);
 
 	void changeState(std::shared_ptr<IConnectionHandler> newState) override;
+	std::shared_ptr<IConnectionHandler> getHandler() const;
 };

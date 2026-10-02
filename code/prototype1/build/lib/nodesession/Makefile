@@ -178,6 +178,30 @@ nodesession/fast:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/build
 .PHONY : nodesession/fast
 
+src/CacheAccessor.o: src/CacheAccessor.cpp.o
+.PHONY : src/CacheAccessor.o
+
+# target to build an object file
+src/CacheAccessor.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o
+.PHONY : src/CacheAccessor.cpp.o
+
+src/CacheAccessor.i: src/CacheAccessor.cpp.i
+.PHONY : src/CacheAccessor.i
+
+# target to preprocess a source file
+src/CacheAccessor.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.i
+.PHONY : src/CacheAccessor.cpp.i
+
+src/CacheAccessor.s: src/CacheAccessor.cpp.s
+.PHONY : src/CacheAccessor.s
+
+# target to generate assembly for a file
+src/CacheAccessor.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.s
+.PHONY : src/CacheAccessor.cpp.s
+
 src/Handshaker.o: src/Handshaker.cpp.o
 .PHONY : src/Handshaker.o
 
@@ -202,6 +226,102 @@ src/Handshaker.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.s
 .PHONY : src/Handshaker.cpp.s
 
+src/MonitoredNode.o: src/MonitoredNode.cpp.o
+.PHONY : src/MonitoredNode.o
+
+# target to build an object file
+src/MonitoredNode.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o
+.PHONY : src/MonitoredNode.cpp.o
+
+src/MonitoredNode.i: src/MonitoredNode.cpp.i
+.PHONY : src/MonitoredNode.i
+
+# target to preprocess a source file
+src/MonitoredNode.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.i
+.PHONY : src/MonitoredNode.cpp.i
+
+src/MonitoredNode.s: src/MonitoredNode.cpp.s
+.PHONY : src/MonitoredNode.s
+
+# target to generate assembly for a file
+src/MonitoredNode.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.s
+.PHONY : src/MonitoredNode.cpp.s
+
+src/Session.o: src/Session.cpp.o
+.PHONY : src/Session.o
+
+# target to build an object file
+src/Session.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o
+.PHONY : src/Session.cpp.o
+
+src/Session.i: src/Session.cpp.i
+.PHONY : src/Session.i
+
+# target to preprocess a source file
+src/Session.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.i
+.PHONY : src/Session.cpp.i
+
+src/Session.s: src/Session.cpp.s
+.PHONY : src/Session.s
+
+# target to generate assembly for a file
+src/Session.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.s
+.PHONY : src/Session.cpp.s
+
+src/SessionBuilder.o: src/SessionBuilder.cpp.o
+.PHONY : src/SessionBuilder.o
+
+# target to build an object file
+src/SessionBuilder.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.o
+.PHONY : src/SessionBuilder.cpp.o
+
+src/SessionBuilder.i: src/SessionBuilder.cpp.i
+.PHONY : src/SessionBuilder.i
+
+# target to preprocess a source file
+src/SessionBuilder.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.i
+.PHONY : src/SessionBuilder.cpp.i
+
+src/SessionBuilder.s: src/SessionBuilder.cpp.s
+.PHONY : src/SessionBuilder.s
+
+# target to generate assembly for a file
+src/SessionBuilder.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.s
+.PHONY : src/SessionBuilder.cpp.s
+
+src/SessionRegistry.o: src/SessionRegistry.cpp.o
+.PHONY : src/SessionRegistry.o
+
+# target to build an object file
+src/SessionRegistry.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.o
+.PHONY : src/SessionRegistry.cpp.o
+
+src/SessionRegistry.i: src/SessionRegistry.cpp.i
+.PHONY : src/SessionRegistry.i
+
+# target to preprocess a source file
+src/SessionRegistry.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.i
+.PHONY : src/SessionRegistry.cpp.i
+
+src/SessionRegistry.s: src/SessionRegistry.cpp.s
+.PHONY : src/SessionRegistry.s
+
+# target to generate assembly for a file
+src/SessionRegistry.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.s
+.PHONY : src/SessionRegistry.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,9 +335,24 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... nodesession"
+	@echo "... src/CacheAccessor.o"
+	@echo "... src/CacheAccessor.i"
+	@echo "... src/CacheAccessor.s"
 	@echo "... src/Handshaker.o"
 	@echo "... src/Handshaker.i"
 	@echo "... src/Handshaker.s"
+	@echo "... src/MonitoredNode.o"
+	@echo "... src/MonitoredNode.i"
+	@echo "... src/MonitoredNode.s"
+	@echo "... src/Session.o"
+	@echo "... src/Session.i"
+	@echo "... src/Session.s"
+	@echo "... src/SessionBuilder.o"
+	@echo "... src/SessionBuilder.i"
+	@echo "... src/SessionBuilder.s"
+	@echo "... src/SessionRegistry.o"
+	@echo "... src/SessionRegistry.i"
+	@echo "... src/SessionRegistry.s"
 .PHONY : help
 
 

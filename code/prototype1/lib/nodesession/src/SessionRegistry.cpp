@@ -1,6 +1,6 @@
 #include "SessionRegistry.hpp"
 
-std::shared_ptr<Session> SessionRegistry::findSession(uint16_t si) const {
+std::shared_ptr<Session> SessionRegistry::findSession(SessionId si) {
 	const char* methodName = "SessionRegistry::findSession()";
 
 	std::lock_guard<std::mutex> lock{registryMutex};
@@ -8,10 +8,10 @@ std::shared_ptr<Session> SessionRegistry::findSession(uint16_t si) const {
 	auto session = registry.find(si);
 
 	if(session == registry.end()) {
-		logWarn << methodName + ": session's not found";
-		return(std::make_shared_ptr<Session>{nullptr});
+		logWarn << std::string{methodName} + ": session's not found";
+		return(std::make_shared<Session>());
 	} else {
-		return(std::make_shared<Session>{session});
+		return(session->second);
 	}
 }
 

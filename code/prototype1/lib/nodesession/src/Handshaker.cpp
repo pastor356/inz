@@ -1,11 +1,17 @@
 #include "Handshaker.hpp"
 
 
-Handshaker::Handshaker(std::unique_ptr<IConnection> conn,
-		std::weak_ptr<IStateContext> ctx, std::shared_ptr<IStateFabric> sessionFabric): 
-			connection(std::move(conn)), 
-			context(std::move(ctx)), 
-			registry(std::move(sessionFabric)) {}
+	
+Handshaker::Handshaker(std::unique_ptr<IConnection> conn, 
+			std::weak_ptr<IStateContext> ctx,
+			std::shared_ptr<SessionBuilder> builder,
+			std::shared_ptr<SessionRegistry> registry,
+			std::shared_ptr<DatabaseCommunicator> dbComm): 
+	context{ctx}, connection{std::move(conn)}, builder{builder}, 
+	dbCommunicator{dbComm}, registry{registry} {}
+
+Handshaker::Handshaker(std::unique_ptr<IConnection> conn, 
+			std::weak_ptr<IStateContext> ctx): connection{std::move(conn)}, context{ctx} {}
 
 
 
@@ -17,7 +23,7 @@ IConnection::Status Handshaker::send(Packet& packet, int flag) const {
 
 
 
-IConnection::Status Handshaker::recv(Packet& packet, int flag) const {
+IConnection::Status Handshaker::recv(Packet& packet, int flag) {
 	auto status = connection->recv(packet, flag);
 	const char* methodName = "Handshaker::recv()";
 
@@ -26,33 +32,89 @@ IConnection::Status Handshaker::recv(Packet& packet, int flag) const {
 		return(status);
 	}
 
+	makeHandshake(packet);
+
 	return(status);
 }
 
 
 
-void Handshaker::makeHandshake() {
+void Handshaker::makeHandshake(Packet& packet) {
 	const char* methodName = "Handshaker::makeHandshake()";
 	uint16_t sessionId;
 	SessionConfig sc;
-	Packet packet;
-
-	auto status = this->recv(packet, 0);
-
-	if(status != IConnection::Status::SUCCESS) {
-		logError << std::string{methodName} + " failed: " + strerror(errno);
-	}
 
 	if(packet.header[0] == MSGTYPE_HANDSHAKE) {
 		sc = parseConfig(packet);
+		auto session = std::make_shared<Session>(sc.login, sc.passwd, sc.secret);
 
-		// set connection in new session
-		(context.lock())->changeState(this->fabric(sc));
+		auto monitor = std::make_unique<LiveMonitor>(std::move(connection));
+		std::weak_ptr<Session> weakSession = session;
+
+		monitor->setCallback([weakSession]() {
+			if (auto activeSession = weakSession.lock()) {
+				activeSession->handleTimeout(); 
+			}
+		});
+
+		connection = std::move(monitor);
+
+
+		if(sc.qosLevel == 1) {
+			connection = std::make_unique<Qos1>(std::move(connection));
+			session->setQos(1);
+		} else if(sc.qosLevel == 2) {
+			//connection = std::make_unique<Qos2>(std::move(connection));
+			session->setQos(2);
+		}
+
+		// DB QUERY AND AUTHORIZATION
+		TopicSet topicSet; 
+		DatabaseCommunicator::DbStatus status;
+
+		if(sc.newUsr) {
+			status = dbCommunicator->createUser(sc.login, 
+					sc.passwd, sc.secret, sc.rights);
+		} else {
+			status = dbCommunicator->authorize(sc.login, sc.passwd, sc.secret, sc.rights);
+		}
+		
+		if(status == DatabaseCommunicator::DbStatus::SUCCESS) {
+			status = dbCommunicator->getTopics(topicSet);
+		}
+
+		session->setConnection(std::move(connection));
+
+		registry->addSession(session);
+
+		if (auto ctx = context.lock()) {
+			ctx->changeState(session);
+		}
 
 	} else if(packet.header[0] == MSGTYPE_RECONNECT) {
 		sessionId = getSessionIdReconnection(packet);
 	
-		std::shared_ptr<Session> session = factory->findSession(sessionId);
+		auto session = registry->findSession(sessionId);
+
+		if(!session) {
+			logError << std::string{methodName} + ": session not found";
+			return;
+		}
+
+		auto monitor = std::make_unique<LiveMonitor>(std::move(connection));
+
+        std::weak_ptr<Session> weakSession = session;
+        monitor->setCallback([weakSession]() {
+            if (auto activeSession = weakSession.lock()) {
+                activeSession->handleTimeout();
+            }
+        });
+
+		connection = std::move(monitor);
+
+        if (session->getQos() == 1) { 
+            connection = std::make_unique<Qos1>(std::move(connection));
+        }
 
 		session->setConnection(std::move(this->connection));
 
@@ -62,7 +124,7 @@ void Handshaker::makeHandshake() {
 
 
 
-	
+
 SessionConfig Handshaker::parseConfig(Packet const& packet) const {
 	SessionConfig sc;
 	uint8_t loginLen, passwdLen, secretLen, topicLen;
@@ -75,7 +137,7 @@ SessionConfig Handshaker::parseConfig(Packet const& packet) const {
 
 		 
 	if(msgType == MSGTYPE_HANDSHAKE) {
-		if(headerSize != SESSIONHEADER_LEN) {
+		if(headerSize != HANDSHAKE_HEADER_LEN) {
 			logError << std::string{methodName} + ": header size doesn't fit";
 			return(sc);
 		}
@@ -154,7 +216,7 @@ Packet Handshaker::serializeHandshakePacket(bool role, uint8_t qos, bool creat, 
     uint8_t firstByte = MSGTYPE_HANDSHAKE;
 
     if(role) {
-        firstByte |= (0b1 << RoleType_Pos);
+        firstByte |= (0b11 << RoleType_Pos);
     }
 
     firstByte |= ((qos & 0b11) << QosType_Pos);
@@ -176,7 +238,7 @@ Packet Handshaker::serializeHandshakePacket(bool role, uint8_t qos, bool creat, 
     uint8_t secretLen = static_cast<uint8_t>(secret.size());
     uint8_t topicLen  = static_cast<uint8_t>(topic.size());
 
-    packet.header.resize(SESSIONHEADER_LEN);
+    packet.header.resize(HANDSHAKE_HEADER_LEN);
     packet.header[0] = firstByte;   // headerSize - 6
     packet.header[1] = secondByte;  // headerSize - 5
     packet.header[2] = loginLen;    // headerSize - 4
@@ -198,10 +260,11 @@ Packet Handshaker::serializeHandshakePacket(bool role, uint8_t qos, bool creat, 
 
 Packet Handshaker::serializeReconnectPacket(uint16_t sessionId) const {
 	Packet packet;
-	packet.header[0] = MSGTYPE_RECONNECT;
+	packet.header.resize(3);
+	packet.header.push_back(MSGTYPE_RECONNECT);
 	
-	packet.header[1] = (sessionId & 0xff); 
-	packet.header[2] = ((sessionId >> 0x8) & 0xff);
+	packet.header.push_back(sessionId & 0xff); 
+	packet.header.push_back((sessionId >> 0x8) & 0xff);
 
 	return(packet);
 }
@@ -210,6 +273,8 @@ Packet Handshaker::serializeReconnectPacket(uint16_t sessionId) const {
 
 uint16_t Handshaker::getSessionIdReconnection(Packet const& packet) const {
 	const char* methodName = "Handshaker::getSessionIdReconnection()";
+	
+	size_t headerSize = packet.header.size();
 
 	if(headerSize != SESSION_RECONNECT_HEADER_LEN) {
 		logError << std::string{methodName} + ": header size doesn't fit";
@@ -217,9 +282,12 @@ uint16_t Handshaker::getSessionIdReconnection(Packet const& packet) const {
 	}
 
 	uint8_t msgType = packet.header[0];
-	uint16_t sessionId;
+	uint16_t sessionId = 0;
 
-	sessionId = packet.header[1] | (packet.header[1] << 0x8);
+	if(msgType == MSGTYPE_RECONNECT) {
+		sessionId = packet.header[1] | (packet.header[1] << 0x8);
+	} 
+	else logError << std::string{methodName} + ": msg type doesn't fit";
 
 	return(sessionId);
 }
@@ -230,9 +298,46 @@ void Handshaker::setConnection(std::unique_ptr<IConnection> conn) {
 }
 
 
-
 int Handshaker::getDescriptor() const {
 	return(connection->getDescriptor());
 }
+
+void Handshaker::setContext(std::weak_ptr<IStateContext> ctx) {
+	context = ctx;
+}
+
+IConnection::Status Handshaker::send(std::string const& message, int flag) const {
+	Packet packet;
+	packet.payload = message; 
+
+    return(this->send(packet, flag));
+}
+
+
+IConnection::Status Handshaker::recv(std::string& message, int flag) {
+	Packet packet;
+
+    auto status = this->recv(packet, flag);
+	message = packet.payload;
+	
+	return(status);
+}
+
+
+IConnection::Status Handshaker::sendHandshakeAck(uint8_t ackByte) const {
+	Packet packet;
+
+	packet.header.push_back(ackByte);
+	packet.payload.clear();
+
+	return(this->send(packet, 0));
+}
+
+
+
+
+
+
+
 
 

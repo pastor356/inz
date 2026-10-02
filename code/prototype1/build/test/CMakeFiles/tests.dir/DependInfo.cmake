@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/first_mock.cpp" "test/CMakeFiles/tests.dir/utest/first_mock.cpp.o" "gcc" "test/CMakeFiles/tests.dir/utest/first_mock.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/maintest_gtest.cpp" "test/CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o" "gcc" "test/CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/resolver_test.cpp" "test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o" "gcc" "test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o.d"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/session_test.cpp" "test/CMakeFiles/tests.dir/utest/session_test.cpp.o" "gcc" "test/CMakeFiles/tests.dir/utest/session_test.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/test_network.cpp" "test/CMakeFiles/tests.dir/utest/test_network.cpp.o" "gcc" "test/CMakeFiles/tests.dir/utest/test_network.cpp.o.d"
   "" "test/tests" "gcc" "test/CMakeFiles/tests.dir/link.d"
   )

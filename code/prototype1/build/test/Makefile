@@ -298,6 +298,30 @@ utest/resolver_test.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/resolver_test.cpp.s
 .PHONY : utest/resolver_test.cpp.s
 
+utest/session_test.o: utest/session_test.cpp.o
+.PHONY : utest/session_test.o
+
+# target to build an object file
+utest/session_test.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/session_test.cpp.o
+.PHONY : utest/session_test.cpp.o
+
+utest/session_test.i: utest/session_test.cpp.i
+.PHONY : utest/session_test.i
+
+# target to preprocess a source file
+utest/session_test.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/session_test.cpp.i
+.PHONY : utest/session_test.cpp.i
+
+utest/session_test.s: utest/session_test.cpp.s
+.PHONY : utest/session_test.s
+
+# target to generate assembly for a file
+utest/session_test.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/session_test.cpp.s
+.PHONY : utest/session_test.cpp.s
+
 utest/test_network.o: utest/test_network.cpp.o
 .PHONY : utest/test_network.o
 
@@ -350,6 +374,9 @@ help:
 	@echo "... utest/resolver_test.o"
 	@echo "... utest/resolver_test.i"
 	@echo "... utest/resolver_test.s"
+	@echo "... utest/session_test.o"
+	@echo "... utest/session_test.i"
+	@echo "... utest/session_test.s"
 	@echo "... utest/test_network.o"
 	@echo "... utest/test_network.i"
 	@echo "... utest/test_network.s"

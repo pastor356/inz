@@ -26,12 +26,14 @@ set(HEADERS
 	IQualityStrategy.hpp
 	LiveMonitor.hpp
 	Qos1.hpp
+	DecoratorBuilder.hpp
 )
 
 set(SOURCES
 	ConnectionDecorator.cpp
 	LiveMonitor.cpp
 	Qos1.cpp
+	DecoratorBuilder.cpp
 )
 
 

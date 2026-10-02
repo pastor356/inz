@@ -36,6 +36,7 @@ set(UTESTSOURCE
 	test_network.cpp
 	first_mock.cpp
 	QosMockTest.cpp 
+	session_test.cpp
 )
 
 set(MOCKHEADERS
@@ -53,6 +54,7 @@ target_link_libraries(${PROJECT_NAME}
 	common
 	networking
 	decorator
+	nodesession
 	GTest::gtest_main
 	GTest::gmock
 )

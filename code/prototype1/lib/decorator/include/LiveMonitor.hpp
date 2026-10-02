@@ -24,6 +24,7 @@ protected:
 public:
 	using ConnectionDecorator::ConnectionDecorator;
 	
+	void setCallback(std::function<void()> cb);
 	bool isSessionExpired() const;
 	IConnection::Status recv(std::string& msg, int flag = 0) const override;
 	IConnection::Status recv(Packet& packet, int flag = 0) const override;

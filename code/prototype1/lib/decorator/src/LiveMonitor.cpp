@@ -58,3 +58,9 @@ bool LiveMonitor::isKeepAlive(Packet& packet) const {
 
 	return(false);
 }
+
+
+void LiveMonitor::setCallback(std::function<void()> cb) {
+	timeoutCallback = cb;
+}
+

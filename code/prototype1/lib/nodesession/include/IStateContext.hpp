@@ -2,10 +2,12 @@
 #include "ISocket.hpp"
 #include "IConnection.hpp"
 #include "LiveMonitor.hpp"
-#include "IQualityStrategy.hpp"
 #include "IConnectionHandler.hpp"
+#include "IQualityStrategy.hpp"
 #include <functional>
 #include <memory>
+
+class IConnectionHandler;
 
 class IStateContext {
 public:

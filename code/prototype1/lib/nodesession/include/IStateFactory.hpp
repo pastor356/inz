@@ -1,9 +1,11 @@
 #pragma once
 #include "IConnectionHandler.hpp"
+#include "Handshaker.hpp"
+#include "SessionConfig.hpp"
 
-class IStateFabric {
+class IStateFactory {
 public:
-	virtual ~IStateFabric() = default;
+	virtual ~IStateFactory() = default;
 
 	virtual std::shared_ptr<IConnectionHandler> createSession(
 			uint8_t qosLevel, 
@@ -12,8 +14,5 @@ public:
 			std::string const& secret,
 			std::string const& topic) const = 0;
 
+	virtual std::shared_ptr<IConnectionHandler> createSession(SessionConfig& sc) const = 0;
 };
-
-
-
-

@@ -7,11 +7,11 @@ std::shared_ptr<Session> createSession(
 			std::string const& secret,
 			std::string const& topic) const { 
 
-	Session session;
-	Session(
+	Session session
+
+	
+
 
 
 	return(std::make_shared<Session>{session});
 }
-
-
