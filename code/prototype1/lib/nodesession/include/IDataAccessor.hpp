@@ -1,7 +1,7 @@
 #pragma once
 #include <unordered_map>
 #include <string>
-#include <vector>
+#include <set>
 
 struct UserAuth {
 	std::string login;
@@ -24,10 +24,10 @@ public:
 
 	using TopicSet = std::set<std::string>;
 
-	AccessorStatus authorize(UserAuth const& auth) const = 0;
-	AccessorStatus createUser(UserAuth const& auth) const = 0;
-	void getTopics(TopicSet const& topicSet) const = 0;
-	void addTopic(std::string const& topic) const = 0;
+	virtual AccessorStatus authorize(UserAuth const& auth) const = 0;
+	virtual AccessorStatus createUser(UserAuth const& auth) = 0;
+	virtual void getTopics(TopicSet& topicSet) const = 0;
+	virtual void addTopic(std::string const& topic) = 0;
+
+	virtual ~IDataAccessor() = default;
 };
-
-

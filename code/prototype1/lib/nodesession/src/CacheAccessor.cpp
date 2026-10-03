@@ -2,6 +2,7 @@
 
 IDataAccessor::AccessorStatus CacheAccessor::authorize(UserAuth const& auth) const {
 	IDataAccessor::AccessorStatus status;
+	const char* methodName = "CacheAcceptor::authorize(UserAuth const&)";
 	auto entity = storage.find(auth.login);
 
 	if(entity == storage.end()) {
@@ -9,9 +10,11 @@ IDataAccessor::AccessorStatus CacheAccessor::authorize(UserAuth const& auth) con
 	}
 	
 	if((auth.password == entity->second.password) && 
-			(auth.secret == entity->second.secret) {
+			(auth.secret == entity->second.secret)) {
 		return(IDataAccessor::AccessorStatus::SUCCESS);
 	}
+
+	return(IDataAccessor::AccessorStatus::FAILURE);
 }
 
 
@@ -37,5 +40,3 @@ void CacheAcceptor::addTopic(std::string const& topic) const {
 void CacheAcceptor::getTopics(TopicSet& topicSet) const {
 	topicSet = this->topics;
 }
-
-

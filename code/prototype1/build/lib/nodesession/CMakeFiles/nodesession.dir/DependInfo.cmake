@@ -11,9 +11,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/CacheAccessor.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/Handshaker.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/MonitoredNode.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o.d"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/NodeRegistry.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/Session.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/SessionBuilder.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.o.d"
-  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/SessionRegistry.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.o.d"
   "" "lib/nodesession/libnodesession.so" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/link.d"
   )
 

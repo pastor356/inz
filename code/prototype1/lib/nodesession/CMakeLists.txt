@@ -22,18 +22,15 @@ set(INCLUDEDIR include/)
 set(SOURCEDIR src/)
 
 set(HEADERS
-	DatabaseCommunicator.hpp
 	Handshaker.hpp
 	IConnectionHandler.hpp
 	IStateContext.hpp
-	IStateFactory.hpp
 	MonitoredNode.hpp
 	SessionBuilder.hpp
 	SessionConfig.hpp
-	SessionFactory.hpp
 	Session.hpp
-	SessionRegistry.hpp
 	CacheAccessor.hpp
+	NodeRegistry.hpp	
 )
 
 set(SOURCES
@@ -41,9 +38,8 @@ set(SOURCES
 	MonitoredNode.cpp
 	SessionBuilder.cpp
 	Session.cpp
-	#SessionFactory.cpp
-	SessionRegistry.cpp
 	CacheAccessor.cpp
+	NodeRegistry.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})

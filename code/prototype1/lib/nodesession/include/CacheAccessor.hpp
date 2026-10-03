@@ -3,15 +3,14 @@
 
 
 class CacheAccessor: public IDataAccessor {
-	std::unordered_map<std::string, UserAuth> storage;
+	std::unordered_map<std::string, UserAuth> storage; // login -> UserAuth
 	TopicSet topics;
+
 public:
+	CacheAccessor() = default;
 	IDataAccessor::AccessorStatus authorize(UserAuth const& auth) const override;
-
 	IDataAccessor::AccessorStatus createUser(UserAuth const& auth) const override;
-
 	void getTopics(TopicSet& topicSet) const override;
-
 	void addTopic(std::string const& topic) const override;
 };
 

@@ -26,31 +26,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
 				"line" : 53,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 56,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 55,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 57,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 54,
+				"line" : 50,
 				"parent" : 0
 			}
 		]
@@ -188,10 +188,7 @@
 				11,
 				12,
 				13,
-				14,
-				15,
-				16,
-				17
+				14
 			]
 		}
 	],
@@ -224,19 +221,14 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/nodesession/src/SessionRegistry.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "lib/nodesession/src/CacheAccessor.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/nodesession/include/DatabaseCommunicator.hpp",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "lib/nodesession/src/NodeRegistry.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
@@ -251,11 +243,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "lib/nodesession/include/IStateContext.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "lib/nodesession/include/IStateFactory.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -275,22 +262,17 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/nodesession/include/SessionFactory.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"path" : "lib/nodesession/include/Session.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/nodesession/include/SessionRegistry.hpp",
+			"path" : "lib/nodesession/include/CacheAccessor.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/nodesession/include/CacheAccessor.hpp",
+			"path" : "lib/nodesession/include/NodeRegistry.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

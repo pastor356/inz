@@ -1,5 +1,6 @@
 #pragma once
 #include "IConnectionHandler.hpp"
+#include "IDataAccessor.hpp"
 
 #define MSGTYPE_SESSIONMSG	(uint8_t)(0x8 << MsgType_Pos)
 #define SESSIONHEADER_LEN	(uint8_t)11
@@ -22,9 +23,7 @@ private:
 	static uint16_t sessionId; // incrementing in every constructor call
 	std::unique_ptr<IConnection> connection;
 	uint16_t thisSessionId;
-	std::string login;
-	std::string password;
-	std::string secret;
+	UserAuth authData;
 	SessionState state;
 
 	uint8_t qosLevel;
@@ -37,13 +36,6 @@ private:
 	uint16_t getSessionIdReconnection(Packet const& packet) const;
 
 public:
-
-	Session() = default;
-	Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContext> ctx,
-			std::string const& password, std::string const& secrt);
-
-	Session(std::string const& login, std::string const& password, 
-			std::string const& secret);
 
 	void setConnection(std::unique_ptr<IConnection> conn) override;
 	void setContext(std::weak_ptr<IStateContext> ctx) override;

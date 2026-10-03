@@ -250,6 +250,30 @@ src/MonitoredNode.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.s
 .PHONY : src/MonitoredNode.cpp.s
 
+src/NodeRegistry.o: src/NodeRegistry.cpp.o
+.PHONY : src/NodeRegistry.o
+
+# target to build an object file
+src/NodeRegistry.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o
+.PHONY : src/NodeRegistry.cpp.o
+
+src/NodeRegistry.i: src/NodeRegistry.cpp.i
+.PHONY : src/NodeRegistry.i
+
+# target to preprocess a source file
+src/NodeRegistry.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.i
+.PHONY : src/NodeRegistry.cpp.i
+
+src/NodeRegistry.s: src/NodeRegistry.cpp.s
+.PHONY : src/NodeRegistry.s
+
+# target to generate assembly for a file
+src/NodeRegistry.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.s
+.PHONY : src/NodeRegistry.cpp.s
+
 src/Session.o: src/Session.cpp.o
 .PHONY : src/Session.o
 
@@ -298,30 +322,6 @@ src/SessionBuilder.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.s
 .PHONY : src/SessionBuilder.cpp.s
 
-src/SessionRegistry.o: src/SessionRegistry.cpp.o
-.PHONY : src/SessionRegistry.o
-
-# target to build an object file
-src/SessionRegistry.cpp.o:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.o
-.PHONY : src/SessionRegistry.cpp.o
-
-src/SessionRegistry.i: src/SessionRegistry.cpp.i
-.PHONY : src/SessionRegistry.i
-
-# target to preprocess a source file
-src/SessionRegistry.cpp.i:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.i
-.PHONY : src/SessionRegistry.cpp.i
-
-src/SessionRegistry.s: src/SessionRegistry.cpp.s
-.PHONY : src/SessionRegistry.s
-
-# target to generate assembly for a file
-src/SessionRegistry.cpp.s:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.s
-.PHONY : src/SessionRegistry.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -344,15 +344,15 @@ help:
 	@echo "... src/MonitoredNode.o"
 	@echo "... src/MonitoredNode.i"
 	@echo "... src/MonitoredNode.s"
+	@echo "... src/NodeRegistry.o"
+	@echo "... src/NodeRegistry.i"
+	@echo "... src/NodeRegistry.s"
 	@echo "... src/Session.o"
 	@echo "... src/Session.i"
 	@echo "... src/Session.s"
 	@echo "... src/SessionBuilder.o"
 	@echo "... src/SessionBuilder.i"
 	@echo "... src/SessionBuilder.s"
-	@echo "... src/SessionRegistry.o"
-	@echo "... src/SessionRegistry.i"
-	@echo "... src/SessionRegistry.s"
 .PHONY : help
 
 
