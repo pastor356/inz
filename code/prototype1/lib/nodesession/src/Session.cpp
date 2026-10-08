@@ -2,20 +2,11 @@
 
 uint16_t Session::sessionId = 300;
 
-Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContext> ctx,
-			std::string const& passwd, std::string const& secrt):
-				connection{std::move(conn)}, context{ctx}, 
-				password{passwd}, secret{secrt} {
-	thisSessionId = ++sessionId;
-	state = SessionState::CONNECTED;
-}
+Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContext> ctx, 
+		UserAuth userAuth):
+	connection{std::move(conn)}, context{ctx}, authData{userAuth} {}
 
 
-Session::Session(std::string const& login, std::string const& password,
-		std::string const& secret): login{login}, password{password}, secret{secret} {
-	thisSessionId = ++sessionId;
-	state = SessionState::CONNECTED;
-}
 
 
 IConnection::Status Session::send(std::string const& message, int flag) const {
@@ -26,8 +17,6 @@ IConnection::Status Session::send(std::string const& message, int flag) const {
 
 	return(status);
 }
-
-
 
 
 IConnection::Status Session::recv(Packet& packet, int flag) {
@@ -46,8 +35,22 @@ IConnection::Status Session::recv(Packet& packet, int flag) {
 		return IConnection::Status::ERROR;
 	}
 
+	trimSessionHeader(packet);
+
+
 	return(status);
 }
+
+void Session::trimSessionHeader(Packet& packet) const {
+	if(packet.header.size() >= SESSIONHEADER_LEN) {
+
+		for(unsigned int i = 0; i < SESSIONHEADER_LEN; ++i) 
+			packet.header.pop_back();
+
+	} else 
+		logError << "Session::trimSessionHeader() failed: header is corrupted";
+}
+
 
 
 Session::SessionHeader Session::parseMsg(Packet& packet) const {
@@ -115,6 +118,7 @@ IConnection::Status Session::send(Packet& packet, int flag) const {
 	return(status);
 }
 
+
 void Session::setConnection(std::unique_ptr<IConnection> conn) {
 	this->connection = std::move(conn);
 }
@@ -136,7 +140,7 @@ void Session::setQos(uint8_t level) {
 	qosLevel = level;
 }
 
-void Session::setContext(std::weak_ptr<IStateContext> ctx) {
+void Session::setContext(std::shared_ptr<IStateContext> ctx) {
 	context = ctx;
 }
 
@@ -144,4 +148,6 @@ uint16_t Session::getId() const {
 	return(thisSessionId);
 }
 
-
+std::unique_ptr<IConnection> Session::getConnection() {
+	return(std::move(connection));
+}

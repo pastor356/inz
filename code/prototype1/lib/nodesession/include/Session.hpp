@@ -22,6 +22,8 @@ public:
 private:
 	static uint16_t sessionId; // incrementing in every constructor call
 	std::unique_ptr<IConnection> connection;
+	std::shared_ptr<IDataAccessor> storage; 
+
 	uint16_t thisSessionId;
 	UserAuth authData;
 	SessionState state;
@@ -32,13 +34,20 @@ private:
 	std::weak_ptr<IStateContext> context;
 
 
-	Session::SessionHeader parseMsg(Packet& packet) const;
+	SessionHeader parseMsg(Packet& packet) const;
+	void trimSessionHeader(Packet& packet) const;
+
 	uint16_t getSessionIdReconnection(Packet const& packet) const;
 
 public:
 
+	// change to unique_ptr<IConnectionHandler>
+	Session(std::unique_ptr<IConnection> connection, std::shared_ptr<IStateContext> ctx,
+			UserAuth userAuth);
+
 	void setConnection(std::unique_ptr<IConnection> conn) override;
-	void setContext(std::weak_ptr<IStateContext> ctx) override;
+	std::unique_ptr<IConnection> getConnection() override;
+	void setContext(std::shared_ptr<IStateContext> ctx) override;
 
 	int getDescriptor() const override;
 

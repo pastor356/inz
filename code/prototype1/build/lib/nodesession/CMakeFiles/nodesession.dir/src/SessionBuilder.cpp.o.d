@@ -263,4 +263,5 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/ISocket.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp

@@ -201,6 +201,7 @@ IConnection::Status TcpConnection::recv(Packet& packet, int flag) const {
 	IConnection::Status status;
 
 	status = recvHeader(packet.header);
+	(void)flag;
 
 	if(status != IConnection::Status::SUCCESS) {
 		logError << std::string{"recv(Packet&) failed: "} + strerror(errno);

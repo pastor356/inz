@@ -31,15 +31,21 @@ set(HEADERS
 	Session.hpp
 	CacheAccessor.hpp
 	NodeRegistry.hpp	
+	InitialState.hpp
+	ReconnectState.hpp
+	Serializer.hpp
 )
 
 set(SOURCES
 	Handshaker.cpp
 	MonitoredNode.cpp
-	SessionBuilder.cpp
+	#SessionBuilder.cpp
 	Session.cpp
 	CacheAccessor.cpp
 	NodeRegistry.cpp
+	InitialState.cpp
+	ReconnectState.cpp
+	Serializer.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})

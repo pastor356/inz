@@ -250,6 +250,30 @@ utest/first_mock.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/first_mock.cpp.s
 .PHONY : utest/first_mock.cpp.s
 
+utest/integrationQosSessionTest.o: utest/integrationQosSessionTest.cpp.o
+.PHONY : utest/integrationQosSessionTest.o
+
+# target to build an object file
+utest/integrationQosSessionTest.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o
+.PHONY : utest/integrationQosSessionTest.cpp.o
+
+utest/integrationQosSessionTest.i: utest/integrationQosSessionTest.cpp.i
+.PHONY : utest/integrationQosSessionTest.i
+
+# target to preprocess a source file
+utest/integrationQosSessionTest.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.i
+.PHONY : utest/integrationQosSessionTest.cpp.i
+
+utest/integrationQosSessionTest.s: utest/integrationQosSessionTest.cpp.s
+.PHONY : utest/integrationQosSessionTest.s
+
+# target to generate assembly for a file
+utest/integrationQosSessionTest.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.s
+.PHONY : utest/integrationQosSessionTest.cpp.s
+
 utest/maintest_gtest.o: utest/maintest_gtest.cpp.o
 .PHONY : utest/maintest_gtest.o
 
@@ -368,6 +392,9 @@ help:
 	@echo "... utest/first_mock.o"
 	@echo "... utest/first_mock.i"
 	@echo "... utest/first_mock.s"
+	@echo "... utest/integrationQosSessionTest.o"
+	@echo "... utest/integrationQosSessionTest.i"
+	@echo "... utest/integrationQosSessionTest.s"
 	@echo "... utest/maintest_gtest.o"
 	@echo "... utest/maintest_gtest.i"
 	@echo "... utest/maintest_gtest.s"

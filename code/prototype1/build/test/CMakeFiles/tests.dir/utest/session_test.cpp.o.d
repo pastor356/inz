@@ -196,15 +196,16 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
+ /usr/include/c++/15/set /usr/include/c++/15/bits/stl_tree.h \
+ /usr/include/c++/15/bits/stl_set.h \
+ /usr/include/c++/15/bits/stl_multiset.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateFactory.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/DatabaseCommunicator.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionRegistry.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp \
  /usr/include/c++/15/mutex /usr/include/c++/15/bits/std_mutex.h \
  /usr/include/c++/15/bits/unique_lock.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionBuilder.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/CacheAccessor.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
@@ -251,11 +252,8 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: \
  /usr/include/bits/types/idtype_t.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
  /usr/include/c++/15/iomanip /usr/include/c++/15/bits/quoted_string.h \
- /usr/include/c++/15/map /usr/include/c++/15/bits/stl_tree.h \
- /usr/include/c++/15/bits/stl_map.h \
- /usr/include/c++/15/bits/stl_multimap.h /usr/include/c++/15/set \
- /usr/include/c++/15/bits/stl_set.h \
- /usr/include/c++/15/bits/stl_multiset.h \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
@@ -271,7 +269,11 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCallee.hpp \
@@ -321,4 +323,6 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/SessionFixture.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ContextMock.hpp

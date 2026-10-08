@@ -9,8 +9,8 @@ class CacheAccessor: public IDataAccessor {
 public:
 	CacheAccessor() = default;
 	IDataAccessor::AccessorStatus authorize(UserAuth const& auth) const override;
-	IDataAccessor::AccessorStatus createUser(UserAuth const& auth) const override;
+	IDataAccessor::AccessorStatus createUser(UserAuth const& auth) override;
 	void getTopics(TopicSet& topicSet) const override;
-	void addTopic(std::string const& topic) const override;
+	void addTopic(std::string const& topic) override;
 };
 

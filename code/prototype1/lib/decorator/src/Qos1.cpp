@@ -3,7 +3,7 @@
 IConnection::Status Qos1::send(std::string const& msg, int flag) const {
 	Packet packet;
 	packet.payload = msg;
-	auto status = this->send(packet);
+	auto status = this->send(packet, flag);
 	if(status != IConnection::Status::SUCCESS) return(status);
 
 	return(status);
@@ -13,7 +13,7 @@ IConnection::Status Qos1::send(std::string const& msg, int flag) const {
 
 IConnection::Status Qos1::recv(std::string& msg, int flag) const {
 	Packet packet;
-	auto status = this->recv(packet);
+	auto status = this->recv(packet, flag);
 	if(status != IConnection::Status::SUCCESS) return(status);
 	msg = packet.payload;
 
@@ -23,7 +23,7 @@ IConnection::Status Qos1::recv(std::string& msg, int flag) const {
 
 
 IConnection::Status Qos1::recv(Packet& packet, int flag) const {
-	auto status = connection->recv(packet);
+	auto status = connection->recv(packet, flag);
 
 	if(status != IConnection::Status::SUCCESS) {
 		return(status);
@@ -100,7 +100,7 @@ IConnection::Status Qos1::send(Packet& packet, int flag) const {
 
 	uint16_t thisMsgId = currMsgId++;
 
-	auto status = connection->send(packet);
+	auto status = connection->send(packet, flag);
 
 	PendingMessage pending{thisMsgId, MsgType::DATA, 
 		std::chrono::steady_clock::now(), packet.payload, 

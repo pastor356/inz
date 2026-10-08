@@ -2,6 +2,8 @@
 #include <unordered_map>
 #include <string>
 #include <set>
+#include <cstdint>
+#include "ConsoleLogger.hpp"
 
 struct UserAuth {
 	std::string login;

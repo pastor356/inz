@@ -37,12 +37,15 @@ set(UTESTSOURCE
 	first_mock.cpp
 	QosMockTest.cpp 
 	session_test.cpp
+	integrationQosSessionTest.cpp
 )
 
 set(MOCKHEADERS
 	SocketMock.hpp
 	ConnectionMock.hpp
 	QosMock.hpp
+	ContextMock.hpp
+	SessionFixture.hpp
 )
 
 list(TRANSFORM UTESTSOURCE PREPEND ${UTESTDIR})

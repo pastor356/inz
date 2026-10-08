@@ -195,4 +195,16 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
+ /usr/include/c++/15/set /usr/include/c++/15/bits/stl_tree.h \
+ /usr/include/c++/15/bits/stl_set.h \
+ /usr/include/c++/15/bits/stl_multiset.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp \
+ /usr/include/c++/15/mutex /usr/include/c++/15/bits/std_mutex.h \
+ /usr/include/c++/15/bits/unique_lock.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/CacheAccessor.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp

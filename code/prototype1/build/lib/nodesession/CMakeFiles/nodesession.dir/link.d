@@ -3,9 +3,12 @@ libnodesession.so: \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o \
   CMakeFiles/nodesession.dir/src/Handshaker.cpp.o \
   CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o \
-  CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.o \
   CMakeFiles/nodesession.dir/src/Session.cpp.o \
-  CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.o \
+  CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o \
+  CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o \
+  CMakeFiles/nodesession.dir/src/InitialState.cpp.o \
+  CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o \
+  CMakeFiles/nodesession.dir/src/Serializer.cpp.o \
   ../decorator/libdecorator.so \
   ../networking/libnetworking.so \
   ../common/libcommon.so \
@@ -42,11 +45,17 @@ CMakeFiles/nodesession.dir/src/Handshaker.cpp.o:
 
 CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o:
 
-CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.o:
-
 CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
-CMakeFiles/nodesession.dir/src/SessionRegistry.cpp.o:
+CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o:
+
+CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
+
+CMakeFiles/nodesession.dir/src/InitialState.cpp.o:
+
+CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o:
+
+CMakeFiles/nodesession.dir/src/Serializer.cpp.o:
 
 ../decorator/libdecorator.so:
 

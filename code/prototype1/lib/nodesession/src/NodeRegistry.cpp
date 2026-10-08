@@ -33,7 +33,7 @@ void NodeRegistry::addSession(const uint16_t sessionId, UserAuth const& user) {
 UserAuth NodeRegistry::removeSession(const uint16_t sessionId) {
 	const char* methodName = "NodeRegistry::removeSession(const uint16_t)";
 	std::unique_lock<std::mutex> lock(mut);
-	auto session = registry->find(sessionId);
+	auto session = registry.find(sessionId);
 
 	auto ret = session->second;
 
@@ -43,4 +43,12 @@ UserAuth NodeRegistry::removeSession(const uint16_t sessionId) {
 	else logError << std::string{methodName} + ": session's not found";
 
 	return(ret);
+}
+
+bool NodeRegistry::isEmpty(UserAuth const& auth) const {
+	if((auth.login.empty() || auth.password.empty()) && auth.secret.empty()) {
+		return(true);
+	}
+
+	return(false);
 }

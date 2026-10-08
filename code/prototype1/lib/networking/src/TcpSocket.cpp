@@ -181,7 +181,6 @@ TcpSocket::TcpSocket(addrInfo && resolvedAddress) {
 	std::unique_ptr ai = std::move(resolvedAddress);
 
 	struct addrinfo* iter = ai.get();
-	int err;
 
 	if(iter == nullptr) {
 		auto ex = std::string{__func__} + ": address info is corrupted";

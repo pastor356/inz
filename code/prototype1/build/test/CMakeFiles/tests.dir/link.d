@@ -9,6 +9,7 @@ tests: \
   CMakeFiles/tests.dir/utest/first_mock.cpp.o \
   CMakeFiles/tests.dir/utest/QosMockTest.cpp.o \
   CMakeFiles/tests.dir/utest/session_test.cpp.o \
+  CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o \
   ../lib/nodesession/libnodesession.so \
   ../lib/libgtest_main.a \
   ../lib/libgmock.a \
@@ -63,6 +64,8 @@ CMakeFiles/tests.dir/utest/first_mock.cpp.o:
 CMakeFiles/tests.dir/utest/QosMockTest.cpp.o:
 
 CMakeFiles/tests.dir/utest/session_test.cpp.o:
+
+CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o:
 
 ../lib/nodesession/libnodesession.so:
 

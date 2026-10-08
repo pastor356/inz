@@ -226,6 +226,30 @@ src/Handshaker.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.s
 .PHONY : src/Handshaker.cpp.s
 
+src/InitialState.o: src/InitialState.cpp.o
+.PHONY : src/InitialState.o
+
+# target to build an object file
+src/InitialState.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/InitialState.cpp.o
+.PHONY : src/InitialState.cpp.o
+
+src/InitialState.i: src/InitialState.cpp.i
+.PHONY : src/InitialState.i
+
+# target to preprocess a source file
+src/InitialState.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/InitialState.cpp.i
+.PHONY : src/InitialState.cpp.i
+
+src/InitialState.s: src/InitialState.cpp.s
+.PHONY : src/InitialState.s
+
+# target to generate assembly for a file
+src/InitialState.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/InitialState.cpp.s
+.PHONY : src/InitialState.cpp.s
+
 src/MonitoredNode.o: src/MonitoredNode.cpp.o
 .PHONY : src/MonitoredNode.o
 
@@ -274,6 +298,54 @@ src/NodeRegistry.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.s
 .PHONY : src/NodeRegistry.cpp.s
 
+src/ReconnectState.o: src/ReconnectState.cpp.o
+.PHONY : src/ReconnectState.o
+
+# target to build an object file
+src/ReconnectState.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o
+.PHONY : src/ReconnectState.cpp.o
+
+src/ReconnectState.i: src/ReconnectState.cpp.i
+.PHONY : src/ReconnectState.i
+
+# target to preprocess a source file
+src/ReconnectState.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/ReconnectState.cpp.i
+.PHONY : src/ReconnectState.cpp.i
+
+src/ReconnectState.s: src/ReconnectState.cpp.s
+.PHONY : src/ReconnectState.s
+
+# target to generate assembly for a file
+src/ReconnectState.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/ReconnectState.cpp.s
+.PHONY : src/ReconnectState.cpp.s
+
+src/Serializer.o: src/Serializer.cpp.o
+.PHONY : src/Serializer.o
+
+# target to build an object file
+src/Serializer.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.o
+.PHONY : src/Serializer.cpp.o
+
+src/Serializer.i: src/Serializer.cpp.i
+.PHONY : src/Serializer.i
+
+# target to preprocess a source file
+src/Serializer.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.i
+.PHONY : src/Serializer.cpp.i
+
+src/Serializer.s: src/Serializer.cpp.s
+.PHONY : src/Serializer.s
+
+# target to generate assembly for a file
+src/Serializer.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.s
+.PHONY : src/Serializer.cpp.s
+
 src/Session.o: src/Session.cpp.o
 .PHONY : src/Session.o
 
@@ -298,30 +370,6 @@ src/Session.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.s
 .PHONY : src/Session.cpp.s
 
-src/SessionBuilder.o: src/SessionBuilder.cpp.o
-.PHONY : src/SessionBuilder.o
-
-# target to build an object file
-src/SessionBuilder.cpp.o:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.o
-.PHONY : src/SessionBuilder.cpp.o
-
-src/SessionBuilder.i: src/SessionBuilder.cpp.i
-.PHONY : src/SessionBuilder.i
-
-# target to preprocess a source file
-src/SessionBuilder.cpp.i:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.i
-.PHONY : src/SessionBuilder.cpp.i
-
-src/SessionBuilder.s: src/SessionBuilder.cpp.s
-.PHONY : src/SessionBuilder.s
-
-# target to generate assembly for a file
-src/SessionBuilder.cpp.s:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionBuilder.cpp.s
-.PHONY : src/SessionBuilder.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -341,18 +389,24 @@ help:
 	@echo "... src/Handshaker.o"
 	@echo "... src/Handshaker.i"
 	@echo "... src/Handshaker.s"
+	@echo "... src/InitialState.o"
+	@echo "... src/InitialState.i"
+	@echo "... src/InitialState.s"
 	@echo "... src/MonitoredNode.o"
 	@echo "... src/MonitoredNode.i"
 	@echo "... src/MonitoredNode.s"
 	@echo "... src/NodeRegistry.o"
 	@echo "... src/NodeRegistry.i"
 	@echo "... src/NodeRegistry.s"
+	@echo "... src/ReconnectState.o"
+	@echo "... src/ReconnectState.i"
+	@echo "... src/ReconnectState.s"
+	@echo "... src/Serializer.o"
+	@echo "... src/Serializer.i"
+	@echo "... src/Serializer.s"
 	@echo "... src/Session.o"
 	@echo "... src/Session.i"
 	@echo "... src/Session.s"
-	@echo "... src/SessionBuilder.o"
-	@echo "... src/SessionBuilder.i"
-	@echo "... src/SessionBuilder.s"
 .PHONY : help
 
 
