@@ -177,21 +177,6 @@ IConnection::Status TcpConnection::send(Packet& packet, int flag) const {
 	}
 
 	status = IConnection::Status::SUCCESS;
-	/*
-	status = sendHeader(packet.header);
-
-	if(status != IConnection::Status::SUCCESS) {
-		logError << std::string{"send(Packet&) failed: "} + strerror(errno);
-		return(status);
-	}
-
-	status = sendPayload(packet.payload);
-
-	if(status != IConnection::Status::SUCCESS) {
-		logError << std::string{"send(Packet&) failed: "} + strerror(errno);
-		return(status);
-	}
-	*/
 
 	return(status);
 }

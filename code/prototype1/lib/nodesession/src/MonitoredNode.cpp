@@ -39,9 +39,20 @@ void MonitoredNode::changeStateSession(std::unique_ptr<IConnection> conn,
 		std::shared_ptr<IStateContext> ctx, UserAuth userAuth) {
 
 	oldConn = std::move(connection);
-	connection = 
+	auto session = 
 		std::make_shared<Session>(std::move(conn), ctx, userAuth);
+
+	registry->addSession(session->getId(), userAuth);
+	connection = std::move(session);
 }
+
+void MonitoredNode::changeStateTerminated(std::shared_ptr<IStateContext> ctx, 
+		UserAuth authUser) {
+
+	oldConn = std::move(connection);
+	connection = std::make_shared<TerminatedState>(ctx, authUser);
+}
+
 
 IConnection::Status MonitoredNode::recv(Packet& packet, int flag) {
 	return(connection->recv(packet, flag));

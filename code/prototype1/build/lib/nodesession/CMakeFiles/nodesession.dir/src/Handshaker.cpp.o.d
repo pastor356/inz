@@ -205,4 +205,64 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: \
  /usr/include/c++/15/bits/unique_lock.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/CacheAccessor.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
+ /usr/local/include/gtest/gtest.h /usr/include/c++/15/sstream \
+ /usr/include/c++/15/bits/sstream.tcc \
+ /usr/local/include/gtest/gtest-assertion-result.h \
+ /usr/local/include/gtest/gtest-message.h \
+ /usr/local/include/gtest/internal/gtest-port.h \
+ /usr/include/c++/15/version /usr/include/c++/15/stdlib.h \
+ /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/locale_facets_nonio.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/15/bits/locale_conv.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
+ /usr/include/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/bits/statx-generic.h \
+ /usr/include/bits/types/struct_statx_timestamp.h \
+ /usr/include/bits/types/struct_statx.h \
+ /usr/local/include/gtest/internal/custom/gtest-port.h \
+ /usr/local/include/gtest/internal/gtest-port-arch.h /usr/include/regex.h \
+ /usr/include/c++/15/condition_variable \
+ /usr/local/include/gtest/gtest-death-test.h \
+ /usr/local/include/gtest/internal/gtest-death-test-internal.h \
+ /usr/local/include/gtest/gtest-matchers.h /usr/include/c++/15/atomic \
+ /usr/local/include/gtest/gtest-printers.h /usr/include/c++/15/any \
+ /usr/include/c++/15/optional /usr/include/c++/15/utility \
+ /usr/include/c++/15/bits/stl_relops.h /usr/include/c++/15/variant \
+ /usr/include/c++/15/bits/monostate.h \
+ /usr/local/include/gtest/internal/gtest-internal.h \
+ /usr/include/sys/wait.h /usr/include/signal.h \
+ /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
+ /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/siginfo-arch.h \
+ /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/sigevent-consts.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/bits/types/stack_t.h /usr/include/sys/ucontext.h \
+ /usr/include/bits/sigstack.h /usr/include/bits/sigstksz.h \
+ /usr/include/bits/ss_flags.h /usr/include/bits/types/struct_sigstack.h \
+ /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h \
+ /usr/include/bits/types/idtype_t.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h \
+ /usr/local/include/gtest/internal/gtest-filepath.h \
+ /usr/local/include/gtest/internal/gtest-string.h \
+ /usr/local/include/gtest/internal/gtest-type-util.h \
+ /usr/include/c++/15/cxxabi.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/cxxabi_tweaks.h \
+ /usr/local/include/gtest/internal/custom/gtest-printers.h \
+ /usr/local/include/gtest/gtest-param-test.h /usr/include/c++/15/iterator \
+ /usr/include/c++/15/bits/stream_iterator.h \
+ /usr/local/include/gtest/internal/gtest-param-util.h \
+ /usr/include/c++/15/cassert /usr/include/assert.h \
+ /usr/local/include/gtest/gtest-test-part.h \
+ /usr/local/include/gtest/gtest-typed-test.h \
+ /usr/local/include/gtest/gtest_pred_impl.h \
+ /usr/local/include/gtest/gtest_prod.h

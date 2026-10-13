@@ -34,6 +34,7 @@ set(HEADERS
 	InitialState.hpp
 	ReconnectState.hpp
 	Serializer.hpp
+	TerminatedState.hpp
 )
 
 set(SOURCES
@@ -46,6 +47,7 @@ set(SOURCES
 	InitialState.cpp
 	ReconnectState.cpp
 	Serializer.cpp
+	TerminatedState.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})

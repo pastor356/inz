@@ -28,7 +28,6 @@ protected:
 		FINISHED
 	};
 
-
 	enum class MsgType: uint8_t { 
 		DATA = MSGTYPE_DATA,
 		PUBACK = MSGTYPE_PUBACK,
@@ -45,7 +44,6 @@ protected:
 		QosState state;
 		int retries{0};
 	};
-
 
 	// packetId to PendingMessage
 	mutable std::unordered_map<uint16_t, PendingMessage> pendingMessages;

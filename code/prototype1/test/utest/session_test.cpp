@@ -62,8 +62,7 @@ TEST_F(SessionTest, HandshakePacketHandling) {
 	EXPECT_EQ(status, IConnection::Status::SUCCESS);
 
 	// check if context has Handshaker state
-	auto* handler = dynamic_cast<Handshaker*>(monitoredNode->getHandler());
+	auto* handler = dynamic_cast<Session*>(monitoredNode->getHandler());
 	EXPECT_NE(handler, nullptr);
-	
 }
 

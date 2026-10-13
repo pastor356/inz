@@ -26,6 +26,7 @@ public:
 
 	using TopicSet = std::set<std::string>;
 
+	virtual UserAuth getUser(std::string const& login) const = 0;
 	virtual AccessorStatus authorize(UserAuth const& auth) const = 0;
 	virtual AccessorStatus createUser(UserAuth const& auth) = 0;
 	virtual void getTopics(TopicSet& topicSet) const = 0;

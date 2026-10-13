@@ -39,3 +39,21 @@ void CacheAccessor::addTopic(std::string const& topic) {
 void CacheAccessor::getTopics(TopicSet& topicSet) const {
 	topicSet = this->topics;
 }
+
+UserAuth CacheAccessor::getUser(std::string const& login) const { 
+	UserAuth auth;
+	if(login.empty()) return(auth);
+	
+	auto res = storage.find(login);
+
+	if(res == storage.end()) {
+		logError << "CacheAccessor::getUser() failed: user with login " + login
+			+ " is not found";
+
+		return(auth);
+	}
+
+	return(res->second);
+}
+
+

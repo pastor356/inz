@@ -206,7 +206,6 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: \
  /usr/include/c++/15/bits/unique_lock.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/CacheAccessor.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
@@ -268,8 +267,10 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \

@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nodesession.dir/src/Serializer.cpp.o.d"
   "CMakeFiles/nodesession.dir/src/Session.cpp.o"
   "CMakeFiles/nodesession.dir/src/Session.cpp.o.d"
+  "CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o"
+  "CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o.d"
   "libnodesession.pdb"
   "libnodesession.so"
 )

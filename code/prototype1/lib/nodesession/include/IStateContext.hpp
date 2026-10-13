@@ -23,6 +23,8 @@ public:
 	virtual void changeStateSession(std::unique_ptr<IConnection> conn,
 			std::shared_ptr<IStateContext> ctx, UserAuth authUser) = 0;
 
+	virtual void changeStateTerminated(std::shared_ptr<IStateContext> ctx, 
+			UserAuth authUser) = 0;
 
 	virtual IConnectionHandler* getHandler() const = 0;
 

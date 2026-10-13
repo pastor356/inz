@@ -370,6 +370,30 @@ src/Session.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.s
 .PHONY : src/Session.cpp.s
 
+src/TerminatedState.o: src/TerminatedState.cpp.o
+.PHONY : src/TerminatedState.o
+
+# target to build an object file
+src/TerminatedState.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o
+.PHONY : src/TerminatedState.cpp.o
+
+src/TerminatedState.i: src/TerminatedState.cpp.i
+.PHONY : src/TerminatedState.i
+
+# target to preprocess a source file
+src/TerminatedState.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/TerminatedState.cpp.i
+.PHONY : src/TerminatedState.cpp.i
+
+src/TerminatedState.s: src/TerminatedState.cpp.s
+.PHONY : src/TerminatedState.s
+
+# target to generate assembly for a file
+src/TerminatedState.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/TerminatedState.cpp.s
+.PHONY : src/TerminatedState.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -407,6 +431,9 @@ help:
 	@echo "... src/Session.o"
 	@echo "... src/Session.i"
 	@echo "... src/Session.s"
+	@echo "... src/TerminatedState.o"
+	@echo "... src/TerminatedState.i"
+	@echo "... src/TerminatedState.s"
 .PHONY : help
 
 

@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/ReconnectState.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/Serializer.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.o.d"
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/Session.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o.d"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/TerminatedState.cpp" "lib/nodesession/CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o.d"
   "" "lib/nodesession/libnodesession.so" "gcc" "lib/nodesession/CMakeFiles/nodesession.dir/link.d"
   )
 

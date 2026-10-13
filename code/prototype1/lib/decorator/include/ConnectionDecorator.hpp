@@ -23,7 +23,7 @@ public:
 	IConnection::Status send(Packet& packet, int flag = 0) const override;
 	IConnection::Status recv(Packet& packet, int flag = 0) const override;
 
-	ConnectionDecorator(std::unique_ptr<IConnection>&& conn);
+	ConnectionDecorator(std::unique_ptr<IConnection> conn);
 };
 
 

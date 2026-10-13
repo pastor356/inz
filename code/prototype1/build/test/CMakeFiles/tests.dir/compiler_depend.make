@@ -1338,6 +1338,7 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ContextMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
@@ -2516,6 +2517,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ContextMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
@@ -3496,6 +3498,8 @@ lib/libgtest.a:
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp:
 
 /usr/include/c++/15/utility:
 

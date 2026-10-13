@@ -1342,6 +1342,7 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ContextMock.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp
@@ -2523,6 +2524,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ContextMock.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp

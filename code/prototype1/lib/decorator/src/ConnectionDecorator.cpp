@@ -10,7 +10,7 @@ IConnection::Status ConnectionDecorator::recv(std::string& msg, int flag) const 
 }
 
 
-ConnectionDecorator::ConnectionDecorator(std::unique_ptr<IConnection>&& conn) {
+ConnectionDecorator::ConnectionDecorator(std::unique_ptr<IConnection> conn) {
 	this->connection = std::move(conn);
 }
 

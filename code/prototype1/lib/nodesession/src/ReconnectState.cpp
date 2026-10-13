@@ -69,7 +69,7 @@ uint16_t ReconnectState::parseMsg(Packet const& packet) const {
 	uint16_t sessionId = 0;
 
 	if(packet.header[0] == MSGTYPE_RECONNECT) {
-		sessionId = packet.header[1] | (packet.header[2] >> 0x8);
+		sessionId = packet.header[1] | (packet.header[2] << 0x8);
 
 	} else {
 		logError << "ReconnectState::parseMsg(Packet const&) failed: msgtype is unknown";

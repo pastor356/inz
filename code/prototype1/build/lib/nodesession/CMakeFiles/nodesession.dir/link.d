@@ -9,6 +9,7 @@ libnodesession.so: \
   CMakeFiles/nodesession.dir/src/InitialState.cpp.o \
   CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o \
   CMakeFiles/nodesession.dir/src/Serializer.cpp.o \
+  CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o \
   ../decorator/libdecorator.so \
   ../networking/libnetworking.so \
   ../common/libcommon.so \
@@ -56,6 +57,8 @@ CMakeFiles/nodesession.dir/src/InitialState.cpp.o:
 CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o:
 
 CMakeFiles/nodesession.dir/src/Serializer.cpp.o:
+
+CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o:
 
 ../decorator/libdecorator.so:
 

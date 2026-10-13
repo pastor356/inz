@@ -4,7 +4,11 @@ uint16_t Session::sessionId = 300;
 
 Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContext> ctx, 
 		UserAuth userAuth):
-	connection{std::move(conn)}, context{ctx}, authData{userAuth} {}
+	connection{std::move(conn)}, context{ctx}, authData{userAuth} {
+	
+	thisSessionId = sessionId++;
+	
+}
 
 
 
@@ -14,6 +18,12 @@ IConnection::Status Session::send(std::string const& message, int flag) const {
 	packet.payload = message;
 
 	auto status = this->send(packet, flag);
+	if(status == IConnection::Status::ERROR || 
+			status == IConnection::Status::HUP) {
+		if(auto strong = context.lock()) {
+			strong->changeStateTerminated(strong, authData);
+		}
+	}
 
 	return(status);
 }
@@ -22,6 +32,13 @@ IConnection::Status Session::send(std::string const& message, int flag) const {
 IConnection::Status Session::recv(Packet& packet, int flag) {
 	auto status = connection->recv(packet, flag);
 	std::string methodName = "Session::recv(Packet&)";
+
+	if(status == IConnection::Status::ERROR || 
+			status == IConnection::Status::HUP) {
+		if(auto strong = context.lock()) {
+			strong->changeStateTerminated(strong, authData);
+		}
+	}
 
 	if(status != IConnection::Status::SUCCESS) {
 		logError << methodName + ": failed";
@@ -90,6 +107,13 @@ IConnection::Status Session::recv(std::string& message, int flag) {
 
 	auto status = this->recv(packet, flag);
 	
+	if(status == IConnection::Status::ERROR || 
+			status == IConnection::Status::HUP) {
+		if(auto strong = context.lock()) {
+			strong->changeStateTerminated(strong, authData);
+		}
+	}
+
 	message = packet.payload;
 
 	return(status);
@@ -114,6 +138,13 @@ IConnection::Status Session::send(Packet& packet, int flag) const {
 	
 	if((status = connection->send(packet, flag)) != IConnection::Status::SUCCESS)
 		logError << "Session::send() failed";
+
+	if(status == IConnection::Status::ERROR || 
+			status == IConnection::Status::HUP) {
+		if(auto strong = context.lock()) {
+			strong->changeStateTerminated(strong, authData);
+		}
+	}
 
 	return(status);
 }

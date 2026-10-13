@@ -59,6 +59,7 @@ public:
 	
 	// callback, injected into LiveMonitor (timeoutCallback field)
 	void handleTimeout(); 
+
 	uint8_t getQos() const;
 	void setQos(uint8_t level);
 	uint16_t getId() const; 

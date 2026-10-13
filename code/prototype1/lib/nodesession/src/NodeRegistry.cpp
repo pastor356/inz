@@ -9,7 +9,8 @@ UserAuth NodeRegistry::findSession(const uint16_t sessionId) {
 	UserAuth res;
 
 	if(session == registry.end()) {
-		logError << std::string{methodName} + ": session's not found";
+		logError << std::string{methodName} + ": session's not found with id " 
+			+ std::to_string(sessionId);
 		return(res);
 	}
 
@@ -24,7 +25,8 @@ void NodeRegistry::addSession(const uint16_t sessionId, UserAuth const& user) {
 	auto res = registry.try_emplace(sessionId, user);
 
 	if(!res.second) {
-		logError << std::string{methodName} + ": session already exists";
+		logError << std::string{methodName} + ": session already exists with id "
+			+ std::to_string(sessionId);
 		return;
 	}
 }
@@ -40,7 +42,8 @@ UserAuth NodeRegistry::removeSession(const uint16_t sessionId) {
 	if(session != registry.end()) {
 		registry.erase(session);
 	} 
-	else logError << std::string{methodName} + ": session's not found";
+	else logError << std::string{methodName} + ": session's not found with id "
+			+ std::to_string(sessionId);
 
 	return(ret);
 }

@@ -6,7 +6,7 @@
 #include "CacheAccessor.hpp"
 #include "IDataAccessor.hpp"
 #include "SessionConfig.hpp"
-
+#include "Qos1.hpp"
 
 
 

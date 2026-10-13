@@ -57,10 +57,19 @@ IConnection::Status Handshaker::recv(Packet& packet, int flag) {
 		return(sendStatus);
 	}
 
+	if(sc.qosLevel == 1) {
+		connection = std::make_unique<Qos1>(std::move(connection));
+	} else if(sc.qosLevel == 2) {
+		//connection == std::make_unique<Qos2>(std::move(connection));
+	}
+
+	if(auto strong = context.lock()) {
+		strong->changeStateSession(std::move(connection), strong, sc.authData);
+	}
+
 
 	return(sendStatus);
 }
-
 
 
 
@@ -70,13 +79,14 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 	size_t loginLen, passwdLen, secretLen, topicLen;
 	size_t headerSize = packet.header.size();
 
+	if(packet.header.size() < HANDSHAKER_HEADERLEN) {
+		logError << "Handshaker::parseMsg() failed: header size doesn't fit";
+		return(sc);
+	}
+
 	uint8_t firstByte = packet.header[headerSize - 6];
 	uint8_t msgType = firstByte & (0b1111 << MsgType_Pos);
 
-	if(packet.header.empty()) {
-		logError << "Handshaker::parseMsg() failed: header is empty";
-		return(sc);
-	}
 
 
 	if(msgType == MSGTYPE_HANDSHAKE) {
@@ -110,6 +120,7 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 
 		sc.creatFlag = (secondByte >> CREATFLAG_Pos) & 0b1;
 		sc.newUsr    = (secondByte >> NEWUSRFLAG_Pos) & 0b1;
+		sc.authData.rights    = (secondByte >> RIGHTS_Pos) & 0b11;
 		sc.rights    = (secondByte >> RIGHTS_Pos) & 0b11;
 
 		if(sc.rights != RIGHTS_USR &&
@@ -132,7 +143,6 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 			sc.authData.secret.assign(cursor, cursor + secretLen);
 
 		}
-
 	} else {
 		logError << std::string{methodName} + ": unknown msg type in header";
 		return(sc);
@@ -181,5 +191,3 @@ IConnection::Status Handshaker::send(std::string const& message, int flag) const
 std::unique_ptr<IConnection> Handshaker::getConnection() {
 	return(std::move(connection));
 }
-
-

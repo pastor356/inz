@@ -50,7 +50,7 @@ Packet serializeHandshake(bool role, uint8_t qos, bool creat, bool newUsr,
 }
 
 
-Packet serializeInitialState(bool isReconnect = false) {
+Packet serializeInitial(bool isReconnect) {
 	Packet packet;
 	if(isReconnect)
 		packet.header.push_back(MSGTYPE_RECONNECT);
@@ -66,7 +66,7 @@ Packet serializeReconnect(uint16_t sessionId) {
 	packet.header.push_back(MSGTYPE_RECONNECT);
 
 	packet.header.push_back(sessionId & 0xff);
-	packet.header.push_back((sessionId << 0x8) & 0xff);
+	packet.header.push_back((sessionId >> 0x8) & 0xff);
 
 	return(packet);
 }

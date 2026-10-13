@@ -4,6 +4,7 @@
 #include "IDataAccessor.hpp"
 #include "NodeRegistry.hpp"
 #include "ReconnectState.hpp"
+#include "TerminatedState.hpp"
 
 
 class MonitoredNode: public IStateContext {
@@ -30,6 +31,9 @@ public:
 
 	void changeStateSession(std::unique_ptr<IConnection> conn,
 			std::shared_ptr<IStateContext> ctx, UserAuth authUser) override;
+
+	void changeStateTerminated(std::shared_ptr<IStateContext> ctx, 
+			UserAuth authUser) override;
 
 	IConnection::Status recv(Packet& packet, int flag = 0) override;
 	IConnection::Status send(Packet& packet, int flag = 0) override;
