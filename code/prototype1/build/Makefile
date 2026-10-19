@@ -214,6 +214,19 @@ nodesession/fast:
 .PHONY : nodesession/fast
 
 #=============================================================================
+# Target rules for targets named reactor
+
+# Build rule for target.
+reactor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reactor
+.PHONY : reactor
+
+# fast build rule for target.
+reactor/fast:
+	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/build
+.PHONY : reactor/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -298,6 +311,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... networking"
 	@echo "... nodesession"
+	@echo "... reactor"
 	@echo "... tests"
 .PHONY : help
 

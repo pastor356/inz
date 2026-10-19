@@ -27,9 +27,3 @@ public:
 };
 
 
-/*
-auto connDec = socket->accept();
-
-auto liveMonConnection = std::make_unique<LiveMonitor>(std::move(connDec));
-auto qosLiveMonConnection = std::make_unique<QoS1>(std::move(liveMonConnection));
-*/

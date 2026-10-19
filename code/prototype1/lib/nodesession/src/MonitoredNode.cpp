@@ -63,3 +63,17 @@ IConnection::Status MonitoredNode::send(Packet& packet, int flag) {
 	return(connection->send(packet, flag));
 }
 
+void MonitoredNode::setRole(uint8_t role) {
+	this->role = role; 
+}
+
+
+bool MonitoredNode::isConsumer() const {
+	if((role & ROLE_CONS) == ROLE_CONS) return(true);
+
+	return(false);
+}
+
+int MonitoredNode::getDescriptor() const {
+	return(connection->getDescriptor());
+}

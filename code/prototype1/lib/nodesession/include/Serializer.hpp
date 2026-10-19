@@ -6,7 +6,7 @@
 
 namespace Serializer {
 
-Packet serializeHandshake(bool role, uint8_t qos, bool creat, bool newUsr,
+Packet serializeHandshake(uint8_t role, uint8_t qos, bool creat, bool newUsr,
 			uint8_t rights, std::string topic, std::string login,
 			std::string password, std::string secret);
 

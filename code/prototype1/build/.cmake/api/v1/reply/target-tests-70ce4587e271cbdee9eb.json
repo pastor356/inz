@@ -131,6 +131,10 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "common::@9fc5b58572d5f236116a"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "networking::@f3c59c8fb4d405477e2b"
 		},
 		{
@@ -152,10 +156,6 @@
 		{
 			"backtrace" : 2,
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "common::@9fc5b58572d5f236116a"
 		}
 	],
 	"id" : "tests::@36f028580bb02cc8272a",

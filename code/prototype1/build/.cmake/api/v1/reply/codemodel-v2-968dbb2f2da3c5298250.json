@@ -12,7 +12,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
@@ -84,10 +85,25 @@
 					]
 				},
 				{
+					"build" : "lib/reactor",
+					"jsonFile" : "directory-lib.reactor-113e3551b700a9bd1ee3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "lib/reactor",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
 					"build" : "test",
 					"childIndexes" : 
 					[
-						6
+						7
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-test-451c0598f41488bb20b9.json",
@@ -96,18 +112,18 @@
 						"string" : "3.10"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 5,
+					"projectIndex" : 6,
 					"source" : "test",
 					"targetIndexes" : 
 					[
-						8
+						9
 					]
 				},
 				{
 					"build" : "_deps/googletest-build",
 					"childIndexes" : 
 					[
-						7
+						8
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-_deps.googletest-build-325181791364522dc3de.json",
@@ -115,15 +131,15 @@
 					{
 						"string" : "3.5"
 					},
-					"parentIndex" : 5,
-					"projectIndex" : 6,
+					"parentIndex" : 6,
+					"projectIndex" : 7,
 					"source" : "build/_deps/googletest-src"
 				},
 				{
 					"build" : "_deps/googletest-build/googlemock",
 					"childIndexes" : 
 					[
-						8
+						9
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-_deps.googletest-build.googlemock-ff4bab7166510dc09d76.json",
@@ -131,8 +147,8 @@
 					{
 						"string" : "3.5"
 					},
-					"parentIndex" : 6,
-					"projectIndex" : 7,
+					"parentIndex" : 7,
+					"projectIndex" : 8,
 					"source" : "build/_deps/googletest-src/googlemock",
 					"targetIndexes" : 
 					[
@@ -148,8 +164,8 @@
 					{
 						"string" : "3.5"
 					},
-					"parentIndex" : 7,
-					"projectIndex" : 8,
+					"parentIndex" : 8,
+					"projectIndex" : 9,
 					"source" : "build/_deps/googletest-src/googletest",
 					"targetIndexes" : 
 					[
@@ -168,7 +184,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"directoryIndexes" : 
 					[
@@ -225,15 +242,11 @@
 					]
 				},
 				{
-					"childIndexes" : 
-					[
-						6
-					],
 					"directoryIndexes" : 
 					[
 						5
 					],
-					"name" : "tests",
+					"name" : "reactor",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -249,8 +262,12 @@
 					[
 						6
 					],
-					"name" : "googletest-distribution",
-					"parentIndex" : 5
+					"name" : "tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
 				},
 				{
 					"childIndexes" : 
@@ -261,8 +278,20 @@
 					[
 						7
 					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 6
+				},
+				{
+					"childIndexes" : 
+					[
+						9
+					],
+					"directoryIndexes" : 
+					[
+						8
+					],
 					"name" : "gmock",
-					"parentIndex" : 6,
+					"parentIndex" : 7,
 					"targetIndexes" : 
 					[
 						2,
@@ -272,10 +301,10 @@
 				{
 					"directoryIndexes" : 
 					[
-						8
+						9
 					],
 					"name" : "gtest",
-					"parentIndex" : 7,
+					"parentIndex" : 8,
 					"targetIndexes" : 
 					[
 						4,
@@ -295,37 +324,37 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "decorator::@f0f1d9882c4718bc7120",
-					"jsonFile" : "target-decorator-6445aa97cac1a36467f8.json",
+					"jsonFile" : "target-decorator-4d126d0a41b72e8a995a.json",
 					"name" : "decorator",
 					"projectIndex" : 3
 				},
 				{
-					"directoryIndex" : 7,
+					"directoryIndex" : 8,
 					"id" : "gmock::@0f7bb11d64f3678238c7",
 					"jsonFile" : "target-gmock-de89caa13e2f99e728b9.json",
 					"name" : "gmock",
-					"projectIndex" : 7
+					"projectIndex" : 8
 				},
 				{
-					"directoryIndex" : 7,
+					"directoryIndex" : 8,
 					"id" : "gmock_main::@0f7bb11d64f3678238c7",
 					"jsonFile" : "target-gmock_main-7c101d76886f994f1a2a.json",
 					"name" : "gmock_main",
-					"projectIndex" : 7
+					"projectIndex" : 8
 				},
 				{
-					"directoryIndex" : 8,
+					"directoryIndex" : 9,
 					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
 					"jsonFile" : "target-gtest-fc17d179b971944088fd.json",
 					"name" : "gtest",
-					"projectIndex" : 8
+					"projectIndex" : 9
 				},
 				{
-					"directoryIndex" : 8,
+					"directoryIndex" : 9,
 					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
 					"jsonFile" : "target-gtest_main-bd838b469b907a0ad2da.json",
 					"name" : "gtest_main",
-					"projectIndex" : 8
+					"projectIndex" : 9
 				},
 				{
 					"directoryIndex" : 2,
@@ -337,16 +366,23 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "nodesession::@aa722582cb4a8ff83327",
-					"jsonFile" : "target-nodesession-b45b5483c354432be08e.json",
+					"jsonFile" : "target-nodesession-9c5ef9382b674ac23280.json",
 					"name" : "nodesession",
 					"projectIndex" : 4
 				},
 				{
 					"directoryIndex" : 5,
-					"id" : "tests::@36f028580bb02cc8272a",
-					"jsonFile" : "target-tests-f8c087bcae8cfebb38b9.json",
-					"name" : "tests",
+					"id" : "reactor::@03f9dbcae4de2595b05d",
+					"jsonFile" : "target-reactor-b8e262dcae91019b3ba4.json",
+					"name" : "reactor",
 					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "tests::@36f028580bb02cc8272a",
+					"jsonFile" : "target-tests-70ce4587e271cbdee9eb.json",
+					"name" : "tests",
+					"projectIndex" : 6
 				}
 			]
 		}

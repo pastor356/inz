@@ -6,13 +6,17 @@
 #include "ReconnectState.hpp"
 #include "TerminatedState.hpp"
 
+#define MSGTYPE_TOPICDATA		(uint8_t)(0xa << MsgType_Pos)
+#define TOPICDATA_HEADERLEN		0x4
 
 class MonitoredNode: public IStateContext {
+	int role = ROLE_CONS;
 	std::shared_ptr<IConnectionHandler> connection;
 	std::shared_ptr<IConnectionHandler> oldConn;
 
 	std::shared_ptr<IDataAccessor> storage;
 	std::shared_ptr<NodeRegistry> registry;
+
 
 public:
 	MonitoredNode() = default;
@@ -20,6 +24,10 @@ public:
 			std::shared_ptr<IDataAccessor> storage, std::shared_ptr<NodeRegistry> registry);
 
 	void changeState(std::shared_ptr<IConnectionHandler> newState) override;
+
+	void setRole(uint8_t role) override;
+
+	bool isConsumer() const override;
 
 	IConnectionHandler* getHandler() const override;
 	
@@ -34,6 +42,8 @@ public:
 
 	void changeStateTerminated(std::shared_ptr<IStateContext> ctx, 
 			UserAuth authUser) override;
+
+	int getDescriptor() const override;
 
 	IConnection::Status recv(Packet& packet, int flag = 0) override;
 	IConnection::Status send(Packet& packet, int flag = 0) override;

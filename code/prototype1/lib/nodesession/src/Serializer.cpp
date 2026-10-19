@@ -2,16 +2,15 @@
 
 namespace Serializer {
 
-Packet serializeHandshake(bool role, uint8_t qos, bool creat, bool newUsr,
+Packet serializeHandshake(uint8_t role, uint8_t qos, bool creat, bool newUsr,
 				uint8_t rights, std::string topic, std::string login,
 				std::string password, std::string secret) {
     Packet packet;
 
     uint8_t firstByte = MSGTYPE_HANDSHAKE;
 
-    if(role) {
-        firstByte |= (0b11 << RoleType_Pos);
-    }
+	if(role > 3) role = ROLE_CONS;
+	firstByte |= ((role & 0b11) << RoleType_Pos);
 
     firstByte |= ((qos & 0b11) << QosType_Pos);
 

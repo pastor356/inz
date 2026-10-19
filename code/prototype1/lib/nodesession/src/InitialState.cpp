@@ -19,12 +19,14 @@ IConnection::Status InitialState::recv(Packet& packet, int flag) {
 		auto strong = context.lock();
 		if(strong) {
 			strong->changeStateHandshake(std::move(connection), strong);
-		}
+		} else 
+			logError << "InitialState::recv() failed: context ptr is nullptr";
 
 	} else if(isReconnect(packet)) { 
 		if(auto strong = context.lock()) {
 			strong->changeStateReconnect(std::move(connection), strong);
-		}
+		} else 
+			logError << "InitialState::recv() failed: context ptr is nullptr";
 	}
 
 	return(status);

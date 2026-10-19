@@ -32,6 +32,13 @@
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/install.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/install/local.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/CMakeFiles/install/strip.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/CMakeFiles/reactor.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/CMakeFiles/edit_cache.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/CMakeFiles/rebuild_cache.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/CMakeFiles/list_install_components.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/CMakeFiles/install.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/CMakeFiles/install/local.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/CMakeFiles/install/strip.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test/CMakeFiles/tests.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test/CMakeFiles/edit_cache.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test/CMakeFiles/rebuild_cache.dir

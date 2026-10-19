@@ -65,7 +65,8 @@ IConnection::Status Handshaker::recv(Packet& packet, int flag) {
 
 	if(auto strong = context.lock()) {
 		strong->changeStateSession(std::move(connection), strong, sc.authData);
-	}
+	} else 
+		logError << "Handshaker::recv() failed: context ptr is nullptr";
 
 
 	return(sendStatus);
@@ -80,18 +81,18 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 	size_t headerSize = packet.header.size();
 
 	if(packet.header.size() < HANDSHAKER_HEADERLEN) {
-		logError << "Handshaker::parseMsg() failed: header size doesn't fit";
+		logError << "Handshaker::parseMsg() failed: header size doesn't fit: "
+				+ std::to_string(headerSize);
 		return(sc);
 	}
 
 	uint8_t firstByte = packet.header[headerSize - 6];
 	uint8_t msgType = firstByte & (0b1111 << MsgType_Pos);
 
-
-
 	if(msgType == MSGTYPE_HANDSHAKE) {
 		if(headerSize != HANDSHAKER_HEADERLEN) {
-			logError << std::string{methodName} + ": header size doesn't fit";
+			logError << std::string{methodName} + ": header size doesn't fit: "
+				+ std::to_string(headerSize);
 			return(sc);
 		}
 
@@ -102,9 +103,25 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 		secretLen = packet.header[headerSize - 2];
 		topicLen = packet.header[headerSize - 1];
 
-		if(firstByte & (0b1 << RoleType_Pos)) {
+		uint8_t roleVal = (firstByte >> RoleType_Pos) & 0b11;
+
+
+		if(roleVal == ROLE_PROD) {
 			sc.isProducer = true;
+		} else if(roleVal == ROLE_CONS) {
+			sc.isConsumer = true;
+		} else if(roleVal == ROLE_CONSPROD) {
+			sc.isProducer = true;
+			sc.isConsumer = true;
+		} else {
+			logError << "Handshaker::parseMsg() failed: unknown role type: "
+				+ std::to_string(roleVal);
 		}
+
+		if(auto strong = context.lock()) {
+			strong->setRole(roleVal);
+		} else 
+			logError << "Handshaker::parseMsg() failed: context ptr is nullptr";
 
 		uint8_t qosLev = firstByte & (0b11 << QosType_Pos);
 
@@ -115,7 +132,8 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 		} else if(qosLev == QOSTYPE_2) {
 			sc.qosLevel = 2;
 		} else {
-			logError << std::string{methodName} + ": unknown QosLevel";
+			logError << std::string{methodName} + ": unknown QosLevel: "
+					+ std::to_string(qosLev);
 		}
 
 		sc.creatFlag = (secondByte >> CREATFLAG_Pos) & 0b1;
@@ -126,7 +144,8 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 		if(sc.rights != RIGHTS_USR &&
 			sc.rights != RIGHTS_ADMIN &&
 			sc.rights != RIGHTS_SYSTEM)
-			logError << std::string{methodName} + ": unknown rights";
+			logError << std::string{methodName} + ": unknown rights: "
+				+ std::to_string(sc.rights);
 
 		if(packet.payload.size() >= (loginLen + passwdLen + secretLen)) {
 			auto cursor = packet.payload.begin();
@@ -144,7 +163,8 @@ SessionConfig Handshaker::parseMsg(Packet const& packet) const {
 
 		}
 	} else {
-		logError << std::string{methodName} + ": unknown msg type in header";
+		logError << std::string{methodName} + ": unknown msg type in header: "
+			+ std::to_string(msgType);
 		return(sc);
 	}
 

@@ -3,7 +3,7 @@
 uint16_t Session::sessionId = 300;
 
 Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContext> ctx, 
-		UserAuth userAuth):
+		UserAuth const& userAuth):
 	connection{std::move(conn)}, context{ctx}, authData{userAuth} {
 	
 	thisSessionId = sessionId++;
@@ -16,13 +16,15 @@ Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContex
 IConnection::Status Session::send(std::string const& message, int flag) const {
 	Packet packet;
 	packet.payload = message;
+	const char* methodName = "Session::send(std::string const&, int)"; 
 
 	auto status = this->send(packet, flag);
 	if(status == IConnection::Status::ERROR || 
 			status == IConnection::Status::HUP) {
 		if(auto strong = context.lock()) {
 			strong->changeStateTerminated(strong, authData);
-		}
+		} else  
+			logError << std::string{methodName} + " failed: context ptr is nullptr";
 	}
 
 	return(status);
@@ -31,13 +33,14 @@ IConnection::Status Session::send(std::string const& message, int flag) const {
 
 IConnection::Status Session::recv(Packet& packet, int flag) {
 	auto status = connection->recv(packet, flag);
-	std::string methodName = "Session::recv(Packet&)";
+	std::string methodName = "Session::recv(Packet&, int)";
 
 	if(status == IConnection::Status::ERROR || 
 			status == IConnection::Status::HUP) {
 		if(auto strong = context.lock()) {
 			strong->changeStateTerminated(strong, authData);
-		}
+		} else 
+			logError << std::string{methodName}+ " failed: context ptr is nullptr";
 	}
 
 	if(status != IConnection::Status::SUCCESS) {
@@ -48,7 +51,9 @@ IConnection::Status Session::recv(Packet& packet, int flag) {
 	SessionHeader sh = parseMsg(packet);
 
 	if (sh.sessionId != thisSessionId) {
-		logError << std::string{methodName} + ": sessionId mismatch";
+		logError << std::string{methodName} + ": sessionId mismatch: "
+			+ std::to_string(sh.sessionId) + " vs. thisSessionId = " 
+			+ std::to_string(thisSessionId);
 		return IConnection::Status::ERROR;
 	}
 
@@ -65,7 +70,7 @@ void Session::trimSessionHeader(Packet& packet) const {
 			packet.header.pop_back();
 
 	} else 
-		logError << "Session::trimSessionHeader() failed: header is corrupted";
+		logError << "Session::trimSessionHeader(Packet&) failed: header is corrupted";
 }
 
 
@@ -104,6 +109,7 @@ Session::SessionHeader Session::parseMsg(Packet& packet) const {
 
 IConnection::Status Session::recv(std::string& message, int flag) {
 	Packet packet;
+	const char* methodName = "Session::recv(std::string const&, int)";
 
 	auto status = this->recv(packet, flag);
 	
@@ -111,7 +117,9 @@ IConnection::Status Session::recv(std::string& message, int flag) {
 			status == IConnection::Status::HUP) {
 		if(auto strong = context.lock()) {
 			strong->changeStateTerminated(strong, authData);
-		}
+		} else 
+			logError <<  std::string{methodName} + " failed: context ptr is nullptr";
+
 	}
 
 	message = packet.payload;
@@ -122,6 +130,8 @@ IConnection::Status Session::recv(std::string& message, int flag) {
 
 IConnection::Status Session::send(Packet& packet, int flag) const {
 	IConnection::Status status;
+	const char* methodName = "Session::send(Packet&, int)";
+	
 
 	auto time_stamp_ns = std::chrono::duration_cast<std::chrono::nanoseconds>
 		(std::chrono::system_clock::now().time_since_epoch()).count();
@@ -143,7 +153,8 @@ IConnection::Status Session::send(Packet& packet, int flag) const {
 			status == IConnection::Status::HUP) {
 		if(auto strong = context.lock()) {
 			strong->changeStateTerminated(strong, authData);
-		}
+		} else 
+			logError << std::string{methodName} + "  failed: context ptr is nullptr";
 	}
 
 	return(status);
@@ -157,7 +168,6 @@ void Session::setConnection(std::unique_ptr<IConnection> conn) {
 int Session::getDescriptor() const {
 	return(connection->getDescriptor());
 }
-
 
 void Session::handleTimeout() {
 	state = SessionState::DISCONNECTED;

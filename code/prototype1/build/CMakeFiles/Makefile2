@@ -67,6 +67,7 @@ all: lib/common/all
 all: lib/networking/all
 all: lib/decorator/all
 all: lib/nodesession/all
+all: lib/reactor/all
 all: test/all
 .PHONY : all
 
@@ -75,6 +76,7 @@ codegen: lib/common/codegen
 codegen: lib/networking/codegen
 codegen: lib/decorator/codegen
 codegen: lib/nodesession/codegen
+codegen: lib/reactor/codegen
 codegen: test/codegen
 .PHONY : codegen
 
@@ -83,6 +85,7 @@ preinstall: lib/common/preinstall
 preinstall: lib/networking/preinstall
 preinstall: lib/decorator/preinstall
 preinstall: lib/nodesession/preinstall
+preinstall: lib/reactor/preinstall
 preinstall: test/preinstall
 .PHONY : preinstall
 
@@ -91,6 +94,7 @@ clean: lib/common/clean
 clean: lib/networking/clean
 clean: lib/decorator/clean
 clean: lib/nodesession/clean
+clean: lib/reactor/clean
 clean: test/clean
 .PHONY : clean
 
@@ -237,6 +241,25 @@ lib/nodesession/clean: lib/nodesession/CMakeFiles/nodesession.dir/clean
 .PHONY : lib/nodesession/clean
 
 #=============================================================================
+# Directory level rules for directory lib/reactor
+
+# Recursive "all" directory target.
+lib/reactor/all: lib/reactor/CMakeFiles/reactor.dir/all
+.PHONY : lib/reactor/all
+
+# Recursive "codegen" directory target.
+lib/reactor/codegen: lib/reactor/CMakeFiles/reactor.dir/codegen
+.PHONY : lib/reactor/codegen
+
+# Recursive "preinstall" directory target.
+lib/reactor/preinstall:
+.PHONY : lib/reactor/preinstall
+
+# Recursive "clean" directory target.
+lib/reactor/clean: lib/reactor/CMakeFiles/reactor.dir/clean
+.PHONY : lib/reactor/clean
+
+#=============================================================================
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
@@ -326,8 +349,8 @@ lib/networking/CMakeFiles/networking.dir/clean:
 # Target rules for target lib/decorator/CMakeFiles/decorator.dir
 
 # All Build rule for target.
-lib/decorator/CMakeFiles/decorator.dir/all: lib/networking/CMakeFiles/networking.dir/all
 lib/decorator/CMakeFiles/decorator.dir/all: lib/common/CMakeFiles/common.dir/all
+lib/decorator/CMakeFiles/decorator.dir/all: lib/networking/CMakeFiles/networking.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/decorator/CMakeFiles/decorator.dir/build.make lib/decorator/CMakeFiles/decorator.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/decorator/CMakeFiles/decorator.dir/build.make lib/decorator/CMakeFiles/decorator.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target decorator"
@@ -359,9 +382,9 @@ lib/decorator/CMakeFiles/decorator.dir/clean:
 # Target rules for target lib/nodesession/CMakeFiles/nodesession.dir
 
 # All Build rule for target.
+lib/nodesession/CMakeFiles/nodesession.dir/all: lib/common/CMakeFiles/common.dir/all
 lib/nodesession/CMakeFiles/nodesession.dir/all: lib/networking/CMakeFiles/networking.dir/all
 lib/nodesession/CMakeFiles/nodesession.dir/all: lib/decorator/CMakeFiles/decorator.dir/all
-lib/nodesession/CMakeFiles/nodesession.dir/all: lib/common/CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31 "Built target nodesession"
@@ -390,19 +413,54 @@ lib/nodesession/CMakeFiles/nodesession.dir/clean:
 .PHONY : lib/nodesession/CMakeFiles/nodesession.dir/clean
 
 #=============================================================================
+# Target rules for target lib/reactor/CMakeFiles/reactor.dir
+
+# All Build rule for target.
+lib/reactor/CMakeFiles/reactor.dir/all: lib/common/CMakeFiles/common.dir/all
+lib/reactor/CMakeFiles/reactor.dir/all: lib/networking/CMakeFiles/networking.dir/all
+lib/reactor/CMakeFiles/reactor.dir/all: lib/decorator/CMakeFiles/decorator.dir/all
+lib/reactor/CMakeFiles/reactor.dir/all: lib/nodesession/CMakeFiles/nodesession.dir/all
+	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=32,33,34 "Built target reactor"
+.PHONY : lib/reactor/CMakeFiles/reactor.dir/all
+
+# Build rule for subdir invocation for target.
+lib/reactor/CMakeFiles/reactor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 26
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/reactor/CMakeFiles/reactor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
+.PHONY : lib/reactor/CMakeFiles/reactor.dir/rule
+
+# Convenience name for target.
+reactor: lib/reactor/CMakeFiles/reactor.dir/rule
+.PHONY : reactor
+
+# codegen rule for target.
+lib/reactor/CMakeFiles/reactor.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=32,33,34 "Finished codegen for target reactor"
+.PHONY : lib/reactor/CMakeFiles/reactor.dir/codegen
+
+# clean rule for target.
+lib/reactor/CMakeFiles/reactor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/clean
+.PHONY : lib/reactor/CMakeFiles/reactor.dir/clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/tests.dir
 
 # All Build rule for target.
+test/CMakeFiles/tests.dir/all: lib/common/CMakeFiles/common.dir/all
 test/CMakeFiles/tests.dir/all: lib/networking/CMakeFiles/networking.dir/all
 test/CMakeFiles/tests.dir/all: lib/decorator/CMakeFiles/decorator.dir/all
 test/CMakeFiles/tests.dir/all: lib/nodesession/CMakeFiles/nodesession.dir/all
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/tests.dir/all: lib/common/CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43 "Built target tests"
 .PHONY : test/CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -419,7 +477,7 @@ tests: test/CMakeFiles/tests.dir/rule
 # codegen rule for target.
 test/CMakeFiles/tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Finished codegen for target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43 "Finished codegen for target tests"
 .PHONY : test/CMakeFiles/tests.dir/codegen
 
 # clean rule for target.

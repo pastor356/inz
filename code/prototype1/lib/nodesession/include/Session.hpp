@@ -43,7 +43,7 @@ public:
 
 	// change to unique_ptr<IConnectionHandler>
 	Session(std::unique_ptr<IConnection> connection, std::shared_ptr<IStateContext> ctx,
-			UserAuth userAuth);
+			UserAuth const& userAuth);
 
 	void setConnection(std::unique_ptr<IConnection> conn) override;
 	std::unique_ptr<IConnection> getConnection() override;

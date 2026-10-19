@@ -14,7 +14,8 @@ void TerminatedState::setConnection(std::unique_ptr<IConnection> conn) {
 
 	if(auto strong = context.lock()) {
 		strong->changeStateReconnect(std::move(conn), strong);
-	}
+	} else 
+		logError << "TerminatedState::setConnection() failed: context ptr is nullptr";
 }
 
 

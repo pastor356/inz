@@ -49,7 +49,7 @@ TEST_F(SessionTest, HandshakePacketHandling) {
 
 
 	Packet handshakePacket;
-	handshakePacket = Serializer::serializeHandshake(true, 1, true, true,  
+	handshakePacket = Serializer::serializeHandshake(ROLE_CONS, 1, true, true,  
 		1, "topic1", "login", "password", "secret");
 
 

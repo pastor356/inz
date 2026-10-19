@@ -11,20 +11,6 @@ protected:
 	IConnection::Status sendPubRel(uint16_t packetId) const override;
 	IConnection::Status sendPubComp(uint16_t packetId) const override;
 
-	/*
-	std::shared_ptr<IQualityStrategy::PendingMessage> 
-		parseMsg(std::string const& msg) const override; 
-	*/
-
-
-	/*
-	IConnection::Status sendHeader(std::vector<uint8_t> const& header) const override;
-	IConnection::Status sendPayload(std::string const& payload) const override;
-
-	IConnection::Status recvHeader(std::vector<uint8_t>& header) const override;
-	IConnection::Status recvPayload(std::string& header) const override;
-	*/
-
 	void trimQosHeader(std::vector<uint8_t>& header) const override;
 public:
 	std::shared_ptr<IQualityStrategy::PendingMessage> 

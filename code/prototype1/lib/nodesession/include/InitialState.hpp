@@ -11,7 +11,6 @@ class InitialState: public IConnectionHandler {
 	bool isHandshake(Packet const& packet) const;
 	bool isReconnect(Packet const& packet) const;
 public:
-
 	InitialState(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContext> ctx);
 	InitialState(std::unique_ptr<IConnection> conn);
 

@@ -15,7 +15,7 @@ TEST_F(SessionTest, TransitionToSession) {
 	monitoredNode->changeStateHandshake(state->getConnection(), monitoredNode);
 
 	Packet packet = Serializer::serializeHandshake(
-			true,		// role
+			ROLE_CONS,		// role
 			1,			// qos
 			true,		// creat
 			true,		// newUsr
@@ -43,7 +43,7 @@ TEST_F(SessionTest, TransitionToSession) {
 	auto* handler = dynamic_cast<Session*>(monitoredNode->getHandler());
 	EXPECT_NE(handler, nullptr);
 
-	auto nodeAuth = nodeRegistry->findSession(300);
+	auto nodeAuth = nodeRegistry->findSession(handler->getId());
 
 	EXPECT_EQ(nodeAuth.login, std::string{"login"});
 }
@@ -58,6 +58,8 @@ TEST_F(SessionTest, TransitionToTerminated) {
 
 	monitoredNode->changeStateSession(state->getConnection(), monitoredNode, auth);
 
+	auto* session = dynamic_cast<Session*>(monitoredNode->getHandler());
+
 	EXPECT_CALL(*connMock, send(A<Packet&>(), 0))
 		.WillOnce(Return(IConnection::Status::ERROR));
 
@@ -69,7 +71,7 @@ TEST_F(SessionTest, TransitionToTerminated) {
 
 	EXPECT_NE(handler, nullptr);
 
-	auto nodeAuth = nodeRegistry->findSession(300);
+	auto nodeAuth = nodeRegistry->findSession(session->getId());
 	EXPECT_EQ(nodeAuth.login, std::string{"login"});
 	EXPECT_EQ(nodeAuth.password, std::string{"password"});
 	EXPECT_EQ(nodeAuth.secret, std::string{"secret"});
@@ -110,7 +112,7 @@ TEST_F(SessionTest, TransitionInitToSession) {
 	Packet incoming;
 	Packet init = Serializer::serializeInitial();
 	Packet handshake = Serializer::serializeHandshake(
-			true,
+			ROLE_CONS,
 			1,
 			true,
 			true,
@@ -140,7 +142,7 @@ TEST_F(SessionTest, TransitionInitToSession) {
 	auto* sessionHandler = dynamic_cast<Session*>(monitoredNode->getHandler());
 	EXPECT_NE(sessionHandler, nullptr);
 
-	auto newSessionAuth = nodeRegistry->findSession(300);
+	auto newSessionAuth = nodeRegistry->findSession(sessionHandler->getId());
 	EXPECT_EQ(newSessionAuth.login, "login");
 	EXPECT_EQ(newSessionAuth.password, "password");
 	EXPECT_EQ(newSessionAuth.secret, "secret");

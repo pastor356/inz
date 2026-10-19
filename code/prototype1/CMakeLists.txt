@@ -37,5 +37,6 @@ add_subdirectory(lib/common)
 add_subdirectory(lib/networking)
 add_subdirectory(lib/decorator)
 add_subdirectory(lib/nodesession)
+add_subdirectory(lib/reactor)
 add_subdirectory(test)
 

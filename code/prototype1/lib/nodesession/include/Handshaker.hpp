@@ -33,6 +33,10 @@
 #define RIGHTS_ADMIN			(uint8_t)(0b10)
 #define RIGHTS_SYSTEM			(uint8_t)(0b11)
 
+#define ROLE_PROD				(uint8_t)(0x1)
+#define ROLE_CONS				(uint8_t)(0x2)
+#define ROLE_CONSPROD			(uint8_t)(0x3)
+
 // ack byte
 #define ACKBYTE_HEADERLEN		0x1
 #define AUTHSTATUS_Pos			0x3
