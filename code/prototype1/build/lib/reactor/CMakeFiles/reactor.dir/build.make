@@ -89,30 +89,110 @@ lib/reactor/CMakeFiles/reactor.dir/src/MessageRouter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/MessageRouter.cpp.s"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/MessageRouter.cpp -o CMakeFiles/reactor.dir/src/MessageRouter.cpp.s
 
-lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
-lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Poll.cpp
-lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.o"
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.o -MF CMakeFiles/reactor.dir/src/Poll.cpp.o.d -o CMakeFiles/reactor.dir/src/Poll.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Poll.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorSocket.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o -MF CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o.d -o CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorSocket.cpp
 
-lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/Poll.cpp.i"
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Poll.cpp > CMakeFiles/reactor.dir/src/Poll.cpp.i
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorSocket.cpp > CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.i
 
-lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/Poll.cpp.s"
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Poll.cpp -o CMakeFiles/reactor.dir/src/Poll.cpp.s
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorSocket.cpp -o CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.s
+
+lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
+lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/NodeInitializer.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o -MF CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o.d -o CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/NodeInitializer.cpp
+
+lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/NodeInitializer.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/NodeInitializer.cpp > CMakeFiles/reactor.dir/src/NodeInitializer.cpp.i
+
+lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/NodeInitializer.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/NodeInitializer.cpp -o CMakeFiles/reactor.dir/src/NodeInitializer.cpp.s
+
+lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
+lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Reactor.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o -MF CMakeFiles/reactor.dir/src/Reactor.cpp.o.d -o CMakeFiles/reactor.dir/src/Reactor.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Reactor.cpp
+
+lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/Reactor.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Reactor.cpp > CMakeFiles/reactor.dir/src/Reactor.cpp.i
+
+lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/Reactor.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Reactor.cpp -o CMakeFiles/reactor.dir/src/Reactor.cpp.s
+
+lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
+lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Invoker.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o -MF CMakeFiles/reactor.dir/src/Invoker.cpp.o.d -o CMakeFiles/reactor.dir/src/Invoker.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Invoker.cpp
+
+lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/Invoker.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Invoker.cpp > CMakeFiles/reactor.dir/src/Invoker.cpp.i
+
+lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/Invoker.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Invoker.cpp -o CMakeFiles/reactor.dir/src/Invoker.cpp.s
+
+lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
+lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Demultiplexer.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o -MF CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o.d -o CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Demultiplexer.cpp
+
+lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/Demultiplexer.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Demultiplexer.cpp > CMakeFiles/reactor.dir/src/Demultiplexer.cpp.i
+
+lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/Demultiplexer.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Demultiplexer.cpp -o CMakeFiles/reactor.dir/src/Demultiplexer.cpp.s
+
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorNode.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o -MF CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o.d -o CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorNode.cpp
+
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/AcceptorNode.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorNode.cpp > CMakeFiles/reactor.dir/src/AcceptorNode.cpp.i
+
+lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/AcceptorNode.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/AcceptorNode.cpp -o CMakeFiles/reactor.dir/src/AcceptorNode.cpp.s
 
 # Object files for target reactor
 reactor_OBJECTS = \
 "CMakeFiles/reactor.dir/src/MessageRouter.cpp.o" \
-"CMakeFiles/reactor.dir/src/Poll.cpp.o"
+"CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o" \
+"CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o" \
+"CMakeFiles/reactor.dir/src/Reactor.cpp.o" \
+"CMakeFiles/reactor.dir/src/Invoker.cpp.o" \
+"CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o" \
+"CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o"
 
 # External object files for target reactor
 reactor_EXTERNAL_OBJECTS =
 
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/MessageRouter.cpp.o
-lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.o
+lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o
+lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o
+lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o
+lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o
+lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o
+lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/build.make
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
 lib/reactor/libreactor.so: lib/nodesession/libnodesession.so
@@ -120,7 +200,7 @@ lib/reactor/libreactor.so: lib/decorator/libdecorator.so
 lib/reactor/libreactor.so: lib/networking/libnetworking.so
 lib/reactor/libreactor.so: lib/common/libcommon.so
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libreactor.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libreactor.so"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/reactor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -178,6 +178,102 @@ reactor/fast:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/build
 .PHONY : reactor/fast
 
+src/AcceptorNode.o: src/AcceptorNode.cpp.o
+.PHONY : src/AcceptorNode.o
+
+# target to build an object file
+src/AcceptorNode.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o
+.PHONY : src/AcceptorNode.cpp.o
+
+src/AcceptorNode.i: src/AcceptorNode.cpp.i
+.PHONY : src/AcceptorNode.i
+
+# target to preprocess a source file
+src/AcceptorNode.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.i
+.PHONY : src/AcceptorNode.cpp.i
+
+src/AcceptorNode.s: src/AcceptorNode.cpp.s
+.PHONY : src/AcceptorNode.s
+
+# target to generate assembly for a file
+src/AcceptorNode.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.s
+.PHONY : src/AcceptorNode.cpp.s
+
+src/AcceptorSocket.o: src/AcceptorSocket.cpp.o
+.PHONY : src/AcceptorSocket.o
+
+# target to build an object file
+src/AcceptorSocket.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o
+.PHONY : src/AcceptorSocket.cpp.o
+
+src/AcceptorSocket.i: src/AcceptorSocket.cpp.i
+.PHONY : src/AcceptorSocket.i
+
+# target to preprocess a source file
+src/AcceptorSocket.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.i
+.PHONY : src/AcceptorSocket.cpp.i
+
+src/AcceptorSocket.s: src/AcceptorSocket.cpp.s
+.PHONY : src/AcceptorSocket.s
+
+# target to generate assembly for a file
+src/AcceptorSocket.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.s
+.PHONY : src/AcceptorSocket.cpp.s
+
+src/Demultiplexer.o: src/Demultiplexer.cpp.o
+.PHONY : src/Demultiplexer.o
+
+# target to build an object file
+src/Demultiplexer.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o
+.PHONY : src/Demultiplexer.cpp.o
+
+src/Demultiplexer.i: src/Demultiplexer.cpp.i
+.PHONY : src/Demultiplexer.i
+
+# target to preprocess a source file
+src/Demultiplexer.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.i
+.PHONY : src/Demultiplexer.cpp.i
+
+src/Demultiplexer.s: src/Demultiplexer.cpp.s
+.PHONY : src/Demultiplexer.s
+
+# target to generate assembly for a file
+src/Demultiplexer.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.s
+.PHONY : src/Demultiplexer.cpp.s
+
+src/Invoker.o: src/Invoker.cpp.o
+.PHONY : src/Invoker.o
+
+# target to build an object file
+src/Invoker.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o
+.PHONY : src/Invoker.cpp.o
+
+src/Invoker.i: src/Invoker.cpp.i
+.PHONY : src/Invoker.i
+
+# target to preprocess a source file
+src/Invoker.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.i
+.PHONY : src/Invoker.cpp.i
+
+src/Invoker.s: src/Invoker.cpp.s
+.PHONY : src/Invoker.s
+
+# target to generate assembly for a file
+src/Invoker.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.s
+.PHONY : src/Invoker.cpp.s
+
 src/MessageRouter.o: src/MessageRouter.cpp.o
 .PHONY : src/MessageRouter.o
 
@@ -202,29 +298,53 @@ src/MessageRouter.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/MessageRouter.cpp.s
 .PHONY : src/MessageRouter.cpp.s
 
-src/Poll.o: src/Poll.cpp.o
-.PHONY : src/Poll.o
+src/NodeInitializer.o: src/NodeInitializer.cpp.o
+.PHONY : src/NodeInitializer.o
 
 # target to build an object file
-src/Poll.cpp.o:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.o
-.PHONY : src/Poll.cpp.o
+src/NodeInitializer.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o
+.PHONY : src/NodeInitializer.cpp.o
 
-src/Poll.i: src/Poll.cpp.i
-.PHONY : src/Poll.i
+src/NodeInitializer.i: src/NodeInitializer.cpp.i
+.PHONY : src/NodeInitializer.i
 
 # target to preprocess a source file
-src/Poll.cpp.i:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.i
-.PHONY : src/Poll.cpp.i
+src/NodeInitializer.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.i
+.PHONY : src/NodeInitializer.cpp.i
 
-src/Poll.s: src/Poll.cpp.s
-.PHONY : src/Poll.s
+src/NodeInitializer.s: src/NodeInitializer.cpp.s
+.PHONY : src/NodeInitializer.s
 
 # target to generate assembly for a file
-src/Poll.cpp.s:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Poll.cpp.s
-.PHONY : src/Poll.cpp.s
+src/NodeInitializer.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.s
+.PHONY : src/NodeInitializer.cpp.s
+
+src/Reactor.o: src/Reactor.cpp.o
+.PHONY : src/Reactor.o
+
+# target to build an object file
+src/Reactor.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o
+.PHONY : src/Reactor.cpp.o
+
+src/Reactor.i: src/Reactor.cpp.i
+.PHONY : src/Reactor.i
+
+# target to preprocess a source file
+src/Reactor.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.i
+.PHONY : src/Reactor.cpp.i
+
+src/Reactor.s: src/Reactor.cpp.s
+.PHONY : src/Reactor.s
+
+# target to generate assembly for a file
+src/Reactor.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.s
+.PHONY : src/Reactor.cpp.s
 
 # Help Target
 help:
@@ -239,12 +359,27 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... reactor"
+	@echo "... src/AcceptorNode.o"
+	@echo "... src/AcceptorNode.i"
+	@echo "... src/AcceptorNode.s"
+	@echo "... src/AcceptorSocket.o"
+	@echo "... src/AcceptorSocket.i"
+	@echo "... src/AcceptorSocket.s"
+	@echo "... src/Demultiplexer.o"
+	@echo "... src/Demultiplexer.i"
+	@echo "... src/Demultiplexer.s"
+	@echo "... src/Invoker.o"
+	@echo "... src/Invoker.i"
+	@echo "... src/Invoker.s"
 	@echo "... src/MessageRouter.o"
 	@echo "... src/MessageRouter.i"
 	@echo "... src/MessageRouter.s"
-	@echo "... src/Poll.o"
-	@echo "... src/Poll.i"
-	@echo "... src/Poll.s"
+	@echo "... src/NodeInitializer.o"
+	@echo "... src/NodeInitializer.i"
+	@echo "... src/NodeInitializer.s"
+	@echo "... src/Reactor.o"
+	@echo "... src/Reactor.i"
+	@echo "... src/Reactor.s"
 .PHONY : help
 
 

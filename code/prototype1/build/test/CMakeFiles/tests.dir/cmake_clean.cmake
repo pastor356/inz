@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o.d"
   "CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o"
   "CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o.d"
+  "CMakeFiles/tests.dir/utest/reactor_test.cpp.o"
+  "CMakeFiles/tests.dir/utest/reactor_test.cpp.o.d"
   "CMakeFiles/tests.dir/utest/resolver_test.cpp.o"
   "CMakeFiles/tests.dir/utest/resolver_test.cpp.o.d"
   "CMakeFiles/tests.dir/utest/session_test.cpp.o"

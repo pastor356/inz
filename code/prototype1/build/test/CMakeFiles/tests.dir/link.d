@@ -10,9 +10,11 @@ tests: \
   CMakeFiles/tests.dir/utest/QosMockTest.cpp.o \
   CMakeFiles/tests.dir/utest/session_test.cpp.o \
   CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o \
-  ../lib/nodesession/libnodesession.so \
+  CMakeFiles/tests.dir/utest/reactor_test.cpp.o \
+  ../lib/reactor/libreactor.so \
   ../lib/libgtest_main.a \
   ../lib/libgmock.a \
+  ../lib/nodesession/libnodesession.so \
   ../lib/decorator/libdecorator.so \
   ../lib/networking/libnetworking.so \
   ../lib/common/libcommon.so \
@@ -67,11 +69,15 @@ CMakeFiles/tests.dir/utest/session_test.cpp.o:
 
 CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o:
 
-../lib/nodesession/libnodesession.so:
+CMakeFiles/tests.dir/utest/reactor_test.cpp.o:
+
+../lib/reactor/libreactor.so:
 
 ../lib/libgtest_main.a:
 
 ../lib/libgmock.a:
+
+../lib/nodesession/libnodesession.so:
 
 ../lib/decorator/libdecorator.so:
 

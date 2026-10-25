@@ -2,7 +2,12 @@ libreactor.so: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o \
   CMakeFiles/reactor.dir/src/MessageRouter.cpp.o \
-  CMakeFiles/reactor.dir/src/Poll.cpp.o \
+  CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o \
+  CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o \
+  CMakeFiles/reactor.dir/src/Reactor.cpp.o \
+  CMakeFiles/reactor.dir/src/Invoker.cpp.o \
+  CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o \
+  CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o \
   ../nodesession/libnodesession.so \
   ../decorator/libdecorator.so \
   ../networking/libnetworking.so \
@@ -38,7 +43,17 @@ libreactor.so: \
 
 CMakeFiles/reactor.dir/src/MessageRouter.cpp.o:
 
-CMakeFiles/reactor.dir/src/Poll.cpp.o:
+CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o:
+
+CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o:
+
+CMakeFiles/reactor.dir/src/Reactor.cpp.o:
+
+CMakeFiles/reactor.dir/src/Invoker.cpp.o:
+
+CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o:
+
+CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o:
 
 ../nodesession/libnodesession.so:
 

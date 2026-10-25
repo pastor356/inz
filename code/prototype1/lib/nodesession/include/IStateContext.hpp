@@ -16,10 +16,13 @@ public:
 	virtual void changeState(std::shared_ptr<IConnectionHandler> newState) = 0;
 	virtual void changeStateHandshake(std::unique_ptr<IConnection> conn,
 			std::shared_ptr<IStateContext> ctx) = 0;
+
 	virtual void changeStateReconnect(std::unique_ptr<IConnection> conn,
 			std::shared_ptr<IStateContext> ctx) = 0;
+
 	virtual void changeStateSession(std::unique_ptr<IConnection> conn,
 			std::shared_ptr<IStateContext> ctx, UserAuth authUser) = 0;
+
 	virtual void changeStateTerminated(std::shared_ptr<IStateContext> ctx, 
 			UserAuth authUser) = 0;
 

@@ -298,6 +298,30 @@ utest/maintest_gtest.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/maintest_gtest.cpp.s
 .PHONY : utest/maintest_gtest.cpp.s
 
+utest/reactor_test.o: utest/reactor_test.cpp.o
+.PHONY : utest/reactor_test.o
+
+# target to build an object file
+utest/reactor_test.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o
+.PHONY : utest/reactor_test.cpp.o
+
+utest/reactor_test.i: utest/reactor_test.cpp.i
+.PHONY : utest/reactor_test.i
+
+# target to preprocess a source file
+utest/reactor_test.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/reactor_test.cpp.i
+.PHONY : utest/reactor_test.cpp.i
+
+utest/reactor_test.s: utest/reactor_test.cpp.s
+.PHONY : utest/reactor_test.s
+
+# target to generate assembly for a file
+utest/reactor_test.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/utest/reactor_test.cpp.s
+.PHONY : utest/reactor_test.cpp.s
+
 utest/resolver_test.o: utest/resolver_test.cpp.o
 .PHONY : utest/resolver_test.o
 
@@ -398,6 +422,9 @@ help:
 	@echo "... utest/maintest_gtest.o"
 	@echo "... utest/maintest_gtest.i"
 	@echo "... utest/maintest_gtest.s"
+	@echo "... utest/reactor_test.o"
+	@echo "... utest/reactor_test.i"
+	@echo "... utest/reactor_test.s"
 	@echo "... utest/resolver_test.o"
 	@echo "... utest/resolver_test.i"
 	@echo "... utest/resolver_test.s"

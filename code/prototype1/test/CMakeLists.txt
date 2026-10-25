@@ -38,6 +38,7 @@ set(UTESTSOURCE
 	QosMockTest.cpp 
 	session_test.cpp
 	integrationQosSessionTest.cpp
+	reactor_test.cpp
 )
 
 set(MOCKHEADERS
@@ -46,6 +47,9 @@ set(MOCKHEADERS
 	QosMock.hpp
 	ContextMock.hpp
 	SessionFixture.hpp
+	PollMock.hpp
+	ReactorNewFixture.hpp
+	ReactorFixture.hpp
 )
 
 list(TRANSFORM UTESTSOURCE PREPEND ${UTESTDIR})
@@ -58,6 +62,7 @@ target_link_libraries(${PROJECT_NAME}
 	networking
 	decorator
 	nodesession
+	reactor
 	GTest::gtest_main
 	GTest::gmock
 )

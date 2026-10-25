@@ -4,20 +4,21 @@
 
 class Poll: public IPoll {
 	int epollFd = -1;
-	std::unordered_map<int, std::shared_ptr<IStateContext>> fdToNode;
-	std::unordered_map<std::shared_ptr<IStateContext>, 
-		std::shared_ptr<EventHandler>> nodeToHandler;
+	int pollTimeout = -1;
 
-	std::unordered_map< std::shared_ptr<EventHandler>, 
-		std::vector<std::shared_ptr<IStateContext>> > handlerToNodes;
+	std::unordered_map<int, std::shared_ptr<EventEntity>> fdToEntity;
+	std::unordered_map<std::shared_ptr<IStateContext>, int> nodeToFd;
+
+	void removeFromFdToEntity(int fd);
 
 public:
-	Poll();
+	Poll(int timeout = -1);
+
 	void registerNode(std::shared_ptr<IStateContext> node, 
 			std::shared_ptr<EventHandler> handler) override;
 
-	void deregister(std::shared_ptr<EventHandler> handler) override; 
-	void deregister(std::shared_ptr<IStateContext> node) override;
+	void deregisterHandler(std::shared_ptr<EventHandler> handler) override; 
+	void deregisterNode(std::shared_ptr<IStateContext> node) override;
 
-	size_t wait() const override;
+	int wait() override;
 };

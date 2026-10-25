@@ -13,4 +13,5 @@ public:
 	virtual void handleError(std::shared_ptr<IStateContext> node) = 0;
 	virtual void handleHup(std::shared_ptr<IStateContext> node) = 0;
 	virtual void handleWrite(std::shared_ptr<IStateContext> node) = 0;
+	virtual ~EventHandler() = default;
 };
