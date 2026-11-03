@@ -60,6 +60,8 @@ Packet serializeInitial(bool isReconnect) {
 }
 
 
+
+
 Packet serializeReconnect(uint16_t sessionId) {
 	Packet packet;
 	packet.header.push_back(MSGTYPE_RECONNECT);
@@ -70,7 +72,28 @@ Packet serializeReconnect(uint16_t sessionId) {
 	return(packet);
 }
 
-};
+
+Packet serializeData(std::string const& topic) {
+	const char* methodName = "Serializer::serializeData(std::string const&)";
+
+	Packet packet;
+	packet.header.push_back(MSGTYPE_TOPICDATA);
+
+	if(topic.size() < 255) {
+		uint8_t topicLen = topic.size();
+		packet.header.push_back(topicLen);
+
+		for(size_t i = 0; i < topicLen; ++i) {
+			packet.header.push_back(topic[i]);
+		}
+	} else {
+		logError << std::string{methodName} + ": topic is too long";
+	}
+
+	return(packet);
+}
+
+}; // namespace Serializer
 
 
 

@@ -60,6 +60,8 @@ public:
 	// callback, injected into LiveMonitor (timeoutCallback field)
 	void handleTimeout(); 
 
+	bool isInitialized() const override { return(true); }
+
 	uint8_t getQos() const;
 	void setQos(uint8_t level);
 	uint16_t getId() const; 

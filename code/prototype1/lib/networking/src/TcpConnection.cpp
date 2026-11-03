@@ -164,6 +164,10 @@ IConnection::Status TcpConnection::send(Packet& packet, int flag) const {
 	message.msg_iov = pack;
 	message.msg_iovlen = 4;
 
+	logInfo << std::string{"TcpConnection::send(Packet&, int) packet sent: "} +
+		std::to_string(packet.header.size()) + " and " + 
+		std::to_string(packet.payload.size());
+
 	nsend = ::sendmsg(connectionFd, &message, flag);
 
 	if(nsend < 0) {
@@ -199,6 +203,11 @@ IConnection::Status TcpConnection::recv(Packet& packet, int flag) const {
 		logError << std::string{"recvPayload(Packet&) failed: "} + strerror(errno);
 		return(status);
 	}
+
+
+	logInfo << std::string{"TcpConnection::recv(Packet&, int) packet received: "} +
+		std::to_string(packet.header.size()) + " and " + 
+		std::to_string(packet.payload.size());
 
 	return(status);
 }

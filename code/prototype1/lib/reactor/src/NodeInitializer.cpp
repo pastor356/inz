@@ -14,9 +14,11 @@ void NodeInitializer::handleRead(std::shared_ptr<IStateContext> node) {
 	auto status = node->recv(packet, 0);
 	counter++;
 
-	if((counter % 2) == 0) {
-		reactor->deregisterNode(node);
-		reactor->registerNode(node, this->messageRouter);
+	if(node->isInitialized()) {
+		if(auto r = reactor.lock()) {
+			r->deregisterNode(node);
+			r->registerNode(node, this->messageRouter);
+		}
 	}
 
 	if(status != IConnection::Status::SUCCESS) {
@@ -27,8 +29,14 @@ void NodeInitializer::handleRead(std::shared_ptr<IStateContext> node) {
 
 
 
-void NodeInitializer::handleWrite(std::shared_ptr<IStateContext> node) {}
+void NodeInitializer::handleWrite(std::shared_ptr<IStateContext> node) {
+	(void) node;
+}
 
-void NodeInitializer::handleHup(std::shared_ptr<IStateContext> node) {}
+void NodeInitializer::handleHup(std::shared_ptr<IStateContext> node) {
+	(void) node;
+}
 
-void NodeInitializer::handleError(std::shared_ptr<IStateContext> node) {}
+void NodeInitializer::handleError(std::shared_ptr<IStateContext> node) {
+	(void) node;
+}

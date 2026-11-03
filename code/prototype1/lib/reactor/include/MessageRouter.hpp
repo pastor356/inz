@@ -17,11 +17,13 @@ public:
 
 private:
 	using NodeSet = std::vector<std::shared_ptr<IStateContext>>;
-	std::shared_ptr<Reactor> reactor;
+	std::weak_ptr<Reactor> reactor;
 
 	std::unordered_map<std::string, NodeSet> topicsToConnections;
 
 	DataHeader parseMsg(Packet const& packet) const;
+	void trimDataHeader(Packet& packet);
+
 	int recvFlag = 0;
 	int sendFlag = 0;
 

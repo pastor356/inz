@@ -1,6 +1,19 @@
 #include "Demultiplexer.hpp"
 
-Demultiplexer::Demultiplexer(int timeout): epollTimeout{timeout} {}
+Demultiplexer::Demultiplexer(int timeout): epollTimeout{timeout} {
+	const char* methodName = "Demultiplexer::Demultiplexer(int)";
+
+	this->waiter = std::make_unique<EPollWaiter>();
+	this->epollFd = waiter->create();
+}
+
+Demultiplexer::Demultiplexer(std::unique_ptr<IWaiter> wait, int timeout):
+	waiter{std::move(wait)} {
+	
+	const char* methodName = "Demultiplexer::Demultiplexer(std::unique_ptr<IWaiter>, int)";
+	this->epollFd = waiter->create();
+
+}
 
 void Demultiplexer::registerNode(std::shared_ptr<IStateContext> node,
 		std::shared_ptr<EventHandler> handler) {
@@ -9,11 +22,11 @@ void Demultiplexer::registerNode(std::shared_ptr<IStateContext> node,
 	
 	struct epoll_event ev;
 	ev.data.fd = node->getDescriptor();
-	ev.events = EPOLLIN | EPOLLOUT | EPOLLERR | EPOLLHUP;
+	ev.events = EPOLLIN | EPOLLERR | EPOLLHUP | EPOLLRDHUP;
 
 	auto entity = std::make_shared<EventEntity>(EventEntity{node, handler, node->getDescriptor()});
 
-	epoll_ctl(this->epollFd, EPOLL_CTL_ADD, node->getDescriptor(), &ev);
+	waiter->ctl(this->epollFd, EPOLL_CTL_ADD, node->getDescriptor(), &ev);
 
 	auto iter = fdToEntity.try_emplace(node->getDescriptor(), std::move(entity));
 	if(!iter.second) {
@@ -24,6 +37,9 @@ void Demultiplexer::registerNode(std::shared_ptr<IStateContext> node,
 	if(!it.second) {
 		logError << std::string{methodName} + " failed to emplace entity";
 	}
+
+
+	logInfo << std::string{methodName} + ": node registered";
 }
 
 
@@ -38,7 +54,7 @@ void Demultiplexer::deregisterNode(std::shared_ptr<IStateContext> node) {
 	if(it != nodeToFd.end()) {
 		nodeToFd.erase(it);
 
-		if(epoll_ctl(epollFd, EPOLL_CTL_DEL, node->getDescriptor(), nullptr) < 0) {
+		if(waiter->ctl(epollFd, EPOLL_CTL_DEL, node->getDescriptor(), nullptr) < 0) {
 			logError << std::string{methodName} + " failed: epoll_ctl(EPOLL_CTL_DEL) failed";
 		}
 
@@ -47,7 +63,6 @@ void Demultiplexer::deregisterNode(std::shared_ptr<IStateContext> node) {
 			std::to_string(node->getDescriptor());
 	}
 }
-
 
 
 void Demultiplexer::deregisterHandler(std::shared_ptr<EventHandler> handler) {
@@ -74,7 +89,9 @@ std::vector<IPoll::ReadyEvent> Demultiplexer::wait() const {
 	std::vector<IPoll::ReadyEvent> ret;
 	struct epoll_event events[MAXEVENTS];
 
-	int nevents = epoll_wait(this->epollFd, events, MAXEVENTS, this->epollTimeout);
+	int nevents = waiter->wait(this->epollFd, events, MAXEVENTS, this->epollTimeout);
+
+	logInfo << std::string{methodName} + ": epoll_wait() returned " + std::to_string(nevents);
 
 	if(nevents < 0) {
 		logError << std::string{methodName} + " failed: epoll_wait() < 0";
@@ -85,11 +102,15 @@ std::vector<IPoll::ReadyEvent> Demultiplexer::wait() const {
 		if(it != fdToEntity.end()) {
 			auto readyEvent = IPoll::ReadyEvent{it->second, events[i].events};
 			ret.push_back(std::move(readyEvent));
+		} else {
+			logError << std::string{methodName} + " failed: handler for "
+				+ std::to_string(events[i].data.fd) + " not found";
 		}
 	}
 
 	return(ret);
 }
+
 
 
 
@@ -106,3 +127,4 @@ void Demultiplexer::removeFromFdToEntity(int fdToRemove) {
 
 	return;
 }
+

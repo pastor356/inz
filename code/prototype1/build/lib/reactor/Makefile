@@ -250,6 +250,54 @@ src/Demultiplexer.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.s
 .PHONY : src/Demultiplexer.cpp.s
 
+src/EPollWaiter.o: src/EPollWaiter.cpp.o
+.PHONY : src/EPollWaiter.o
+
+# target to build an object file
+src/EPollWaiter.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o
+.PHONY : src/EPollWaiter.cpp.o
+
+src/EPollWaiter.i: src/EPollWaiter.cpp.i
+.PHONY : src/EPollWaiter.i
+
+# target to preprocess a source file
+src/EPollWaiter.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/EPollWaiter.cpp.i
+.PHONY : src/EPollWaiter.cpp.i
+
+src/EPollWaiter.s: src/EPollWaiter.cpp.s
+.PHONY : src/EPollWaiter.s
+
+# target to generate assembly for a file
+src/EPollWaiter.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/EPollWaiter.cpp.s
+.PHONY : src/EPollWaiter.cpp.s
+
+src/EchoRouter.o: src/EchoRouter.cpp.o
+.PHONY : src/EchoRouter.o
+
+# target to build an object file
+src/EchoRouter.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/EchoRouter.cpp.o
+.PHONY : src/EchoRouter.cpp.o
+
+src/EchoRouter.i: src/EchoRouter.cpp.i
+.PHONY : src/EchoRouter.i
+
+# target to preprocess a source file
+src/EchoRouter.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/EchoRouter.cpp.i
+.PHONY : src/EchoRouter.cpp.i
+
+src/EchoRouter.s: src/EchoRouter.cpp.s
+.PHONY : src/EchoRouter.s
+
+# target to generate assembly for a file
+src/EchoRouter.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/EchoRouter.cpp.s
+.PHONY : src/EchoRouter.cpp.s
+
 src/Invoker.o: src/Invoker.cpp.o
 .PHONY : src/Invoker.o
 
@@ -368,6 +416,12 @@ help:
 	@echo "... src/Demultiplexer.o"
 	@echo "... src/Demultiplexer.i"
 	@echo "... src/Demultiplexer.s"
+	@echo "... src/EPollWaiter.o"
+	@echo "... src/EPollWaiter.i"
+	@echo "... src/EPollWaiter.s"
+	@echo "... src/EchoRouter.o"
+	@echo "... src/EchoRouter.i"
+	@echo "... src/EchoRouter.s"
 	@echo "... src/Invoker.o"
 	@echo "... src/Invoker.i"
 	@echo "... src/Invoker.s"

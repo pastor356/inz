@@ -33,7 +33,6 @@ set(HEADERS
 	NodeRegistry.hpp	
 	InitialState.hpp
 	ReconnectState.hpp
-	Serializer.hpp
 	TerminatedState.hpp
 )
 
@@ -46,7 +45,6 @@ set(SOURCES
 	NodeRegistry.cpp
 	InitialState.cpp
 	ReconnectState.cpp
-	Serializer.cpp
 	TerminatedState.cpp
 )
 
@@ -59,5 +57,3 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDEDIR})
 target_link_libraries(${PROJECT_NAME} PUBLIC networking)
 target_link_libraries(${PROJECT_NAME} PUBLIC decorator)
 target_link_libraries(${PROJECT_NAME} PUBLIC common)
-
-

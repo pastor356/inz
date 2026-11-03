@@ -202,6 +202,30 @@ src/ConsoleLogger.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/common/CMakeFiles/common.dir/build.make lib/common/CMakeFiles/common.dir/src/ConsoleLogger.cpp.s
 .PHONY : src/ConsoleLogger.cpp.s
 
+src/Serializer.o: src/Serializer.cpp.o
+.PHONY : src/Serializer.o
+
+# target to build an object file
+src/Serializer.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/common/CMakeFiles/common.dir/build.make lib/common/CMakeFiles/common.dir/src/Serializer.cpp.o
+.PHONY : src/Serializer.cpp.o
+
+src/Serializer.i: src/Serializer.cpp.i
+.PHONY : src/Serializer.i
+
+# target to preprocess a source file
+src/Serializer.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/common/CMakeFiles/common.dir/build.make lib/common/CMakeFiles/common.dir/src/Serializer.cpp.i
+.PHONY : src/Serializer.cpp.i
+
+src/Serializer.s: src/Serializer.cpp.s
+.PHONY : src/Serializer.s
+
+# target to generate assembly for a file
+src/Serializer.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/common/CMakeFiles/common.dir/build.make lib/common/CMakeFiles/common.dir/src/Serializer.cpp.s
+.PHONY : src/Serializer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -218,6 +242,9 @@ help:
 	@echo "... src/ConsoleLogger.o"
 	@echo "... src/ConsoleLogger.i"
 	@echo "... src/ConsoleLogger.s"
+	@echo "... src/Serializer.o"
+	@echo "... src/Serializer.i"
+	@echo "... src/Serializer.s"
 .PHONY : help
 
 

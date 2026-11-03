@@ -26,13 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 57,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 60,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 57,
 				"parent" : 0
 			},
 			{
@@ -42,15 +48,9 @@
 				"parent" : 0
 			},
 			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 61,
-				"parent" : 0
-			},
-			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 58,
+				"line" : 56,
 				"parent" : 0
 			}
 		]
@@ -107,8 +107,7 @@
 				4,
 				5,
 				6,
-				7,
-				8
+				7
 			]
 		}
 	],
@@ -178,14 +177,14 @@
 				4,
 				5,
 				6,
-				7,
-				8
+				7
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
+				8,
 				9,
 				10,
 				11,
@@ -196,9 +195,7 @@
 				16,
 				17,
 				18,
-				19,
-				20,
-				21
+				19
 			]
 		}
 	],
@@ -244,12 +241,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "lib/nodesession/src/ReconnectState.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "lib/nodesession/src/Serializer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -311,11 +302,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "lib/nodesession/include/ReconnectState.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "lib/nodesession/include/Serializer.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

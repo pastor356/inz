@@ -83,7 +83,8 @@ std::shared_ptr<IQualityStrategy::PendingMessage> Qos1::parseMsg(Packet const& p
 
 		return(retMsg);
 	} else {
-		logError << "packet.header.size() < QOSHEADER_LEN";
+		logInfo << "Qos1::parseMsg(Packet&): header size is " 
+			+ std::to_string(packet.header.size());
 		return(nullptr);
 	}
 

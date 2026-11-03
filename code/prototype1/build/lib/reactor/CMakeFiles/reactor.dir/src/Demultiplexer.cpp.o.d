@@ -274,10 +274,12 @@ lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
  /usr/include/sys/epoll.h /usr/include/sys/ioctl.h \
  /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \
  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
  /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
  /usr/include/linux/sockios.h /usr/include/bits/ioctl-types.h \
- /usr/include/sys/ttydefaults.h /usr/include/bits/epoll.h
+ /usr/include/sys/ttydefaults.h /usr/include/bits/epoll.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EPollWaiter.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IWaiter.hpp

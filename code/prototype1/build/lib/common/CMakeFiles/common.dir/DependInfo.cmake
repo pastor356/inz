@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/src/ConsoleLogger.cpp" "lib/common/CMakeFiles/common.dir/src/ConsoleLogger.cpp.o" "gcc" "lib/common/CMakeFiles/common.dir/src/ConsoleLogger.cpp.o.d"
+  "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/src/Serializer.cpp" "lib/common/CMakeFiles/common.dir/src/Serializer.cpp.o" "gcc" "lib/common/CMakeFiles/common.dir/src/Serializer.cpp.o.d"
   "" "lib/common/libcommon.so" "gcc" "lib/common/CMakeFiles/common.dir/link.d"
   )
 

@@ -9,12 +9,24 @@ Handshaker::Handshaker(std::shared_ptr<IStateContext> ctx,
 
 
 IConnection::Status Handshaker::recv(Packet& packet, int flag) {
+	const char* methodName = "Handshaker::recv(Packet&, int)";
 	auto status = connection->recv(packet, flag);
 	uint8_t ackByte = 0;
 	Packet ackPacket;
 
+
+	logInfo << std::string{"Handshaker::recv(): got package "} + 
+		std::to_string(packet.header.size()) + " and " + 
+		std::to_string(packet.payload.size());
+
+
 	SessionConfig sc = parseMsg(packet);
 	IDataAccessor::AccessorStatus authStatus;
+
+	logInfo << std::string{methodName} + ": got sessionConfig: "
+		+ "topic = " + sc.topic 
+		+ ", qosLevel = " + std::to_string(sc.qosLevel)
+		+ ", sc.authData.login = " + sc.authData.login;
 
 	if(sc.newUsr) {
 		authStatus = dataAccessor->createUser(sc.authData);

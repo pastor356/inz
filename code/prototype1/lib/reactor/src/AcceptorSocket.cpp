@@ -16,14 +16,21 @@ void AcceptorSocket::handleRead(std::shared_ptr<IStateContext> node) {
 	auto monitoredNode = std::make_shared<MonitoredNode>(connHandler, storage, registry);
 	connHandler->setContext(monitoredNode);
 
-	reactor->registerNode(monitoredNode, nodeInitializer);
+	if(auto r = reactor.lock()) 
+		r->registerNode(monitoredNode, nodeInitializer);
 }
 
 
 
-void AcceptorSocket::handleWrite(std::shared_ptr<IStateContext> node) {}
-void AcceptorSocket::handleError(std::shared_ptr<IStateContext> node) {}
-void AcceptorSocket::handleHup(std::shared_ptr<IStateContext> node) {}
+void AcceptorSocket::handleWrite(std::shared_ptr<IStateContext> node) {
+	(void)node;
+}
+void AcceptorSocket::handleError(std::shared_ptr<IStateContext> node) {
+	(void)node;
+}
+void AcceptorSocket::handleHup(std::shared_ptr<IStateContext> node) {
+	(void)node;
+}
 
 
 

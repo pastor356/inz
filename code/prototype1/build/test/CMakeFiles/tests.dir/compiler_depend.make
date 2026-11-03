@@ -1314,6 +1314,7 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
@@ -1335,7 +1336,6 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
-  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
@@ -2117,6 +2117,7 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
@@ -2138,16 +2139,17 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
-  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorNode.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorSocket.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Demultiplexer.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EPollWaiter.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EventHandler.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IInvoker.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IPoll.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IWaiter.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Invoker.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/MessageRouter.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/NodeInitializer.hpp \
@@ -2160,6 +2162,7 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ReactorNewFixture.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/SessionFixture.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/SocketMock.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/WaiterMock.hpp \
   /usr/include/alloca.h \
   /usr/include/arpa/inet.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -2973,6 +2976,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
@@ -2994,7 +2998,6 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
-  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
@@ -3893,7 +3896,11 @@ lib/common/libcommon.so:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/MessageRouter.hpp:
 
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IWaiter.hpp:
+
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IInvoker.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EPollWaiter.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Demultiplexer.hpp:
 
@@ -3910,6 +3917,8 @@ lib/common/libcommon.so:
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/integrationQosSessionTest.cpp:
 
@@ -4088,8 +4097,6 @@ lib/nodesession/libnodesession.so:
 /usr/include/c++/15/ext/alloc_traits.h:
 
 /usr/include/c++/15/condition_variable:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp:
 
 /usr/include/c++/15/concepts:
 
@@ -4368,6 +4375,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 _deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/WaiterMock.hpp:
 
 /usr/include/c++/15/bits/shared_ptr_atomic.h:
 

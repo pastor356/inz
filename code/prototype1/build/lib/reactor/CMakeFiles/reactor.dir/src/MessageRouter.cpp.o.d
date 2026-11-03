@@ -273,7 +273,7 @@ lib/reactor/CMakeFiles/reactor.dir/src/MessageRouter.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IPoll.hpp \
  /usr/include/sys/epoll.h /usr/include/sys/ioctl.h \
  /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \

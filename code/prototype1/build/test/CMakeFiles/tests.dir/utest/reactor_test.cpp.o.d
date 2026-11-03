@@ -273,7 +273,7 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \
@@ -337,6 +337,8 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: \
  /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
  /usr/include/linux/sockios.h /usr/include/bits/ioctl-types.h \
  /usr/include/sys/ttydefaults.h /usr/include/bits/epoll.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/WaiterMock.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IWaiter.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/MessageRouter.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Reactor.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IInvoker.hpp \
@@ -344,5 +346,6 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorNode.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/NodeInitializer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Demultiplexer.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EPollWaiter.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Invoker.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ReactorNewFixture.hpp

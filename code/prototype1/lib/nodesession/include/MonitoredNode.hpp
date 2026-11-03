@@ -45,6 +45,8 @@ public:
 
 	int getDescriptor() const override;
 
+	bool isInitialized() const override { return(connection->isInitialized()); }
+
 	IConnection::Status recv(Packet& packet, int flag = 0) override;
 	IConnection::Status send(Packet& packet, int flag = 0) override;
 };

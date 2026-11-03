@@ -11,6 +11,7 @@ public:
 		std::shared_ptr<IStateContext> node;
 		std::shared_ptr<EventHandler> handler;
 		int fd;
+		
 	};
 
 	struct ReadyEvent {

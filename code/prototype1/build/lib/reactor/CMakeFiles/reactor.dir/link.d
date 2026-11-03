@@ -8,6 +8,8 @@ libreactor.so: \
   CMakeFiles/reactor.dir/src/Invoker.cpp.o \
   CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o \
   CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o \
+  CMakeFiles/reactor.dir/src/EchoRouter.cpp.o \
+  CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o \
   ../nodesession/libnodesession.so \
   ../decorator/libdecorator.so \
   ../networking/libnetworking.so \
@@ -54,6 +56,10 @@ CMakeFiles/reactor.dir/src/Invoker.cpp.o:
 CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o:
 
 CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o:
+
+CMakeFiles/reactor.dir/src/EchoRouter.cpp.o:
+
+CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o:
 
 ../nodesession/libnodesession.so:
 

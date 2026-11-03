@@ -272,7 +272,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Serializer.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \

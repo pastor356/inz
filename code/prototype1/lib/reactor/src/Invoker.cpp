@@ -12,7 +12,7 @@ void Invoker::dispatch(std::vector<IPoll::ReadyEvent>& events) {
 			if(eventFlags & EPOLLERR) 
 				events[i].entity->handler->handleError(events[i].entity->node);
 
-			if(eventFlags & EPOLLHUP) 
+			if(eventFlags & EPOLLHUP | EPOLLRDHUP) 
 				events[i].entity->handler->handleHup(events[i].entity->node);
 
 			if(eventFlags & EPOLLIN) 

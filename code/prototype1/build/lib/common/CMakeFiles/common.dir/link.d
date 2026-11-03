@@ -2,6 +2,7 @@ libcommon.so: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o \
   CMakeFiles/common.dir/src/ConsoleLogger.cpp.o \
+  CMakeFiles/common.dir/src/Serializer.cpp.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -32,6 +33,8 @@ libcommon.so: \
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o:
 
 CMakeFiles/common.dir/src/ConsoleLogger.cpp.o:
+
+CMakeFiles/common.dir/src/Serializer.cpp.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 

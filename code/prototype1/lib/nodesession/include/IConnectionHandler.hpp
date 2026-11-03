@@ -18,6 +18,7 @@ public:
 	virtual void setConnection(std::unique_ptr<IConnection> conn) = 0;
 	virtual std::unique_ptr<IConnection> getConnection() = 0;
 	virtual void setContext(std::shared_ptr<IStateContext> ctx) = 0;
+	virtual bool isInitialized() const = 0;
 
 	virtual ~IConnectionHandler() = default;
 };

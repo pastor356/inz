@@ -29,6 +29,11 @@ void Reactor::run() {
 	}
 }
 		
+void Reactor::quit() {
+	logInfo << std::string{"Reactor::quit(): reactor quits"};
+	quitflag = 0;
+}
+
 
 
 

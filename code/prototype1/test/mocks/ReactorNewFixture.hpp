@@ -12,7 +12,6 @@ public:
 
 	std::shared_ptr<IStateContext> acceptorNode;
 
-
 	std::shared_ptr<IDataAccessor>		storage;
 	std::shared_ptr<NodeRegistry>		registry;
 
@@ -45,4 +44,3 @@ public:
 
 	}
 };
-

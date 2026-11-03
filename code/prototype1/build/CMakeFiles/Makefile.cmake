@@ -102,6 +102,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/prototype1.dir/DependInfo.cmake"
+  "CMakeFiles/client.dir/DependInfo.cmake"
   "lib/common/CMakeFiles/common.dir/DependInfo.cmake"
   "lib/networking/CMakeFiles/networking.dir/DependInfo.cmake"
   "lib/decorator/CMakeFiles/decorator.dir/DependInfo.cmake"

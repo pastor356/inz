@@ -322,30 +322,6 @@ src/ReconnectState.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/ReconnectState.cpp.s
 .PHONY : src/ReconnectState.cpp.s
 
-src/Serializer.o: src/Serializer.cpp.o
-.PHONY : src/Serializer.o
-
-# target to build an object file
-src/Serializer.cpp.o:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.o
-.PHONY : src/Serializer.cpp.o
-
-src/Serializer.i: src/Serializer.cpp.i
-.PHONY : src/Serializer.i
-
-# target to preprocess a source file
-src/Serializer.cpp.i:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.i
-.PHONY : src/Serializer.cpp.i
-
-src/Serializer.s: src/Serializer.cpp.s
-.PHONY : src/Serializer.s
-
-# target to generate assembly for a file
-src/Serializer.cpp.s:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Serializer.cpp.s
-.PHONY : src/Serializer.cpp.s
-
 src/Session.o: src/Session.cpp.o
 .PHONY : src/Session.o
 
@@ -425,9 +401,6 @@ help:
 	@echo "... src/ReconnectState.o"
 	@echo "... src/ReconnectState.i"
 	@echo "... src/ReconnectState.s"
-	@echo "... src/Serializer.o"
-	@echo "... src/Serializer.i"
-	@echo "... src/Serializer.s"
 	@echo "... src/Session.o"
 	@echo "... src/Session.i"
 	@echo "... src/Session.s"

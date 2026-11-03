@@ -21,5 +21,7 @@ public:
 	void setConnection(std::unique_ptr<IConnection> conn) override;
 	std::unique_ptr<IConnection> getConnection() override;
 	void setContext(std::shared_ptr<IStateContext> ctx) override;
+
+	bool isInitialized() const override { return(false); }
 };
 

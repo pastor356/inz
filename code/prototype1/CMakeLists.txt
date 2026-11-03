@@ -22,12 +22,10 @@ set(SRCDIR ./src/)
 set(HEADERDIR ./include/)
 
 set(HEADERS
-	ILogger.hpp
-	ConsoleLogger.hpp
 )
 
 set(SOURCES
-	ConsoleLogger.cpp
+	main.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${HEADERDIR})
@@ -40,3 +38,26 @@ add_subdirectory(lib/nodesession)
 add_subdirectory(lib/reactor)
 add_subdirectory(test)
 
+add_executable(${PROJECT_NAME}  ${SOURCES} ${HEADERS})
+
+add_executable(client src/main_client.cpp)
+
+target_link_libraries(${PROJECT_NAME}
+        common
+        networking
+        decorator
+        nodesession
+        reactor
+        GTest::gtest_main
+        GTest::gmock
+)
+
+target_link_libraries(client
+        common
+        networking
+        decorator
+        nodesession
+        reactor
+        GTest::gtest_main
+        GTest::gmock
+)

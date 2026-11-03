@@ -24,4 +24,5 @@ public:
 	std::unique_ptr<IConnection> getConnection() override;
 	void setContext(std::shared_ptr<IStateContext> ctx) override;
 	int getDescriptor() const override;
+	bool isInitialized() const override { return(false); }
 };

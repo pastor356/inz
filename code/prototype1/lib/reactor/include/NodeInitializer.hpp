@@ -4,7 +4,7 @@
 #include "IPoll.hpp"
 
 class NodeInitializer: public EventHandler {
-	std::shared_ptr<Reactor> reactor;
+	std::weak_ptr<Reactor> reactor;
 	std::shared_ptr<EventHandler> messageRouter;
 	uint32_t counter = 0;
 

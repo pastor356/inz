@@ -30,6 +30,7 @@ public:
 	virtual int getDescriptor() const = 0;
 	virtual void setRole(uint8_t role) = 0;
 	virtual bool isConsumer() const = 0;
+	virtual bool isInitialized() const = 0;
 
 	virtual IConnection::Status recv(Packet& packet, int flag = 0) = 0;
 	virtual IConnection::Status send(Packet& packet, int flag = 0) = 0;

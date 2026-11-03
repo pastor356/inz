@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/common.dir/link.d"
   "CMakeFiles/common.dir/src/ConsoleLogger.cpp.o"
   "CMakeFiles/common.dir/src/ConsoleLogger.cpp.o.d"
+  "CMakeFiles/common.dir/src/Serializer.cpp.o"
+  "CMakeFiles/common.dir/src/Serializer.cpp.o.d"
   "libcommon.pdb"
   "libcommon.so"
 )

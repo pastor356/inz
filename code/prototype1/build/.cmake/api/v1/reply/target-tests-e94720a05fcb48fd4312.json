@@ -27,13 +27,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 58,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 60,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
@@ -48,7 +48,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 59,
+				"line" : 60,
 				"parent" : 0
 			}
 		]
@@ -262,7 +262,8 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17
 			]
 		}
 	],
@@ -360,6 +361,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "test/mocks/ReactorFixture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/WaiterMock.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

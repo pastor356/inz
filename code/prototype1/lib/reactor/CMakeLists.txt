@@ -33,6 +33,9 @@ set(HEADERS
 	Invoker.hpp
 	Demultiplexer.hpp
 	AcceptorNode.hpp
+	EchoRouter.hpp
+	IWaiter.hpp
+	EPollWaiter.hpp
 )
 
 set(SOURCES
@@ -44,6 +47,8 @@ set(SOURCES
 	Invoker.cpp
 	Demultiplexer.cpp
 	AcceptorNode.cpp
+	EchoRouter.cpp
+	EPollWaiter.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})

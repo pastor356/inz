@@ -162,7 +162,7 @@ std::unique_ptr<IConnection> TcpSocket::connect(addrInfo && resolvedAddress) con
 	} while((iter = iter->ai_next) != NULL);
 
 	if(!iter) {
-		logError << std::string{"connect() failed: "} + strerror(errno);
+		logError << std::string{"connect() failed: "} + strerror(errno) + " " + sock_ntop();
 		struct sockaddr_storage failed;
 		memset(&failed, 0, sizeof(failed));
 		return(std::make_unique<TcpCallee>(-1, failed));
@@ -223,7 +223,7 @@ std::string TcpSocket::sock_ntop() const {
 			auto *sin = reinterpret_cast<const struct sockaddr_in*>(&this->addr);
 
 			if(inet_ntop(AF_INET, &sin->sin_addr, res, MAXLINE) != NULL) {
-					return(std::string{res});
+				return(std::string{res} + ":" + std::to_string(ntohs(sin->sin_port)));
 			}
 
 			break;
@@ -231,7 +231,7 @@ std::string TcpSocket::sock_ntop() const {
 			 auto *sin6 = reinterpret_cast<const struct sockaddr_in6*>(&this->addr);
 
 			if(inet_ntop(AF_INET6, &sin6->sin6_addr, res, MAXLINE) != NULL) {
-					return(std::string{res});
+				return(std::string{res} + ":" + std::to_string(ntohs(sin6->sin6_port)));
 			}
 
 			break;
@@ -241,3 +241,35 @@ std::string TcpSocket::sock_ntop() const {
 		}
 	}
 }
+
+/*
+std::string TcpSocket::sock_ntop(struct addrinto* ai) const {
+	char res[MAXLINE];
+
+	struct sockaddr* address = ai->ai_addr;
+
+	switch(address->sa_family) {
+		case AF_INET: {
+			auto *sin = reinterpret_cast<const struct sockaddr_in*>(address);
+
+			if(inet_ntop(AF_INET, &sin->sin_addr, res, MAXLINE) != NULL) {
+				return(std::string{res} + ":" + std::to_string(ntohs(sin->sin_port)));
+			}
+
+			break;
+		} case AF_INET6: {
+			 auto *sin6 = reinterpret_cast<const struct sockaddr_in6*>(address);
+
+			if(inet_ntop(AF_INET6, &sin6->sin6_addr, res, MAXLINE) != NULL) {
+				return(std::string{res} + ":" + std::to_string(ntohs(sin6->sin6_port)));
+			}
+
+			break;
+		} default: {
+			printf("%s: unknown sa_family\n", __func__);
+			return(std::string{});
+		}
+	}
+}
+*/
+

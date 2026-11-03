@@ -8,13 +8,25 @@
 #define RECONNECT_HEADERLEN 0x3
 
 class ReconnectState: public IConnectionHandler {
+public:
+	struct ReconnectHeader {
+		uint16_t sessionId;
+		uint8_t qosLevel;
+	};
+
+private:
+
 	std::unique_ptr<IConnection> connection;
 	std::weak_ptr<IStateContext> context;
 	std::shared_ptr<NodeRegistry> registry;
 	std::shared_ptr<IDataAccessor> storage;
 
-	uint16_t parseMsg(Packet const& packet) const; // -> sessionId
+	ReconnectHeader parseMsg(Packet const& packet) const; // -> sessionId
+
+	void trimReconnHeader(Packet& packet) const;
+	
 public:
+
 	ReconnectState(std::unique_ptr<IConnection> conn, 
 			std::shared_ptr<IStateContext> ctx,
 			std::shared_ptr<NodeRegistry> reg, 
@@ -30,5 +42,6 @@ public:
 	std::unique_ptr<IConnection> getConnection();
 	void setContext(std::shared_ptr<IStateContext> ctx) override;
 	int getDescriptor() const override;
+	bool isInitialized() const override { return(false); }
 };
 

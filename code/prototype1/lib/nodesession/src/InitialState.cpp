@@ -10,6 +10,11 @@ IConnection::Status InitialState::recv(Packet& packet, int flag) {
 
 	auto status = connection->recv(packet, 0);
 
+	logInfo << std::string{"InitialState::recv(): got package "} + 
+		std::to_string(packet.header.size()) + " and " + 
+		std::to_string(packet.payload.size());
+
+
 	if(status != IConnection::Status::SUCCESS) {
 		logError << std::string{methodName} + ": recv failed";
 		return(status);

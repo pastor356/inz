@@ -43,7 +43,6 @@ public:
 
 	void changeStateReconnect(std::unique_ptr<IConnection> conn, 
 			std::shared_ptr<IStateContext> ctx) override {}
+
+	bool isInitialized() const override { return(true); }
 };
-
-
-

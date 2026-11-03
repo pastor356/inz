@@ -76,4 +76,5 @@ public:
 
 	void setContext(std::shared_ptr<IStateContext> ctx) override;
 	int getDescriptor() const override;
+	bool isInitialized() const override { return(false); }
 };

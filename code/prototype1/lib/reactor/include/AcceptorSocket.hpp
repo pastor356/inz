@@ -5,7 +5,7 @@
 #include "AcceptorNode.hpp"
 
 class AcceptorSocket: public EventHandler {
-	std::shared_ptr<Reactor> reactor;
+	std::weak_ptr<Reactor> reactor;
 
 	std::shared_ptr<IDataAccessor> storage;
 	std::shared_ptr<NodeRegistry> registry;

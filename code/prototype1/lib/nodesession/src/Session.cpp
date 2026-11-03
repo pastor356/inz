@@ -8,9 +8,12 @@ Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContex
 	
 	thisSessionId = sessionId++;
 	
+	Packet packet;
+	packet.payload.resize(sizeof(thisSessionId));
+	memcpy(packet.payload.data(), &thisSessionId, sizeof(thisSessionId)); // UNSAFE
+
+	connection->send(packet);
 }
-
-
 
 
 IConnection::Status Session::send(std::string const& message, int flag) const {
@@ -59,7 +62,6 @@ IConnection::Status Session::recv(Packet& packet, int flag) {
 
 	trimSessionHeader(packet);
 
-
 	return(status);
 }
 
@@ -84,19 +86,22 @@ Session::SessionHeader Session::parseMsg(Packet& packet) const {
         return sessionHeader;
     }
 
-    uint8_t msgType = packet.header[0];
+	uint8_t sessionHeaderOffset = packet.header.size() - SESSIONHEADER_LEN;
+
+    uint8_t msgType = packet.header[sessionHeaderOffset];
     if (msgType != MSGTYPE_SESSIONMSG) {
         logError << std::string{methodName} + ": msg type is unknown";
         return sessionHeader;
     }
 
     sessionHeader.sessionId =
-        static_cast<uint16_t>(packet.header[1]) |
-        (static_cast<uint16_t>(packet.header[2]) << 0x8);
+        static_cast<uint16_t>(packet.header[sessionHeaderOffset - 1]) |
+        (static_cast<uint16_t>(packet.header[sessionHeaderOffset - 2]) << 0x8);
 
     uint64_t timeStampNs = 0;
     for (uint8_t i = 0; i < sizeof(uint64_t); ++i) {
-        timeStampNs |= (static_cast<uint64_t>(packet.header[3 + i]) << (i * 0x8));
+        timeStampNs |= (static_cast<uint64_t>(
+					packet.header[(sessionHeaderOffset + 3) + i]) << (i * 0x8));
     }
 
     sessionHeader.timeStamp = std::chrono::nanoseconds(timeStampNs);
@@ -132,7 +137,6 @@ IConnection::Status Session::send(Packet& packet, int flag) const {
 	IConnection::Status status;
 	const char* methodName = "Session::send(Packet&, int)";
 	
-
 	auto time_stamp_ns = std::chrono::duration_cast<std::chrono::nanoseconds>
 		(std::chrono::system_clock::now().time_since_epoch()).count();
 

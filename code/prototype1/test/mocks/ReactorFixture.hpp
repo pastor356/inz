@@ -11,6 +11,7 @@
 #include "ContextMock.hpp"
 #include "SessionFixture.hpp"
 #include "PollMock.hpp"
+#include "WaiterMock.hpp"
 
 #include "MessageRouter.hpp"
 #include "AcceptorSocket.hpp"
@@ -30,18 +31,24 @@ public:
 	std::unique_ptr<StrictMock<SocketMock>> sockOwner;
 	SocketMock* sockMock;
 
+	std::unique_ptr<StrictMock<WaiterMock>> waiter;
+	WaiterMock* waiterPtr;
+
+
 	std::shared_ptr<IDataAccessor> dataAccessor;
 	std::shared_ptr<IStateContext> monitoredNode;
 	std::shared_ptr<IConnectionHandler> state;
 	std::shared_ptr<NodeRegistry> nodeRegistry;
 
 	std::shared_ptr<Reactor> reactor;
-	std::shared_ptr<StrictMock<PollMock>> poller;
+	std::shared_ptr<Demultiplexer> poller;
 	std::shared_ptr<IInvoker> dispatcher;
 
 	std::shared_ptr<EventHandler> messageRouter;
 	std::shared_ptr<EventHandler> acceptorSocket;
 	std::shared_ptr<EventHandler> nodeInitializer;
+
+	std::shared_ptr<IStateContext> acceptorNode;
 
 	ReactorTest() {
 		owner = std::make_unique<StrictMock<ConnectionMock>>();
@@ -49,19 +56,29 @@ public:
 		sockOwner = std::make_unique<StrictMock<SocketMock>>();
 		sockMock = sockOwner.get();
 
+
 		dataAccessor = std::make_shared<CacheAccessor>();
 		nodeRegistry = std::make_shared<NodeRegistry>();
-		state = std::make_shared<InitialState>(std::move(owner));
-		monitoredNode = std::make_shared<MonitoredNode>(state, dataAccessor, nodeRegistry);
-		state->setContext(monitoredNode);
-		
-		poller = std::make_shared<StrictMock<PollMock>>();
+		//state = std::make_shared<InitialState>(std::move(owner));
+		//monitoredNode = std::make_shared<MonitoredNode>(state, dataAccessor, nodeRegistry);
+		//state->setContext(monitoredNode);
+
+		waiter = std::make_unique<StrictMock<WaiterMock>>();
+		waiterPtr = waiter.get();
+
+		EXPECT_CALL(*waiterPtr, create()).WillOnce(Return(0));
+
+		poller = std::make_shared<Demultiplexer>(std::move(waiter));
 		dispatcher = std::make_shared<Invoker>();
 		reactor = std::make_shared<Reactor>(poller, dispatcher);
 
 		messageRouter = std::make_shared<MessageRouter>(reactor);
 		nodeInitializer = std::make_shared<NodeInitializer>(reactor, messageRouter);
-		//acceptorSocket = std::make_shared<AcceptorSocket>(std::move(sockOwner), 
-				 //reactor, dataAccessor, nodeRegistry, nodeInitializer);
+
+		acceptorNode = std::make_shared<AcceptorNode>(std::move(sockOwner));
+
+		acceptorSocket = std::make_shared<AcceptorSocket>(
+				reactor, dataAccessor, nodeRegistry, nodeInitializer);
 	}
 };
+

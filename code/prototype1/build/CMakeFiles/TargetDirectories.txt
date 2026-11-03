@@ -1,3 +1,5 @@
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/prototype1.dir
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/client.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/edit_cache.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/rebuild_cache.dir
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/list_install_components.dir

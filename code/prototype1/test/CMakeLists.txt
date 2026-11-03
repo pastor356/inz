@@ -50,6 +50,7 @@ set(MOCKHEADERS
 	PollMock.hpp
 	ReactorNewFixture.hpp
 	ReactorFixture.hpp
+	WaiterMock.hpp
 )
 
 list(TRANSFORM UTESTSOURCE PREPEND ${UTESTDIR})

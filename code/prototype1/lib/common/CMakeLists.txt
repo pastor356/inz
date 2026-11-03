@@ -25,10 +25,12 @@ set(HEADERS
 	ILogger.hpp
 	ConsoleLogger.hpp
 	Packet.hpp
+	Serializer.hpp
 )
 
 set(SOURCES
 	ConsoleLogger.cpp
+	Serializer.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})
@@ -36,3 +38,5 @@ list(TRANSFORM SOURCES PREPEND ${SOURCEDIR})
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES} ${HEADERS})
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDEDIR})
+
+

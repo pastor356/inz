@@ -5,6 +5,7 @@
 #include "Resolver.hpp"
 #include "ConsoleLogger.hpp"
 
+#include <arpa/inet.h>
 
 class TcpSocket: public ISocket {
 	int sockFd;
@@ -13,6 +14,8 @@ class TcpSocket: public ISocket {
 	struct sockaddr_storage initAddress(std::string const& address, int port);
 
 	std::string sock_ntop() const;
+	std::string sock_ntop(struct addrinto* ai) const;
+
 public:
 	// setsockopt() method
 	TcpSocket(int sockfd, std::string const& address, int port); 

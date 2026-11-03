@@ -9,9 +9,8 @@ void MessageRouter::handleRead(std::shared_ptr<IStateContext> node) {
 	Packet packet;
 	auto status = node->recv(packet, recvFlag);
 
-	if(packet.header.size() == 0) {
-		logError << std::string{methodName} + " failed: header size is 0";
-		return;
+
+	if(packet.header.size() == 0 && packet.payload.size() == 0) {
 	}
 
 	if(packet.header[0] == MSGTYPE_TOPICDATA) {
@@ -61,12 +60,30 @@ MessageRouter::DataHeader MessageRouter::parseMsg(Packet const& packet) const {
 	return(res);
 }
 
+void MessageRouter::trimDataHeader(Packet& packet) {
+	if(packet.header.size() < TOPICDATA_HEADERLEN) return;
 
-void MessageRouter::handleWrite(std::shared_ptr<IStateContext> node) {}
+	for(uint8_t i = 0; i < TOPICDATA_HEADERLEN; ++i) {
+		packet.header.pop_back();
+	}
+}
 
-void MessageRouter::handleHup(std::shared_ptr<IStateContext> node) {}
 
-void MessageRouter::handleError(std::shared_ptr<IStateContext> node) {}
+
+void MessageRouter::handleWrite(std::shared_ptr<IStateContext> node) {
+	(void) node;
+}
+
+void MessageRouter::handleHup(std::shared_ptr<IStateContext> node) {
+	if(auto strong = reactor.lock()) {
+		strong->deregisterNode(node);
+	}
+}
+
+void MessageRouter::handleError(std::shared_ptr<IStateContext> node) {
+	logInfo << "MessageRouter::handleError(Node&): error on descriptor " 
+		+ std::to_string(node->getDescriptor());
+}
 
 
 void MessageRouter::registerNode(std::string const& topic, std::shared_ptr<IStateContext> node) {
@@ -83,7 +100,5 @@ void MessageRouter::registerNode(std::string const& topic, std::shared_ptr<IStat
 		}
 	}
 }
-
-
 
 

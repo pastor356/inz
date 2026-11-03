@@ -18,13 +18,23 @@ IConnection::Status ReconnectState::recv(Packet& packet, int flag) {
 		return(status);
 	}
 
-	uint16_t sessionId = parseMsg(packet);
+	ReconnectState::ReconnectHeader reconHeader = parseMsg(packet);
 
-	UserAuth sessionData = registry->findSession(sessionId);
+	logInfo << std::string{"ReconnectState::recv(): got package "} + 
+		std::to_string(packet.header.size()) + " and " + 
+		std::to_string(packet.payload.size());
+
+	UserAuth sessionData = registry->findSession(reconHeader.sessionId);
 
 	if(registry->isEmpty(sessionData)) {
 		logError << "session's not found";
 		return(IConnection::Status::ERROR);
+	}
+
+	if(reconHeader.qosLevel == 1) {
+		connection = std::make_unique<Qos1>(std::move(connection));
+	} else if(reconHeader.qosLevel == 2) {
+		//connection = std::make_unique<Qos2>(std::move(connection));
 	}
 
 	if(auto strong = context.lock()) {
@@ -32,6 +42,13 @@ IConnection::Status ReconnectState::recv(Packet& packet, int flag) {
 	}
 
 	return(status);
+}
+
+void ReconnectState::trimReconnHeader(Packet& packet) const {
+	if(packet.header.size() < RECONNECT_HEADERLEN) return;
+	for(uint8_t i = 0; i < RECONNECT_HEADERLEN; ++i) {
+		packet.header.pop_back();
+	}
 }
 
 
@@ -60,22 +77,24 @@ void ReconnectState::setContext(std::shared_ptr<IStateContext> ctx) {
 }
 
 
-uint16_t ReconnectState::parseMsg(Packet const& packet) const {
-	if(packet.header.empty()) {
-		logError << "ReconnectState::parseMsg() failed: packet is empty";
-		return(0);
+ReconnectState::ReconnectHeader ReconnectState::parseMsg(Packet const& packet) const {
+	ReconnectState::ReconnectHeader rh;
+
+	if(packet.header.size() < RECONNECT_HEADERLEN) {
+		logError << "ReconnectState::parseMsg() failed: packet size is corrupted";
+		return(rh);
 	}
 
-	uint16_t sessionId = 0;
-
 	if(packet.header[0] == MSGTYPE_RECONNECT) {
-		sessionId = packet.header[1] | (packet.header[2] << 0x8);
+
+		rh.sessionId = packet.header[1] | (packet.header[2] << 0x8);
+		rh.qosLevel = (packet.header[0] >> 0x2) & 0b11;
 
 	} else {
 		logError << "ReconnectState::parseMsg(Packet const&) failed: msgtype is unknown";
 	}
 
-	return(sessionId);
+	return(rh);
 }
 
 

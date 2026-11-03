@@ -162,6 +162,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named prototype1
+
+# Build rule for target.
+prototype1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prototype1
+.PHONY : prototype1
+
+# fast build rule for target.
+prototype1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype1.dir/build.make CMakeFiles/prototype1.dir/build
+.PHONY : prototype1/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
 # Target rules for targets named common
 
 # Build rule for target.
@@ -291,6 +317,54 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype1.dir/build.make CMakeFiles/prototype1.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype1.dir/build.make CMakeFiles/prototype1.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype1.dir/build.make CMakeFiles/prototype1.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/main_client.o: src/main_client.cpp.o
+.PHONY : src/main_client.o
+
+# target to build an object file
+src/main_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/main_client.cpp.o
+.PHONY : src/main_client.cpp.o
+
+src/main_client.i: src/main_client.cpp.i
+.PHONY : src/main_client.i
+
+# target to preprocess a source file
+src/main_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/main_client.cpp.i
+.PHONY : src/main_client.cpp.i
+
+src/main_client.s: src/main_client.cpp.s
+.PHONY : src/main_client.s
+
+# target to generate assembly for a file
+src/main_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/main_client.cpp.s
+.PHONY : src/main_client.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -303,6 +377,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... client"
 	@echo "... common"
 	@echo "... decorator"
 	@echo "... gmock"
@@ -311,8 +386,15 @@ help:
 	@echo "... gtest_main"
 	@echo "... networking"
 	@echo "... nodesession"
+	@echo "... prototype1"
 	@echo "... reactor"
 	@echo "... tests"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/main_client.o"
+	@echo "... src/main_client.i"
+	@echo "... src/main_client.s"
 .PHONY : help
 
 
