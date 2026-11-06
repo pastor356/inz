@@ -51,7 +51,7 @@ TEST(QosMockTest, PendingMsgTest_OnSend) {
 	EXPECT_EQ(pm.packetId, expectedId);
     EXPECT_EQ(pm.msgType, TestableQos::MsgType::DATA);
     EXPECT_EQ(pm.state, TestableQos::QosState::WAIT_PUBACK);
-    EXPECT_EQ(pm.payload, message);
+    EXPECT_EQ(pm.packet.payload, message);
     EXPECT_EQ(pm.retries, 0);
 };
 
@@ -82,7 +82,7 @@ TEST(QosMockTest, PendingMsgTest_Puback) {
 	TestableQos::PendingMessage pending_msg;
 	pending_msg.packetId = qos.currentId();
 	pending_msg.msgType = TestableQos::MsgType::DATA;
-	pending_msg.payload = "dupa";
+	pending_msg.packet.payload = "dupa";
 	pending_msg.state = TestableQos::QosState::WAIT_PUBACK;
 
 	qos.insertPending(qos.currentId(), pending_msg); 

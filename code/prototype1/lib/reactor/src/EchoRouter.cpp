@@ -5,9 +5,7 @@ void EchoRouter::handleRead(std::shared_ptr<IStateContext> node) {
 	Packet packet;
 	IConnection::Status status = IConnection::Status::SUCCESS;
 
-	while(status == IConnection::Status::SUCCESS) {
-		status = node->recv(packet);
-	}
+	status = node->recv(packet);
 
 	std::cout << std::string{methodName} + " " + packet.payload << " with len " <<
 	   packet.payload.size() << std::endl;

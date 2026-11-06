@@ -50,6 +50,7 @@ CMakeFiles/client.dir/src/main_client.cpp.o
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionClient.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorNode.hpp

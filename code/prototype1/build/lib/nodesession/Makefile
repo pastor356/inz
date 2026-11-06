@@ -346,6 +346,30 @@ src/Session.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.s
 .PHONY : src/Session.cpp.s
 
+src/SessionClient.o: src/SessionClient.cpp.o
+.PHONY : src/SessionClient.o
+
+# target to build an object file
+src/SessionClient.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionClient.cpp.o
+.PHONY : src/SessionClient.cpp.o
+
+src/SessionClient.i: src/SessionClient.cpp.i
+.PHONY : src/SessionClient.i
+
+# target to preprocess a source file
+src/SessionClient.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionClient.cpp.i
+.PHONY : src/SessionClient.cpp.i
+
+src/SessionClient.s: src/SessionClient.cpp.s
+.PHONY : src/SessionClient.s
+
+# target to generate assembly for a file
+src/SessionClient.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/SessionClient.cpp.s
+.PHONY : src/SessionClient.cpp.s
+
 src/TerminatedState.o: src/TerminatedState.cpp.o
 .PHONY : src/TerminatedState.o
 
@@ -404,6 +428,9 @@ help:
 	@echo "... src/Session.o"
 	@echo "... src/Session.i"
 	@echo "... src/Session.s"
+	@echo "... src/SessionClient.o"
+	@echo "... src/SessionClient.i"
+	@echo "... src/SessionClient.s"
 	@echo "... src/TerminatedState.o"
 	@echo "... src/TerminatedState.i"
 	@echo "... src/TerminatedState.s"

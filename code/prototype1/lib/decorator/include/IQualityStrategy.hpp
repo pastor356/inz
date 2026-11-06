@@ -40,7 +40,7 @@ protected:
 		uint16_t packetId;
 		MsgType msgType;
 		std::chrono::steady_clock::time_point lastSent;
-		std::string payload; // for retry
+		Packet packet;
 		QosState state;
 		int retries{0};
 	};

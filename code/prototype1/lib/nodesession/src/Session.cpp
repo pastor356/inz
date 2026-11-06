@@ -51,6 +51,8 @@ IConnection::Status Session::recv(Packet& packet, int flag) {
 		return(status);
 	}
 
+	if(packet.header.size() < SESSIONHEADER_LEN) return(status);
+
 	SessionHeader sh = parseMsg(packet);
 
 	if (sh.sessionId != thisSessionId) {
@@ -95,8 +97,8 @@ Session::SessionHeader Session::parseMsg(Packet& packet) const {
     }
 
     sessionHeader.sessionId =
-        static_cast<uint16_t>(packet.header[sessionHeaderOffset - 1]) |
-        (static_cast<uint16_t>(packet.header[sessionHeaderOffset - 2]) << 0x8);
+        static_cast<uint16_t>(packet.header[sessionHeaderOffset + 1]) |
+        (static_cast<uint16_t>(packet.header[sessionHeaderOffset + 2]) << 0x8);
 
     uint64_t timeStampNs = 0;
     for (uint8_t i = 0; i < sizeof(uint64_t); ++i) {

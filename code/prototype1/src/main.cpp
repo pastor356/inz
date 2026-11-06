@@ -59,7 +59,7 @@ int main() {
 	std::shared_ptr<IInvoker> dispatcher = std::make_shared<Invoker>();
 	reactor = std::make_shared<Reactor>(poller, dispatcher);
 
-	std::shared_ptr<EventHandler> messageRouter = std::make_shared<EchoRouter>(reactor);
+	std::shared_ptr<EventHandler> messageRouter = std::make_shared<MessageRouter>(reactor);
 	std::shared_ptr<EventHandler> nodeInitializer = std::make_shared<NodeInitializer>(reactor,
 		messageRouter);
 

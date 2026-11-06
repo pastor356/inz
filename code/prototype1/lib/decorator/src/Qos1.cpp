@@ -3,12 +3,13 @@
 IConnection::Status Qos1::send(std::string const& msg, int flag) const {
 	Packet packet;
 	packet.payload = msg;
+
 	auto status = this->send(packet, flag);
+
 	if(status != IConnection::Status::SUCCESS) return(status);
 
 	return(status);
 }
-
 
 
 IConnection::Status Qos1::recv(std::string& msg, int flag) const {
@@ -49,7 +50,7 @@ IConnection::Status Qos1::recv(Packet& packet, int flag) const {
 		if(iter != pendingMessages.end() && iter->second.state == QosState::WAIT_PUBACK) 
 			pendingMessages.erase(iter);
 
-		return(IConnection::Status::SUCCESS);
+		return(this->recv(packet, flag));
 	}
 
 	trimQosHeader(packet.header); 
@@ -79,7 +80,7 @@ std::shared_ptr<IQualityStrategy::PendingMessage> Qos1::parseMsg(Packet const& p
 
 		retMsg->lastSent = std::chrono::steady_clock::now(); 
 		
-		retMsg->payload = packet.payload;
+		retMsg->packet = packet;
 
 		return(retMsg);
 	} else {
@@ -87,7 +88,6 @@ std::shared_ptr<IQualityStrategy::PendingMessage> Qos1::parseMsg(Packet const& p
 			+ std::to_string(packet.header.size());
 		return(nullptr);
 	}
-
 }
 
 
@@ -104,7 +104,7 @@ IConnection::Status Qos1::send(Packet& packet, int flag) const {
 	auto status = connection->send(packet, flag);
 
 	PendingMessage pending{thisMsgId, MsgType::DATA, 
-		std::chrono::steady_clock::now(), packet.payload, 
+		std::chrono::steady_clock::now(), packet,
 		QosState::WAIT_PUBACK, 0};
 
 

@@ -7,6 +7,7 @@
 #include "MonitoredNode.hpp"
 #include "InitialState.hpp"
 #include "Serializer.hpp"
+#include "SessionClient.hpp"
 
 #include "MessageRouter.hpp"
 #include "AcceptorSocket.hpp"
@@ -17,6 +18,7 @@
 #include "Invoker.hpp"
 
 #include <signal.h>
+#include <unistd.h>
 
 int main(int argc, char* argv[]) {
 	enableLogger();
@@ -43,7 +45,7 @@ int main(int argc, char* argv[]) {
 	conn->send(packet);
 
 	packet = Serializer::serializeHandshake(
-		ROLE_CONS,
+		ROLE_PROD,
 		1,
 		true,
 		true,
@@ -54,31 +56,32 @@ int main(int argc, char* argv[]) {
 		"secret");
 	
 	conn->send(packet); // Handshake
-
 	Packet incoming;
-	auto status = conn->recv(incoming);
-	status = conn->recv(incoming);
-
-	uint16_t sessionId;
-	memcpy(&sessionId, incoming.payload.data(), sizeof(sessionId));
-
-	std::cout << "SESSION ID: " << sessionId << std::endl;
+	auto status = conn->recv(incoming); // handshake ack
 
 	conn = std::make_unique<LiveMonitor>(std::move(conn));
 	conn = std::make_unique<Qos1>(std::move(conn));
 
-	Packet data = Serializer::serializeData(argv[1]);
+	auto sess = std::make_unique<SessionClient>(std::move(conn));
 
-	data.payload = std::string{argv[4]};
 
 	incoming.header.clear();
 	incoming.payload.clear();
-	for(size_t i = 0; i < atoi(argv[5]); ++i) {
-		conn->send(data);
 
-		conn->recv(incoming, MSG_DONTWAIT);
+	size_t nmsg = atoi(argv[5]);
+
+	for(size_t i = 0; i < nmsg; ++i) {
+		Packet data = Serializer::serializeData(argv[1]);
+		data.payload = argv[4];
+
+		data.payload += std::to_string(i);
+
+		sess->send(data);
+		std::cout << "SENT MESSAGE No: " << i << std::endl;
+		sess->recv(incoming, MSG_DONTWAIT);
 	}
 
+	pause();
 
 	return(0);
 }

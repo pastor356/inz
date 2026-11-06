@@ -4,26 +4,28 @@ std::string ConsoleLogger::applicationName = "Default";
 bool ConsoleLogger::enable = false;
 
 ConsoleLogger::ConsoleLogger(ILogger::Severity sev, std::string const& msg) {
-	std::string outputString;
+	if(enable) {
+		std::string outputString;
 
-	switch(sev) {
-		case ILogger::Severity::LOG_INFO:
-			outputString += "INFO: ";
-			break;
-		case ILogger::Severity::LOG_WARN:
-			outputString += "WARNING: ";
-			break;
-		case ILogger::Severity::LOG_ERROR:
-			outputString += "ERROR: ";
-			break;
-		default:
-			outputString += "Unknown logtype: ";
-			break;
+		switch(sev) {
+			case ILogger::Severity::LOG_INFO:
+				outputString += "INFO: ";
+				break;
+			case ILogger::Severity::LOG_WARN:
+				outputString += "WARNING: ";
+				break;
+			case ILogger::Severity::LOG_ERROR:
+				outputString += "ERROR: ";
+				break;
+			default:
+				outputString += "Unknown logtype: ";
+				break;
+		}
+
+		outputString += msg;
+
+		std::cout << outputString << std::endl;
 	}
-
-	outputString += msg;
-
-	std::cout << outputString << std::endl;
 }
 
 
@@ -68,5 +70,4 @@ bool ConsoleLogger::enableLogger() {
 	ConsoleLogger::enable = true;
 	return(enable);
 }
-
 

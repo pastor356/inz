@@ -12,7 +12,6 @@ Demultiplexer::Demultiplexer(std::unique_ptr<IWaiter> wait, int timeout):
 	
 	const char* methodName = "Demultiplexer::Demultiplexer(std::unique_ptr<IWaiter>, int)";
 	this->epollFd = waiter->create();
-
 }
 
 void Demultiplexer::registerNode(std::shared_ptr<IStateContext> node,
@@ -47,6 +46,8 @@ void Demultiplexer::deregisterNode(std::shared_ptr<IStateContext> node) {
 	const char* methodName = "Demultiplexer::deregisterNode(std::shared_ptr<IStateContext>)";
 
 	int fdToRemove = node->getDescriptor();
+
+	logInfo << std::string{methodName} + " node deregistered";
 
 	removeFromFdToEntity(fdToRemove);
 
@@ -99,6 +100,7 @@ std::vector<IPoll::ReadyEvent> Demultiplexer::wait() const {
 
 	for(int i = 0; i < nevents; ++i) {
 		auto it = fdToEntity.find(events[i].data.fd);
+
 		if(it != fdToEntity.end()) {
 			auto readyEvent = IPoll::ReadyEvent{it->second, events[i].events};
 			ret.push_back(std::move(readyEvent));
@@ -110,8 +112,6 @@ std::vector<IPoll::ReadyEvent> Demultiplexer::wait() const {
 
 	return(ret);
 }
-
-
 
 
 void Demultiplexer::removeFromFdToEntity(int fdToRemove) {

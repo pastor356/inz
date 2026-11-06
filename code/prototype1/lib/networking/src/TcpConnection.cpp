@@ -189,7 +189,7 @@ IConnection::Status TcpConnection::send(Packet& packet, int flag) const {
 IConnection::Status TcpConnection::recv(Packet& packet, int flag) const {
 	IConnection::Status status;
 
-	status = recvHeader(packet.header);
+	status = recvHeader(packet.header, flag);
 	(void)flag;
 
 	if(status != IConnection::Status::SUCCESS) {
@@ -197,7 +197,7 @@ IConnection::Status TcpConnection::recv(Packet& packet, int flag) const {
 		return(status);
 	}
 
-	status = recvPayload(packet.payload);
+	status = recvPayload(packet.payload, true, flag);
 
 	if(status != IConnection::Status::SUCCESS) {
 		logError << std::string{"recvPayload(Packet&) failed: "} + strerror(errno);
@@ -213,12 +213,12 @@ IConnection::Status TcpConnection::recv(Packet& packet, int flag) const {
 }
 
 	
-IConnection::Status TcpConnection::recvHeader(std::vector<uint8_t>& header) const {
+IConnection::Status TcpConnection::recvHeader(std::vector<uint8_t>& header, int flag) const {
 	std::string tmp;
 	size_t headerSize;
 	tmp.resize(2);
 
-	auto status = this->recv(tmp, sizeof(headerSize), 0);
+	auto status = this->recv(tmp, sizeof(headerSize), flag);
 
 	if(status != IConnection::Status::SUCCESS) 
 		return(status);
@@ -240,7 +240,7 @@ IConnection::Status TcpConnection::recvHeader(std::vector<uint8_t>& header) cons
 }
 
 
-IConnection::Status TcpConnection::recvPayload(std::string& payload, bool expected) const {
+IConnection::Status TcpConnection::recvPayload(std::string& payload, bool expected, int flag) const {
 	IConnection::Status status = IConnection::Status::SUCCESS;
 
 	// recvSize(size_t& msgSize) method
@@ -248,7 +248,7 @@ IConnection::Status TcpConnection::recvPayload(std::string& payload, bool expect
 	std::string buf;
 	buf.resize(sizeof(payloadSize));
 
-	status = this->recv(buf, sizeof(payloadSize), 0);
+	status = this->recv(buf, sizeof(payloadSize), flag);
 
 	if(status != IConnection::Status::SUCCESS) {
 		logError << std::string{"recvPayload() failed: "} + strerror(errno);

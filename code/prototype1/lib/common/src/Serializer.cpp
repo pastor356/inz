@@ -10,6 +10,7 @@ Packet serializeHandshake(uint8_t role, uint8_t qos, bool creat, bool newUsr,
     uint8_t firstByte = MSGTYPE_HANDSHAKE;
 
 	if(role > 3) role = ROLE_CONS;
+
 	firstByte |= ((role & 0b11) << RoleType_Pos);
 
     firstByte |= ((qos & 0b11) << QosType_Pos);

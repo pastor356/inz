@@ -34,6 +34,7 @@ set(HEADERS
 	InitialState.hpp
 	ReconnectState.hpp
 	TerminatedState.hpp
+	SessionClient.hpp
 )
 
 set(SOURCES
@@ -46,6 +47,7 @@ set(SOURCES
 	InitialState.cpp
 	ReconnectState.cpp
 	TerminatedState.cpp
+	SessionClient.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})

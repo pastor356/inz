@@ -49,6 +49,7 @@ CMakeFiles/client.dir/src/main_client.cpp.o: /home/pastor/Public/books/VI_sem/in
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionClient.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorNode.hpp \
@@ -651,6 +652,8 @@ lib/nodesession/libnodesession.so:
 
 /usr/include/c++/15/bits/std_mutex.h:
 
+/usr/include/c++/15/bits/std_abs.h:
+
 /usr/include/string.h:
 
 /usr/include/bits/socket_type.h:
@@ -855,10 +858,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp:
 
-/usr/include/bits/ss_flags.h:
-
-/usr/include/c++/15/bits/node_handle.h:
-
 /usr/include/c++/15/iomanip:
 
 /usr/include/asm/posix_types_64.h:
@@ -878,12 +877,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp:
 
 _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
-
-/usr/include/c++/15/cctype:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/environments.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp:
 
@@ -1046,6 +1039,16 @@ lib/decorator/libdecorator.so:
 /usr/include/c++/15/cwchar:
 
 /usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/bits/ss_flags.h:
+
+/usr/include/c++/15/cctype:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15/bits/node_handle.h:
 
 /usr/include/bits/statx.h:
 
@@ -1269,6 +1272,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /usr/include/c++/15/bits/hash_bytes.h:
 
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionClient.hpp:
+
 /usr/include/c++/15/bits/locale_classes.tcc:
 
 _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
@@ -1330,5 +1335,3 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 /usr/include/bits/types/stack_t.h:
 
 /usr/include/c++/15/bits/sstream.tcc:
-
-/usr/include/c++/15/bits/std_abs.h:

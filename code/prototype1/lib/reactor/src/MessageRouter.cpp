@@ -9,8 +9,11 @@ void MessageRouter::handleRead(std::shared_ptr<IStateContext> node) {
 	Packet packet;
 	auto status = node->recv(packet, recvFlag);
 
+	logInfo << std::string{methodName} + ": got pack: " + packet.payload;
 
-	if(packet.header.size() == 0 && packet.payload.size() == 0) {
+	if(packet.header.empty()) {
+		logInfo << std::string{methodName} + ": got empty message";
+		return;
 	}
 
 	if(packet.header[0] == MSGTYPE_TOPICDATA) {
@@ -22,10 +25,11 @@ void MessageRouter::handleRead(std::shared_ptr<IStateContext> node) {
 		if(nodesOnTopic == topicsToConnections.end()) {
 			NodeSet newSet;
 			newSet.push_back(node);
-			topicsToConnections.emplace(dh.topic, std::move(newSet));
+			auto result = topicsToConnections.emplace(dh.topic, std::move(newSet));
+			nodesOnTopic = result.first;
 		}
 
-		NodeSet nodes = nodesOnTopic->second;
+		const auto& nodes = nodesOnTopic->second;
 
 		for(size_t i = 0; i < nodes.size(); ++i) {
 			if(nodes[i]->isConsumer()) 

@@ -12,8 +12,8 @@ class TcpConnection: public IConnection {
 
 	IConnection::Status sendHeader(std::vector<uint8_t> const& header) const;
 	IConnection::Status sendPayload(std::string const& payload, bool needSend = true) const;
-	IConnection::Status recvHeader(std::vector<uint8_t>& header) const;
-	IConnection::Status recvPayload(std::string& payload, bool expected = true) const;
+	IConnection::Status recvHeader(std::vector<uint8_t>& header, int flag = 0) const;
+	IConnection::Status recvPayload(std::string& payload, bool expected = true, int flag = 0) const;
 
 public:
 	TcpConnection(int sockFd, std::string const& addr, int port);

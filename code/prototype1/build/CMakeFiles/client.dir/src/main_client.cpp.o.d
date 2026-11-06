@@ -277,6 +277,7 @@ CMakeFiles/client.dir/src/main_client.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/InitialState.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionClient.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/MessageRouter.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EventHandler.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IPoll.hpp \
