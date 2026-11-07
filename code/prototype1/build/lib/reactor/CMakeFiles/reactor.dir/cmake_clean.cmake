@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o.d"
   "CMakeFiles/reactor.dir/src/Reactor.cpp.o"
   "CMakeFiles/reactor.dir/src/Reactor.cpp.o.d"
+  "CMakeFiles/reactor.dir/src/TimerQueue.cpp.o"
+  "CMakeFiles/reactor.dir/src/TimerQueue.cpp.o.d"
   "libreactor.pdb"
   "libreactor.so"
 )

@@ -5,6 +5,7 @@
 #include "NodeRegistry.hpp"
 #include "ReconnectState.hpp"
 #include "TerminatedState.hpp"
+#include "TimerQueue.hpp"
 
 #define MSGTYPE_TOPICDATA		(uint8_t)(0xa << MsgType_Pos)
 #define TOPICDATA_HEADERLEN		0x4
@@ -16,12 +17,19 @@ class MonitoredNode: public IStateContext {
 
 	std::shared_ptr<IDataAccessor> storage;
 	std::shared_ptr<NodeRegistry> registry;
-
+	std::shared_ptr<TimerQueue> timer;
 
 public:
 	MonitoredNode() = default;
 	MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
-			std::shared_ptr<IDataAccessor> storage, std::shared_ptr<NodeRegistry> registry);
+			std::shared_ptr<IDataAccessor> storage, 
+			std::shared_ptr<NodeRegistry> registry);
+
+
+	MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
+			std::shared_ptr<IDataAccessor> storage, 
+			std::shared_ptr<NodeRegistry> registry
+			std::shared_ptr<TimerQueue> timer);
 
 	void changeState(std::shared_ptr<IConnectionHandler> newState) override;
 

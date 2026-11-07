@@ -394,6 +394,30 @@ src/Reactor.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.s
 .PHONY : src/Reactor.cpp.s
 
+src/TimerQueue.o: src/TimerQueue.cpp.o
+.PHONY : src/TimerQueue.o
+
+# target to build an object file
+src/TimerQueue.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o
+.PHONY : src/TimerQueue.cpp.o
+
+src/TimerQueue.i: src/TimerQueue.cpp.i
+.PHONY : src/TimerQueue.i
+
+# target to preprocess a source file
+src/TimerQueue.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.i
+.PHONY : src/TimerQueue.cpp.i
+
+src/TimerQueue.s: src/TimerQueue.cpp.s
+.PHONY : src/TimerQueue.s
+
+# target to generate assembly for a file
+src/TimerQueue.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.s
+.PHONY : src/TimerQueue.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -434,6 +458,9 @@ help:
 	@echo "... src/Reactor.o"
 	@echo "... src/Reactor.i"
 	@echo "... src/Reactor.s"
+	@echo "... src/TimerQueue.o"
+	@echo "... src/TimerQueue.i"
+	@echo "... src/TimerQueue.s"
 .PHONY : help
 
 

@@ -17,6 +17,14 @@ MonitoredNode::MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
 	connection{initial}, storage{storage}, registry{registry}, oldConn{nullptr} {}
 
 
+MonitoredNode::MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
+		std::shared_ptr<IDataAccessor> storage, 
+		std::shared_ptr<NodeRegistry> registry
+		std::shared_ptr<TimerQueue> timer): 
+	connection{initial}, storage{storage}, registry{registry}, 
+	oldConn{nullptr}, timer{timer} {}
+
+
 void MonitoredNode::changeStateHandshake(std::unique_ptr<IConnection> conn,
 		std::shared_ptr<IStateContext> ctx) {
 
