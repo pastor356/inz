@@ -15,6 +15,19 @@ Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContex
 	connection->send(packet);
 }
 
+Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContext> ctx,
+			UserAuth const& userAuth, std::shared_ptr<TimerQueue> timer):
+	connection{std::move(conn)}, context{ctx}, authData{userAuth}, timer{timer} {
+
+	thisSessionId = sessionId++;
+	
+	Packet packet;
+	packet.payload.resize(sizeof(thisSessionId));
+	memcpy(packet.payload.data(), &thisSessionId, sizeof(thisSessionId)); // UNSAFE
+
+	connection->send(packet);
+}
+
 
 IConnection::Status Session::send(std::string const& message, int flag) const {
 	Packet packet;

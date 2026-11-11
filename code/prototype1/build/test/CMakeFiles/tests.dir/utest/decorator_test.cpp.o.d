@@ -180,17 +180,25 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: \
  /usr/include/c++/15/pstl/execution_defs.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
+ /usr/include/c++/15/chrono /usr/include/c++/15/bits/chrono.h \
+ /usr/include/c++/15/ratio /usr/include/c++/15/limits \
+ /usr/include/c++/15/ctime /usr/include/c++/15/bits/parse_numbers.h \
+ /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
  /usr/include/c++/15/unordered_map \
  /usr/include/c++/15/bits/unordered_map.h \
  /usr/include/c++/15/bits/hashtable.h \
  /usr/include/c++/15/bits/hashtable_policy.h \
  /usr/include/c++/15/bits/enable_special_members.h \
  /usr/include/c++/15/bits/node_handle.h \
- /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/chrono \
- /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
- /usr/include/c++/15/limits /usr/include/c++/15/ctime \
- /usr/include/c++/15/bits/parse_numbers.h \
+ /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/array \
+ /usr/include/c++/15/compare \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/ISocket.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCallee.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
@@ -220,8 +228,6 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
  /usr/include/c++/15/atomic \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
- /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
- /usr/include/c++/15/array /usr/include/c++/15/compare \
  /usr/include/c++/15/utility /usr/include/c++/15/bits/stl_relops.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/sys/wait.h /usr/include/signal.h \
@@ -258,11 +264,6 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/ISocket.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCallee.hpp \
  /usr/include/sys/epoll.h /usr/include/sys/ioctl.h \
  /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \
  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
@@ -272,4 +273,9 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h \
  /usr/include/bits/fcntl-linux.h /usr/include/bits/cloexec.h \
  /usr/include/linux/falloc.h /usr/include/poll.h /usr/include/sys/poll.h \
- /usr/include/bits/poll.h
+ /usr/include/bits/poll.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
+ /usr/include/sys/timerfd.h /usr/include/bits/timerfd.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp

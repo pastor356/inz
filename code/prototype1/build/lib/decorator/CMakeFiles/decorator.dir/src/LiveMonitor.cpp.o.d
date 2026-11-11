@@ -167,6 +167,7 @@ lib/decorator/CMakeFiles/decorator.dir/src/LiveMonitor.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp \
  /usr/include/c++/15/deque /usr/include/c++/15/bits/stl_deque.h \
  /usr/include/c++/15/bits/deque.tcc \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp \
  /usr/include/c++/15/iostream /usr/include/c++/15/ostream \

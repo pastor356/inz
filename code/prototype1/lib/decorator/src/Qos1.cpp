@@ -43,8 +43,8 @@ IConnection::Status Qos1::recv(Packet& packet, int flag) const {
 			pending->state == QosState::FINISHED) { // this Msg
 
 		auto iter = pendingMessages.find(pending->packetId);
-
 		logInfo << "received PubAck";
+		timer->cancelTimer(iter->second.timerId);
 
 		// msg found in map
 		if(iter != pendingMessages.end() && iter->second.state == QosState::WAIT_PUBACK) 
@@ -103,10 +103,16 @@ IConnection::Status Qos1::send(Packet& packet, int flag) const {
 
 	auto status = connection->send(packet, flag);
 
+	auto timeoutDuration = std::chrono::seconds(3);
+    auto timeWaitForAck = std::chrono::steady_clock::now() + timeoutDuration;
+
+	auto tid = timer->addTimer(timeWaitForAck, [this, thisMsgId] () {
+			this->retry(thisMsgId);
+		});
+
 	PendingMessage pending{thisMsgId, MsgType::DATA, 
 		std::chrono::steady_clock::now(), packet,
-		QosState::WAIT_PUBACK, 0};
-
+		QosState::WAIT_PUBACK, 0, tid};
 
 	pendingMessages.insert(std::pair<uint16_t, PendingMessage>(thisMsgId, pending));
 
@@ -163,9 +169,9 @@ IConnection::Status Qos1::sendPubRel(uint16_t packetId) const {
 
 		return(connection->send(tmp));
 	}
+
 	return(IConnection::Status::AGAIN);
 }
-
 
 
 IConnection::Status Qos1::sendPubComp(uint16_t packetId) const {
@@ -180,3 +186,29 @@ IConnection::Status Qos1::sendPubComp(uint16_t packetId) const {
 	}
 	return(IConnection::Status::AGAIN);
 }
+
+void Qos1::retry(uint16_t packetId) const {
+	auto it = pendingMessages.find(packetId);
+
+	logInfo << std::string{"Qos1::retry(uint16_t)"};
+
+	if(it == pendingMessages.end()) {
+		logError << std::string{"Qos1::retry(uint16_t) failed: packet with id "} 
+			+ std::to_string(packetId) + " is not in map";
+			return;
+	}
+
+	++it->second.retries;
+	auto timeoutDuration = std::chrono::seconds(3);
+    auto timeWaitForAck = std::chrono::steady_clock::now() + timeoutDuration;
+
+	auto tid = timer->addTimer(timeWaitForAck, [this, packetId]() {
+		   this->retry(packetId);
+	});
+
+	it->second.timerId = tid;
+
+
+	return;
+}
+

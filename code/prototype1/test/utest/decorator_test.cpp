@@ -8,6 +8,7 @@
 #include <sys/epoll.h>
 #include <fcntl.h>
 #include <poll.h>
+#include "TimerQueue.hpp"
 
 #define MAXEVENTS 10
 
@@ -33,9 +34,9 @@ public:
 
 
 TEST_F(QosTest, MessageExhchangeTest) {
-
-	this->connection = std::make_unique<LiveMonitor>(std::move(this->connection));
-	this->connection = std::make_unique<Qos1>(std::move(this->connection));
+	auto timer = std::make_shared<TimerQueue>();
+	this->connection = std::make_unique<LiveMonitor>(std::move(this->connection), timer);
+	this->connection = std::make_unique<Qos1>(std::move(this->connection), timer);
 
 	int flag = fcntl(connection->getDescriptor(), F_GETFL, 0);
 	fcntl(connection->getDescriptor(),  F_SETFL, flag | O_NONBLOCK);
@@ -75,7 +76,9 @@ TEST_F(QosTest, MessageExhchangeTest) {
 
 TEST_F(QosTest, KeepAlivePacketTest) {
 	Packet packet;
-	this->connection = std::make_unique<LiveMonitor>(std::move(connection));
+	auto timer = std::make_shared<TimerQueue>();
+
+	this->connection = std::make_unique<LiveMonitor>(std::move(connection), timer);
 	packet.header.push_back(MSGTYPE_KEEPALIVE);
 	connection->send(packet);
 }

@@ -43,6 +43,7 @@ protected:
 		Packet packet;
 		QosState state;
 		int retries{0};
+		uint64_t timerId;
 	};
 
 	// packetId to PendingMessage

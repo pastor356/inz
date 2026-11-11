@@ -43,6 +43,7 @@ test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: /home/pastor/Public/books/VI_
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/IConnection.hpp \
@@ -52,6 +53,10 @@ test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: /home/pastor/Public/books/VI_
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/SocketMock.hpp \
@@ -140,6 +145,7 @@ test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: /home/pastor/Public/books/VI_
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
+  /usr/include/bits/timerfd.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/timex.h \
   /usr/include/bits/types.h \
@@ -426,6 +432,7 @@ test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: /home/pastor/Public/books/VI_
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/socket.h \
   /usr/include/sys/stat.h \
+  /usr/include/sys/timerfd.h \
   /usr/include/sys/types.h \
   /usr/include/sys/ucontext.h \
   /usr/include/sys/wait.h \
@@ -467,6 +474,7 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: /home/pastor/Public/books/
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/IConnection.hpp \
@@ -476,6 +484,10 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: /home/pastor/Public/books/
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
   /usr/include/alloca.h \
   /usr/include/arpa/inet.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -559,6 +571,7 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: /home/pastor/Public/books/
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
+  /usr/include/bits/timerfd.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/timex.h \
   /usr/include/bits/types.h \
@@ -828,6 +841,7 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: /home/pastor/Public/books/
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/socket.h \
   /usr/include/sys/stat.h \
+  /usr/include/sys/timerfd.h \
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
   /usr/include/sys/ucontext.h \
@@ -1318,6 +1332,7 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/IConnection.hpp \
@@ -1339,6 +1354,7 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ContextMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
@@ -1429,6 +1445,7 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
+  /usr/include/bits/timerfd.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/timex.h \
   /usr/include/bits/types.h \
@@ -1715,6 +1732,7 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/socket.h \
   /usr/include/sys/stat.h \
+  /usr/include/sys/timerfd.h \
   /usr/include/sys/types.h \
   /usr/include/sys/ucontext.h \
   /usr/include/sys/wait.h \
@@ -2121,6 +2139,7 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/IConnection.hpp \
@@ -2142,6 +2161,7 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorNode.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorSocket.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Demultiplexer.hpp \
@@ -2255,6 +2275,7 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
+  /usr/include/bits/timerfd.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/timex.h \
   /usr/include/bits/types.h \
@@ -2545,6 +2566,7 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/socket.h \
   /usr/include/sys/stat.h \
+  /usr/include/sys/timerfd.h \
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
   /usr/include/sys/ucontext.h \
@@ -2980,6 +3002,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/IConnection.hpp \
@@ -3001,6 +3024,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ContextMock.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
@@ -3091,6 +3115,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
+  /usr/include/bits/timerfd.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/timex.h \
   /usr/include/bits/types.h \
@@ -3377,6 +3402,7 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/socket.h \
   /usr/include/sys/stat.h \
+  /usr/include/sys/timerfd.h \
   /usr/include/sys/types.h \
   /usr/include/sys/ucontext.h \
   /usr/include/sys/wait.h \
@@ -3906,8 +3932,6 @@ lib/common/libcommon.so:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/maintest_gtest.cpp:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp:
-
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp:
@@ -3959,6 +3983,8 @@ lib/libgtest.a:
 /usr/include/sys/types.h:
 
 /usr/include/sys/select.h:
+
+/usr/include/sys/timerfd.h:
 
 /usr/include/stdlib.h:
 
@@ -4023,10 +4049,6 @@ lib/libgtest.a:
 /usr/include/c++/15/tr1/poly_hermite.tcc:
 
 /usr/include/c++/15/tr1/modified_bessel_func.tcc:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp:
-
-/usr/include/c++/15/tr1/legendre_function.tcc:
 
 /usr/include/c++/15/tr1/exp_integral.tcc:
 
@@ -4162,6 +4184,26 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o:
 
 /usr/include/c++/15/bits/std_abs.h:
 
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IPoll.hpp:
+
+/usr/include/c++/15/bits/stl_uninitialized.h:
+
+/usr/include/c++/15/bits/stl_multimap.h:
+
+/usr/include/c++/15/bits/shared_ptr_base.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/WaiterMock.hpp:
+
+/usr/include/c++/15/bits/shared_ptr_atomic.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp:
+
+/usr/include/c++/15/bits/shared_ptr.h:
+
+/usr/include/c++/15/bits/requires_hosted.h:
+
+/usr/include/c++/15/bits/refwrap.h:
+
 /usr/include/bits/signum-generic.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so:
@@ -4183,10 +4225,6 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o:
 /usr/include/c++/15/bits/sstream.tcc:
 
 /usr/include/bits/types/stack_t.h:
-
-/usr/include/c++/15/streambuf:
-
-/usr/include/bits/socket.h:
 
 /usr/include/c++/15/ext/aligned_buffer.h:
 
@@ -4222,19 +4260,17 @@ _deps/googletest-src/googlemock/include/gmock/gmock-matchers.h:
 
 /usr/include/bits/mathcalls-helper-functions.h:
 
-/usr/include/bits/locale.h:
-
 /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h:
 
 /usr/include/c++/15/tr1/riemann_zeta.tcc:
 
 /usr/include/bits/siginfo-consts-arch.h:
 
-/usr/include/bits/sigstack.h:
-
 /usr/include/c++/15/debug/debug.h:
 
 /usr/include/bits/getopt_core.h:
+
+/usr/include/bits/sigstack.h:
 
 /lib64/libgcc_s.so.1:
 
@@ -4249,20 +4285,6 @@ _deps/googletest-src/googlemock/include/gmock/gmock-matchers.h:
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp:
 
 /usr/include/bits/libc-header-start.h:
-
-/usr/include/bits/sigaction.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/bits/in.h:
-
-/usr/include/bits/statx-generic.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorSocket.hpp:
-
-/usr/include/c++/15/bits/stl_tempbuf.h:
-
-/usr/include/c++/15/bits/deque.tcc:
 
 /usr/include/errno.h:
 
@@ -4350,9 +4372,19 @@ _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h:
 
 /usr/include/c++/15/bits/charconv.h:
 
+/usr/include/asm-generic/errno-base.h:
+
 _deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/asm-generic/errno.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/bits/floatn.h:
 
@@ -4361,8 +4393,6 @@ _deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h:
 /usr/include/c++/15/cstdint:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:
-
-/usr/include/c++/15/bits/refwrap.h:
 
 /usr/include/c++/15/bits/unordered_map.h:
 
@@ -4376,13 +4406,17 @@ _deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/WaiterMock.hpp:
-
-/usr/include/c++/15/bits/shared_ptr_atomic.h:
-
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp:
 
 /usr/include/alloca.h:
+
+lib/libgmock.a:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/c++/15/bits/streambuf.tcc:
+
+/usr/include/c++/15/bits/basic_string.tcc:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp:
 
@@ -4395,10 +4429,6 @@ _deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:
 /usr/include/c++/15/bits/stl_vector.h:
 
 /usr/include/c++/15/bits/functexcept.h:
-
-/usr/include/bits/ss_flags.h:
-
-/usr/include/c++/15/bits/node_handle.h:
 
 /usr/include/c++/15/iomanip:
 
@@ -4428,12 +4458,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
-/usr/include/c++/15/cctype:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/environments.h:
-
 /usr/include/c++/15/string:
 
 _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
@@ -4445,16 +4469,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 /usr/include/c++/15/bits/codecvt.h:
 
 /usr/include/bits/types/__locale_t.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/socket_type.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/asm-generic/errno.h:
 
 /usr/include/bits/types/struct_osockaddr.h:
 
@@ -4470,6 +4484,10 @@ _deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
+/usr/include/c++/15/tr1/legendre_function.tcc:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp:
+
 _deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h:
 
 /usr/include/c++/15/bits/stl_construct.h:
@@ -4477,6 +4495,32 @@ _deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h:
 /usr/include/c++/15/bits/ptr_traits.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h:
+
+_deps/googletest-src/googletest/include/gtest/gtest.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
+
+/usr/include/c++/15/bits/chrono.h:
+
+_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/c++/15/ext/concurrence.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/15/bits/exception_ptr.h:
+
+_deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/session_test.cpp:
+
+/usr/include/c++/15/array:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/SessionFixture.hpp:
 
@@ -4501,6 +4545,20 @@ test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o:
 /usr/include/linux/sched/types.h:
 
 /usr/include/c++/15/bits/nested_exception.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/bits/statx-generic.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorSocket.hpp:
+
+/usr/include/c++/15/bits/stl_tempbuf.h:
+
+/usr/include/c++/15/bits/deque.tcc:
+
+/usr/include/string.h:
+
+/usr/include/bits/socket_type.h:
 
 /usr/include/bits/siginfo-consts.h:
 
@@ -4550,6 +4608,16 @@ _deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-ac
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp:
 
+/usr/include/bits/locale.h:
+
+/usr/include/bits/waitflags.h:
+
+test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o:
+
+/usr/include/c++/15/bits/locale_conv.h:
+
+/usr/include/c++/15/bits/locale_facets.tcc:
+
 test/CMakeFiles/tests.dir/utest/session_test.cpp.o:
 
 /usr/include/c++/15/cstdio:
@@ -4568,49 +4636,35 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp:
+/usr/include/bits/sigaction.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp:
+/usr/include/bits/iscanonical.h:
 
 /usr/include/c++/15/bits/range_access.h:
 
-/usr/include/bits/sigthread.h:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp:
 
-/usr/include/c++/15/ext/concurrence.h:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp:
 
-/usr/include/bits/floatn-common.h:
+/usr/include/c++/15/streambuf:
 
-/usr/include/c++/15/bits/exception_ptr.h:
+/usr/include/bits/socket.h:
 
-_deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
+/usr/include/bits/ss_flags.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/session_test.cpp:
+/usr/include/c++/15/cctype:
 
-/usr/include/c++/15/array:
+/usr/include/bits/environments.h:
 
-lib/libgmock.a:
+/usr/include/bits/types/struct_FILE.h:
 
-/usr/include/arpa/inet.h:
-
-/usr/include/c++/15/bits/streambuf.tcc:
-
-/usr/include/c++/15/bits/basic_string.tcc:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-_deps/googletest-src/googletest/include/gtest/gtest.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/usr/include/c++/15/bits/chrono.h:
-
-_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h:
+/usr/include/c++/15/bits/node_handle.h:
 
 /usr/include/bits/statx.h:
 
 /usr/include/bits/stdint-least.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp:
 
 /usr/include/c++/15/bits/move.h:
 
@@ -4667,6 +4721,8 @@ _deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h:
 /usr/include/bits/types/__FILE.h:
 
 lib/libgtest_main.a:
+
+/usr/include/bits/timerfd.h:
 
 /usr/include/bits/types/__fpos64_t.h:
 
@@ -4750,11 +4806,11 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /usr/include/bits/types/struct_tm.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp:
-
 /usr/include/bits/math-vector.h:
 
 /usr/include/bits/uio_lim.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp:
 
 /usr/include/c++/15/bits/concept_check.h:
 
@@ -4765,14 +4821,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/c++/15/mutex:
 
 /usr/include/bits/unistd_ext.h:
-
-/usr/include/bits/waitflags.h:
-
-test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o:
-
-/usr/include/c++/15/bits/locale_conv.h:
-
-/usr/include/c++/15/bits/locale_facets.tcc:
 
 /usr/lib64/crti.o:
 
@@ -4828,9 +4876,9 @@ test/CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o:
 
 /usr/include/c++/15/bits/stl_tree.h:
 
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
 /usr/include/bits/wchar.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/bits/waitstatus.h:
 
@@ -4886,8 +4934,6 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 /usr/include/c++/15/bits/locale_facets.h:
 
-/usr/include/c++/15/bits/requires_hosted.h:
-
 /usr/include/c++/15/bits/locale_facets_nonio.tcc:
 
 _deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h:
@@ -4907,15 +4953,3 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 /usr/include/asm-generic/socket.h:
 
 /usr/include/c++/15/bits/quoted_string.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp:
-
-/usr/include/c++/15/bits/shared_ptr.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IPoll.hpp:
-
-/usr/include/c++/15/bits/stl_uninitialized.h:
-
-/usr/include/c++/15/bits/stl_multimap.h:
-
-/usr/include/c++/15/bits/shared_ptr_base.h:

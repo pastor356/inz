@@ -1,6 +1,7 @@
 #pragma once
 #include "IInvoker.hpp"
 #include "IPoll.hpp"
+#include <atomic>
 
 
 class Reactor {

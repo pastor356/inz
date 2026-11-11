@@ -16,8 +16,11 @@
 #include "Reactor.hpp"
 #include "Demultiplexer.hpp"
 #include "Invoker.hpp"
+#include "TimerQueue.hpp"
+#include "TimerHandler.hpp"
 
 #include <signal.h>
+
 void sigint(int signo);
 std::shared_ptr<Reactor> reactor;
 
@@ -37,10 +40,7 @@ int main() {
 	act.sa_handler = sigint;
 	act.sa_flags = 0;
 	sigemptyset(&act.sa_mask);
-
 	sigaction(SIGINT, &act, nullptr);
-	
-
 
 	Resolver resolver;
 	std::unique_ptr<ISocket> tcpSocket = std::make_unique<TcpSocket>(resolver.resolve(
@@ -66,9 +66,16 @@ int main() {
 	std::shared_ptr<IStateContext> acceptorNode = std::make_shared<AcceptorNode>(
 		std::move(tcpSocket));
 
-	std::shared_ptr<EventHandler> acceptorSocket = std::make_shared<AcceptorSocket>(
-		 reactor, dataAccessor, nodeRegistry, nodeInitializer);
+	std::shared_ptr<TimerQueue> timer = std::make_shared<TimerQueue>();
 
+	std::shared_ptr<EventHandler> timerHandler = std::make_shared<TimerHandler>();
+
+	std::shared_ptr<EventHandler> acceptorSocket = std::make_shared<AcceptorSocket>(
+		 reactor, dataAccessor, nodeRegistry, nodeInitializer, timer);
+
+
+
+	reactor->registerNode(timer, timerHandler);
 	reactor->registerNode(acceptorNode, acceptorSocket);
 
 	reactor->run();
@@ -78,6 +85,6 @@ int main() {
 
 
 void sigint(int signo) {
-	reactor->quit();
+	if(signo == SIGINT) reactor->quit();
 }
 

@@ -394,29 +394,29 @@ src/Reactor.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.s
 .PHONY : src/Reactor.cpp.s
 
-src/TimerQueue.o: src/TimerQueue.cpp.o
-.PHONY : src/TimerQueue.o
+src/TimerHandler.o: src/TimerHandler.cpp.o
+.PHONY : src/TimerHandler.o
 
 # target to build an object file
-src/TimerQueue.cpp.o:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o
-.PHONY : src/TimerQueue.cpp.o
+src/TimerHandler.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o
+.PHONY : src/TimerHandler.cpp.o
 
-src/TimerQueue.i: src/TimerQueue.cpp.i
-.PHONY : src/TimerQueue.i
+src/TimerHandler.i: src/TimerHandler.cpp.i
+.PHONY : src/TimerHandler.i
 
 # target to preprocess a source file
-src/TimerQueue.cpp.i:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.i
-.PHONY : src/TimerQueue.cpp.i
+src/TimerHandler.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.i
+.PHONY : src/TimerHandler.cpp.i
 
-src/TimerQueue.s: src/TimerQueue.cpp.s
-.PHONY : src/TimerQueue.s
+src/TimerHandler.s: src/TimerHandler.cpp.s
+.PHONY : src/TimerHandler.s
 
 # target to generate assembly for a file
-src/TimerQueue.cpp.s:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.s
-.PHONY : src/TimerQueue.cpp.s
+src/TimerHandler.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.s
+.PHONY : src/TimerHandler.cpp.s
 
 # Help Target
 help:
@@ -458,9 +458,9 @@ help:
 	@echo "... src/Reactor.o"
 	@echo "... src/Reactor.i"
 	@echo "... src/Reactor.s"
-	@echo "... src/TimerQueue.o"
-	@echo "... src/TimerQueue.i"
-	@echo "... src/TimerQueue.s"
+	@echo "... src/TimerHandler.o"
+	@echo "... src/TimerHandler.i"
+	@echo "... src/TimerHandler.s"
 .PHONY : help
 
 

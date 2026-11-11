@@ -308,7 +308,13 @@ test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
  /usr/include/c++/15/chrono \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/QosMock.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
+ /usr/include/sys/timerfd.h /usr/include/bits/timerfd.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks/ConnectionMock.hpp

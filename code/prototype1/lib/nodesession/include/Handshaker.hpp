@@ -7,6 +7,7 @@
 #include "IDataAccessor.hpp"
 #include "SessionConfig.hpp"
 #include "Qos1.hpp"
+#include "TimerQueue.hpp"
 
 
 
@@ -56,6 +57,7 @@ class Handshaker: public IConnectionHandler {
 	std::unique_ptr<IConnection> connection;
 	std::shared_ptr<IDataAccessor> dataAccessor;
 	std::shared_ptr<NodeRegistry> nodeRegistry;
+	std::shared_ptr<TimerQueue> timer;
 	
 public:
 	SessionConfig parseMsg(Packet const& packet) const;
@@ -64,6 +66,13 @@ public:
 			std::unique_ptr<IConnection> conn, 
 			std::shared_ptr<IDataAccessor> dataAcc, 
 			std::shared_ptr<NodeRegistry> nodeReg);
+
+
+	Handshaker(std::shared_ptr<IStateContext> ctx, 
+			std::unique_ptr<IConnection> conn, 
+			std::shared_ptr<IDataAccessor> dataAcc, 
+			std::shared_ptr<NodeRegistry> nodeReg,
+			std::shared_ptr<TimerQueue> timer);
 
 	IConnection::Status recv(Packet& packet, int flag = 0) override;
 	IConnection::Status send(Packet& packet, int flag = 0) const override;

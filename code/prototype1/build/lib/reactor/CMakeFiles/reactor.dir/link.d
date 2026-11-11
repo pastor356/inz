@@ -10,7 +10,7 @@ libreactor.so: \
   CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o \
   CMakeFiles/reactor.dir/src/EchoRouter.cpp.o \
   CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o \
-  CMakeFiles/reactor.dir/src/TimerQueue.cpp.o \
+  CMakeFiles/reactor.dir/src/TimerHandler.cpp.o \
   ../nodesession/libnodesession.so \
   ../decorator/libdecorator.so \
   ../networking/libnetworking.so \
@@ -62,7 +62,7 @@ CMakeFiles/reactor.dir/src/EchoRouter.cpp.o:
 
 CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o:
 
-CMakeFiles/reactor.dir/src/TimerQueue.cpp.o:
+CMakeFiles/reactor.dir/src/TimerHandler.cpp.o:
 
 ../nodesession/libnodesession.so:
 

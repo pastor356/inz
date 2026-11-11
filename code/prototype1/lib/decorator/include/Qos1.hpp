@@ -1,6 +1,6 @@
 #pragma once
 #include "IQualityStrategy.hpp"
-#include <gtest/gtest.h>
+
 
 
 class Qos1: public IQualityStrategy {
@@ -12,10 +12,14 @@ protected:
 	IConnection::Status sendPubComp(uint16_t packetId) const override;
 
 	void trimQosHeader(std::vector<uint8_t>& header) const override;
+	void retry(uint16_t packetId) const;
+
 public:
 	std::shared_ptr<IQualityStrategy::PendingMessage> 
 		parseMsg(Packet const& packet) const override;  // PRIVATE
+
 	using IQualityStrategy::IQualityStrategy;
+
 
 	IConnection::Status send(Packet& packet, int flag = 0) const override;
 	IConnection::Status recv(Packet& packet, int flag = 0) const override;

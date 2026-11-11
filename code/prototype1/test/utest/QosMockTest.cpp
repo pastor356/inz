@@ -6,6 +6,7 @@
 #include "LiveMonitor.hpp"
 
 #include "QosMock.hpp"
+#include "TimerQueue.hpp"
 #include "ConnectionMock.hpp"
 
 #include <gtest/gtest.h>
@@ -31,7 +32,9 @@ TEST(QosMockTest, PendingMsgTest_OnSend) {
 			}
 		);
 
-	TestableQos qos(std::move(owner));
+	auto timer = std::make_shared<TimerQueue>();
+
+	TestableQos qos(std::move(owner), timer);
 
 	Packet packet;
 	packet.header.resize(9, 0);
@@ -65,7 +68,9 @@ TEST(QosMockTest, PendingMsgTest_Puback) {
 
 	StrictMock<ConnectionMock>* mock = owner.get();
 
-	TestableQos qos{std::move(owner)};
+
+	auto timer = std::make_shared<TimerQueue>();
+	TestableQos qos{std::move(owner), timer};
 
 	Packet packet; // incoming packet
 	packet.header.reserve(3);

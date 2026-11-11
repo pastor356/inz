@@ -194,9 +194,14 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o: \
  /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/array \
  /usr/include/c++/15/compare \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
  /usr/include/c++/15/set /usr/include/c++/15/bits/stl_tree.h \
  /usr/include/c++/15/bits/stl_set.h \
- /usr/include/c++/15/bits/stl_multiset.h
+ /usr/include/c++/15/bits/stl_multiset.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h /usr/include/sys/timerfd.h \
+ /usr/include/bits/timerfd.h

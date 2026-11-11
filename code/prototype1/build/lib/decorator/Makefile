@@ -202,30 +202,6 @@ src/ConnectionDecorator.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/decorator/CMakeFiles/decorator.dir/build.make lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.s
 .PHONY : src/ConnectionDecorator.cpp.s
 
-src/DecoratorBuilder.o: src/DecoratorBuilder.cpp.o
-.PHONY : src/DecoratorBuilder.o
-
-# target to build an object file
-src/DecoratorBuilder.cpp.o:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/decorator/CMakeFiles/decorator.dir/build.make lib/decorator/CMakeFiles/decorator.dir/src/DecoratorBuilder.cpp.o
-.PHONY : src/DecoratorBuilder.cpp.o
-
-src/DecoratorBuilder.i: src/DecoratorBuilder.cpp.i
-.PHONY : src/DecoratorBuilder.i
-
-# target to preprocess a source file
-src/DecoratorBuilder.cpp.i:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/decorator/CMakeFiles/decorator.dir/build.make lib/decorator/CMakeFiles/decorator.dir/src/DecoratorBuilder.cpp.i
-.PHONY : src/DecoratorBuilder.cpp.i
-
-src/DecoratorBuilder.s: src/DecoratorBuilder.cpp.s
-.PHONY : src/DecoratorBuilder.s
-
-# target to generate assembly for a file
-src/DecoratorBuilder.cpp.s:
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/decorator/CMakeFiles/decorator.dir/build.make lib/decorator/CMakeFiles/decorator.dir/src/DecoratorBuilder.cpp.s
-.PHONY : src/DecoratorBuilder.cpp.s
-
 src/LiveMonitor.o: src/LiveMonitor.cpp.o
 .PHONY : src/LiveMonitor.o
 
@@ -290,9 +266,6 @@ help:
 	@echo "... src/ConnectionDecorator.o"
 	@echo "... src/ConnectionDecorator.i"
 	@echo "... src/ConnectionDecorator.s"
-	@echo "... src/DecoratorBuilder.o"
-	@echo "... src/DecoratorBuilder.i"
-	@echo "... src/DecoratorBuilder.s"
 	@echo "... src/LiveMonitor.o"
 	@echo "... src/LiveMonitor.i"
 	@echo "... src/LiveMonitor.s"

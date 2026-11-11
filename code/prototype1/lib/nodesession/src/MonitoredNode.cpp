@@ -19,7 +19,7 @@ MonitoredNode::MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
 
 MonitoredNode::MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
 		std::shared_ptr<IDataAccessor> storage, 
-		std::shared_ptr<NodeRegistry> registry
+		std::shared_ptr<NodeRegistry> registry,
 		std::shared_ptr<TimerQueue> timer): 
 	connection{initial}, storage{storage}, registry{registry}, 
 	oldConn{nullptr}, timer{timer} {}
@@ -29,7 +29,7 @@ void MonitoredNode::changeStateHandshake(std::unique_ptr<IConnection> conn,
 		std::shared_ptr<IStateContext> ctx) {
 
 	oldConn = std::move(connection);
-	connection = std::make_shared<Handshaker>(ctx, std::move(conn), storage, registry);
+	connection = std::make_shared<Handshaker>(ctx, std::move(conn), storage, registry, timer);
 }
 
 
@@ -48,7 +48,7 @@ void MonitoredNode::changeStateSession(std::unique_ptr<IConnection> conn,
 
 	oldConn = std::move(connection);
 	auto session = 
-		std::make_shared<Session>(std::move(conn), ctx, userAuth);
+		std::make_shared<Session>(std::move(conn), ctx, userAuth, timer);
 
 	registry->addSession(session->getId(), userAuth);
 	connection = std::move(session);

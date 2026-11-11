@@ -198,12 +198,17 @@ CMakeFiles/client.dir/src/main_client.cpp.o: \
  /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/array \
  /usr/include/c++/15/compare \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
  /usr/include/c++/15/set /usr/include/c++/15/bits/stl_tree.h \
  /usr/include/c++/15/bits/stl_set.h \
  /usr/include/c++/15/bits/stl_multiset.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h /usr/include/sys/timerfd.h \
+ /usr/include/bits/timerfd.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp \
  /usr/include/c++/15/mutex /usr/include/c++/15/bits/std_mutex.h \
@@ -211,66 +216,6 @@ CMakeFiles/client.dir/src/main_client.cpp.o: \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/CacheAccessor.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
- /usr/include/c++/15/sstream /usr/include/c++/15/bits/sstream.tcc \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
- /usr/include/c++/15/stdlib.h /usr/include/c++/15/locale \
- /usr/include/c++/15/bits/locale_facets_nonio.h \
- /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
- /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
- /usr/include/c++/15/bits/locale_facets_nonio.tcc \
- /usr/include/c++/15/bits/locale_conv.h /usr/include/sys/stat.h \
- /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
- /usr/include/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/bits/statx-generic.h \
- /usr/include/bits/types/struct_statx_timestamp.h \
- /usr/include/bits/types/struct_statx.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
- /usr/include/regex.h /usr/include/c++/15/condition_variable \
- /usr/include/c++/15/any /usr/include/c++/15/optional \
- /usr/include/c++/15/variant /usr/include/c++/15/bits/monostate.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
- /usr/include/c++/15/atomic \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
- /usr/include/c++/15/utility /usr/include/c++/15/bits/stl_relops.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
- /usr/include/sys/wait.h /usr/include/signal.h \
- /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
- /usr/include/bits/types/sig_atomic_t.h \
- /usr/include/bits/types/siginfo_t.h /usr/include/bits/siginfo-arch.h \
- /usr/include/bits/siginfo-consts.h \
- /usr/include/bits/siginfo-consts-arch.h \
- /usr/include/bits/types/sigval_t.h /usr/include/bits/sigevent-consts.h \
- /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
- /usr/include/bits/types/stack_t.h /usr/include/sys/ucontext.h \
- /usr/include/bits/sigstack.h /usr/include/bits/sigstksz.h \
- /usr/include/bits/ss_flags.h /usr/include/bits/types/struct_sigstack.h \
- /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h \
- /usr/include/bits/types/idtype_t.h \
- /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
- /usr/include/c++/15/iomanip /usr/include/c++/15/bits/quoted_string.h \
- /usr/include/c++/15/map /usr/include/c++/15/bits/stl_map.h \
- /usr/include/c++/15/bits/stl_multimap.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
- /usr/include/c++/15/cxxabi.h \
- /usr/include/c++/15/x86_64-redhat-linux/bits/cxxabi_tweaks.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
- /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
- /usr/include/c++/15/cassert /usr/include/assert.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp \
@@ -289,10 +234,22 @@ CMakeFiles/client.dir/src/main_client.cpp.o: \
  /usr/include/sys/ttydefaults.h /usr/include/bits/epoll.h \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Reactor.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IInvoker.hpp \
+ /usr/include/c++/15/atomic \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorSocket.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/AcceptorNode.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/NodeInitializer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Demultiplexer.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EPollWaiter.hpp \
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IWaiter.hpp \
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Invoker.hpp
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Invoker.hpp \
+ /usr/include/signal.h /usr/include/bits/signum-generic.h \
+ /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/siginfo-arch.h \
+ /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/sigevent-consts.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/bits/types/stack_t.h /usr/include/sys/ucontext.h \
+ /usr/include/bits/sigstack.h /usr/include/bits/sigstksz.h \
+ /usr/include/bits/ss_flags.h /usr/include/bits/types/struct_sigstack.h \
+ /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h

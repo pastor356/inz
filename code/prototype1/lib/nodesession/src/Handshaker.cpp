@@ -7,6 +7,14 @@ Handshaker::Handshaker(std::shared_ptr<IStateContext> ctx,
 	context{ctx}, connection{std::move(conn)}, 
 	dataAccessor{dataAcc}, nodeRegistry{nodeReg} {}
 
+Handshaker::Handshaker(std::shared_ptr<IStateContext> ctx, 
+		std::unique_ptr<IConnection> conn, 
+		std::shared_ptr<IDataAccessor> dataAcc, 
+		std::shared_ptr<NodeRegistry> nodeReg,
+		std::shared_ptr<TimerQueue> timer):
+	context{ctx}, connection{std::move(conn)}, 
+	dataAccessor{dataAcc}, nodeRegistry{nodeReg}, timer{timer} {}
+
 
 IConnection::Status Handshaker::recv(Packet& packet, int flag) {
 	const char* methodName = "Handshaker::recv(Packet&, int)";
@@ -70,9 +78,9 @@ IConnection::Status Handshaker::recv(Packet& packet, int flag) {
 	}
 
 	if(sc.qosLevel == 1) {
-		connection = std::make_unique<Qos1>(std::move(connection));
+		connection = std::make_unique<Qos1>(std::move(connection), timer);
 	} else if(sc.qosLevel == 2) {
-		//connection == std::make_unique<Qos2>(std::move(connection));
+		//connection == std::make_unique<Qos2>(std::move(connection), timer);
 	}
 
 	if(auto strong = context.lock()) {

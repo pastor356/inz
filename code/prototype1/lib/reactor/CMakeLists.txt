@@ -36,7 +36,7 @@ set(HEADERS
 	EchoRouter.hpp
 	IWaiter.hpp
 	EPollWaiter.hpp
-	TimerQueue.hpp
+	TimerHandler.hpp
 )
 
 set(SOURCES
@@ -50,7 +50,7 @@ set(SOURCES
 	AcceptorNode.cpp
 	EchoRouter.cpp
 	EPollWaiter.cpp
-	TimerQueue.cpp
+	TimerHandler.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})

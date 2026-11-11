@@ -1,6 +1,7 @@
 #pragma once
 #include "IConnectionHandler.hpp"
 #include "IDataAccessor.hpp"
+#include "TimerQueue.hpp"
 
 #define MSGTYPE_SESSIONMSG	(uint8_t)(0x8 << MsgType_Pos)
 #define SESSIONHEADER_LEN	(uint8_t)11
@@ -24,6 +25,8 @@ private:
 	std::unique_ptr<IConnection> connection;
 	std::shared_ptr<IDataAccessor> storage; 
 
+	std::shared_ptr<TimerQueue> timer;
+
 	uint16_t thisSessionId;
 	UserAuth authData;
 	SessionState state;
@@ -44,6 +47,9 @@ public:
 	// change to unique_ptr<IConnectionHandler>
 	Session(std::unique_ptr<IConnection> connection, std::shared_ptr<IStateContext> ctx,
 			UserAuth const& userAuth);
+
+	Session(std::unique_ptr<IConnection> connection, std::shared_ptr<IStateContext> ctx,
+			UserAuth const& userAuth, std::shared_ptr<TimerQueue> timer);
 
 	void setConnection(std::unique_ptr<IConnection> conn) override;
 	std::unique_ptr<IConnection> getConnection() override;

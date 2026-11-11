@@ -11,10 +11,17 @@ class AcceptorSocket: public EventHandler {
 	std::shared_ptr<NodeRegistry> registry;
 
 	std::shared_ptr<EventHandler> nodeInitializer;
+	std::shared_ptr<TimerQueue> timer;
+
 public: 
 	AcceptorSocket(std::shared_ptr<Reactor> poll, 
 			std::shared_ptr<IDataAccessor> stor, std::shared_ptr<NodeRegistry> reg,
 			std::shared_ptr<EventHandler> nodeInit);
+
+	AcceptorSocket(std::shared_ptr<Reactor> poll, 
+			std::shared_ptr<IDataAccessor> stor, std::shared_ptr<NodeRegistry> reg,
+			std::shared_ptr<EventHandler> nodeInit,
+			std::shared_ptr<TimerQueue> timer);
 
 	void handleRead(std::shared_ptr<IStateContext> node) override;
 	void handleWrite(std::shared_ptr<IStateContext> node) override;

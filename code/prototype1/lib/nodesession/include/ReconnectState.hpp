@@ -2,6 +2,7 @@
 #include "IConnectionHandler.hpp"
 #include "Handshaker.hpp"
 #include "IStateContext.hpp"
+#include "TimerQueue.hpp"
 
 
 #define MSGTYPE_RECONNECT	(uint8_t)(0x7 << MsgType_Pos)
@@ -20,6 +21,7 @@ private:
 	std::weak_ptr<IStateContext> context;
 	std::shared_ptr<NodeRegistry> registry;
 	std::shared_ptr<IDataAccessor> storage;
+	std::shared_ptr<TimerQueue> timer;
 
 	ReconnectHeader parseMsg(Packet const& packet) const; // -> sessionId
 
@@ -31,6 +33,12 @@ public:
 			std::shared_ptr<IStateContext> ctx,
 			std::shared_ptr<NodeRegistry> reg, 
 			std::shared_ptr<IDataAccessor> stor);
+
+	ReconnectState(std::unique_ptr<IConnection> conn, 
+			std::shared_ptr<IStateContext> ctx,
+			std::shared_ptr<NodeRegistry> reg, 
+			std::shared_ptr<IDataAccessor> stor,
+			std::shared_ptr<TimerQueue> timer);
 
 	IConnection::Status recv(Packet& packet, int flag = 0) override;
 	IConnection::Status send(Packet& packet, int flag = 0) const override;

@@ -6,6 +6,8 @@
 #include <functional>
 #include "IStateContext.hpp"
 
+class IStateContext;
+
 class IConnectionHandler {
 public:
 	virtual IConnection::Status send(std::string const& packet, int flag = 0) const = 0;

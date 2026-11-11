@@ -28,7 +28,7 @@ public:
 
 	MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
 			std::shared_ptr<IDataAccessor> storage, 
-			std::shared_ptr<NodeRegistry> registry
+			std::shared_ptr<NodeRegistry> registry,
 			std::shared_ptr<TimerQueue> timer);
 
 	void changeState(std::shared_ptr<IConnectionHandler> newState) override;

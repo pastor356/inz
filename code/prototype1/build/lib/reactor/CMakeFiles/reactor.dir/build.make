@@ -201,19 +201,19 @@ lib/reactor/CMakeFiles/reactor.dir/src/EPollWaiter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/EPollWaiter.cpp.s"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/EPollWaiter.cpp -o CMakeFiles/reactor.dir/src/EPollWaiter.cpp.s
 
-lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
-lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerQueue.cpp
-lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o"
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o -MF CMakeFiles/reactor.dir/src/TimerQueue.cpp.o.d -o CMakeFiles/reactor.dir/src/TimerQueue.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerQueue.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o: lib/reactor/CMakeFiles/reactor.dir/flags.make
+lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerHandler.cpp
+lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o -MF CMakeFiles/reactor.dir/src/TimerHandler.cpp.o.d -o CMakeFiles/reactor.dir/src/TimerHandler.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerHandler.cpp
 
-lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/TimerQueue.cpp.i"
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerQueue.cpp > CMakeFiles/reactor.dir/src/TimerQueue.cpp.i
+lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor.dir/src/TimerHandler.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerHandler.cpp > CMakeFiles/reactor.dir/src/TimerHandler.cpp.i
 
-lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/TimerQueue.cpp.s"
-	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerQueue.cpp -o CMakeFiles/reactor.dir/src/TimerQueue.cpp.s
+lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor.dir/src/TimerHandler.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/TimerHandler.cpp -o CMakeFiles/reactor.dir/src/TimerHandler.cpp.s
 
 # Object files for target reactor
 reactor_OBJECTS = \
@@ -226,7 +226,7 @@ reactor_OBJECTS = \
 "CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o" \
 "CMakeFiles/reactor.dir/src/EchoRouter.cpp.o" \
 "CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o" \
-"CMakeFiles/reactor.dir/src/TimerQueue.cpp.o"
+"CMakeFiles/reactor.dir/src/TimerHandler.cpp.o"
 
 # External object files for target reactor
 reactor_EXTERNAL_OBJECTS =
@@ -240,7 +240,7 @@ lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/EchoRouter.cpp.o
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o
-lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/TimerQueue.cpp.o
+lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/build.make
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/compiler_depend.ts
 lib/reactor/libreactor.so: lib/nodesession/libnodesession.so

@@ -36,6 +36,7 @@ add_subdirectory(lib/networking)
 add_subdirectory(lib/decorator)
 add_subdirectory(lib/nodesession)
 add_subdirectory(lib/reactor)
+add_subdirectory(lib/cons_app)
 add_subdirectory(test)
 
 add_executable(${PROJECT_NAME}  ${SOURCES} ${HEADERS})

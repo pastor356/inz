@@ -14,7 +14,7 @@ int TimerQueue::getDescriptor() const {
 	return(this->timerFd);
 }
 
-TimerQueue::timerId TimerQueue::addTimer(TimerQueue::timePoint tp, TimerQueue::callback cb) {
+ITimerQueue::timerId TimerQueue::addTimer(ITimerQueue::timePoint tp, ITimerQueue::callback cb) {
 	const char* methodName = "TimerQueue::addTimer(timePoint, callback)";
 
 	++thisTimerId;
@@ -34,14 +34,14 @@ TimerQueue::timerId TimerQueue::addTimer(TimerQueue::timePoint tp, TimerQueue::c
 	return(thisTimerId);
 }
 
-void TimerQueue::cancelTimer(TimerQueue::timerId const& tid) {
+void TimerQueue::cancelTimer(ITimerQueue::timerId const& tid) {
     
     auto itId = idToTime.find(tid);
     if (itId == idToTime.end()) {
         return; 
     }
 
-    timePoint tp = itId->second;
+	ITimerQueue::timePoint tp = itId->second;
     idToTime.erase(itId); 
 
     auto range = timePointToCb.equal_range(tp);
@@ -66,8 +66,10 @@ void TimerQueue::cancelTimer(TimerQueue::timerId const& tid) {
 
 IConnection::Status TimerQueue::recv(Packet& packet, int flag) {
 	uint64_t buf;
+	
 	(void) flag;
 	(void) packet;
+
 	ssize_t nread = ::read(timerFd, &buf, sizeof(buf));
 
 	std::vector<TimerQueue::callback> cbs;
@@ -130,10 +132,4 @@ void TimerQueue::stopSystemTimer() {
 TimerQueue::~TimerQueue() {
 	close(timerFd);
 }
-
-
-
-
-
-
 

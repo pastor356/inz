@@ -330,13 +330,3 @@ IConnection::Status TcpConnection::sendHeader(std::vector<uint8_t>const& header)
 }
 
 
-
-
-
-
-
-
-
-
-
-

@@ -12,6 +12,7 @@
 #include "MessageRouter.hpp"
 #include "AcceptorSocket.hpp"
 #include "NodeInitializer.hpp"
+#include "TimerQueue.hpp"
 
 #include "Reactor.hpp"
 #include "Demultiplexer.hpp"
@@ -39,6 +40,7 @@ int main(int argc, char* argv[]) {
 				SocketParams{AF_INET, SOCK_STREAM, SockRole::CLI, true}));
 
 
+	auto timer = std::make_shared<TimerQueue>();
 
 	Packet packet = Serializer::serializeInitial();
 
@@ -59,8 +61,8 @@ int main(int argc, char* argv[]) {
 	Packet incoming;
 	auto status = conn->recv(incoming); // handshake ack
 
-	conn = std::make_unique<LiveMonitor>(std::move(conn));
-	conn = std::make_unique<Qos1>(std::move(conn));
+	//conn = std::make_unique<LiveMonitor>(std::move(conn), timer);
+	conn = std::make_unique<Qos1>(std::move(conn), timer);
 
 	auto sess = std::make_unique<SessionClient>(std::move(conn));
 

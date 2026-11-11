@@ -7,6 +7,13 @@ ReconnectState::ReconnectState(std::unique_ptr<IConnection> conn,
 			std::shared_ptr<IDataAccessor> stor):
 	connection{std::move(conn)}, registry{reg}, storage{stor}, context{ctx} {}
 
+ReconnectState::ReconnectState(std::unique_ptr<IConnection> conn, 
+		std::shared_ptr<IStateContext> ctx,
+		std::shared_ptr<NodeRegistry> reg, 
+		std::shared_ptr<IDataAccessor> stor,
+		std::shared_ptr<TimerQueue> timer):
+connection{std::move(conn)}, registry{reg}, storage{stor}, context{ctx}, timer{timer} {}
+
 
 
 	
@@ -32,7 +39,7 @@ IConnection::Status ReconnectState::recv(Packet& packet, int flag) {
 	}
 
 	if(reconHeader.qosLevel == 1) {
-		connection = std::make_unique<Qos1>(std::move(connection));
+		connection = std::make_unique<Qos1>(std::move(connection), timer);
 	} else if(reconHeader.qosLevel == 2) {
 		//connection = std::make_unique<Qos2>(std::move(connection));
 	}
