@@ -36,13 +36,21 @@ public:
 		throw std::logic_error("AcceptorNode: send not supported"); 
 	}
 
-	void changeState(std::shared_ptr<IConnectionHandler> newState) override {}
+	void changeState(std::shared_ptr<IConnectionHandler> newState) override {
+		(void) newState;
+	}
 
 	void changeStateHandshake(std::unique_ptr<IConnection> conn,
-			std::shared_ptr<IStateContext> ctx) override {}
+			std::shared_ptr<IStateContext> ctx) override {
+		(void) conn;
+		(void) ctx;
+	}
 
 	void changeStateReconnect(std::unique_ptr<IConnection> conn, 
-			std::shared_ptr<IStateContext> ctx) override {}
+			std::shared_ptr<IStateContext> ctx) override {
+		(void) conn;
+		(void) ctx;
+	}
 
 	bool isInitialized() const override { return(true); }
 };

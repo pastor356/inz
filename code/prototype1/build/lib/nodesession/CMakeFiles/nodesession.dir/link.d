@@ -12,8 +12,11 @@ libnodesession.so: \
   CMakeFiles/nodesession.dir/src/SessionClient.cpp.o \
   CMakeFiles/nodesession.dir/src/TimerQueue.cpp.o \
   ../decorator/libdecorator.so \
+  ../SQLiteCpp/libSQLiteCpp.so.1 \
   ../networking/libnetworking.so \
   ../common/libcommon.so \
+  ../SQLiteCpp/sqlite3/libsqlite3.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -65,9 +68,15 @@ CMakeFiles/nodesession.dir/src/TimerQueue.cpp.o:
 
 ../decorator/libdecorator.so:
 
+../SQLiteCpp/libSQLiteCpp.so.1:
+
 ../networking/libnetworking.so:
 
 ../common/libcommon.so:
+
+../SQLiteCpp/sqlite3/libsqlite3.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 

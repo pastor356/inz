@@ -1,0 +1,251 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/libInfluxDB.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"target_include_directories",
+			"target_compile_features"
+		],
+		"files" : 
+		[
+			"lib/cons_app/influxdb-cxx/src/CMakeLists.txt",
+			"lib/cons_app/influxdb-cxx/CMakeLists.txt",
+			"/usr/lib64/cmake/cpr/cprTargets.cmake",
+			"/usr/lib64/cmake/cpr/cprConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 140,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 2
+			},
+			{
+				"file" : 3,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 41,
+				"parent" : 6
+			},
+			{
+				"file" : 2,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "InfluxDB-BoostSupport::@3a6cfb2040bb1584f4d3"
+		},
+		{
+			"id" : "InfluxDB-Internal::@3a6cfb2040bb1584f4d3"
+		},
+		{
+			"id" : "InfluxDB-Core::@3a6cfb2040bb1584f4d3"
+		}
+	],
+	"id" : "InfluxDB::@3a6cfb2040bb1584f4d3",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib64"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "lib64"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib64/libcpr.so.1.14.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/usr/lib64/libcurl.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "InfluxDB",
+	"nameOnDisk" : "libInfluxDB.so",
+	"paths" : 
+	{
+		"build" : "lib/cons_app/influxdb-cxx/src",
+		"source" : "lib/cons_app/influxdb-cxx/src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/InfluxDB.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/Point.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/InfluxDBFactory.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/InfluxDBBuilder.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/Proxy.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/LineProtocol.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/HTTP.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/QueryParser.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-BoostSupport.dir/BoostSupport.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-BoostSupport.dir/UDP.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-BoostSupport.dir/TCP.cxx.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-BoostSupport.dir/UnixSocket.cxx.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

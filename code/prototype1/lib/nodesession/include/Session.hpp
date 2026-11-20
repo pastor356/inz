@@ -21,25 +21,25 @@ public:
 	};
 
 private:
-	static uint16_t sessionId; // incrementing in every constructor call
+
 	std::unique_ptr<IConnection> connection;
-	std::shared_ptr<IDataAccessor> storage; 
+	std::weak_ptr<IStateContext> context;
+	UserAuth authData;
 
 	std::shared_ptr<TimerQueue> timer;
+	std::shared_ptr<IDataAccessor> storage; 
 
 	uint16_t thisSessionId;
-	UserAuth authData;
 	SessionState state;
+	static uint16_t sessionId; // incrementing in every constructor call
 
 	uint8_t qosLevel;
 
 	// timeOfCreation;
-	std::weak_ptr<IStateContext> context;
 
 
 	SessionHeader parseMsg(Packet& packet) const;
 	void trimSessionHeader(Packet& packet) const;
-
 	uint16_t getSessionIdReconnection(Packet const& packet) const;
 
 public:

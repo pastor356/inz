@@ -15,6 +15,9 @@ libreactor.so: \
   ../decorator/libdecorator.so \
   ../networking/libnetworking.so \
   ../common/libcommon.so \
+  ../SQLiteCpp/libSQLiteCpp.so.1 \
+  ../SQLiteCpp/sqlite3/libsqlite3.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -71,6 +74,12 @@ CMakeFiles/reactor.dir/src/TimerHandler.cpp.o:
 ../networking/libnetworking.so:
 
 ../common/libcommon.so:
+
+../SQLiteCpp/libSQLiteCpp.so.1:
+
+../SQLiteCpp/sqlite3/libsqlite3.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 

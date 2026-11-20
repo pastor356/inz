@@ -1,0 +1,136 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/cons_app/influxdb-cxx/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 140,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 155,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 156,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 159,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 175,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib64",
+			"paths" : 
+			[
+				"lib/cons_app/influxdb-cxx/src/libInfluxDB.so.2.0.0",
+				"lib/cons_app/influxdb-cxx/src/libInfluxDB.so.2"
+			],
+			"targetId" : "InfluxDB::@3a6cfb2040bb1584f4d3",
+			"targetIndex" : 0,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib64",
+			"paths" : 
+			[
+				"lib/cons_app/influxdb-cxx/src/libInfluxDB.so"
+			],
+			"targetId" : "InfluxDB::@3a6cfb2040bb1584f4d3",
+			"targetIndex" : 0,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "lib/cons_app/influxdb-cxx/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/InfluxDB",
+			"paths" : 
+			[
+				"build/lib/cons_app/influxdb-cxx/src/InfluxDB/influxdb_export.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib64/cmake/InfluxDB",
+			"exportName" : "InfluxDBTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "InfluxDB::@3a6cfb2040bb1584f4d3",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"lib/cons_app/influxdb-cxx/CMakeFiles/Export/c200824b9cc2886fe0f6a20df54d4c37/InfluxDBTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib64/cmake/InfluxDB",
+			"paths" : 
+			[
+				"build/lib/cons_app/influxdb-cxx/cmake/InfluxDBConfig.cmake",
+				"build/lib/cons_app/influxdb-cxx/cmake/InfluxDBConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/cons_app/influxdb-cxx",
+		"source" : "lib/cons_app/influxdb-cxx"
+	}
+}

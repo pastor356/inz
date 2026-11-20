@@ -1,0 +1,357 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/cons_app/libcons_app.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories",
+			"target_compile_features"
+		],
+		"files" : 
+		[
+			"lib/cons_app/CMakeLists.txt",
+			"lib/nodesession/CMakeLists.txt",
+			"lib/SQLiteCpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 6
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 308,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 382,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g -O2 -g -DNDEBUG -std=c++20 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "SQLITE_ENABLE_COLUMN_METADATA"
+				},
+				{
+					"define" : "cons_app_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 12,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/sqlite3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					14,
+					3
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "common::@9fc5b58572d5f236116a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "networking::@f3c59c8fb4d405477e2b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "decorator::@f0f1d9882c4718bc7120"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "nodesession::@aa722582cb4a8ff83327"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "reactor::@03f9dbcae4de2595b05d"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "SQLiteCpp::@2f3ce4567be4c411b3a5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sqlite3::@cc021ff62033284c0bf2"
+		}
+	],
+	"id" : "cons_app::@141635c3ae415c2bba44",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp/sqlite3:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../reactor/libreactor.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../nodesession/libnodesession.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../decorator/libdecorator.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../networking/libnetworking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "../SQLiteCpp/libSQLiteCpp.so.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "../SQLiteCpp/sqlite3/libsqlite3.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "../common/libcommon.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "cons_app",
+	"nameOnDisk" : "libcons_app.so",
+	"paths" : 
+	{
+		"build" : "lib/cons_app",
+		"source" : "lib/cons_app"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/src/ActiveQueue.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/src/Scheduler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/src/AppendRequest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/src/DatabaseAccessor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/cons_app/include/MethodRequest.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/cons_app/include/ActiveQueue.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/cons_app/include/Scheduler.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/cons_app/include/DatabaseAccessor.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/cons_app/include/AppendRequest.hpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

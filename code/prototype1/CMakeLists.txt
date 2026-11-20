@@ -9,7 +9,6 @@ set(CMAKE_CXX_FLAGS "\
     -O0\
     -Wall\
     -Wextra\
-    -Wunused\
     -Wno-error=maybe-uninitialized\
     -Wcast-align\
     -Winvalid-pch\
@@ -37,6 +36,7 @@ add_subdirectory(lib/decorator)
 add_subdirectory(lib/nodesession)
 add_subdirectory(lib/reactor)
 add_subdirectory(lib/cons_app)
+add_subdirectory(lib/SQLiteCpp)
 add_subdirectory(test)
 
 add_executable(${PROJECT_NAME}  ${SOURCES} ${HEADERS})

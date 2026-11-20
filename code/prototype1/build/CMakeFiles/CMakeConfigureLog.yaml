@@ -572,3 +572,131 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "lib/cons_app/influxdb-cxx/src/CMakeLists.txt:69 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA"
+      binary: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d857/fast
+        gmake[1]: Entering directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d857.dir/build.make CMakeFiles/cmTC_3d857.dir/build
+        gmake[2]: Entering directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA'
+        Building CXX object CMakeFiles/cmTC_3d857.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g  -std=c++20 -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_3d857.dir/src.cxx.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA/src.cxx
+        Linking CXX executable cmTC_3d857
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d857.dir/link.txt --verbose=1
+        /usr/bin/c++ 	-O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g  CMakeFiles/cmTC_3d857.dir/src.cxx.o -o cmTC_3d857
+        gmake[2]: Leaving directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA'
+        gmake[1]: Leaving directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-pLsUMA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "lib/cons_app/influxdb-cxx/src/CMakeLists.txt:69 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw"
+      binary: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_62191/fast
+        gmake[1]: Entering directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_62191.dir/build.make CMakeFiles/cmTC_62191.dir/build
+        gmake[2]: Entering directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw'
+        Building CXX object CMakeFiles/cmTC_62191.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g  -std=c++20 -fPIE   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_62191.dir/src.cxx.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw/src.cxx
+        Linking CXX executable cmTC_62191
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62191.dir/link.txt --verbose=1
+        /usr/bin/c++ 	-O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g  CMakeFiles/cmTC_62191.dir/src.cxx.o -o cmTC_62191
+        gmake[2]: Leaving directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw'
+        gmake[1]: Leaving directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-b5nVQw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSourceCompiles.cmake:89 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "lib/cons_app/influxdb-cxx/src/CMakeLists.txt:69 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ"
+      binary: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7656/fast
+        gmake[1]: Entering directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b7656.dir/build.make CMakeFiles/cmTC_b7656.dir/build
+        gmake[2]: Entering directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ'
+        Building CXX object CMakeFiles/cmTC_b7656.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g  -std=c++20 -fPIE -o CMakeFiles/cmTC_b7656.dir/src.cxx.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ/src.cxx
+        /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ/src.cxx: In function ‘int main()’:
+        /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+            2 |     int main() { return somefunc();}
+              |                         ~~~~~~~~^~
+        /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ/src.cxx:1:37: note: declared here
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+              |                                     ^~~~~~~~
+        Linking CXX executable cmTC_b7656
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7656.dir/link.txt --verbose=1
+        /usr/bin/c++ 	-O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g  CMakeFiles/cmTC_b7656.dir/src.cxx.o -o cmTC_b7656
+        gmake[2]: Leaving directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ'
+        gmake[1]: Leaving directory '/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/CMakeScratch/TryCompile-OqJkwQ'
+        
+      exitCode: 0
+...

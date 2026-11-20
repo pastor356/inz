@@ -244,8 +244,10 @@ lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/sr
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/build.make
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/compiler_depend.ts
 lib/nodesession/libnodesession.so: lib/decorator/libdecorator.so
+lib/nodesession/libnodesession.so: lib/SQLiteCpp/libSQLiteCpp.so.1
 lib/nodesession/libnodesession.so: lib/networking/libnetworking.so
 lib/nodesession/libnodesession.so: lib/common/libcommon.so
+lib/nodesession/libnodesession.so: lib/SQLiteCpp/sqlite3/libsqlite3.so
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libnodesession.so"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nodesession.dir/link.txt --verbose=$(VERBOSE)

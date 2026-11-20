@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"headers\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -253,6 +253,123 @@ reactor/fast:
 .PHONY : reactor/fast
 
 #=============================================================================
+# Target rules for targets named cons_app
+
+# Build rule for target.
+cons_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cons_app
+.PHONY : cons_app
+
+# fast build rule for target.
+cons_app/fast:
+	$(MAKE) $(MAKESILENT) -f lib/cons_app/CMakeFiles/cons_app.dir/build.make lib/cons_app/CMakeFiles/cons_app.dir/build
+.PHONY : cons_app/fast
+
+#=============================================================================
+# Target rules for targets named consApp
+
+# Build rule for target.
+consApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 consApp
+.PHONY : consApp
+
+# fast build rule for target.
+consApp/fast:
+	$(MAKE) $(MAKESILENT) -f lib/cons_app/CMakeFiles/consApp.dir/build.make lib/cons_app/CMakeFiles/consApp.dir/build
+.PHONY : consApp/fast
+
+#=============================================================================
+# Target rules for targets named InfluxDB-BoostSupport
+
+# Build rule for target.
+InfluxDB-BoostSupport: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InfluxDB-BoostSupport
+.PHONY : InfluxDB-BoostSupport
+
+# fast build rule for target.
+InfluxDB-BoostSupport/fast:
+	$(MAKE) $(MAKESILENT) -f lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-BoostSupport.dir/build.make lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-BoostSupport.dir/build
+.PHONY : InfluxDB-BoostSupport/fast
+
+#=============================================================================
+# Target rules for targets named InfluxDB-Internal
+
+# Build rule for target.
+InfluxDB-Internal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InfluxDB-Internal
+.PHONY : InfluxDB-Internal
+
+# fast build rule for target.
+InfluxDB-Internal/fast:
+	$(MAKE) $(MAKESILENT) -f lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/build.make lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/build
+.PHONY : InfluxDB-Internal/fast
+
+#=============================================================================
+# Target rules for targets named InfluxDB-Core
+
+# Build rule for target.
+InfluxDB-Core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InfluxDB-Core
+.PHONY : InfluxDB-Core
+
+# fast build rule for target.
+InfluxDB-Core/fast:
+	$(MAKE) $(MAKESILENT) -f lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/build.make lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/build
+.PHONY : InfluxDB-Core/fast
+
+#=============================================================================
+# Target rules for targets named InfluxDB
+
+# Build rule for target.
+InfluxDB: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InfluxDB
+.PHONY : InfluxDB
+
+# fast build rule for target.
+InfluxDB/fast:
+	$(MAKE) $(MAKESILENT) -f lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB.dir/build.make lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB.dir/build
+.PHONY : InfluxDB/fast
+
+#=============================================================================
+# Target rules for targets named SQLiteCpp
+
+# Build rule for target.
+SQLiteCpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SQLiteCpp
+.PHONY : SQLiteCpp
+
+# fast build rule for target.
+SQLiteCpp/fast:
+	$(MAKE) $(MAKESILENT) -f lib/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build.make lib/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/build
+.PHONY : SQLiteCpp/fast
+
+#=============================================================================
+# Target rules for targets named SQLiteCpp_cppcheck
+
+# Build rule for target.
+SQLiteCpp_cppcheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SQLiteCpp_cppcheck
+.PHONY : SQLiteCpp_cppcheck
+
+# fast build rule for target.
+SQLiteCpp_cppcheck/fast:
+	$(MAKE) $(MAKESILENT) -f lib/SQLiteCpp/CMakeFiles/SQLiteCpp_cppcheck.dir/build.make lib/SQLiteCpp/CMakeFiles/SQLiteCpp_cppcheck.dir/build
+.PHONY : SQLiteCpp_cppcheck/fast
+
+#=============================================================================
+# Target rules for targets named sqlite3
+
+# Build rule for target.
+sqlite3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite3
+.PHONY : sqlite3
+
+# fast build rule for target.
+sqlite3/fast:
+	$(MAKE) $(MAKESILENT) -f lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/build.make lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/build
+.PHONY : sqlite3/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -377,8 +494,16 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... SQLiteCpp_cppcheck"
+	@echo "... InfluxDB"
+	@echo "... InfluxDB-BoostSupport"
+	@echo "... InfluxDB-Core"
+	@echo "... InfluxDB-Internal"
+	@echo "... SQLiteCpp"
 	@echo "... client"
 	@echo "... common"
+	@echo "... consApp"
+	@echo "... cons_app"
 	@echo "... decorator"
 	@echo "... gmock"
 	@echo "... gmock_main"
@@ -388,6 +513,7 @@ help:
 	@echo "... nodesession"
 	@echo "... prototype1"
 	@echo "... reactor"
+	@echo "... sqlite3"
 	@echo "... tests"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

@@ -6,5 +6,5 @@ CXX_DEFINES = -Dnetworking_EXPORTS
 
 CXX_INCLUDES = -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include -I/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include
 
-CXX_FLAGS = 	-O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g -std=c++17 -fPIC
+CXX_FLAGS = 	-O0	-Wall	-Wextra	-Wunused	-Wno-error=maybe-uninitialized	-Wcast-align	-Winvalid-pch	-Wmissing-include-dirs	-g -O2 -g -DNDEBUG -std=c++17 -fPIC
 

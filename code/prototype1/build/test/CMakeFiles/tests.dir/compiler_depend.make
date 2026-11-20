@@ -137,7 +137,9 @@ test/CMakeFiles/tests.dir/utest/QosMockTest.cpp.o: /home/pastor/Public/books/VI_
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -563,7 +565,9 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o: /home/pastor/Public/books/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -981,7 +985,9 @@ test/CMakeFiles/tests.dir/utest/first_mock.cpp.o: /home/pastor/Public/books/VI_s
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1437,7 +1443,9 @@ test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o: /home/pastor/Pu
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1825,7 +1833,9 @@ test/CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o: /home/pastor/Public/books/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2267,7 +2277,9 @@ test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o: /home/pastor/Public/books/VI
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2678,7 +2690,9 @@ test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o: /home/pastor/Public/books/V
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -3107,7 +3121,9 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o: /home/pastor/Public/books/VI
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -3542,7 +3558,9 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o: /home/pastor/Public/books/VI
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -3849,11 +3867,13 @@ test/CMakeFiles/tests.dir/utest/test_network.cpp.o: /home/pastor/Public/books/VI
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/syslimits.h
 
-test/tests: lib/common/libcommon.so \
+test/tests: lib/SQLiteCpp/libSQLiteCpp.so.1 \
+  lib/SQLiteCpp/sqlite3/libsqlite3.so \
+  lib/common/libcommon.so \
   lib/decorator/libdecorator.so \
-  lib/libgmock.a \
-  lib/libgtest.a \
-  lib/libgtest_main.a \
+  lib/libgmock.so.1.12.1 \
+  lib/libgtest.so.1.12.1 \
+  lib/libgtest_main.so.1.12.1 \
   lib/networking/libnetworking.so \
   lib/nodesession/libnodesession.so \
   lib/reactor/libreactor.so \
@@ -3866,6 +3886,7 @@ test/tests: lib/common/libcommon.so \
   /usr/lib64/crti.o \
   /usr/lib64/crtn.o \
   /usr/lib64/libc.so \
+  /usr/lib64/libdl.a \
   /usr/lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o \
@@ -3910,7 +3931,11 @@ lib/reactor/libreactor.so:
 
 lib/networking/libnetworking.so:
 
+lib/libgmock.so.1.12.1:
+
 lib/common/libcommon.so:
+
+lib/SQLiteCpp/libSQLiteCpp.so.1:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/test_network.cpp:
 
@@ -3955,8 +3980,6 @@ lib/common/libcommon.so:
 /usr/include/poll.h:
 
 /usr/include/bits/poll.h:
-
-lib/libgtest.a:
 
 /usr/include/bits/ioctls.h:
 
@@ -4122,6 +4145,8 @@ lib/nodesession/libnodesession.so:
 
 /usr/include/c++/15/concepts:
 
+/usr/lib64/libdl.a:
+
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/resolver_test.cpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/test/utest/first_mock.cpp:
@@ -4203,6 +4228,10 @@ test/CMakeFiles/tests.dir/utest/decorator_test.cpp.o:
 /usr/include/c++/15/bits/requires_hosted.h:
 
 /usr/include/c++/15/bits/refwrap.h:
+
+/usr/include/c++/15/bits/stl_construct.h:
+
+/usr/include/c++/15/bits/ptr_traits.h:
 
 /usr/include/bits/signum-generic.h:
 
@@ -4410,8 +4439,6 @@ _deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h:
 
 /usr/include/alloca.h:
 
-lib/libgmock.a:
-
 /usr/include/arpa/inet.h:
 
 /usr/include/c++/15/bits/streambuf.tcc:
@@ -4490,10 +4517,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
 _deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h:
 
-/usr/include/c++/15/bits/stl_construct.h:
-
-/usr/include/c++/15/bits/ptr_traits.h:
-
 _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest.h:
@@ -4541,6 +4564,8 @@ _deps/googletest-src/googlemock/include/gmock/gmock-actions.h:
 _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 
 test/CMakeFiles/tests.dir/utest/resolver_test.cpp.o:
+
+lib/SQLiteCpp/sqlite3/libsqlite3.so:
 
 /usr/include/linux/sched/types.h:
 
@@ -4596,6 +4621,10 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /usr/include/c++/15/bits/new_allocator.h:
 
+/usr/include/c++/15/bits/quoted_string.h:
+
+/usr/include/asm-generic/socket.h:
+
 /usr/include/c++/15/bits/stl_pair.h:
 
 /usr/include/c++/15/bits/stl_bvector.h:
@@ -4615,6 +4644,8 @@ _deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-ac
 test/CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o:
 
 /usr/include/c++/15/bits/locale_conv.h:
+
+lib/libgtest_main.so.1.12.1:
 
 /usr/include/c++/15/bits/locale_facets.tcc:
 
@@ -4672,6 +4703,12 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o:
 
 /usr/include/bits/stdint-uintn.h:
 
+/usr/include/bits/stdio.h:
+
+lib/libgtest.so.1.12.1:
+
+/usr/include/c++/15/bits/atomic_base.h:
+
 /usr/include/bits/stdio_lim.h:
 
 /usr/include/asm/posix_types.h:
@@ -4683,6 +4720,8 @@ test/CMakeFiles/tests.dir/utest/session_test.cpp.o:
 _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdlib-bsearch.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/gthr-default.h:
 
@@ -4719,8 +4758,6 @@ _deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h:
 /usr/include/bits/sched.h:
 
 /usr/include/bits/types/__FILE.h:
-
-lib/libgtest_main.a:
 
 /usr/include/bits/timerfd.h:
 
@@ -4852,8 +4889,6 @@ test/CMakeFiles/tests.dir/utest/maintest_gtest.cpp.o:
 
 /usr/include/c++/15/bits/align.h:
 
-/usr/include/c++/15/bits/atomic_base.h:
-
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/15/set:
@@ -4949,7 +4984,3 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 /usr/include/bits/local_lim.h:
 
 /usr/include/c++/15/bits/postypes.h:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/include/c++/15/bits/quoted_string.h:

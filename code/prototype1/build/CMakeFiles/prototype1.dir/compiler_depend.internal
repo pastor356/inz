@@ -114,7 +114,9 @@ CMakeFiles/prototype1.dir/src/main.cpp.o
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-least.h
  /usr/include/bits/stdint-uintn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -378,6 +380,7 @@ prototype1
  /usr/lib64/crti.o
  /usr/lib64/crtn.o
  /usr/lib64/libc.so
+ /usr/lib64/libdl.a
  /usr/lib64/libm.so
  /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o
  /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o
@@ -386,11 +389,13 @@ prototype1
  /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so
  /usr/lib64/libc_nonshared.a
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles/prototype1.dir/src/main.cpp.o
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp/libSQLiteCpp.so.1
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp/sqlite3/libsqlite3.so
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common/libcommon.so
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator/libdecorator.so
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgmock.a
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgtest.a
- /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgtest_main.a
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgmock.so.1.12.1
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgtest.so.1.12.1
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/libgtest_main.so.1.12.1
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking/libnetworking.so
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession/libnodesession.so
  /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor/libreactor.so

@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "../../../bin/libgmock.pdb"
-  "../../../lib/libgmock.a"
+  "../../../lib/.1.12.1"
+  "../../../lib/libgmock.so"
+  "../../../lib/libgmock.so.1.12.1"
+  "CMakeFiles/gmock.dir/link.d"
   "CMakeFiles/gmock.dir/src/gmock-all.cc.o"
   "CMakeFiles/gmock.dir/src/gmock-all.cc.o.d"
 )

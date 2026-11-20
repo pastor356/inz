@@ -1,2 +1,1 @@
-/usr/bin/ar qc ../../../lib/libgmock.a "CMakeFiles/gmock.dir/src/gmock-all.cc.o"
-/usr/bin/ranlib ../../../lib/libgmock.a
+/usr/bin/c++ -fPIC     -O0    -Wall    -Wextra    -Wunused    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs	-g -O2 -g -DNDEBUG -Wl,--dependency-file=CMakeFiles/gmock.dir/link.d -shared -Wl,-soname,libgmock.so.1.12.1 -o ../../../lib/libgmock.so.1.12.1 "CMakeFiles/gmock.dir/src/gmock-all.cc.o"  -Wl,-rpath,/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib: ../../../lib/libgtest.so.1.12.1

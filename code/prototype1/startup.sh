@@ -1,4 +1,5 @@
 #!/bin/bash
+
 vim lib/nodesession/include/* \
 	lib/nodesession/src/* \
 	lib/reactor/include/* \
@@ -9,6 +10,7 @@ vim lib/nodesession/include/* \
 	lib/networking/src/* \
 	lib/common/include/* \
 	lib/common/src/* \
+	lib/cons_app/include/* \
+	lib/cons_app/src/* \
 	test/utest/* \
 	test/mocks/*
-

@@ -228,13 +228,15 @@ test/tests: test/CMakeFiles/tests.dir/utest/reactor_test.cpp.o
 test/tests: test/CMakeFiles/tests.dir/build.make
 test/tests: test/CMakeFiles/tests.dir/compiler_depend.ts
 test/tests: lib/reactor/libreactor.so
-test/tests: lib/libgtest_main.a
-test/tests: lib/libgmock.a
+test/tests: lib/libgtest_main.so.1.12.1
+test/tests: lib/libgmock.so.1.12.1
 test/tests: lib/nodesession/libnodesession.so
 test/tests: lib/decorator/libdecorator.so
 test/tests: lib/networking/libnetworking.so
 test/tests: lib/common/libcommon.so
-test/tests: lib/libgtest.a
+test/tests: lib/SQLiteCpp/libSQLiteCpp.so.1
+test/tests: lib/SQLiteCpp/sqlite3/libsqlite3.so
+test/tests: lib/libgtest.so.1.12.1
 test/tests: test/CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable tests"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)

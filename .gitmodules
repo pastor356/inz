@@ -4,3 +4,6 @@
 [submodule "code/prototype1/code/prototype/lib/cons_app/influxdb-cxx"]
 	path = code/prototype1/code/prototype/lib/cons_app/influxdb-cxx
 	url = https://github.com/offa/influxdb-cxx.git
+[submodule "code/prototype1/build/code/prototype1/lib/SQLiteCpp"]
+	path = code/prototype1/build/code/prototype1/lib/SQLiteCpp
+	url = https://github.com/SRombauts/SQLiteCpp.git

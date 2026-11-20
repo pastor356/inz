@@ -1,0 +1,145 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/InfluxDB.cxx.o"
+		},
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/Point.cxx.o"
+		},
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/InfluxDBFactory.cxx.o"
+		},
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/InfluxDBBuilder.cxx.o"
+		},
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Core.dir/Proxy.cxx.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"lib/cons_app/influxdb-cxx/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g -O2 -g -DNDEBUG -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/cons_app/influxdb-cxx/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"id" : "InfluxDB-Core::@3a6cfb2040bb1584f4d3",
+	"name" : "InfluxDB-Core",
+	"paths" : 
+	{
+		"build" : "lib/cons_app/influxdb-cxx/src",
+		"source" : "lib/cons_app/influxdb-cxx/src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/InfluxDB.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/Point.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/InfluxDBFactory.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/InfluxDBBuilder.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/Proxy.cxx",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

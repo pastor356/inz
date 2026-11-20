@@ -38,7 +38,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o: /home/pastor
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -292,7 +294,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Pu
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -603,7 +607,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/InitialState.cpp.o: /home/pastor/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -915,7 +921,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o: /home/pastor
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1218,7 +1226,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o: /home/pastor/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1523,7 +1533,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o: /home/pasto
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1827,7 +1839,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o: /home/pastor/Publi
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2129,7 +2143,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/SessionClient.cpp.o: /home/pastor
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2429,7 +2445,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o: /home/past
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2724,7 +2742,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/TimerQueue.cpp.o: /home/pastor/Pu
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2962,7 +2982,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/TimerQueue.cpp.o: /home/pastor/Pu
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
 
-lib/nodesession/libnodesession.so: lib/common/libcommon.so \
+lib/nodesession/libnodesession.so: lib/SQLiteCpp/libSQLiteCpp.so.1 \
+  lib/SQLiteCpp/sqlite3/libsqlite3.so \
+  lib/common/libcommon.so \
   lib/decorator/libdecorator.so \
   lib/networking/libnetworking.so \
   /lib64/ld-linux-x86-64.so.2 \
@@ -2973,6 +2995,7 @@ lib/nodesession/libnodesession.so: lib/common/libcommon.so \
   /usr/lib64/crti.o \
   /usr/lib64/crtn.o \
   /usr/lib64/libc.so \
+  /usr/lib64/libdl.a \
   /usr/lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o \
@@ -3008,6 +3031,8 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o:
 
 /usr/lib64/libm.so:
 
+/usr/lib64/libdl.a:
+
 /lib64/libmvec.so.1:
 
 /lib64/ld-linux-x86-64.so.2:
@@ -3015,6 +3040,8 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o:
 lib/networking/libnetworking.so:
 
 lib/common/libcommon.so:
+
+lib/SQLiteCpp/libSQLiteCpp.so.1:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/TimerQueue.cpp:
 
@@ -3101,6 +3128,8 @@ lib/common/libcommon.so:
 /usr/include/bits/unistd_ext.h:
 
 /usr/include/bits/types/struct_osockaddr.h:
+
+/usr/include/bits/types/sigevent_t.h:
 
 /usr/include/c++/15/bits/postypes.h:
 
@@ -3220,6 +3249,12 @@ lib/decorator/libdecorator.so:
 
 /usr/include/bits/types/mbstate_t.h:
 
+/usr/lib64/crtn.o:
+
+/usr/include/c++/15/bits/ios_base.h:
+
+/usr/include/wchar.h:
+
 /usr/include/c++/15/ext/concurrence.h:
 
 /usr/include/c++/15/bits/exception_ptr.h:
@@ -3238,10 +3273,6 @@ lib/decorator/libdecorator.so:
 
 /usr/include/bits/typesizes.h:
 
-/usr/include/c++/15/bits/stl_algobase.h:
-
-/usr/include/c++/15/clocale:
-
 /usr/include/bits/struct_mutex.h:
 
 /usr/include/c++/15/bits/stl_iterator_base_funcs.h:
@@ -3259,12 +3290,6 @@ lib/decorator/libdecorator.so:
 /usr/include/c++/15/x86_64-redhat-linux/bits/gthr-default.h:
 
 /usr/include/bits/stdlib-float.h:
-
-/usr/lib64/crtn.o:
-
-/usr/include/c++/15/bits/ios_base.h:
-
-/usr/include/wchar.h:
 
 /usr/include/asm/posix_types.h:
 
@@ -3334,8 +3359,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
 /usr/include/c++/15/iostream:
 
-/usr/include/c++/15/bits/std_abs.h:
-
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -3368,9 +3391,21 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
 /usr/include/bits/select.h:
 
+/usr/include/c++/15/bits/ostream_insert.h:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/include/c++/15/bits/utility.h:
+
 /usr/include/bits/types/cookie_io_functions_t.h:
 
+/usr/include/bits/stdio.h:
+
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
 
 /usr/include/bits/types/time_t.h:
 
@@ -3383,12 +3418,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 /usr/include/bits/stdint-uintn.h:
 
 /usr/include/asm/errno.h:
-
-/usr/include/c++/15/bits/utility.h:
-
-/usr/include/c++/15/bits/ostream_insert.h:
-
-/usr/include/bits/types/error_t.h:
 
 /usr/include/bits/types.h:
 
@@ -3414,17 +3443,23 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/InitialState.cpp.o:
 
 /usr/include/bits/posix_opt.h:
 
-lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
+/usr/include/c++/15/bits/basic_string.tcc:
 
-/usr/include/c++/15/typeinfo:
+/usr/include/c++/15/bits/streambuf.tcc:
+
+/usr/include/c++/15/bits/std_abs.h:
+
+lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/bits/stdint-intn.h:
 
 /usr/include/bits/types/clockid_t.h:
 
-/usr/include/c++/15/bits/basic_string.tcc:
+/usr/include/c++/15/typeinfo:
 
-/usr/include/c++/15/bits/streambuf.tcc:
+/usr/include/c++/15/bits/stl_algobase.h:
+
+/usr/include/c++/15/clocale:
 
 /usr/include/c++/15/bits/ptr_traits.h:
 
@@ -3552,9 +3587,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/c++/15/string_view:
 
-/usr/include/bits/endian.h:
-
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/ISocket.hpp:
+
+/usr/include/bits/endian.h:
 
 /usr/include/c++/15/system_error:
 
@@ -3574,8 +3609,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
-
 /usr/include/c++/15/bits/std_function.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h:
@@ -3594,9 +3627,15 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp:
 
+/usr/include/bits/types/__sigval_t.h:
+
+/usr/include/gnu/stubs-64.h:
+
 /usr/include/bits/types/FILE.h:
 
 /usr/include/linux/posix_types.h:
+
+lib/SQLiteCpp/sqlite3/libsqlite3.so:
 
 /usr/include/c++/15/bits/nested_exception.h:
 
@@ -3685,9 +3724,3 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o:
 /usr/include/bits/getopt_posix.h:
 
 /usr/include/bits/in.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/types/__sigval_t.h:
-
-/usr/include/bits/types/sigevent_t.h:

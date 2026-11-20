@@ -247,6 +247,8 @@ lib/reactor/libreactor.so: lib/nodesession/libnodesession.so
 lib/reactor/libreactor.so: lib/decorator/libdecorator.so
 lib/reactor/libreactor.so: lib/networking/libnetworking.so
 lib/reactor/libreactor.so: lib/common/libcommon.so
+lib/reactor/libreactor.so: lib/SQLiteCpp/libSQLiteCpp.so.1
+lib/reactor/libreactor.so: lib/SQLiteCpp/sqlite3/libsqlite3.so
 lib/reactor/libreactor.so: lib/reactor/CMakeFiles/reactor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libreactor.so"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/reactor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/reactor.dir/link.txt --verbose=$(VERBOSE)

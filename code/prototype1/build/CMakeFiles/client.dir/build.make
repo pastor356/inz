@@ -97,13 +97,15 @@ client: CMakeFiles/client.dir/src/main_client.cpp.o
 client: CMakeFiles/client.dir/build.make
 client: CMakeFiles/client.dir/compiler_depend.ts
 client: lib/reactor/libreactor.so
-client: lib/libgtest_main.a
-client: lib/libgmock.a
+client: lib/libgtest_main.so.1.12.1
+client: lib/libgmock.so.1.12.1
 client: lib/nodesession/libnodesession.so
 client: lib/decorator/libdecorator.so
 client: lib/networking/libnetworking.so
 client: lib/common/libcommon.so
-client: lib/libgtest.a
+client: lib/SQLiteCpp/libSQLiteCpp.so.1
+client: lib/SQLiteCpp/sqlite3/libsqlite3.so
+client: lib/libgtest.so.1.12.1
 client: CMakeFiles/client.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)

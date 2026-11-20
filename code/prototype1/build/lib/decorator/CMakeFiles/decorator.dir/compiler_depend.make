@@ -53,7 +53,9 @@ lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o: /home/past
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -312,7 +314,9 @@ lib/decorator/CMakeFiles/decorator.dir/src/LiveMonitor.cpp.o: /home/pastor/Publi
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -597,7 +601,9 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o: /home/pastor/Public/books
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -906,6 +912,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp:
 
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp:
+
 /lib64/libm.so.6:
 
 /usr/include/c++/15/bits/hash_bytes.h:
@@ -930,6 +938,8 @@ lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/include/c++/15/bits/atomic_base.h:
 
+/usr/include/bits/stdio.h:
+
 /usr/include/pthread.h:
 
 /usr/include/bits/wctype-wchar.h:
@@ -944,17 +954,11 @@ lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/include/c++/15/backward/binders.h:
 
-/usr/include/c++/15/bits/new_allocator.h:
-
-/usr/include/bits/cpu-set.h:
-
 /usr/include/c++/15/array:
 
 /usr/include/c++/15/tuple:
 
 /usr/include/bits/timesize.h:
-
-/usr/include/bits/unistd_ext.h:
 
 /usr/include/c++/15/bits/locale_facets.h:
 
@@ -962,9 +966,9 @@ lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/include/c++/15/bits/align.h:
 
-/usr/include/c++/15/bits/uses_allocator.h:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/src/LiveMonitor.cpp:
 
-/usr/include/bits/struct_rwlock.h:
+/usr/include/bits/types/struct_timespec.h:
 
 /usr/include/c++/15/cwctype:
 
@@ -992,15 +996,11 @@ lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
 
 /usr/include/c++/15/ratio:
 
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/15/bits/hashtable.h:
-
-/usr/include/bits/types/time_t.h:
-
 /usr/include/bits/timex.h:
 
 /usr/include/bits/errno.h:
+
+/usr/include/bits/time64.h:
 
 /usr/include/bits/uintn-identity.h:
 
@@ -1064,8 +1064,6 @@ lib/decorator/CMakeFiles/decorator.dir/src/ConnectionDecorator.cpp.o:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp:
 
-/usr/include/bits/time64.h:
-
 /usr/include/c++/15/initializer_list:
 
 lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o:
@@ -1091,8 +1089,6 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o:
 /usr/include/asm/posix_types_64.h:
 
 /usr/include/bits/thread-shared-types.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -1192,7 +1188,13 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o:
 
 /usr/include/bits/stdint-uintn.h:
 
+/usr/include/bits/unistd_ext.h:
+
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
 
 /usr/include/features.h:
 
@@ -1201,6 +1203,20 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o:
 /usr/include/bits/types/__FILE.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/15/bits/hashtable.h:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/include/c++/15/bits/new_allocator.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/c++/15/bits/uses_allocator.h:
 
 /usr/include/c++/15/bits/invoke.h:
 
@@ -1229,10 +1245,6 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o:
 /usr/include/c++/15/bits/stl_uninitialized.h:
 
 /usr/include/c++/15/bits/shared_ptr_base.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/src/LiveMonitor.cpp:
 
 /usr/include/c++/15/bits/std_abs.h:
 
@@ -1367,8 +1379,6 @@ lib/decorator/CMakeFiles/decorator.dir/src/Qos1.cpp.o:
 /usr/include/c++/15/unordered_map:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
 
 /usr/include/c++/15/bits/std_function.h:
 

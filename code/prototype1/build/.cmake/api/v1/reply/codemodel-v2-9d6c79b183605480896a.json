@@ -1,0 +1,645 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						10,
+						12
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6,
+						17
+					]
+				},
+				{
+					"build" : "lib/common",
+					"jsonFile" : "directory-lib.common-RelWithDebInfo-00228c46432c4f9e0602.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/common",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "lib/networking",
+					"jsonFile" : "directory-lib.networking-RelWithDebInfo-36c80416bbd94d7c6d87.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "lib/networking",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "lib/decorator",
+					"jsonFile" : "directory-lib.decorator-RelWithDebInfo-4338aa1281dd2d02099a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "lib/decorator",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "lib/nodesession",
+					"jsonFile" : "directory-lib.nodesession-RelWithDebInfo-bf7e2e7d3c062a00161c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "lib/nodesession",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "lib/reactor",
+					"jsonFile" : "directory-lib.reactor-RelWithDebInfo-113e3551b700a9bd1ee3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "lib/reactor",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "lib/cons_app",
+					"childIndexes" : 
+					[
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.cons_app-RelWithDebInfo-c7e61dc3ab5884124606.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "lib/cons_app",
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"build" : "lib/cons_app/influxdb-cxx",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.cons_app.influxdb-cxx-RelWithDebInfo-bd7da83c41c6ae77f5bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 7,
+					"source" : "lib/cons_app/influxdb-cxx"
+				},
+				{
+					"build" : "lib/cons_app/influxdb-cxx/3rd-party",
+					"jsonFile" : "directory-lib.cons_app.influxdb-cxx.3rd-party-RelWithDebInfo-98ce3bf8ab22dfdcf582.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 7,
+					"source" : "lib/cons_app/influxdb-cxx/3rd-party"
+				},
+				{
+					"build" : "lib/cons_app/influxdb-cxx/src",
+					"jsonFile" : "directory-lib.cons_app.influxdb-cxx.src-RelWithDebInfo-efe326e1ff4a3a4404d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.0"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 7,
+					"source" : "lib/cons_app/influxdb-cxx/src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "lib/SQLiteCpp",
+					"childIndexes" : 
+					[
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.SQLiteCpp-RelWithDebInfo-8ddc1fa50fb1256ebcad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "lib/SQLiteCpp",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "lib/SQLiteCpp/sqlite3",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.SQLiteCpp.sqlite3-RelWithDebInfo-31829db21443ceff734a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 8,
+					"source" : "lib/SQLiteCpp/sqlite3",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "test",
+					"childIndexes" : 
+					[
+						13
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-test-RelWithDebInfo-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 9,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						14
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-RelWithDebInfo-325181791364522dc3de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 10,
+					"source" : "build/_deps/googletest-src"
+				},
+				{
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						15
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-RelWithDebInfo-9efe54a59c86822a5ca7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 13,
+					"projectIndex" : 11,
+					"source" : "build/_deps/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						11,
+						12
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-RelWithDebInfo-187fc3989663ca91ec26.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 12,
+					"source" : "build/_deps/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						13,
+						14
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						8,
+						9
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "prototype1",
+					"targetIndexes" : 
+					[
+						6,
+						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "common",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "networking",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "decorator",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "nodesession",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "reactor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						7
+					],
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "cons_app",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7,
+						8,
+						9
+					],
+					"name" : "influxdb-cxx",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10,
+						11
+					],
+					"name" : "SQLiteCpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						19
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						10
+					],
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						11
+					],
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 9
+				},
+				{
+					"childIndexes" : 
+					[
+						12
+					],
+					"directoryIndexes" : 
+					[
+						14
+					],
+					"name" : "gmock",
+					"parentIndex" : 10,
+					"targetIndexes" : 
+					[
+						11,
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						15
+					],
+					"name" : "gtest",
+					"parentIndex" : 11,
+					"targetIndexes" : 
+					[
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 9,
+					"id" : "InfluxDB::@3a6cfb2040bb1584f4d3",
+					"jsonFile" : "target-InfluxDB-RelWithDebInfo-70f0d7f2f4224298cd6e.json",
+					"name" : "InfluxDB",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "InfluxDB-BoostSupport::@3a6cfb2040bb1584f4d3",
+					"jsonFile" : "target-InfluxDB-BoostSupport-RelWithDebInfo-8d14c30129dcfda5d8af.json",
+					"name" : "InfluxDB-BoostSupport",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "InfluxDB-Core::@3a6cfb2040bb1584f4d3",
+					"jsonFile" : "target-InfluxDB-Core-RelWithDebInfo-f1fdb619f8699d5e677e.json",
+					"name" : "InfluxDB-Core",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "InfluxDB-Internal::@3a6cfb2040bb1584f4d3",
+					"jsonFile" : "target-InfluxDB-Internal-RelWithDebInfo-e722d7f0ab8cc84198a5.json",
+					"name" : "InfluxDB-Internal",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "SQLiteCpp::@2f3ce4567be4c411b3a5",
+					"jsonFile" : "target-SQLiteCpp-RelWithDebInfo-3c07fc5cf35ffe742b34.json",
+					"name" : "SQLiteCpp",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "SQLiteCpp_cppcheck::@2f3ce4567be4c411b3a5",
+					"jsonFile" : "target-SQLiteCpp_cppcheck-RelWithDebInfo-a7b73eeaef2eab03c807.json",
+					"name" : "SQLiteCpp_cppcheck",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-RelWithDebInfo-47983fba130c43c98d67.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "common::@9fc5b58572d5f236116a",
+					"jsonFile" : "target-common-RelWithDebInfo-deaad310c4fdda4cac85.json",
+					"name" : "common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "consApp::@141635c3ae415c2bba44",
+					"jsonFile" : "target-consApp-RelWithDebInfo-4720031f49ed756e46e0.json",
+					"name" : "consApp",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "cons_app::@141635c3ae415c2bba44",
+					"jsonFile" : "target-cons_app-RelWithDebInfo-05d6b536ebce2365b594.json",
+					"name" : "cons_app",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "decorator::@f0f1d9882c4718bc7120",
+					"jsonFile" : "target-decorator-RelWithDebInfo-8acd57291d65205e5558.json",
+					"name" : "decorator",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-RelWithDebInfo-0ec98ce4184dec116110.json",
+					"name" : "gmock",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-RelWithDebInfo-d2318bc70e3afa63a40a.json",
+					"name" : "gmock_main",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-RelWithDebInfo-be7e5aab4e575ae2ec38.json",
+					"name" : "gtest",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-RelWithDebInfo-e5b8c62060c6ea69fa7b.json",
+					"name" : "gtest_main",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "networking::@f3c59c8fb4d405477e2b",
+					"jsonFile" : "target-networking-RelWithDebInfo-727bb7cbd18a5357ea57.json",
+					"name" : "networking",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "nodesession::@aa722582cb4a8ff83327",
+					"jsonFile" : "target-nodesession-RelWithDebInfo-fd4614bac7b6e16c4ca0.json",
+					"name" : "nodesession",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "prototype1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-prototype1-RelWithDebInfo-d3b8ae60b5d1d69603ac.json",
+					"name" : "prototype1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "reactor::@03f9dbcae4de2595b05d",
+					"jsonFile" : "target-reactor-RelWithDebInfo-0a903e44be8db62ff1ff.json",
+					"name" : "reactor",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "sqlite3::@cc021ff62033284c0bf2",
+					"jsonFile" : "target-sqlite3-RelWithDebInfo-ebad88d4325451703462.json",
+					"name" : "sqlite3",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "tests::@36f028580bb02cc8272a",
+					"jsonFile" : "target-tests-RelWithDebInfo-0dbfbd730d6e5b8813bc.json",
+					"name" : "tests",
+					"projectIndex" : 9
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build",
+		"source" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

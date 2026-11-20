@@ -20,7 +20,8 @@ ITimerQueue::timerId TimerQueue::addTimer(ITimerQueue::timePoint tp, ITimerQueue
 	++thisTimerId;
 	int isEarliest = timePointToCb.empty() || timePointToCb.begin()->first > tp; 
 
-	auto it = timePointToCb.emplace(tp, std::make_pair(thisTimerId, cb));
+	timePointToCb.emplace(tp, std::make_pair(thisTimerId, cb));
+
 
 	auto ret = idToTime.try_emplace(thisTimerId, tp);
 
@@ -71,6 +72,11 @@ IConnection::Status TimerQueue::recv(Packet& packet, int flag) {
 	(void) packet;
 
 	ssize_t nread = ::read(timerFd, &buf, sizeof(buf));
+	
+	if(nread != 8) {
+		logInfo << "::read() in TimerQueue::recv() read only "
+		   	+ std::to_string(nread) + " bytes";
+	}
 
 	std::vector<TimerQueue::callback> cbs;
 	auto now = TimerQueue::clock::now();

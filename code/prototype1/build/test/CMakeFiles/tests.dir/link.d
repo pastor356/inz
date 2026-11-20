@@ -12,13 +12,16 @@ tests: \
   CMakeFiles/tests.dir/utest/integrationQosSessionTest.cpp.o \
   CMakeFiles/tests.dir/utest/reactor_test.cpp.o \
   ../lib/reactor/libreactor.so \
-  ../lib/libgtest_main.a \
-  ../lib/libgmock.a \
+  ../lib/libgtest_main.so.1.12.1 \
+  ../lib/libgmock.so.1.12.1 \
   ../lib/nodesession/libnodesession.so \
   ../lib/decorator/libdecorator.so \
   ../lib/networking/libnetworking.so \
   ../lib/common/libcommon.so \
-  ../lib/libgtest.a \
+  ../lib/SQLiteCpp/libSQLiteCpp.so.1 \
+  ../lib/SQLiteCpp/sqlite3/libsqlite3.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a \
+  ../lib/libgtest.so.1.12.1 \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -73,9 +76,9 @@ CMakeFiles/tests.dir/utest/reactor_test.cpp.o:
 
 ../lib/reactor/libreactor.so:
 
-../lib/libgtest_main.a:
+../lib/libgtest_main.so.1.12.1:
 
-../lib/libgmock.a:
+../lib/libgmock.so.1.12.1:
 
 ../lib/nodesession/libnodesession.so:
 
@@ -85,7 +88,13 @@ CMakeFiles/tests.dir/utest/reactor_test.cpp.o:
 
 ../lib/common/libcommon.so:
 
-../lib/libgtest.a:
+../lib/SQLiteCpp/libSQLiteCpp.so.1:
+
+../lib/SQLiteCpp/sqlite3/libsqlite3.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a:
+
+../lib/libgtest.so.1.12.1:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 

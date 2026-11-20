@@ -63,7 +63,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o: /home/pastor/Public/b
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -384,7 +386,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o: /home/pastor/Public
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -717,7 +721,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o: /home/pastor/Public/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1111,7 +1117,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/EchoRouter.cpp.o: /home/pastor/Public/boo
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1443,7 +1451,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o: /home/pastor/Public/books/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1775,7 +1785,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/MessageRouter.cpp.o: /home/pastor/Public/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2111,7 +2123,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o: /home/pastor/Publi
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2443,7 +2457,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/Reactor.cpp.o: /home/pastor/Public/books/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2766,7 +2782,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o: /home/pastor/Public/b
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -3007,7 +3025,9 @@ lib/reactor/CMakeFiles/reactor.dir/src/TimerHandler.cpp.o: /home/pastor/Public/b
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
 
-lib/reactor/libreactor.so: lib/common/libcommon.so \
+lib/reactor/libreactor.so: lib/SQLiteCpp/libSQLiteCpp.so.1 \
+  lib/SQLiteCpp/sqlite3/libsqlite3.so \
+  lib/common/libcommon.so \
   lib/decorator/libdecorator.so \
   lib/networking/libnetworking.so \
   lib/nodesession/libnodesession.so \
@@ -3019,6 +3039,7 @@ lib/reactor/libreactor.so: lib/common/libcommon.so \
   /usr/lib64/crti.o \
   /usr/lib64/crtn.o \
   /usr/lib64/libc.so \
+  /usr/lib64/libdl.a \
   /usr/lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbeginS.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o \
@@ -3046,8 +3067,6 @@ lib/reactor/CMakeFiles/reactor.dir/src/NodeInitializer.cpp.o:
 
 lib/reactor/CMakeFiles/reactor.dir/src/MessageRouter.cpp.o:
 
-lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o:
-
 lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
@@ -3055,6 +3074,8 @@ lib/reactor/CMakeFiles/reactor.dir/src/AcceptorSocket.cpp.o:
 /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a:
 
 /usr/lib64/libm.so:
+
+/usr/lib64/libdl.a:
 
 /lib64/libmvec.so.1:
 
@@ -3064,11 +3085,11 @@ lib/networking/libnetworking.so:
 
 lib/common/libcommon.so:
 
+lib/SQLiteCpp/libSQLiteCpp.so.1:
+
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/TimerHandler.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/MessageRouter.cpp:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EchoRouter.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IWaiter.hpp:
 
@@ -3172,15 +3193,13 @@ lib/reactor/CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o:
 
 /usr/include/ctype.h:
 
+/usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h:
+
 /usr/include/asm/bitsperlong.h:
 
 /usr/include/arpa/inet.h:
 
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/15/bits/basic_string.h:
-
-/usr/include/c++/15/bits/version.h:
 
 /usr/include/bits/epoll.h:
 
@@ -3196,21 +3215,13 @@ lib/reactor/CMakeFiles/reactor.dir/src/EPollWaiter.cpp.o:
 
 /usr/include/bits/wordsize.h:
 
-/usr/include/c++/15/bits/cpp_type_traits.h:
-
-/usr/include/bits/wctype-wchar.h:
-
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp:
 
 /usr/include/bits/timesize.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/NodeInitializer.cpp:
-
-/usr/include/c++/15/mutex:
-
-/usr/include/bits/unistd_ext.h:
-
 /usr/include/c++/15/bits/align.h:
+
+/usr/include/c++/15/bits/version.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/DecoratorBuilder.hpp:
 
@@ -3286,6 +3297,12 @@ lib/decorator/libdecorator.so:
 
 /usr/include/bits/time64.h:
 
+lib/reactor/CMakeFiles/reactor.dir/src/Demultiplexer.cpp.o:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
+
 /usr/include/bits/types/struct_timeval.h:
 
 /usr/include/bits/stdio_lim.h:
@@ -3297,6 +3314,18 @@ lib/decorator/libdecorator.so:
 /usr/include/bits/types/__mbstate_t.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/NodeInitializer.cpp:
+
+/usr/include/c++/15/mutex:
+
+/usr/include/bits/unistd_ext.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EchoRouter.hpp:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/c++/15/bits/atomic_base.h:
 
 /usr/include/bits/stdint-least.h:
 
@@ -3339,8 +3368,6 @@ lib/decorator/libdecorator.so:
 /usr/include/features-time64.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp:
-
-/usr/include/c++/15/bits/atomic_base.h:
 
 /usr/include/c++/15/bits/utility.h:
 
@@ -3440,6 +3467,12 @@ lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o:
 
 /usr/include/bits/setjmp.h:
 
+/usr/include/c++/15/bits/basic_string.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/c++/15/bits/cpp_type_traits.h:
+
 /usr/include/linux/sockios.h:
 
 /usr/include/bits/confname.h:
@@ -3467,8 +3500,6 @@ lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o:
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/src/Invoker.cpp:
 
 /usr/include/c++/15/type_traits:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h:
 
 /lib64/libgcc_s.so.1:
 
@@ -3565,6 +3596,8 @@ lib/reactor/CMakeFiles/reactor.dir/src/AcceptorNode.cpp.o:
 lib/nodesession/libnodesession.so:
 
 /usr/include/c++/15/cstdlib:
+
+lib/SQLiteCpp/sqlite3/libsqlite3.so:
 
 /usr/include/linux/sched/types.h:
 
@@ -3672,6 +3705,12 @@ lib/nodesession/libnodesession.so:
 
 /usr/include/c++/15/cstring:
 
+/usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/c++/15/bits/functexcept.h:
+
+/usr/include/c++/15/bits/stl_vector.h:
+
 /usr/include/bits/types/struct_iovec.h:
 
 /usr/include/c++/15/cwctype:
@@ -3723,12 +3762,6 @@ lib/nodesession/libnodesession.so:
 /usr/include/c++/15/bits/hashtable_policy.h:
 
 /usr/include/c++/15/ext/string_conversions.h:
-
-/usr/include/c++/15/bits/functexcept.h:
-
-/usr/include/c++/15/bits/stl_vector.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h:
 
 /usr/include/c++/15/functional:
 
@@ -3783,8 +3816,6 @@ lib/nodesession/libnodesession.so:
 /usr/include/c++/15/unordered_map:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
 
 lib/reactor/CMakeFiles/reactor.dir/src/Invoker.cpp.o:
 

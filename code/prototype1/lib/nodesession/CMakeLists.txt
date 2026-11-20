@@ -57,7 +57,9 @@ list(TRANSFORM SOURCES PREPEND ${SOURCEDIR})
 
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES} ${HEADERS})
+
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDEDIR})
 target_link_libraries(${PROJECT_NAME} PUBLIC networking)
 target_link_libraries(${PROJECT_NAME} PUBLIC decorator)
 target_link_libraries(${PROJECT_NAME} PUBLIC common)
+target_link_libraries(${PROJECT_NAME} PUBLIC SQLiteCpp)

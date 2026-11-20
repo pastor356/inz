@@ -1,0 +1,138 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/LineProtocol.cxx.o"
+		},
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/HTTP.cxx.o"
+		},
+		{
+			"path" : "lib/cons_app/influxdb-cxx/src/CMakeFiles/InfluxDB-Internal.dir/QueryParser.cxx.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_include_directories",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"lib/cons_app/influxdb-cxx/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "\t-O0\t-Wall\t-Wextra\t-Wunused\t-Wno-error=maybe-uninitialized\t-Wcast-align\t-Winvalid-pch\t-Wmissing-include-dirs\t-g -O2 -g -DNDEBUG -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/cons_app/influxdb-cxx/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/cons_app/influxdb-cxx/3rd-party"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"id" : "InfluxDB-Internal::@3a6cfb2040bb1584f4d3",
+	"name" : "InfluxDB-Internal",
+	"paths" : 
+	{
+		"build" : "lib/cons_app/influxdb-cxx/src",
+		"source" : "lib/cons_app/influxdb-cxx/src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/LineProtocol.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/HTTP.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/cons_app/influxdb-cxx/src/QueryParser.cxx",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

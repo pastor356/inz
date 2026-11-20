@@ -43,8 +43,8 @@ int main() {
 	sigaction(SIGINT, &act, nullptr);
 
 	Resolver resolver;
-	std::unique_ptr<ISocket> tcpSocket = std::make_unique<TcpSocket>(resolver.resolve(
-				"127.0.0.1", "4242", 
+	std::unique_ptr<ISocket> tcpSocket = std::make_unique<TcpSocket>(
+			resolver.resolve("127.0.0.1", "4242", 
 				SocketParams{AF_INET, SOCK_STREAM, SockRole::SERV, true}));
 
 	tcpSocket->bind();
@@ -87,4 +87,3 @@ int main() {
 void sigint(int signo) {
 	if(signo == SIGINT) reactor->quit();
 }
-

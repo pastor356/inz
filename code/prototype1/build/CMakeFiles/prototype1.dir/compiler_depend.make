@@ -113,7 +113,9 @@ CMakeFiles/prototype1.dir/src/main.cpp.o: /home/pastor/Public/books/VI_sem/inz/c
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -376,6 +378,7 @@ prototype1: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/crti.o \
   /usr/lib64/crtn.o \
   /usr/lib64/libc.so \
+  /usr/lib64/libdl.a \
   /usr/lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o \
@@ -384,11 +387,13 @@ prototype1: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib64/libc_nonshared.a \
   CMakeFiles/prototype1.dir/src/main.cpp.o \
+  lib/SQLiteCpp/libSQLiteCpp.so.1 \
+  lib/SQLiteCpp/sqlite3/libsqlite3.so \
   lib/common/libcommon.so \
   lib/decorator/libdecorator.so \
-  lib/libgmock.a \
-  lib/libgtest.a \
-  lib/libgtest_main.a \
+  lib/libgmock.so.1.12.1 \
+  lib/libgtest.so.1.12.1 \
+  lib/libgtest_main.so.1.12.1 \
   lib/networking/libnetworking.so \
   lib/nodesession/libnodesession.so \
   lib/reactor/libreactor.so
@@ -398,7 +403,11 @@ lib/reactor/libreactor.so:
 
 lib/networking/libnetworking.so:
 
+lib/libgmock.so.1.12.1:
+
 lib/common/libcommon.so:
+
+lib/SQLiteCpp/libSQLiteCpp.so.1:
 
 CMakeFiles/prototype1.dir/src/main.cpp.o:
 
@@ -409,6 +418,8 @@ CMakeFiles/prototype1.dir/src/main.cpp.o:
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
 /usr/lib64/libm.so:
+
+/usr/lib64/libdl.a:
 
 /usr/lib64/crt1.o:
 
@@ -542,11 +553,11 @@ lib/nodesession/libnodesession.so:
 
 /usr/include/c++/15/cerrno:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp:
+/usr/include/c++/15/bits/version.h:
 
-lib/libgtest.a:
+/usr/include/c++/15/iostream:
 
-/usr/include/bits/ioctls.h:
+/usr/include/c++/15/bits/vector.tcc:
 
 /usr/include/linux/posix_types.h:
 
@@ -564,17 +575,17 @@ lib/libgtest.a:
 
 /usr/include/bits/struct_mutex.h:
 
+/usr/include/bits/stdlib-bsearch.h:
+
 /usr/include/bits/stdio_lim.h:
 
 /usr/include/bits/types/__mbstate_t.h:
 
+lib/libgtest.so.1.12.1:
+
+/usr/include/c++/15/bits/atomic_base.h:
+
 /usr/include/bits/stdint-least.h:
-
-lib/libgtest_main.a:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/bits/timerfd.h:
 
 /usr/include/string.h:
 
@@ -742,11 +753,11 @@ lib/libgtest_main.a:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/c++/15/iostream:
-
-/usr/include/c++/15/bits/vector.tcc:
-
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/ReconnectState.hpp:
+
+/usr/include/bits/ioctls.h:
 
 /usr/include/features-time64.h:
 
@@ -806,6 +817,8 @@ lib/libgtest_main.a:
 
 /usr/include/bits/waitflags.h:
 
+lib/libgtest_main.so.1.12.1:
+
 /usr/include/c++/15/bits/locale_facets.tcc:
 
 /usr/include/bits/sigaction.h:
@@ -832,6 +845,8 @@ lib/decorator/libdecorator.so:
 
 /usr/include/bits/types/locale_t.h:
 
+/usr/include/bits/stdio.h:
+
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/EchoRouter.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/IInvoker.hpp:
@@ -847,8 +862,6 @@ lib/decorator/libdecorator.so:
 /usr/include/bits/types/struct_sigstack.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include/Reactor.hpp:
-
-lib/libgmock.a:
 
 /usr/include/arpa/inet.h:
 
@@ -907,6 +920,10 @@ lib/libgmock.a:
 /usr/include/asm/errno.h:
 
 /usr/include/bits/types/struct_osockaddr.h:
+
+/usr/include/bits/timerfd.h:
+
+/usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/bits/types/__locale_t.h:
 
@@ -970,8 +987,6 @@ lib/libgmock.a:
 
 /usr/include/c++/15/bits/concept_check.h:
 
-/usr/include/c++/15/bits/version.h:
-
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/c++/15/mutex:
@@ -999,8 +1014,6 @@ lib/libgmock.a:
 /usr/include/c++/15/bit:
 
 /usr/include/c++/15/bits/align.h:
-
-/usr/include/c++/15/bits/atomic_base.h:
 
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
@@ -1077,6 +1090,8 @@ lib/libgmock.a:
 /usr/include/c++/15/bits/locale_facets.h:
 
 /usr/include/c++/15/bits/requires_hosted.h:
+
+lib/SQLiteCpp/sqlite3/libsqlite3.so:
 
 /usr/include/linux/sched/types.h:
 

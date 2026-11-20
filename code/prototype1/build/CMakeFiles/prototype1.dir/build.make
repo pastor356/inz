@@ -97,13 +97,15 @@ prototype1: CMakeFiles/prototype1.dir/src/main.cpp.o
 prototype1: CMakeFiles/prototype1.dir/build.make
 prototype1: CMakeFiles/prototype1.dir/compiler_depend.ts
 prototype1: lib/reactor/libreactor.so
-prototype1: lib/libgtest_main.a
-prototype1: lib/libgmock.a
+prototype1: lib/libgtest_main.so.1.12.1
+prototype1: lib/libgmock.so.1.12.1
 prototype1: lib/nodesession/libnodesession.so
 prototype1: lib/decorator/libdecorator.so
 prototype1: lib/networking/libnetworking.so
 prototype1: lib/common/libcommon.so
-prototype1: lib/libgtest.a
+prototype1: lib/SQLiteCpp/libSQLiteCpp.so.1
+prototype1: lib/SQLiteCpp/sqlite3/libsqlite3.so
+prototype1: lib/libgtest.so.1.12.1
 prototype1: CMakeFiles/prototype1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable prototype1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prototype1.dir/link.txt --verbose=$(VERBOSE)

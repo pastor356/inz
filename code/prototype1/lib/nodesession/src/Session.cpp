@@ -29,6 +29,7 @@ Session::Session(std::unique_ptr<IConnection> conn, std::shared_ptr<IStateContex
 }
 
 
+
 IConnection::Status Session::send(std::string const& message, int flag) const {
 	Packet packet;
 	packet.payload = message;

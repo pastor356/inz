@@ -10,13 +10,16 @@ void Reactor::registerNode(std::shared_ptr<IStateContext> node,
 	demux->registerNode(node, handler);
 }
 
+
 void Reactor::deregisterHandler(std::shared_ptr<EventHandler> handler) {
 	demux->deregisterHandler(handler);
 }
 
+
 void Reactor::deregisterNode(std::shared_ptr<IStateContext> node) {
 	demux->deregisterNode(node);
 }
+
 
 void Reactor::runOnce() {
 	auto eventsVector = demux->wait();
@@ -24,17 +27,12 @@ void Reactor::runOnce() {
 }
 
 void Reactor::run() {
-	while(quitflag) {
+	while(this->quitflag) {
 		this->runOnce();
 	}
 }
-		
+
 void Reactor::quit() {
 	logInfo << std::string{"Reactor::quit(): reactor quits"};
 	quitflag = 0;
 }
-
-
-
-
-
