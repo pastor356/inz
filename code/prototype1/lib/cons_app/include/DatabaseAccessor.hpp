@@ -19,6 +19,6 @@ class DatabaseAccessor {
 	std::unique_ptr<influxdb::InfluxDB> connection;
 public:
 	DatabaseAccessor(std::unique_ptr<influxdb::InfluxDB> conn);
-	DatabaseAccessor(std::string const& url);
+		DatabaseAccessor(std::string const& url);
 	DBStatus append(Sample const& sample);
 };

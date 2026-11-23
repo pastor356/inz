@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/reactor/libreactor.so"
+			"path" : "lib/nodesession/libnodesession.so"
 		}
 	],
 	"backtrace" : 1,
@@ -16,7 +16,6 @@
 		],
 		"files" : 
 		[
-			"lib/reactor/CMakeLists.txt",
 			"lib/nodesession/CMakeLists.txt",
 			"lib/SQLiteCpp/CMakeLists.txt"
 		],
@@ -28,7 +27,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 60,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
@@ -40,19 +51,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 63,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 62,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 65,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
@@ -61,28 +60,19 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 65,
+				"line" : 308,
 				"parent" : 6
 			},
 			{
-				"file" : 2
-			},
-			{
 				"command" : 1,
-				"file" : 2,
-				"line" : 308,
-				"parent" : 8
-			},
-			{
-				"command" : 1,
-				"file" : 2,
+				"file" : 1,
 				"line" : 382,
-				"parent" : 8
+				"parent" : 6
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 61,
+				"line" : 63,
 				"parent" : 0
 			}
 		]
@@ -99,18 +89,18 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "SQLITE_ENABLE_COLUMN_METADATA"
 				},
 				{
-					"define" : "reactor_EXPORTS"
+					"define" : "nodesession_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 11,
-					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/reactor/include"
+					"backtrace" : 9,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include"
 				},
 				{
 					"backtrace" : 4,
@@ -121,19 +111,15 @@
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include"
 				},
 				{
-					"backtrace" : 2,
-					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include"
-				},
-				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/sqlite3"
 				}
 			],
@@ -142,7 +128,7 @@
 			{
 				"backtraces" : 
 				[
-					2
+					3
 				],
 				"standard" : "17"
 			},
@@ -157,7 +143,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		}
 	],
@@ -172,23 +159,19 @@
 			"id" : "networking::@f3c59c8fb4d405477e2b"
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 2,
 			"id" : "decorator::@f0f1d9882c4718bc7120"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "nodesession::@aa722582cb4a8ff83327"
-		},
-		{
-			"backtrace" : 2,
+			"backtrace" : 3,
 			"id" : "SQLiteCpp::@2f3ce4567be4c411b3a5"
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 3,
 			"id" : "sqlite3::@cc021ff62033284c0bf2"
 		}
 	],
-	"id" : "reactor::@03f9dbcae4de2595b05d",
+	"id" : "nodesession::@aa722582cb4a8ff83327",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -198,17 +181,17 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp/sqlite3",
+				"fragment" : "-Wl,-rpath,/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/decorator:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/networking:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/common:/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/SQLiteCpp/sqlite3",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../nodesession/libnodesession.so",
+				"fragment" : "../decorator/libdecorator.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "../decorator/libdecorator.so",
+				"fragment" : "../SQLiteCpp/libSQLiteCpp.so.1",
 				"role" : "libraries"
 			},
 			{
@@ -223,28 +206,23 @@
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "../SQLiteCpp/libSQLiteCpp.so.1",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 9,
 				"fragment" : "../SQLiteCpp/sqlite3/libsqlite3.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 10,
+				"backtrace" : 8,
 				"fragment" : "-ldl",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "reactor",
-	"nameOnDisk" : "libreactor.so",
+	"name" : "nodesession",
+	"nameOnDisk" : "libnodesession.so",
 	"paths" : 
 	{
-		"build" : "lib/reactor",
-		"source" : "lib/reactor"
+		"build" : "lib/nodesession",
+		"source" : "lib/nodesession"
 	},
 	"sourceGroups" : 
 	[
@@ -261,14 +239,14 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				10,
 				11,
 				12,
 				13,
@@ -281,7 +259,9 @@
 				20,
 				21,
 				22,
-				23
+				23,
+				24,
+				25
 			]
 		}
 	],
@@ -290,131 +270,142 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/MessageRouter.cpp",
+			"path" : "lib/nodesession/src/Handshaker.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/AcceptorSocket.cpp",
+			"path" : "lib/nodesession/src/MonitoredNode.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/NodeInitializer.cpp",
+			"path" : "lib/nodesession/src/Session.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/Reactor.cpp",
+			"path" : "lib/nodesession/src/CacheAccessor.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/Invoker.cpp",
+			"path" : "lib/nodesession/src/NodeRegistry.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/Demultiplexer.cpp",
+			"path" : "lib/nodesession/src/InitialState.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/AcceptorNode.cpp",
+			"path" : "lib/nodesession/src/ReconnectState.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/EchoRouter.cpp",
+			"path" : "lib/nodesession/src/TerminatedState.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/EPollWaiter.cpp",
+			"path" : "lib/nodesession/src/SessionClient.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lib/reactor/src/TimerHandler.cpp",
+			"path" : "lib/nodesession/src/TimerQueue.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/EventHandler.hpp",
+			"compileGroupIndex" : 0,
+			"path" : "lib/nodesession/src/DatabaseAccessor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/nodesession/include/Handshaker.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/IPoll.hpp",
+			"path" : "lib/nodesession/include/IConnectionHandler.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/IInvoker.hpp",
+			"path" : "lib/nodesession/include/IStateContext.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/NodeInitializer.hpp",
+			"path" : "lib/nodesession/include/MonitoredNode.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/MessageRouter.hpp",
+			"path" : "lib/nodesession/include/SessionBuilder.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/AcceptorSocket.hpp",
+			"path" : "lib/nodesession/include/SessionConfig.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/Reactor.hpp",
+			"path" : "lib/nodesession/include/Session.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/Invoker.hpp",
+			"path" : "lib/nodesession/include/CacheAccessor.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/Demultiplexer.hpp",
+			"path" : "lib/nodesession/include/NodeRegistry.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/AcceptorNode.hpp",
+			"path" : "lib/nodesession/include/InitialState.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/EchoRouter.hpp",
+			"path" : "lib/nodesession/include/ReconnectState.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/IWaiter.hpp",
+			"path" : "lib/nodesession/include/TerminatedState.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/EPollWaiter.hpp",
+			"path" : "lib/nodesession/include/SessionClient.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lib/reactor/include/TimerHandler.hpp",
+			"path" : "lib/nodesession/include/TimerQueue.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/nodesession/include/DatabaseAccessor.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

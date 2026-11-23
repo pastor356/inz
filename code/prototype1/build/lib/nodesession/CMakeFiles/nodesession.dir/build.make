@@ -215,6 +215,20 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/TimerQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nodesession.dir/src/TimerQueue.cpp.s"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/TimerQueue.cpp -o CMakeFiles/nodesession.dir/src/TimerQueue.cpp.s
 
+lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o: lib/nodesession/CMakeFiles/nodesession.dir/flags.make
+lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/DatabaseAccessor.cpp
+lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o: lib/nodesession/CMakeFiles/nodesession.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o -MF CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o.d -o CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o -c /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/DatabaseAccessor.cpp
+
+lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.i"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/DatabaseAccessor.cpp > CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.i
+
+lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.s"
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/DatabaseAccessor.cpp -o CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.s
+
 # Object files for target nodesession
 nodesession_OBJECTS = \
 "CMakeFiles/nodesession.dir/src/Handshaker.cpp.o" \
@@ -226,7 +240,8 @@ nodesession_OBJECTS = \
 "CMakeFiles/nodesession.dir/src/ReconnectState.cpp.o" \
 "CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o" \
 "CMakeFiles/nodesession.dir/src/SessionClient.cpp.o" \
-"CMakeFiles/nodesession.dir/src/TimerQueue.cpp.o"
+"CMakeFiles/nodesession.dir/src/TimerQueue.cpp.o" \
+"CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o"
 
 # External object files for target nodesession
 nodesession_EXTERNAL_OBJECTS =
@@ -241,6 +256,7 @@ lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/sr
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/src/TerminatedState.cpp.o
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/src/SessionClient.cpp.o
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/src/TimerQueue.cpp.o
+lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/build.make
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/compiler_depend.ts
 lib/nodesession/libnodesession.so: lib/decorator/libdecorator.so
@@ -249,7 +265,7 @@ lib/nodesession/libnodesession.so: lib/networking/libnetworking.so
 lib/nodesession/libnodesession.so: lib/common/libcommon.so
 lib/nodesession/libnodesession.so: lib/SQLiteCpp/sqlite3/libsqlite3.so
 lib/nodesession/libnodesession.so: lib/nodesession/CMakeFiles/nodesession.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libnodesession.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libnodesession.so"
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/lib/nodesession && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nodesession.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

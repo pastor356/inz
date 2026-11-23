@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nodesession.dir/link.d"
   "CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o"
   "CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o.d"
+  "CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o"
+  "CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o.d"
   "CMakeFiles/nodesession.dir/src/Handshaker.cpp.o"
   "CMakeFiles/nodesession.dir/src/Handshaker.cpp.o.d"
   "CMakeFiles/nodesession.dir/src/InitialState.cpp.o"

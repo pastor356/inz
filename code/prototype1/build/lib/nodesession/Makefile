@@ -202,6 +202,30 @@ src/CacheAccessor.cpp.s:
 	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.s
 .PHONY : src/CacheAccessor.cpp.s
 
+src/DatabaseAccessor.o: src/DatabaseAccessor.cpp.o
+.PHONY : src/DatabaseAccessor.o
+
+# target to build an object file
+src/DatabaseAccessor.cpp.o:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o
+.PHONY : src/DatabaseAccessor.cpp.o
+
+src/DatabaseAccessor.i: src/DatabaseAccessor.cpp.i
+.PHONY : src/DatabaseAccessor.i
+
+# target to preprocess a source file
+src/DatabaseAccessor.cpp.i:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.i
+.PHONY : src/DatabaseAccessor.cpp.i
+
+src/DatabaseAccessor.s: src/DatabaseAccessor.cpp.s
+.PHONY : src/DatabaseAccessor.s
+
+# target to generate assembly for a file
+src/DatabaseAccessor.cpp.s:
+	cd /home/pastor/Public/books/VI_sem/inz/code/prototype1/build && $(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.s
+.PHONY : src/DatabaseAccessor.cpp.s
+
 src/Handshaker.o: src/Handshaker.cpp.o
 .PHONY : src/Handshaker.o
 
@@ -434,6 +458,9 @@ help:
 	@echo "... src/CacheAccessor.o"
 	@echo "... src/CacheAccessor.i"
 	@echo "... src/CacheAccessor.s"
+	@echo "... src/DatabaseAccessor.o"
+	@echo "... src/DatabaseAccessor.i"
+	@echo "... src/DatabaseAccessor.s"
 	@echo "... src/Handshaker.o"
 	@echo "... src/Handshaker.i"
 	@echo "... src/Handshaker.s"

@@ -263,4 +263,24 @@ lib/cons_app/CMakeFiles/consApp.dir/src/main.cpp.o: \
  /usr/include/bits/types/stack_t.h /usr/include/sys/ucontext.h \
  /usr/include/bits/sigstack.h /usr/include/bits/sigstksz.h \
  /usr/include/bits/ss_flags.h /usr/include/bits/types/struct_sigstack.h \
- /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h
+ /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_tree.h \
+ /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h /usr/include/sys/timerfd.h \
+ /usr/include/bits/timerfd.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/ISocket.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
+ /usr/include/c++/15/set /usr/include/c++/15/bits/stl_set.h \
+ /usr/include/c++/15/bits/stl_multiset.h \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpSocket.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCaller.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpConnection.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/TcpCallee.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Serializer.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionClient.hpp \
+ /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp

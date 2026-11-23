@@ -14,15 +14,15 @@ IConnectionHandler* MonitoredNode::getHandler() const {
 
 MonitoredNode::MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
 		std::shared_ptr<IDataAccessor> storage, std::shared_ptr<NodeRegistry> registry):
-	connection{initial}, storage{storage}, registry{registry}, oldConn{nullptr} {}
+	connection{initial}, oldConn{nullptr}, storage{storage}, registry{registry} {}
 
 
 MonitoredNode::MonitoredNode(std::shared_ptr<IConnectionHandler> initial,
 		std::shared_ptr<IDataAccessor> storage, 
 		std::shared_ptr<NodeRegistry> registry,
 		std::shared_ptr<TimerQueue> timer): 
-	connection{initial}, storage{storage}, registry{registry}, 
-	oldConn{nullptr}, timer{timer} {}
+	connection{initial}, oldConn{nullptr}, storage{storage}, registry{registry}, 
+	timer{timer} {}
 
 
 void MonitoredNode::changeStateHandshake(std::unique_ptr<IConnection> conn,

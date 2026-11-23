@@ -36,6 +36,7 @@ set(HEADERS
 	TerminatedState.hpp
 	SessionClient.hpp
 	TimerQueue.hpp
+	DatabaseAccessor.hpp
 )
 
 set(SOURCES
@@ -50,6 +51,7 @@ set(SOURCES
 	TerminatedState.cpp
 	SessionClient.cpp
 	TimerQueue.cpp
+	DatabaseAccessor.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${INCLUDEDIR})

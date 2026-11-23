@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "prototype1"
+			"path" : "test/tests"
 		}
 	],
 	"backtrace" : 1,
@@ -11,11 +11,12 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt",
+			"test/CMakeLists.txt",
 			"lib/nodesession/CMakeLists.txt",
 			"lib/SQLiteCpp/CMakeLists.txt",
 			"build/_deps/googletest-src/googletest/CMakeLists.txt"
@@ -28,13 +29,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 42,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 46,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
@@ -43,7 +44,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 65,
+				"line" : 67,
 				"parent" : 3
 			},
 			{
@@ -69,6 +70,12 @@
 				"file" : 3,
 				"line" : 161,
 				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
 			}
 		]
 	},
@@ -78,7 +85,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "    -O0    -Wall    -Wextra    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs\t-g -O2 -g -DNDEBUG -std=c++17"
+					"fragment" : "    -O0    -Wall    -Wextra    -Wunused    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs\t-g -O2 -g -DNDEBUG -std=c++17"
 				}
 			],
 			"defines" : 
@@ -90,6 +97,10 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 10,
+					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/test/mocks"
+				},
 				{
 					"backtrace" : 2,
 					"path" : "/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include"
@@ -151,7 +162,15 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
 			]
 		}
 	],
@@ -198,13 +217,13 @@
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "prototype1::@6890427a1f51a3e7e1df",
+	"id" : "tests::@36f028580bb02cc8272a",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O0    -Wall    -Wextra    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs\t-g -O2 -g -DNDEBUG",
+				"fragment" : "-O0    -Wall    -Wextra    -Wunused    -Wno-error=maybe-uninitialized    -Wcast-align    -Winvalid-pch    -Wmissing-include-dirs\t-g -O2 -g -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -217,47 +236,47 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/reactor/libreactor.so",
+				"fragment" : "../lib/reactor/libreactor.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/libgtest_main.so.1.12.1",
+				"fragment" : "../lib/libgtest_main.so.1.12.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/libgmock.so.1.12.1",
+				"fragment" : "../lib/libgmock.so.1.12.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/nodesession/libnodesession.so",
+				"fragment" : "../lib/nodesession/libnodesession.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/decorator/libdecorator.so",
+				"fragment" : "../lib/decorator/libdecorator.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/networking/libnetworking.so",
+				"fragment" : "../lib/networking/libnetworking.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/common/libcommon.so",
+				"fragment" : "../lib/common/libcommon.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "lib/SQLiteCpp/libSQLiteCpp.so.1",
+				"fragment" : "../lib/SQLiteCpp/libSQLiteCpp.so.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "lib/SQLiteCpp/sqlite3/libsqlite3.so",
+				"fragment" : "../lib/SQLiteCpp/sqlite3/libsqlite3.so",
 				"role" : "libraries"
 			},
 			{
@@ -267,18 +286,18 @@
 			},
 			{
 				"backtrace" : 9,
-				"fragment" : "lib/libgtest.so.1.12.1",
+				"fragment" : "../lib/libgtest.so.1.12.1",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "prototype1",
-	"nameOnDisk" : "prototype1",
+	"name" : "tests",
+	"nameOnDisk" : "tests",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "test",
+		"source" : "test"
 	},
 	"sourceGroups" : 
 	[
@@ -286,7 +305,30 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17
 			]
 		}
 	],
@@ -295,8 +337,101 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "test/utest/maintest_gtest.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/decorator_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/resolver_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/test_network.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/first_mock.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/QosMockTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/session_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/integrationQosSessionTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test/utest/reactor_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/SocketMock.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/ConnectionMock.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/QosMock.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/ContextMock.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/SessionFixture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/PollMock.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/ReactorNewFixture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/ReactorFixture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "test/mocks/WaiterMock.hpp",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

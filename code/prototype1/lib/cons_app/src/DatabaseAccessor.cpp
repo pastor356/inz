@@ -4,6 +4,7 @@
 DatabaseAccessor::DatabaseAccessor(std::unique_ptr<influxdb::InfluxDB> conn):
 	connection{std::move(conn)} {}
 
+
 DatabaseAccessor::DatabaseAccessor(std::string const& url) {
 	using namespace influxdb;
 	connection = InfluxDBFactory::Get(url);

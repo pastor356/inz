@@ -3,6 +3,7 @@
 IDataAccessor::AccessorStatus CacheAccessor::authorize(UserAuth const& auth) const {
 	const char* methodName = "CacheAcceptor::authorize(UserAuth const&)";
 	auto entity = storage.find(auth.login);
+	(void) methodName;
 
 	if(entity == storage.end()) {
 		return(IDataAccessor::AccessorStatus::USER_NOT_FOUND);

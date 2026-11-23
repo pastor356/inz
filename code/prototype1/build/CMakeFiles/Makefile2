@@ -448,12 +448,12 @@ CMakeFiles/prototype1.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtes
 CMakeFiles/prototype1.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype1.dir/build.make CMakeFiles/prototype1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype1.dir/build.make CMakeFiles/prototype1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=67,68 "Built target prototype1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=68,69 "Built target prototype1"
 .PHONY : CMakeFiles/prototype1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/prototype1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/prototype1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : CMakeFiles/prototype1.dir/rule
@@ -465,7 +465,7 @@ prototype1: CMakeFiles/prototype1.dir/rule
 # codegen rule for target.
 CMakeFiles/prototype1.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype1.dir/build.make CMakeFiles/prototype1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=67,68 "Finished codegen for target prototype1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=68,69 "Finished codegen for target prototype1"
 .PHONY : CMakeFiles/prototype1.dir/codegen
 
 # clean rule for target.
@@ -494,7 +494,7 @@ CMakeFiles/client.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_ma
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
@@ -622,12 +622,12 @@ lib/nodesession/CMakeFiles/nodesession.dir/all: lib/SQLiteCpp/CMakeFiles/SQLiteC
 lib/nodesession/CMakeFiles/nodesession.dir/all: lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65,66 "Built target nodesession"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65,66,67 "Built target nodesession"
 .PHONY : lib/nodesession/CMakeFiles/nodesession.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nodesession/CMakeFiles/nodesession.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nodesession/CMakeFiles/nodesession.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : lib/nodesession/CMakeFiles/nodesession.dir/rule
@@ -639,7 +639,7 @@ nodesession: lib/nodesession/CMakeFiles/nodesession.dir/rule
 # codegen rule for target.
 lib/nodesession/CMakeFiles/nodesession.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nodesession/CMakeFiles/nodesession.dir/build.make lib/nodesession/CMakeFiles/nodesession.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65,66 "Finished codegen for target nodesession"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65,66,67 "Finished codegen for target nodesession"
 .PHONY : lib/nodesession/CMakeFiles/nodesession.dir/codegen
 
 # clean rule for target.
@@ -659,12 +659,12 @@ lib/reactor/CMakeFiles/reactor.dir/all: lib/SQLiteCpp/CMakeFiles/SQLiteCpp.dir/a
 lib/reactor/CMakeFiles/reactor.dir/all: lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=69,70,71,72,73,74,75,76,77,78,79 "Built target reactor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80 "Built target reactor"
 .PHONY : lib/reactor/CMakeFiles/reactor.dir/all
 
 # Build rule for subdir invocation for target.
 lib/reactor/CMakeFiles/reactor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/reactor/CMakeFiles/reactor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : lib/reactor/CMakeFiles/reactor.dir/rule
@@ -676,7 +676,7 @@ reactor: lib/reactor/CMakeFiles/reactor.dir/rule
 # codegen rule for target.
 lib/reactor/CMakeFiles/reactor.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/reactor/CMakeFiles/reactor.dir/build.make lib/reactor/CMakeFiles/reactor.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=69,70,71,72,73,74,75,76,77,78,79 "Finished codegen for target reactor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80 "Finished codegen for target reactor"
 .PHONY : lib/reactor/CMakeFiles/reactor.dir/codegen
 
 # clean rule for target.
@@ -702,7 +702,7 @@ lib/cons_app/CMakeFiles/cons_app.dir/all: lib/SQLiteCpp/sqlite3/CMakeFiles/sqlit
 
 # Build rule for subdir invocation for target.
 lib/cons_app/CMakeFiles/cons_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cons_app/CMakeFiles/cons_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : lib/cons_app/CMakeFiles/cons_app.dir/rule
@@ -741,7 +741,7 @@ lib/cons_app/CMakeFiles/consApp.dir/all: lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite
 
 # Build rule for subdir invocation for target.
 lib/cons_app/CMakeFiles/consApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 64
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 65
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cons_app/CMakeFiles/consApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : lib/cons_app/CMakeFiles/consApp.dir/rule
@@ -962,7 +962,7 @@ lib/SQLiteCpp/CMakeFiles/SQLiteCpp_cppcheck.dir/clean:
 lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/build.make lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/build.make lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=80,81 "Built target sqlite3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=81,82 "Built target sqlite3"
 .PHONY : lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -979,7 +979,7 @@ sqlite3: lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/rule
 # codegen rule for target.
 lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/build.make lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=80,81 "Finished codegen for target sqlite3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=81,82 "Finished codegen for target sqlite3"
 .PHONY : lib/SQLiteCpp/sqlite3/CMakeFiles/sqlite3.dir/codegen
 
 # clean rule for target.
@@ -1003,12 +1003,12 @@ test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtes
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90,91 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91,92 "Built target tests"
 .PHONY : test/CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 62
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/tests.dir/rule
@@ -1020,7 +1020,7 @@ tests: test/CMakeFiles/tests.dir/rule
 # codegen rule for target.
 test/CMakeFiles/tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90,91 "Finished codegen for target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pastor/Public/books/VI_sem/inz/code/prototype1/build/CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91,92 "Finished codegen for target tests"
 .PHONY : test/CMakeFiles/tests.dir/codegen
 
 # clean rule for target.

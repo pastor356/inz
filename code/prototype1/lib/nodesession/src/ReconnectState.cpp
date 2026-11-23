@@ -5,18 +5,16 @@ ReconnectState::ReconnectState(std::unique_ptr<IConnection> conn,
 			std::shared_ptr<IStateContext> ctx,
 			std::shared_ptr<NodeRegistry> reg, 
 			std::shared_ptr<IDataAccessor> stor):
-	connection{std::move(conn)}, registry{reg}, storage{stor}, context{ctx} {}
+	connection{std::move(conn)}, context{ctx}, registry{reg}, storage{stor} {}
 
 ReconnectState::ReconnectState(std::unique_ptr<IConnection> conn, 
 		std::shared_ptr<IStateContext> ctx,
 		std::shared_ptr<NodeRegistry> reg, 
 		std::shared_ptr<IDataAccessor> stor,
 		std::shared_ptr<TimerQueue> timer):
-connection{std::move(conn)}, registry{reg}, storage{stor}, context{ctx}, timer{timer} {}
+connection{std::move(conn)}, context{ctx}, registry{reg}, storage{stor}, timer{timer} {}
 
 
-
-	
 IConnection::Status ReconnectState::recv(Packet& packet, int flag) {
 	auto status = connection->recv(packet, flag);
 

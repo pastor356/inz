@@ -64,6 +64,8 @@ MessageRouter::DataHeader MessageRouter::parseMsg(Packet const& packet) const {
 	return(res);
 }
 
+
+
 void MessageRouter::trimDataHeader(Packet& packet) {
 	if(packet.header.size() < TOPICDATA_HEADERLEN) return;
 

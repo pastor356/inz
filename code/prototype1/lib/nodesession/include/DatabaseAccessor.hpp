@@ -1,24 +1,32 @@
 #pragma once
+#include <vector>
 #include "IDataAccessor.hpp"
 #include "SQLiteCpp/SQLiteCpp.h"
 #include "SQLiteCpp/Database.h"
 #include "SQLiteCpp/Statement.h"
 
 /*
-   CREATE TABLE usr_auth(
-	   login TEXT NOT NULL, 
-	   password TEXT NOT NULL, 
-	   secret TEXT NOT NULL, 
-	   rights INTEGER CHECK (rights > 0 AND rights < 4), 
-	   sessionId INTEGER CHECK (sessionId > 0), 
-	   topic TEXT, 
-	   sessActive INTEGER);
-*/
 
+sqlite> .schema topics
+CREATE TABLE topics (
+	topic TEXT NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE usr(
+	login TEXT NOT NULL PRIMARY KEY,
+	password TEXT NOT NULL,
+	secret TEXT NOT NULL,
+	topic TEXT REFERENCES topics(topic)
+);
+*/
 
 class DatabaseAccessor: public IDataAccessor {
 	mutable SQLite::Database dbase;
-	mutable SQLite::Statement query; // ?
+
+	mutable SQLite::Statement authorizeQuery; 
+	mutable SQLite::Statement createUserQuery;
+	mutable SQLite::Statement getTopicsQuery;
+	mutable SQLite::Statement addTopicQuery;
 
 	enum class DataPos: size_t {
 		LOGIN = 0,
@@ -28,6 +36,8 @@ class DatabaseAccessor: public IDataAccessor {
 		SESSIONID = 4,
 		TOPIC = 5
 	};
+
+	SQLite::Database openAndInit(const std::string& path);
 
 public:
 	DatabaseAccessor(std::string const& dbFilename);
@@ -40,6 +50,3 @@ public:
 
 	~DatabaseAccessor();
 };
-
-
-

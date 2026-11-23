@@ -226,6 +226,290 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/CacheAccessor.cpp.o: /home/pastor
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
 
+lib/nodesession/CMakeFiles/nodesession.dir/src/DatabaseAccessor.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/DatabaseAccessor.cpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Assertion.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Column.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Database.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Exception.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/SQLiteCpp.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/SQLiteCppExport.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Statement.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Transaction.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Utils.h \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/DatabaseAccessor.hpp \
+  /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IDataAccessor.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm/bitsperlong.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm/posix_types.h \
+  /usr/include/asm/posix_types_64.h \
+  /usr/include/asm/types.h \
+  /usr/include/assert.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/15/backward/auto_ptr.h \
+  /usr/include/c++/15/backward/binders.h \
+  /usr/include/c++/15/bit \
+  /usr/include/c++/15/bits/align.h \
+  /usr/include/c++/15/bits/alloc_traits.h \
+  /usr/include/c++/15/bits/allocated_ptr.h \
+  /usr/include/c++/15/bits/allocator.h \
+  /usr/include/c++/15/bits/atomic_base.h \
+  /usr/include/c++/15/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/15/bits/basic_ios.h \
+  /usr/include/c++/15/bits/basic_ios.tcc \
+  /usr/include/c++/15/bits/basic_string.h \
+  /usr/include/c++/15/bits/basic_string.tcc \
+  /usr/include/c++/15/bits/char_traits.h \
+  /usr/include/c++/15/bits/charconv.h \
+  /usr/include/c++/15/bits/chrono.h \
+  /usr/include/c++/15/bits/codecvt.h \
+  /usr/include/c++/15/bits/concept_check.h \
+  /usr/include/c++/15/bits/cpp_type_traits.h \
+  /usr/include/c++/15/bits/cxxabi_forced.h \
+  /usr/include/c++/15/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15/bits/enable_special_members.h \
+  /usr/include/c++/15/bits/erase_if.h \
+  /usr/include/c++/15/bits/exception.h \
+  /usr/include/c++/15/bits/exception_defines.h \
+  /usr/include/c++/15/bits/exception_ptr.h \
+  /usr/include/c++/15/bits/fs_dir.h \
+  /usr/include/c++/15/bits/fs_fwd.h \
+  /usr/include/c++/15/bits/fs_ops.h \
+  /usr/include/c++/15/bits/fs_path.h \
+  /usr/include/c++/15/bits/functexcept.h \
+  /usr/include/c++/15/bits/functional_hash.h \
+  /usr/include/c++/15/bits/hash_bytes.h \
+  /usr/include/c++/15/bits/hashtable.h \
+  /usr/include/c++/15/bits/hashtable_policy.h \
+  /usr/include/c++/15/bits/invoke.h \
+  /usr/include/c++/15/bits/ios_base.h \
+  /usr/include/c++/15/bits/istream.tcc \
+  /usr/include/c++/15/bits/locale_classes.h \
+  /usr/include/c++/15/bits/locale_classes.tcc \
+  /usr/include/c++/15/bits/locale_conv.h \
+  /usr/include/c++/15/bits/locale_facets.h \
+  /usr/include/c++/15/bits/locale_facets.tcc \
+  /usr/include/c++/15/bits/locale_facets_nonio.h \
+  /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/15/bits/localefwd.h \
+  /usr/include/c++/15/bits/memory_resource.h \
+  /usr/include/c++/15/bits/memoryfwd.h \
+  /usr/include/c++/15/bits/move.h \
+  /usr/include/c++/15/bits/nested_exception.h \
+  /usr/include/c++/15/bits/new_allocator.h \
+  /usr/include/c++/15/bits/node_handle.h \
+  /usr/include/c++/15/bits/ostream.h \
+  /usr/include/c++/15/bits/ostream.tcc \
+  /usr/include/c++/15/bits/ostream_insert.h \
+  /usr/include/c++/15/bits/parse_numbers.h \
+  /usr/include/c++/15/bits/postypes.h \
+  /usr/include/c++/15/bits/predefined_ops.h \
+  /usr/include/c++/15/bits/ptr_traits.h \
+  /usr/include/c++/15/bits/quoted_string.h \
+  /usr/include/c++/15/bits/range_access.h \
+  /usr/include/c++/15/bits/refwrap.h \
+  /usr/include/c++/15/bits/requires_hosted.h \
+  /usr/include/c++/15/bits/shared_ptr.h \
+  /usr/include/c++/15/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15/bits/shared_ptr_base.h \
+  /usr/include/c++/15/bits/sstream.tcc \
+  /usr/include/c++/15/bits/std_abs.h \
+  /usr/include/c++/15/bits/stl_algobase.h \
+  /usr/include/c++/15/bits/stl_construct.h \
+  /usr/include/c++/15/bits/stl_function.h \
+  /usr/include/c++/15/bits/stl_iterator.h \
+  /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/15/bits/stl_iterator_base_types.h \
+  /usr/include/c++/15/bits/stl_map.h \
+  /usr/include/c++/15/bits/stl_multimap.h \
+  /usr/include/c++/15/bits/stl_multiset.h \
+  /usr/include/c++/15/bits/stl_pair.h \
+  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15/bits/stl_relops.h \
+  /usr/include/c++/15/bits/stl_set.h \
+  /usr/include/c++/15/bits/stl_tempbuf.h \
+  /usr/include/c++/15/bits/stl_tree.h \
+  /usr/include/c++/15/bits/stl_uninitialized.h \
+  /usr/include/c++/15/bits/stream_iterator.h \
+  /usr/include/c++/15/bits/streambuf.tcc \
+  /usr/include/c++/15/bits/streambuf_iterator.h \
+  /usr/include/c++/15/bits/string_view.tcc \
+  /usr/include/c++/15/bits/stringfwd.h \
+  /usr/include/c++/15/bits/unique_ptr.h \
+  /usr/include/c++/15/bits/unordered_map.h \
+  /usr/include/c++/15/bits/uses_allocator.h \
+  /usr/include/c++/15/bits/uses_allocator_args.h \
+  /usr/include/c++/15/bits/utility.h \
+  /usr/include/c++/15/bits/version.h \
+  /usr/include/c++/15/cassert \
+  /usr/include/c++/15/cctype \
+  /usr/include/c++/15/cerrno \
+  /usr/include/c++/15/clocale \
+  /usr/include/c++/15/codecvt \
+  /usr/include/c++/15/concepts \
+  /usr/include/c++/15/cstddef \
+  /usr/include/c++/15/cstdint \
+  /usr/include/c++/15/cstdio \
+  /usr/include/c++/15/cstdlib \
+  /usr/include/c++/15/ctime \
+  /usr/include/c++/15/cwchar \
+  /usr/include/c++/15/cwctype \
+  /usr/include/c++/15/debug/assertions.h \
+  /usr/include/c++/15/debug/debug.h \
+  /usr/include/c++/15/exception \
+  /usr/include/c++/15/ext/aligned_buffer.h \
+  /usr/include/c++/15/ext/alloc_traits.h \
+  /usr/include/c++/15/ext/atomicity.h \
+  /usr/include/c++/15/ext/concurrence.h \
+  /usr/include/c++/15/ext/numeric_traits.h \
+  /usr/include/c++/15/ext/string_conversions.h \
+  /usr/include/c++/15/ext/type_traits.h \
+  /usr/include/c++/15/filesystem \
+  /usr/include/c++/15/initializer_list \
+  /usr/include/c++/15/iomanip \
+  /usr/include/c++/15/ios \
+  /usr/include/c++/15/iosfwd \
+  /usr/include/c++/15/iostream \
+  /usr/include/c++/15/istream \
+  /usr/include/c++/15/iterator \
+  /usr/include/c++/15/limits \
+  /usr/include/c++/15/locale \
+  /usr/include/c++/15/map \
+  /usr/include/c++/15/memory \
+  /usr/include/c++/15/new \
+  /usr/include/c++/15/ostream \
+  /usr/include/c++/15/pstl/execution_defs.h \
+  /usr/include/c++/15/pstl/glue_memory_defs.h \
+  /usr/include/c++/15/pstl/pstl_config.h \
+  /usr/include/c++/15/ratio \
+  /usr/include/c++/15/set \
+  /usr/include/c++/15/sstream \
+  /usr/include/c++/15/stdexcept \
+  /usr/include/c++/15/streambuf \
+  /usr/include/c++/15/string \
+  /usr/include/c++/15/string_view \
+  /usr/include/c++/15/system_error \
+  /usr/include/c++/15/tuple \
+  /usr/include/c++/15/type_traits \
+  /usr/include/c++/15/typeinfo \
+  /usr/include/c++/15/unordered_map \
+  /usr/include/c++/15/utility \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
+  /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/types.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
+  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
+  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
+
 lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o: /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/Handshaker.cpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp \
   /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ILogger.hpp \
@@ -3051,10 +3335,6 @@ lib/SQLiteCpp/libSQLiteCpp.so.1:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/NodeRegistry.cpp:
 
-/usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp:
-
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/MonitoredNode.hpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/MonitoredNode.cpp:
@@ -3073,53 +3353,17 @@ lib/SQLiteCpp/libSQLiteCpp.so.1:
 
 /usr/include/c++/15/vector:
 
-/usr/include/c++/15/pstl/glue_memory_defs.h:
-
-/usr/include/c++/15/pstl/execution_defs.h:
-
-/usr/include/c++/15/memory:
-
-/usr/include/c++/15/map:
-
-/usr/include/c++/15/limits:
-
 /usr/include/c++/15/functional:
 
 /usr/include/c++/15/deque:
-
-/usr/include/c++/15/ctime:
 
 /usr/include/c++/15/cstring:
 
 /usr/include/c++/15/bits/unique_lock.h:
 
-/usr/include/c++/15/bits/stl_raw_storage_iter.h:
-
 /usr/include/c++/15/bits/stl_deque.h:
 
 /usr/include/c++/15/bits/std_mutex.h:
-
-/usr/include/c++/15/bits/stl_uninitialized.h:
-
-/usr/include/c++/15/bits/stl_multimap.h:
-
-/usr/include/c++/15/bits/shared_ptr_base.h:
-
-/usr/include/c++/15/bits/shared_ptr_atomic.h:
-
-/usr/include/netdb.h:
-
-/usr/include/c++/15/bits/parse_numbers.h:
-
-/usr/include/c++/15/bits/stl_tempbuf.h:
-
-/usr/include/c++/15/bits/deque.tcc:
-
-/usr/include/c++/15/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/15/bits/atomic_base.h:
-
-/usr/include/c++/15/bits/align.h:
 
 /usr/include/c++/15/array:
 
@@ -3131,15 +3375,107 @@ lib/SQLiteCpp/libSQLiteCpp.so.1:
 
 /usr/include/bits/types/sigevent_t.h:
 
+/usr/include/bits/sockaddr.h:
+
+lib/nodesession/CMakeFiles/nodesession.dir/src/InitialState.cpp.o:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/TerminatedState.cpp:
+
+/usr/include/bits/posix_opt.h:
+
+/lib64/libgcc_s.so.1:
+
+/usr/include/bits/netdb.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/arpa/inet.h:
+
+lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp:
+
+/lib64/libc.so.6:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp:
+
+/usr/include/bits/socket_type.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/crtendS.o:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TerminatedState.hpp:
+
+/usr/include/c++/15/utility:
+
+/usr/include/c++/15/pstl/glue_memory_defs.h:
+
+/usr/include/c++/15/pstl/execution_defs.h:
+
+/usr/include/c++/15/memory:
+
+/usr/include/c++/15/map:
+
+/usr/include/asm/socket.h:
+
+/usr/include/c++/15/locale:
+
+/usr/include/c++/15/limits:
+
+/usr/include/c++/15/iterator:
+
+/usr/include/c++/15/ctime:
+
+/usr/include/c++/15/codecvt:
+
+/usr/include/c++/15/cassert:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/c++/15/bits/unique_ptr.h:
+
+/usr/include/c++/15/bits/deque.tcc:
+
+/usr/include/c++/15/bits/stl_tempbuf.h:
+
+/usr/include/c++/15/bits/stl_raw_storage_iter.h:
+
 /usr/include/c++/15/bits/postypes.h:
 
 /usr/include/c++/15/bits/ostream.tcc:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp:
+
+/usr/include/c++/15/bits/move.h:
 
 /usr/include/bits/stdint-least.h:
 
 /usr/include/c++/15/bits/memoryfwd.h:
 
 /usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
 /usr/include/bits/types/struct_timespec.h:
 
@@ -3151,9 +3487,7 @@ lib/SQLiteCpp/libSQLiteCpp.so.1:
 
 /usr/include/ctype.h:
 
-/usr/include/c++/15/bits/move.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ITimerQueue.hpp:
+/usr/include/c++/15/bits/locale_conv.h:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionClient.hpp:
 
@@ -3167,13 +3501,9 @@ lib/decorator/libdecorator.so:
 
 /usr/include/bits/types/locale_t.h:
 
-/usr/include/c++/15/bits/allocated_ptr.h:
-
-/usr/include/c++/15/bits/istream.tcc:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/IQualityStrategy.hpp:
-
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/Handshaker.cpp:
+
+/usr/include/c++/15/filesystem:
 
 /usr/include/c++/15/bits/requires_hosted.h:
 
@@ -3193,23 +3523,23 @@ lib/decorator/libdecorator.so:
 
 /usr/include/c++/15/bits/alloc_traits.h:
 
-/usr/include/arpa/inet.h:
-
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
 /usr/include/bits/types/struct_sched_param.h:
 
 /usr/include/c++/15/bits/basic_string.h:
 
+/usr/include/bits/socket.h:
+
+/usr/include/c++/15/streambuf:
+
 /usr/include/c++/15/bits/basic_ios.tcc:
 
 /usr/include/pthread.h:
 
-/usr/include/c++/15/backward/auto_ptr.h:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp:
 
-/usr/include/c++/15/bits/exception_defines.h:
-
-/usr/include/bits/types/timer_t.h:
+/usr/include/c++/15/bits/concept_check.h:
 
 /usr/include/c++/15/bits/version.h:
 
@@ -3225,8 +3555,6 @@ lib/decorator/libdecorator.so:
 
 /usr/include/sys/types.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/Resolver.hpp:
-
 /usr/include/bits/timesize.h:
 
 /usr/include/c++/15/bits/locale_facets.h:
@@ -3241,17 +3569,19 @@ lib/decorator/libdecorator.so:
 
 /usr/include/bits/types/sigset_t.h:
 
-/usr/include/c++/15/bits/unique_ptr.h:
-
-/usr/include/asm-generic/sockios.h:
-
 /usr/include/c++/15/bits/node_handle.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp:
+
+/usr/include/c++/15/bits/fs_ops.h:
+
 /usr/lib64/crtn.o:
 
 /usr/include/c++/15/bits/ios_base.h:
+
+/usr/include/c++/15/sstream:
 
 /usr/include/wchar.h:
 
@@ -3270,8 +3600,6 @@ lib/decorator/libdecorator.so:
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/typesizes.h:
 
 /usr/include/bits/struct_mutex.h:
 
@@ -3297,9 +3625,11 @@ lib/decorator/libdecorator.so:
 
 /usr/include/bits/stdio_lim.h:
 
+/usr/include/c++/15/bits/stream_iterator.h:
+
 /usr/include/bits/types/__mbstate_t.h:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h:
+/usr/include/c++/15/iomanip:
 
 /usr/include/asm/posix_types_64.h:
 
@@ -3319,6 +3649,8 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/ConsoleLogger.hpp:
 
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/DatabaseAccessor.hpp:
+
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/CacheAccessor.cpp:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/ConnectionDecorator.hpp:
@@ -3335,11 +3667,11 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/bits/types/__fpos_t.h:
-
 /usr/include/c++/15/bits/charconv.h:
 
 /usr/include/bits/types/clock_t.h:
+
+/usr/include/libintl.h:
 
 /usr/include/bits/endianness.h:
 
@@ -3367,6 +3699,10 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
 /usr/include/bits/types/__sigset_t.h:
 
+/usr/include/bits/typesizes.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Column.h:
+
 /usr/include/c++/15/bit:
 
 /usr/include/c++/15/bits/allocator.h:
@@ -3387,19 +3723,27 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
 /usr/include/gnu/stubs.h:
 
+/usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Transaction.h:
+
 /usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/select.h:
+
+/usr/include/bits/timerfd.h:
+
+/usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/c++/15/bits/ostream_insert.h:
 
 /usr/include/bits/types/error_t.h:
 
-/usr/include/c++/15/bits/utility.h:
-
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/bits/stdio.h:
+
+/usr/include/c++/15/bits/atomic_base.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
@@ -3414,6 +3758,10 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 /usr/include/c++/15/bits/hashtable.h:
 
 /usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Assertion.h:
 
 /usr/include/bits/stdint-uintn.h:
 
@@ -3437,12 +3785,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Session.cpp.o:
 
 /usr/include/bits/atomic_wide_counter.h:
 
-lib/nodesession/CMakeFiles/nodesession.dir/src/InitialState.cpp.o:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/TerminatedState.cpp:
-
-/usr/include/bits/posix_opt.h:
-
 /usr/include/c++/15/bits/basic_string.tcc:
 
 /usr/include/c++/15/bits/streambuf.tcc:
@@ -3457,6 +3799,8 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/c++/15/typeinfo:
 
+/usr/include/c++/15/bits/stl_relops.h:
+
 /usr/include/c++/15/bits/stl_algobase.h:
 
 /usr/include/c++/15/clocale:
@@ -3464,8 +3808,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 /usr/include/c++/15/bits/ptr_traits.h:
 
 /usr/include/c++/15/bits/stl_construct.h:
-
-/usr/include/c++/15/bits/stl_function.h:
 
 /usr/include/c++/15/cwchar:
 
@@ -3479,13 +3821,13 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/c++/15/bits/stl_pair.h:
 
+/usr/include/bits/environments.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15/cctype:
+
 /usr/include/c++/15/bits/stl_set.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/NodeRegistry.hpp:
-
-/lib64/libgcc_s.so.1:
-
-/usr/include/bits/netdb.h:
 
 /usr/include/bits/waitstatus.h:
 
@@ -3496,10 +3838,6 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/c++/15/bits/stl_tree.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/bits/timerfd.h:
 
 /usr/include/bits/types/struct_tm.h:
 
@@ -3513,19 +3851,23 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/c++/15/bits/stringfwd.h:
 
+/usr/include/c++/15/bits/fs_path.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp:
+
+/usr/include/c++/15/bits/shared_ptr.h:
+
 /usr/include/c++/15/bits/uses_allocator_args.h:
 
 /usr/include/netinet/in.h:
 
 /usr/include/c++/15/cerrno:
 
-/usr/include/c++/15/bits/shared_ptr.h:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Session.hpp:
-
 /usr/include/c++/15/concepts:
 
 /usr/include/c++/15/cstdint:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/SQLiteCppExport.h:
 
 /usr/include/c++/15/cstdio:
 
@@ -3533,9 +3875,13 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/c++/15/cwctype:
 
+/usr/include/bits/getopt_core.h:
+
+/usr/include/c++/15/debug/debug.h:
+
 /usr/include/c++/15/exception:
 
-/usr/include/bits/sockaddr.h:
+/usr/include/c++/15/bits/locale_facets_nonio.h:
 
 /usr/include/c++/15/ext/aligned_buffer.h:
 
@@ -3543,9 +3889,17 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/linux/types.h:
 
+/usr/include/c++/15/bits/utility.h:
+
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Database.h:
+
 /usr/lib64/libc_nonshared.a:
 
 /usr/include/c++/15/ext/numeric_traits.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/c++/15/bits/quoted_string.h:
 
 /usr/include/c++/15/bits/hashtable_policy.h:
 
@@ -3595,27 +3949,15 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/NodeRegistry.cpp.o:
 
 /usr/include/c++/15/tuple:
 
-lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/SessionConfig.hpp:
-
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/TimerQueue.hpp:
-
 /usr/include/c++/15/chrono:
 
 /home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/networking/include/IConnection.hpp:
 
 /usr/include/c++/15/unordered_map:
 
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Utils.h:
+
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h:
-
-/usr/include/c++/15/bits/std_function.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h:
-
-/usr/include/c++/15/bits/chrono.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
 
 /usr/include/c++/15/debug/assertions.h:
 
@@ -3625,7 +3967,9 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/MonitoredNode.cpp.o:
 
 /usr/include/endian.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/Qos1.hpp:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp:
+
+/usr/include/features-time64.h:
 
 /usr/include/bits/types/__sigval_t.h:
 
@@ -3641,19 +3985,19 @@ lib/SQLiteCpp/sqlite3/libsqlite3.so:
 
 /usr/include/linux/sched/types.h:
 
-/usr/include/c++/15/bits/stl_map.h:
+/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
 
-/usr/include/c++/15/bits/locale_classes.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h:
-
-/usr/include/linux/stddef.h:
+/usr/include/c++/15/bits/chrono.h:
 
 /usr/include/locale.h:
 
 /usr/include/wctype.h:
 
 /usr/include/sched.h:
+
+/usr/include/c++/15/bits/stl_function.h:
+
+/usr/include/c++/15/bits/fs_dir.h:
 
 /usr/include/sys/timerfd.h:
 
@@ -3669,58 +4013,68 @@ lib/nodesession/CMakeFiles/nodesession.dir/src/Handshaker.cpp.o:
 
 /usr/include/time.h:
 
-/usr/include/c++/15/streambuf:
-
-/usr/include/bits/socket.h:
-
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h:
 
 /usr/include/c++/15/bits/localefwd.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h:
 
-/usr/include/features-time64.h:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/src/DatabaseAccessor.cpp:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/common/include/Packet.hpp:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/SQLiteCpp.h:
 
-/lib64/libc.so.6:
+/usr/include/assert.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/decorator/include/LiveMonitor.hpp:
+/usr/include/c++/15/bits/exception_defines.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/Handshaker.hpp:
+/usr/include/bits/types/timer_t.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IConnectionHandler.hpp:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Statement.h:
 
-/usr/include/c++/15/bits/concept_check.h:
+/usr/include/c++/15/backward/auto_ptr.h:
 
-/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/nodesession/include/IStateContext.hpp:
+/usr/include/c++/15/bits/align.h:
 
-/usr/include/string.h:
+/usr/include/c++/15/bits/istream.tcc:
 
-/usr/include/bits/socket_type.h:
+/usr/include/c++/15/bits/allocated_ptr.h:
 
-/usr/include/asm-generic/socket.h:
+/usr/include/c++/15/bits/std_function.h:
 
-/usr/include/asm/socket.h:
+/home/pastor/Public/books/VI_sem/inz/code/prototype1/lib/SQLiteCpp/include/SQLiteCpp/Exception.h:
 
-/usr/include/asm/sockios.h:
+/usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h:
 
-/usr/include/bits/confname.h:
+/usr/include/c++/15/bits/codecvt.h:
 
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/15/cctype:
-
-/usr/include/bits/environments.h:
-
-/usr/include/c++/15/debug/debug.h:
-
-/usr/include/bits/getopt_core.h:
+/usr/include/bits/getopt_posix.h:
 
 /usr/include/c++/15/cstddef:
 
 /usr/include/errno.h:
 
-/usr/include/bits/getopt_posix.h:
+/usr/include/c++/15/bits/fs_fwd.h:
 
-/usr/include/bits/in.h:
+/usr/include/c++/15/bits/locale_facets_nonio.tcc:
+
+/usr/include/netdb.h:
+
+/usr/include/c++/15/bits/parse_numbers.h:
+
+/usr/include/c++/15/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/15/bits/stl_uninitialized.h:
+
+/usr/include/c++/15/bits/stl_multimap.h:
+
+/usr/include/c++/15/bits/shared_ptr_base.h:
+
+/usr/include/c++/15/bits/sstream.tcc:
+
+/usr/include/c++/15/bits/locale_classes.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/c++/15/bits/stl_map.h:
